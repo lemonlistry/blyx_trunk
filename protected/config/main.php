@@ -72,6 +72,13 @@ return array(
             ),
         ),
 
+        //Yii::App()->webBrowser->get("http://example.com");
+        //Yii::App()->webBrowser->getResponseText();
+        'webBrowser' => array(
+            'class'     => 'application.components.DGWebBrowser.DGWebBrowser',
+            'adapter'    => 'sockets' // curl | sockets | fopen
+        ),
+
          'cache'=>array(
             'class'=>'CMemCache',
             'servers'=>array(
