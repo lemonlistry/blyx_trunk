@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<project name="platform package" default="package" basedir="./">
+    <!--<property file="build.properties" /> -->
+    <target name="package">
+        <tstamp>
+            <format property="timestamp" pattern="yyyyMMddHHmmss" />
+        </tstamp>
+        <tar destfile="platform${timestamp}.tar.gz" basedir=".." excludes="*/.svn" compression="gzip" longfile="gnu">
+        </tar>
+    </target>
+    <target name="deploy" depends="package">
+        <untar src="platform${timestamp}.tar.gz" dest="/var/www/html/platform" compression="gzip"/>
+        <delete file="platform${timestamp}.tar.gz" />
+    </target>
+</project>
