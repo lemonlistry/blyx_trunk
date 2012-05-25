@@ -187,9 +187,11 @@ class DefaultController extends Controller
      * int nSock 默认填0
      * int nUserId 默认填0
      * int nType 协议id
-     * int nLength 包体的长度0
+     * int nLength 包体的长度 33
      * int nSerialNo 默认填0
      * int nVersion  默认填1
+     * 包体:
+     * Password定长33个字节(默认填boluo123)
      */
     public function actionCloseServer(){
         $socket = new SocketHelper(Yii::app()->params['socket_ip'], Yii::app()->params['socket_port']);

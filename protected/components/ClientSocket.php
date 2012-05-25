@@ -119,13 +119,13 @@ class ClientSocket{
     public function error($msg=null){
         if(!$this->bShowErros && !$this->bExceptions) return;
 
-        $errCode = socket_last_error($this->hnd);var_dump($errCode);
+        $errCode = socket_last_error($this->hnd);
         if($errCode != 0){
             //Connection reset by peer
             if($errCode==104){
                 $this->bConnected = false;
             }
-            $errMsg = socket_strerror($errCode);var_dump($errMsg);exit;
+            $errMsg = socket_strerror($errCode);
             if($this->bExceptions){
                 throw new Exception("Socket error. Code: $errCode - Message: $errMsg\n");
                 }
