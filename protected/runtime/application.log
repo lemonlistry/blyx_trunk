@@ -10814,3 +10814,905 @@ in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
 in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
 2012/05/25 09:01:16 [trace] [system.CModule] Loading "clientScript" application component
 in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:12:47 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:12:47 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:12:47 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:12:47 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:12:47 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:12:47 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:12:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:12:47 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:12:47 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:12:47 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:12:47 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:12:47 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:18:19 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:18:19 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:18:19 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:18:19 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:18:19 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:18:19 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:18:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:18:19 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:18:19 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:18:19 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:18:19 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:18:19 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:20:52 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:20:52 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:20:52 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:20:52 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:20:52 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:20:52 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:20:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:20:52 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:20:52 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:20:52 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:20:52 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:20:52 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:21:18 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:21:18 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:21:18 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:21:18 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:21:18 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:21:18 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:21:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:21:18 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:21:18 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:21:18 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:21:18 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:21:18 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:21:51 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:21:51 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:21:51 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:21:51 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:21:51 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:21:51 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:21:51 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:21:51 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:21:51 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:21:51 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:21:51 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:22:01 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:22:01 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:22:01 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:22:01 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:22:01 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:22:01 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:22:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:22:01 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:22:01 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:22:01 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:22:01 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:22:01 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:26:55 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:26:55 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:26:55 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:26:55 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:26:55 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:26:55 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:26:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:26:55 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:26:55 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:26:55 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:26:55 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:26:55 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:27:03 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:27:03 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:27:03 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:27:03 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:27:03 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:27:03 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:27:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:27:03 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:27:03 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:27:03 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:27:03 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:27:03 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:27:50 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:27:50 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:27:50 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:27:50 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:27:50 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:27:50 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:27:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:27:50 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:27:50 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:27:50 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:27:50 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:27:50 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:29:16 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:29:16 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:29:16 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:29:16 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:29:16 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:29:16 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:29:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:29:16 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:29:16 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:29:16 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:29:16 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:29:16 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:30:21 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:30:21 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:30:21 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:30:21 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:30:21 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:30:21 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:30:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:30:21 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:30:21 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:30:21 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:30:21 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:30:21 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:31:44 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:31:44 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:31:44 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:31:44 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:31:44 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:31:44 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:31:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:31:44 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:31:44 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:31:44 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:31:44 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:31:44 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:36:00 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:36:00 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:36:00 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:36:00 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:36:00 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:36:00 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:36:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:36:00 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:36:00 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:36:00 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:36:00 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:36:00 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:36:24 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:36:24 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:36:24 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:36:24 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:36:24 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:36:24 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:36:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:36:24 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:36:24 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:36:24 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:36:24 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:36:24 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:38:25 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:38:25 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:38:25 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:38:25 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:38:25 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:38:25 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:38:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:38:25 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:38:25 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:38:25 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:38:25 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:38:25 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:40:21 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:40:21 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:40:21 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:40:21 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:40:21 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:40:21 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:40:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:40:21 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:40:21 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:40:21 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:40:21 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:40:21 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:49:58 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:49:58 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:49:58 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:49:58 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:49:58 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:49:58 [trace] [system.base.CModule] Loading "passport" module
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:49:58 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:49:58 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:49:58 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\modules\passport\views\default\login.php (7)
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (30)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:49:58 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\modules\passport\views\default\login.php (23)
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (30)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:28 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:28 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:28 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:28 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:28 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:28 [trace] [system.base.CModule] Loading "interact" module
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:28 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:28 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:43 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:43 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:43 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:43 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:43 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:43 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:52:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:52:43 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:52:43 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:52:43 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:52:43 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:52:43 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:53:08 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:53:08 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:53:08 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:53:08 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:53:08 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:53:08 [trace] [system.base.CModule] Loading "interact" module
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:53:08 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:53:08 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:53:23 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:53:23 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:53:23 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:53:23 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:53:23 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:53:23 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 09:53:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 09:53:23 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 09:53:23 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:53:23 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:53:23 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 09:53:23 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:00:29 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:00:29 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:00:29 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:00:29 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:00:29 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:00:29 [trace] [system.base.CModule] Loading "interact" module
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:00:29 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:00:29 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:00:47 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:00:47 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:00:47 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:00:47 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:00:47 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:00:47 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 10:00:47 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 10:00:47 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:00:47 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:00:47 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:00:47 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:08:01 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:08:01 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:08:01 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:08:01 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:08:01 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:08:01 [trace] [system.base.CModule] Loading "interact" module
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:08:01 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:08:01 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:08:20 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:08:20 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:08:20 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:08:20 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:08:20 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:08:20 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:08:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 10:08:20 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 10:08:20 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:08:20 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:08:20 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:08:20 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:11:20 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:20 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:20 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:20 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:20 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:20 [trace] [system.base.CModule] Loading "interact" module
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:20 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:20 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:38 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:38 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:38 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:38 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:38 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:38 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 10:11:38 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 10:11:38 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:11:38 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:11:38 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:11:38 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:11:42 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:42 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:42 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:42 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:42 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:42 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:11:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 10:11:42 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 10:11:42 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:11:42 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:11:42 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:11:42 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:12:11 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:12:11 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:12:11 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:12:11 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:12:11 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:12:11 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:12:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 10:12:11 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 10:12:11 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:12:11 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:12:11 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:12:11 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:34:37 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:34:37 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:34:37 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:34:37 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:34:37 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:34:37 [trace] [system.base.CModule] Loading "interact" module
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:34:37 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:34:37 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:34:52 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:34:52 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:34:52 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:34:52 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:34:52 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:34:52 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/25 10:34:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/25 10:34:52 [trace] [system.CModule] Loading "errorHandler" application component
+2012/05/25 10:34:52 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:34:52 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (34)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:34:52 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (37)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/05/25 10:34:52 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)

@@ -156,5 +156,6 @@ return array(
         'adminEmail'=>'webmaster@example.com',
         'socket_ip'=>'172.16.2.74',
         'socket_port'=>'20005',
+        'socket_password'=>'boluo123',
     ),
 );
