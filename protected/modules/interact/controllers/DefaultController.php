@@ -180,8 +180,8 @@ class DefaultController extends Controller
         $socket->close();
     }
     
-	/**
-     * GM 发送奖励给玩家
+    /**
+     * 请求关闭服务器
      * 
      * 包头: 
      * int nSock 默认填0
