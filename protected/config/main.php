@@ -49,6 +49,7 @@ return array(
         'core',
         'install',
         'restfulApi',
+        'interact',
     ),
 
     'defaultController' => 'passport',
@@ -74,10 +75,10 @@ return array(
 
         //Yii::App()->webBrowser->get("http://example.com");
         //Yii::App()->webBrowser->getResponseText();
-        'webBrowser' => array(
-            'class'     => 'application.components.DGWebBrowser.DGWebBrowser',
-            'adapter'    => 'sockets' // curl | sockets | fopen
-        ),
+//        'webBrowser' => array(
+//            'class'     => 'application.components.DGWebBrowser.DGWebBrowser',
+//            'adapter'    => 'sockets' // curl | sockets | fopen
+//        ),
 
          'cache'=>array(
             'class'=>'CMemCache',
@@ -153,5 +154,7 @@ return array(
     'params'=>array(
         // this is used in contact page
         'adminEmail'=>'webmaster@example.com',
+        'socket_ip'=>'172.16.2.74',
+        'socket_port'=>'20005',
     ),
 );
