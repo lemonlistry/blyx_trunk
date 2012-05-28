@@ -137,7 +137,7 @@ return array(
             'routes'=>array(
                 array(
                     'class'=>'CFileLogRoute',
-                    'levels'=>'error, warning, info, profiler, trace',
+                    'levels'=>'error, warning, info', //, profiler, trace
                 ),
                 // uncomment the following to show log messages on web pages
                 /*
@@ -154,6 +154,7 @@ return array(
     'params'=>array(
         'adminEmail'=>'webmaster@example.com',
         'socket_logic_ip'=>'172.16.2.74', //socket逻辑服务器IP
+        'socket_gateway_ip'=>'172.16.2.74', //socket网关服务器IP
         'socket_logic_port'=>'20005', //socket逻辑服务器通讯端口 
         'socket_gateway_port'=>'8002', //socket网关服务器端口
         'socket_password'=>'boluo123',

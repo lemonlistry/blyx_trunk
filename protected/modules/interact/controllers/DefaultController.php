@@ -228,7 +228,7 @@ class DefaultController extends Controller
      */
     public function actionRequestLogin(){
         $server_group_id = 9;
-        $socket = new SocketHelper(Yii::app()->params['socket_logic_ip'], Yii::app()->params['socket_gateway_port']);
+        $socket = new SocketHelper(Yii::app()->params['socket_gateway_ip'], Yii::app()->params['socket_gateway_port']);
         //定义socket响应状态码
         $key_result_code = 100000;
         $key_role_id = 431001;
@@ -251,14 +251,14 @@ class DefaultController extends Controller
         $par_res_login = $socket->parseResponsePack($res_login);
         //是否正常登录
         if($par_res_login[$key_result_code] == 0){
-            echo 'socket login success ...';
+            Yii::log('socket login success ...');
             $role_id = $par_res_login[$key_role_id];
             //如果没有角色 创建角色
             if($par_res_login[$key_has_role] != 1){
                 $res_role = $this->createRole($socket, $server_group_id, $role_id);
                 $par_res_role = $socket->parseResponsePack($res_role);
                 if($par_res_role[$key_result_code] == 0){
-                    echo 'socket create role success ...';
+                    Yii::log('socket create role success ...');
                 }else if($par_res_role[$key_result_code] == 481004){
                     throw new CException('socket create role error, role name exist ...');
                 }else{
@@ -272,7 +272,7 @@ class DefaultController extends Controller
             if($par_res_scene[$key_result_code] != 0){
                 throw new CException('socket enter scene error ...');
             }else{
-                echo 'socket enter scene success ...';
+                Yii::log('socket enter scene success ...');
             }
         }else{
             throw new CException('socket login error ...');
