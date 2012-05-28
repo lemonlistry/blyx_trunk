@@ -1,4 +1,10 @@
 <?php
+
+/**
+ * socket help class 
+ * @author shadow
+ *
+ */
 class SocketHelper{
     
     //IP地址
@@ -59,7 +65,7 @@ class SocketHelper{
     }
     
     /**
-     * 获取包头信息 打包顺序  nSock  nUserId  nType nLength nSerialNo nVersion
+     * 获取逻辑服包头信息 打包顺序  nSock  nUserId  nType nLength nSerialNo nVersion
      * @param int $nType 协议类型
      * @param int $nLength 包体长度
      * @param int $nSock 默认值0
@@ -68,7 +74,7 @@ class SocketHelper{
      * @param int $nVersion 默认值1
      * @return string
      */
-    public function getPackHeader($nType, $nLength, $nSock = 0, $nUserId = 0, $nSerialNo = 0, $nVersion = 1){
+    public function getLogicPackHeader($nType, $nLength, $nSock = 0, $nUserId = 0, $nSerialNo = 0, $nVersion = 1){
         $cmd = pack('L',$nSock);
         $cmd .= pack('L',$nUserId);
         $cmd .= pack('L',$nType);
@@ -76,5 +82,68 @@ class SocketHelper{
         $cmd .= pack('L',$nSerialNo);
         $cmd .= pack('L',$nVersion);
         return $cmd;
+    }
+    
+    /**
+     * 获取网关包头信息 打包顺序   nType nLength nSerialNo nVersion
+     * @param int $nType 协议类型
+     * @param int $nLength 包体长度
+     * @param int $nSerialNo 默认值0
+     * @param int $nVersion 默认值1
+     * @return string
+     */
+    public function getGateWayPackHeader($nType, $nLength, $nSerialNo = 0, $nVersion = 1){
+        $cmd = pack('L',$nType);
+        $cmd .= pack('L',$nLength);
+        $cmd .= pack('L',$nSerialNo);
+        $cmd .= pack('L',$nVersion);
+        return $cmd;
+    }
+    
+    /**
+     * 解析服务端响应的包
+     * @param array $response 响应包
+     * @param string $response_type 响应协议号
+     * @param string $format 解析格式
+     * @param int $head_length 包头长度 
+     * @param int $kv_state_length key value 对声明长度
+     * @return array
+     */
+    public function parseResponsePack($response, $response_type = null, $head_length = 32, $kv_state_length = 4, $format = 'H*'){
+        if(empty($response)){
+            throw new CException('socket response error ...');
+        }
+        //解包
+        $res = unpack($format, $response);
+        $res = implode('', $res);
+        $length = $head_length + $kv_state_length;
+        //截取响应的协议号包体
+        if(!empty($response_type)){
+            $response_type_arr = str_split($response_type, 2);
+            $response_type_arr = array_reverse($response_type_arr);
+            $code = implode('', $response_type_arr);
+            $res = strstr($res, $code);
+        }
+        //获得包体内容
+        $packet = substr($res, $length);
+        //每两个长度组成一个字节数组
+        $res_arr = str_split($packet, 2);
+        //每4个字节截取为一个数组
+        $chunk_arr = array_chunk($res_arr, 4);
+        $result = array();
+        //获取响应包体的key value 键值对
+        foreach ($chunk_arr as $key => $value) {
+            if($key % 2 == 0){
+                $val = array_reverse($value);
+                $str = implode('', $val);
+                $k = base_convert($str, 16, 10);  
+            }else{
+                $val = array_reverse($value);
+                $str = implode('', $val);
+                $v = base_convert($str, 16, 10);  
+                $result[$k] = $v;
+            }
+        }
+        return $result;
     }
 }

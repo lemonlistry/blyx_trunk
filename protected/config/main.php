@@ -152,10 +152,10 @@ return array(
     // application-level parameters that can be accessed
     // using Yii::app()->params['paramName']
     'params'=>array(
-        // this is used in contact page
         'adminEmail'=>'webmaster@example.com',
-        'socket_ip'=>'172.16.2.74',
-        'socket_port'=>'20005',
+        'socket_logic_ip'=>'172.16.2.74', //socket逻辑服务器IP
+        'socket_logic_port'=>'20005', //socket逻辑服务器通讯端口 
+        'socket_gateway_port'=>'8002', //socket网关服务器端口
         'socket_password'=>'boluo123',
     ),
 );
