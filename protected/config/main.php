@@ -91,9 +91,10 @@ return array(
             ),
         ),
 
+        //mongodb://username:pwd@host:port/db
         'mongodb' => array(
             'class'             => 'EMongoDB',
-            'connectionString'  => 'mongodb://localhost',
+            'connectionString'  => 'mongodb://passport:111111@localhost:27017/passport',
             'dbName'            => 'passport',
             'fsyncFlag'         => false,
             'safeFlag'          => false,
@@ -102,7 +103,7 @@ return array(
 
         'mongodb_core' => array(
             'class'             => 'EMongoDB',
-            'connectionString'  => 'mongodb://localhost',
+            'connectionString'  => 'mongodb://platform:111111@localhost:27017/platform',
             'dbName'            => 'platform',
             'fsyncFlag'         => false,
             'safeFlag'          => false,
