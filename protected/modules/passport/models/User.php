@@ -62,6 +62,9 @@ class User extends MongoDocument
         );
     }
 
+    /**
+     * 设置mongodb组件
+     */
     public function getDbComponent(){
         return 'mongodb';
     }

@@ -80,7 +80,7 @@ return array(
 //            'adapter'    => 'sockets' // curl | sockets | fopen
 //        ),
 
-         'cache'=>array(
+        'cache'=>array(
             'class'=>'CMemCache',
             'servers'=>array(
                 array(
@@ -108,7 +108,7 @@ return array(
             'safeFlag'          => false,
             'useCursor'         => false,
         ),
-        /*
+        
         'db'=>array(
             'connectionString' => 'mysql:host=localhost;dbname=passport',
             'emulatePrepare' => true,
@@ -127,7 +127,7 @@ return array(
             'charset' => 'utf8',
             'tablePrefix' => 'core_',
         ),
-        */
+   
         'errorHandler'=>array(
             // use 'site/error' action to display errors
             'errorAction'=>'site/error',

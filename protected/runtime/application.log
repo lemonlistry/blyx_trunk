@@ -14,3 +14,1544 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2012/05/29 08:58:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 08:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:00:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:00:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString 不能是空的.' in E:\platform_jhs\trunk\framework\db\CDbConnection.php:370
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 E:\platform_jhs\trunk\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 E:\platform_jhs\trunk\framework\base\CModule.php(388): CDbConnection->init()
+#3 E:\platform_jhs\trunk\framework\base\CModule.php(104): CModule->getComponent('db')
+#4 E:\platform_jhs\trunk\protected\extensions\ActiveRecord.php(25): CModule->__get('db')
+#5 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(2263): ActiveRecord->getDbConnection()
+#6 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#7 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('User')
+#8 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(21): CActiveRecord->__construct()
+#10 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#11 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#15 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#16 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 09:00:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:01:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString 不能是空的.' in E:\platform_jhs\trunk\framework\db\CDbConnection.php:370
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 E:\platform_jhs\trunk\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 E:\platform_jhs\trunk\framework\base\CModule.php(388): CDbConnection->init()
+#3 E:\platform_jhs\trunk\framework\base\CModule.php(104): CModule->getComponent('db')
+#4 E:\platform_jhs\trunk\protected\extensions\ActiveRecord.php(25): CModule->__get('db')
+#5 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(2263): ActiveRecord->getDbConnection()
+#6 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#7 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('User')
+#8 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(21): CActiveRecord->__construct()
+#10 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#11 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#15 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#16 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 09:01:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:01:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'passport.user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `User`.
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (21)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 09:01:53 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "User" 对应的 table "User".' in E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('User')
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(21): CActiveRecord->__construct()
+#4 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#5 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#9 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#10 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 09:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:04:46 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 09:04:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:07:25 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 09:07:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:08:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:10:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:12:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:12:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:13:08 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 09:13:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:16:35 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 09:16:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:16:37 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 09:16:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:20:10 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 09:20:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:20:12 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 09:20:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:28:42 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 09:28:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:32:03 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 09:32:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:50:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:50:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:53:27 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 09:53:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 09:53:34 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 09:53:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:01:18 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 10:01:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:02:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:02:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:03:16 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 10:03:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:06:12 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 10:06:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:06:28 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 10:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:06:31 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 10:06:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:06:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:06:37 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 10:06:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:08:44 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 10:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:08:46 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 10:08:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:08:47 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 10:08:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:08:53 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 10:08:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:09:12 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(78): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 10:09:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:26:43 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(80): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 10:26:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 10:30:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 11:11:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 11:11:40 [error] [exception.EMongoException] exception 'EMongoException' with message 'Cannot apply scopes to criteria' in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php:528
+Stack trace:
+#0 E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(823): EMongoDocument->applyScopes('username = ? AN...')
+#1 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): EMongoDocument->find('username = ? AN...', Array)
+#2 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(76): UserIdentity->authenticate()
+#3 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#4 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#5 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#9 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#10 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 11:11:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 11:19:23 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(80): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 11:19:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 11:33:56 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(80): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 11:33:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 11:52:00 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(80): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 11:52:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 11:52:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 11:52:17 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(80): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 11:52:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 11:56:38 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(80): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 11:56:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:38:34 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(80): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 13:38:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:38:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:39:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:39:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:39:19 [warning] [application] Failed to set unsafe attribute "user" of "User".
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (22)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 13:39:19 [warning] [application] Failed to set unsafe attribute "pwd" of "User".
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (22)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 13:39:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:39:49 [warning] [application] Failed to set unsafe attribute "user" of "User".
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (22)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 13:39:49 [warning] [application] Failed to set unsafe attribute "pwd" of "User".
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (22)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 13:39:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:40:43 [warning] [application] Failed to set unsafe attribute "user" of "User".
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (22)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 13:40:43 [warning] [application] Failed to set unsafe attribute "pwd" of "User".
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (22)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 13:40:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:40:47 [warning] [application] Failed to set unsafe attribute "user" of "User".
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (22)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 13:40:47 [warning] [application] Failed to set unsafe attribute "pwd" of "User".
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (22)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 13:40:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:40:56 [warning] [application] Failed to set unsafe attribute "user" of "User".
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (22)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 13:40:56 [warning] [application] Failed to set unsafe attribute "pwd" of "User".
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (22)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 13:40:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:41:26 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', NULL)
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(80): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 13:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:42:05 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.user" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('user', NULL)
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(80): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 13:42:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:43:10 [warning] [application] Failed to set unsafe attribute "user" of "User".
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (22)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 13:43:10 [warning] [application] Failed to set unsafe attribute "pwd" of "User".
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (22)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 13:43:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:43:14 [warning] [application] Failed to set unsafe attribute "user" of "User".
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (22)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 13:43:14 [warning] [application] Failed to set unsafe attribute "pwd" of "User".
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (22)
+in E:\platform_jhs\trunk\index.php (13)
+2012/05/29 13:43:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:43:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:43:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:43:31 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(80): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 13:43:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:46:16 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(83): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 13:46:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:48:20 [error] [php] Undefined variable: this (E:\platform_jhs\trunk\protected\modules\passport\models\User.php:22)
+Stack trace:
+#0 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#1 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#2 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 E:\platform_jhs\trunk\framework\web\CController.php(287): DefaultController->runAction()
+#4 E:\platform_jhs\trunk\framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#5 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): DefaultController->run()
+#6 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 E:\platform_jhs\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/passport
+in E:\platform_jhs\trunk\protected\modules\passport\models\User.php (22)
+in E:\platform_jhs\trunk\protected\components\UserIdentity.php (21)
+in E:\platform_jhs\trunk\protected\modules\passport\models\User.php (84)
+2012/05/29 13:48:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:48:45 [error] [php] Use of undefined constant self - assumed 'self' (E:\platform_jhs\trunk\protected\modules\passport\models\User.php:22)
+Stack trace:
+#0 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#1 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#2 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 E:\platform_jhs\trunk\framework\web\CController.php(287): DefaultController->runAction()
+#4 E:\platform_jhs\trunk\framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#5 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): DefaultController->run()
+#6 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 E:\platform_jhs\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/passport
+in E:\platform_jhs\trunk\protected\modules\passport\models\User.php (22)
+in E:\platform_jhs\trunk\protected\components\UserIdentity.php (21)
+in E:\platform_jhs\trunk\protected\modules\passport\models\User.php (84)
+2012/05/29 13:48:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:50:38 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(83): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 13:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:53:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:54:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:56:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:56:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:56:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 13:59:10 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.username" 未被定义.' in E:\platform_jhs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\db\schema\CDbCriteria.php(153): CComponent->__set('username', 'admin')
+#1 E:\platform_jhs\trunk\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 E:\platform_jhs\trunk\framework\db\ar\CActiveRecord.php(1391): CDbCommandBuilder->createCriteria(Array, Array)
+#3 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): CActiveRecord->find(Array)
+#4 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(83): UserIdentity->authenticate()
+#5 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#6 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#7 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#11 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#12 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 13:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 14:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 14:01:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 14:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 14:01:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 14:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 14:02:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 14:04:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 14:04:22 [error] [exception.EMongoException] exception 'EMongoException' with message 'Cannot apply scopes to criteria' in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php:528
+Stack trace:
+#0 E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(823): EMongoDocument->applyScopes('username = :use...')
+#1 E:\platform_jhs\trunk\protected\components\UserIdentity.php(21): EMongoDocument->find('username = :use...', Array)
+#2 E:\platform_jhs\trunk\protected\modules\passport\models\User.php(79): UserIdentity->authenticate()
+#3 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(23): User->login()
+#4 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#5 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#9 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport')
+#10 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/passport
+HTTP_REFERER=http://127.0.0.3/passport
+---
+2012/05/29 14:04:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 14:04:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
