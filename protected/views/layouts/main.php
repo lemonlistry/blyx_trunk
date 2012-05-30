@@ -5,7 +5,6 @@
     <meta name="language" content="zh-CN" />
     <title><?php echo Yii::app()->name; ?></title>
     <link href="<?php echo Yii::app()->request->baseUrl;?>/css/passport/global.css?v=<?php echo Yii::app()->params['version']; ?>" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl;?>/js/jquery/jquery-1.7.2.min.js?v=<?php echo Yii::app()->params['version']; ?>"></script>
 </head>
 <body>
 <div id="container">
@@ -14,15 +13,15 @@
     
     <div id="nav">
         <ul>
-            <li class="inactive" id="other"><a href="#" target="menu">管理操作</a></li>
-            <li class="inactive" id="about"><a href="#" target="menu">管理操作</a></li>
-            <li class="inactive" id="user"><a href="#" target="menu">管理操作</a></li>
-            <li class="inactive" id="news"><a href="#" target="menu">管理操作</a></li>
-            <li class="inactive" id="mars"><a href="#" target="menu">管理操作</a></li>
-            <li class="inactive" id="jielong"><a href="#" target="menu">管理操作</a></li>
-            <li class="inactive" id="box"><a href="#" target="menu">管理操作</a></li>
-            <li class="inactive" id="school"><a href="#" target="menu">管理操作</a></li>
-            <li class="active" id="config"><a href="#" target="menu">管理操作</a></li>
+            <li class="inactive" id="other"><a href="#">管理操作</a></li>
+            <li class="inactive" id="about"><a href="#">管理操作</a></li>
+            <li class="inactive" id="user"><a href="#">管理操作</a></li>
+            <li class="inactive" id="news"><a href="#">管理操作</a></li>
+            <li class="inactive" id="mars"><a href="#">管理操作</a></li>
+            <li class="inactive" id="jielong"><a href="#">管理操作</a></li>
+            <li class="inactive" id="box"><a href="#">管理操作</a></li>
+            <li class="inactive" id="school"><a href="#">管理操作</a></li>
+            <li class="active" id="config"><a href="#">管理操作</a></li>
         </ul>
     </div>
     
@@ -38,10 +37,10 @@
     <div>
         <div id="menu">
             <ul>
-                <li><img src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/li.jpg" />&nbsp;&nbsp;&nbsp; <a href="http://www.865171.cn" target="main">操作一</a></li>
-                <li><img src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/li.jpg" />&nbsp;&nbsp;&nbsp; <a href="" target="main">操作二</a></li>
-                <li><img src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/li.jpg" />&nbsp;&nbsp;&nbsp; <a href="" target="main">操作三</a></li>
-                <li><img src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/li.jpg" />&nbsp;&nbsp;&nbsp; <a href="" target="main">操作四</a></li>
+                <li><img src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/li.jpg" />&nbsp;&nbsp;&nbsp; <a href="#">操作一</a></li>
+                <li><img src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/li.jpg" />&nbsp;&nbsp;&nbsp; <a href="#">操作二</a></li>
+                <li><img src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/li.jpg" />&nbsp;&nbsp;&nbsp; <a href="#">操作三</a></li>
+                <li><img src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/li.jpg" />&nbsp;&nbsp;&nbsp; <a href="#">操作四</a></li>
             </ul>
         </div>
         <?php echo $content; ?>
@@ -53,6 +52,8 @@
     Copyright &copy; 2009-<?php echo date('Y'); ?> By blyx . All Rights Reserved.<br/>
     <p>版本：<?php echo Yii::app()->params['version']; ?> &nbsp;&nbsp; 执行时间：<?php echo printf("%.2f", Yii::getLogger()->getExecutionTime()); ?>秒 </p>
 </div>
+
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl;?>/js/jquery/jquery-1.7.2.min.js?v=<?php echo Yii::app()->params['version']; ?>"></script>
 
 </body>
 </html>
