@@ -40,7 +40,7 @@ class Controller extends CController
         return true;
     }
     
-	/**
+    /**
      * 根据给出的主键返回数据模型
      * 如果没有发现模型，将触发一个404错误
      * @param integer $id 模型主键

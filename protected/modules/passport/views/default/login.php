@@ -1,25 +1,38 @@
-<?php
-    $this->pageTitle=Yii::app()->name . ' - Login';
-?>
-
-<div class="form">
-
-    <?php $form = $this->beginWidget('ActiveForm', array('id' => 'login_form')); ?>
-
-    <div class="row">
-        <label>username:</label>
-        <input type="text" name="user[username]" id="username" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><?php echo Yii::app()->name; ?></title>
+<link href="<?php echo Yii::app()->request->baseUrl;?>/css/passport/login.css?v=<?php echo Yii::app()->params['version']; ?>" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl;?>/js/jquery/jquery-1.7.2.min.js?v=<?php echo Yii::app()->params['version']; ?>"></script>
+</head>
+<body>
+<div class="login">
+    <div class="title"><img src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/login_title.gif" /></div>
+    <div class="main">
+        <form action="<?php echo $this->createUrl('/passport');?>" method="post" id="login_form">
+        <table class="login_table">
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="user[username]" id="username" size="32" class="username"/></td>
+            </tr>
+            <tr><td></td><td></td></tr>
+            <tr><td></td><td></td></tr>
+            <tr>
+                <td>Password </td>
+                <td><input type="password" name="user[password]" id="password" size="32" class="password" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="text-align: left; padding-top: 32px;">
+                    <input type="image" src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/login.gif" name="submit" id="submit"/>
+                    <input type="image" src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/cancel.gif" name="cancel" id="cancel"/>
+                </td>
+            </tr>
+        </table>
+        <input type="hidden" name="login" id="login" />
+        </form>
     </div>
-
-    <div class="row">
-        <label>password:</label>
-        <input type="text" name="user[password]" id="password" />
-    </div>
-
-    <div class="row buttons">
-        <input type="submit" name="submit" id="submit" value="submit" />
-    </div>
-    
-    <?php $this->endWidget(); ?>
-    
 </div>
+</body>
+</html>

@@ -2,59 +2,57 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="language" content="en" />
-
-    <!-- blueprint CSS framework -->
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-
-    <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+    <meta name="language" content="zh-CN" />
+    <title><?php echo Yii::app()->name; ?></title>
+    <link href="<?php echo Yii::app()->request->baseUrl;?>/css/passport/global.css?v=<?php echo Yii::app()->params['version']; ?>" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl;?>/js/jquery/jquery-1.7.2.min.js?v=<?php echo Yii::app()->params['version']; ?>"></script>
 </head>
-
 <body>
+<div id="container">
 
-<div class="container" id="page">
+    <div id="banner"><h1>管理平台</h1></div>
+    
+    <div id="nav">
+        <ul>
+            <li class="inactive" id="other"><a href="#" target="menu">管理操作</a></li>
+            <li class="inactive" id="about"><a href="#" target="menu">管理操作</a></li>
+            <li class="inactive" id="user"><a href="#" target="menu">管理操作</a></li>
+            <li class="inactive" id="news"><a href="#" target="menu">管理操作</a></li>
+            <li class="inactive" id="mars"><a href="#" target="menu">管理操作</a></li>
+            <li class="inactive" id="jielong"><a href="#" target="menu">管理操作</a></li>
+            <li class="inactive" id="box"><a href="#" target="menu">管理操作</a></li>
+            <li class="inactive" id="school"><a href="#" target="menu">管理操作</a></li>
+            <li class="active" id="config"><a href="#" target="menu">管理操作</a></li>
+        </ul>
+    </div>
+    
+    <div id="main">
+        <div id="welcome">欢迎您 , <?php echo Yii::app()->user->name; ?> !</div>
+        <div id="adminop">
+            <ul>
+                <li><a href="<?php echo $this->createUrl('/passport/default/logout'); ?>">退出</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div>
+        <div id="menu">
+            <ul>
+                <li><img src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/li.jpg" />&nbsp;&nbsp;&nbsp; <a href="http://www.865171.cn" target="main">操作一</a></li>
+                <li><img src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/li.jpg" />&nbsp;&nbsp;&nbsp; <a href="" target="main">操作二</a></li>
+                <li><img src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/li.jpg" />&nbsp;&nbsp;&nbsp; <a href="" target="main">操作三</a></li>
+                <li><img src="<?php echo Yii::app()->request->baseUrl;?>/images/passport/li.jpg" />&nbsp;&nbsp;&nbsp; <a href="" target="main">操作四</a></li>
+            </ul>
+        </div>
+        <?php echo $content; ?>
+    </div>
+    
+</div>
 
-    <div id="header">
-        <div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-    </div><!-- header -->
-
-    <div id="mainmenu">
-        <?php $this->widget('zii.widgets.CMenu',array(
-            'items'=>array(
-                array('label'=>'Home', 'url'=>array('/site/index')),
-                array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-                array('label'=>'Contact', 'url'=>array('/site/contact')),
-                array('label'=>'Login', 'url'=>array('/passport'), 'visible'=>Yii::app()->user->isGuest),
-                array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-            ),
-        )); ?>
-    </div><!-- mainmenu -->
-    <?php if(isset($this->breadcrumbs)):?>
-        <?php $this->widget('zii.widgets.CBreadcrumbs', array(
-            'links'=>$this->breadcrumbs,
-        )); ?><!-- breadcrumbs -->
-    <?php endif?>
-
-    <?php echo $content; ?>
-
-    <div class="clear"></div>
-
-    <div id="footer">
-        Copyright &copy; 2009-<?php echo date('Y'); ?> by 菠萝游戏.<br/>
-        All Rights Reserved.<br/>
-        <span class="gray">版本：1.0.0 &nbsp;&nbsp; 
-      执行时间：<?php echo printf("%.2f", Yii::getLogger()->getExecutionTime()); ?>秒 &nbsp;&nbsp; 
-            </span>
-    </div><!-- footer -->
-
-</div><!-- page -->
+<div id="bottom">
+    Copyright &copy; 2009-<?php echo date('Y'); ?> By blyx . All Rights Reserved.<br/>
+    <p>版本：<?php echo Yii::app()->params['version']; ?> &nbsp;&nbsp; 执行时间：<?php echo printf("%.2f", Yii::getLogger()->getExecutionTime()); ?>秒 </p>
+</div>
 
 </body>
 </html>

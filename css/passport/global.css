@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+body {font-family:Arial, Helvetica, sans-serif; font-size:12px; margin:0px; text-align:left; border-right:1px #ccc solid;margin-bottom:2px;border-bottom: 1px #ccc solid;}
+a {color: #000; text-decoration: none;}
+ul { list-style:none;}
+#container {width: 100%;height:100%;}
+#banner {margin-top: 8px; margin-left: 32px;}
+#main {width: 100%; margin-bottom: 2px; background:#eeeeee; margin-left: 0px; margin-right:0px; height: 30px; color: #000; line-height: 2.4;overflow: auto;}
+#main a {color:#000;}
+#welcome { float:left; width: 40%; font-weight: 800; padding-left: 8px; position:relative;}
+#adminop { float:left; width: 59%; position:relative; text-align:right; line-height:1; *line-height:2.2;}
+#adminop ul li {float: right; width: 80px;}
+#nav {width: 100%; clear: both;}
+#nav ul li {float: right; width:82px; height:25px; line-height: 2.1; text-align: center;}
+.inactive { background-image/**/:url(../../images/passport/nav_bg_inactive2.png) !important;background: none; margin-left: 2px; margin-right:2px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/admin/nav_bg_inactive2.png);}
+.inactive a {color: #000;}
+.active {background:url(../../images/passport/nav_bg_active2.png) !important;background: none; margin-left: 2px; margin-right:2px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/admin/nav_bg_active2.png);}
+.active a {color:#fff;}
+.blankgray {background:#bbb; height:2px; width:100%; margin:0; padding:0; clear:both; font-size:2px;}
+
+#menu {width: 10%; float:left;}
+#menu img {_margin-top: 12px;  padding-left: 8px;}/*没办法,ie6对list-style-image支持不好*/
+#menu ul {padding:0; margin: 0; list-style: none;}
+#menu ul li {background-repeat: repeat-x; background-position:center; height: 32px;;margin-top: 2px; margin-bottom: 2px; border:1px #ccc solid; line-height: 2.8;}
+#content {width: 89%; height: 100%; line-height: 1.8; margin:auto; border:1px #ccc dashed; text-align: left; text-indent: 2em; float: right;'}
+.clear{clear: both;}
+
+#bottom { clear: both; position: fixed; bottom: 0; text-align: center; width: 100%; background: #fff; }

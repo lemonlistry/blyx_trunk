@@ -11,13 +11,14 @@ class DefaultController extends Controller
     {
         $this->render('index');
     }
-
+    
     /**
      * 登录页
      */
     public function actionLogin()
     {
-        if (isset($_POST['submit'])){
+        $this->layout = false;
+        if (isset($_POST['login'])){
             $model = new User();
             $model->attributes = Yii::app()->request->getParam('user');
             if ($model->validate() && $model->login()) {
@@ -28,6 +29,14 @@ class DefaultController extends Controller
         }
 
         $this->render('login');
+    }
+    
+    /**
+     * 退出登录
+     */
+    public function actionLogout(){
+        Yii::app()->user->logout();
+        $this->redirect(Yii::app()->homeUrl);
     }
 
 }
