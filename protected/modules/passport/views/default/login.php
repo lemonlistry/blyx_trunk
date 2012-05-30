@@ -13,13 +13,13 @@
         <form action="<?php echo $this->createUrl('/passport');?>" method="post" id="login_form">
         <table class="login_table">
             <tr>
-                <td>Username</td>
+                <td>用户名:</td>
                 <td><input type="text" name="user[username]" id="username" size="32" class="username"/></td>
             </tr>
             <tr><td></td><td></td></tr>
             <tr><td></td><td></td></tr>
             <tr>
-                <td>Password </td>
+                <td>密&nbsp;&nbsp;码: </td>
                 <td><input type="password" name="user[password]" id="password" size="32" class="password" /></td>
             </tr>
             <tr>
