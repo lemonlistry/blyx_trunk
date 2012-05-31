@@ -23,9 +23,10 @@ class AuthManager {
      * @param int $resource_id
      * @param int $channel_id
      * @param int $uid
+     * @param boolean $prime 增加(TRUE)/删除(FALSE)权限
      * @return boolean
      */
-    public static function setAuth($resource_id, $channel_id, $uid)
+    public static function setAuth($resource_id, $channel_id, $uid, $prime = true)
     {
     
     }
@@ -51,23 +52,23 @@ class AuthManager {
     }
     
     /**
-     * 频道设置
+     * 频道添加
      * @param string $name
      * @param string $desc
      * @return boolean
      */
-    public static function setChannel($name, $desc)
+    public static function addChannel($name, $desc)
     {
     
     }
     
     /**
-     * 资源设置
+     * 资源添加
      * @param string $name
      * @param string $desc
      * @return boolean
      */
-    public static function setResource($name, $desc)
+    public static function addResource($name, $desc)
     {
     
     }

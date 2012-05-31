@@ -19,15 +19,6 @@ class User extends MongoDocument
     }
 
     /**
-     * returns the primary key field for this model
-     */
-    public function primaryKey()
-    {
-        return 'username';
-    }
-
-    
-    /**
      * 设置mongodb组件
      */
     public function getDbComponent()

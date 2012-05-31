@@ -36,6 +36,7 @@ return array(
              // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters'=>array('127.0.0.1','::1'),
         ),
+        */
         'gii'=>array(
             'class'=>'system.gii.GiiModule',
             'password'=>'1',
@@ -44,7 +45,6 @@ return array(
                 'ext.YiiMongoDbSuite.gii'
             ),
         ),
-        */
         'passport',
         'core',
         'install',
@@ -111,7 +111,7 @@ return array(
             'useCursor'         => false,
         ),
         
-        'db'=>array(
+        'db_passport'=>array(
             'connectionString' => 'mysql:host=localhost;dbname=passport',
             'emulatePrepare' => true,
             'username' => 'root',
@@ -119,17 +119,17 @@ return array(
             'charset' => 'utf8',
             'tablePrefix' => 'bl_',
         ),
-
-        'db_core'=>array(
+        */
+        
+        'db'=>array(
             'class' => 'CDbConnection',
             'connectionString' => 'mysql:host=localhost;dbname=platform',
             'emulatePrepare' => true,
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
-            'tablePrefix' => 'core_',
+            'tablePrefix' => 'bl_',
         ),
-        */
         
         'errorHandler'=>array(
             // use 'site/error' action to display errors
