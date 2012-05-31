@@ -94,17 +94,18 @@ return array(
         //mongodb://username:pwd@host:port/db
         'mongodb' => array(
             'class'             => 'EMongoDB',
-            'connectionString'  => 'mongodb://passport:111111@localhost:27017/passport',
-            'dbName'            => 'passport',
+            'connectionString'  => 'mongodb://platform:111111@localhost:27017/platform',
+            'dbName'            => 'platform',
             'fsyncFlag'         => false,
             'safeFlag'          => false,
             'useCursor'         => false,
         ),
 
-        'mongodb_core' => array(
+        /*
+        'mongodb_passport' => array(
             'class'             => 'EMongoDB',
-            'connectionString'  => 'mongodb://platform:111111@localhost:27017/platform',
-            'dbName'            => 'platform',
+            'connectionString'  => 'mongodb://platform:111111@localhost:27017/passport',
+            'dbName'            => 'passport',
             'fsyncFlag'         => false,
             'safeFlag'          => false,
             'useCursor'         => false,
@@ -128,7 +129,8 @@ return array(
             'charset' => 'utf8',
             'tablePrefix' => 'core_',
         ),
-   
+        */
+        
         'errorHandler'=>array(
             // use 'site/error' action to display errors
             'errorAction'=>'site/error',
