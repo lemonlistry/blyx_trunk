@@ -10,7 +10,15 @@ abstract class MongoDocument extends EMongoDocument
 
     public static $db_instance = array(); 
     
-    abstract public function getDbComponent();
+    public $db = 'mongodb';
+    
+    /**
+     * get mongodb component
+     * @return string
+     */
+    public function getDbComponent(){
+        return $this->db;
+    }
     
     /**
      * Get EMongoDB component instance

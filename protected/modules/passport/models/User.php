@@ -26,6 +26,15 @@ class User extends MongoDocument
         return 'username';
     }
 
+    
+    /**
+     * 设置mongodb组件
+     */
+    public function getDbComponent()
+    {
+        return parent::getDbComponent();
+    }
+    
     /**
      * @return string the associated collection name
      */
@@ -60,13 +69,6 @@ class User extends MongoDocument
             'username' => 'Username',
             'password' => 'Password',
         );
-    }
-
-    /**
-     * 设置mongodb组件
-     */
-    public function getDbComponent(){
-        return 'mongodb';
     }
 
     /**
