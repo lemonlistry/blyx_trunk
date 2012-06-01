@@ -1,19 +1,17 @@
 <?php
 
 /**
- * This is the MongoDB Document model class based on table "{{prime}}".
+ * This is the MongoDB Document model class based on table "{{auto_increment}}".
  */
-class Prime extends MongoDocument
+class AutoIncrement extends MongoDocument
 {
     public $id;
-    public $uid;
-    public $channel_id;
-    public $resource_id;
-    public $prime;
+    public $table;
+    public $index;
 
     /**
      * Returns the static model of the specified AR class.
-     * @return Prime the static model class
+     * @return AutoIncrement the static model class
      */
     public static function model($className=__CLASS__)
     {
@@ -33,7 +31,7 @@ class Prime extends MongoDocument
      */
     public function getCollectionName()
     {
-        return 'bl_prime';
+        return 'bl_auto_increment';
     }
 
     /**
@@ -44,11 +42,12 @@ class Prime extends MongoDocument
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('channel_id, resource_id, prime', 'required'),
-            array('uid, channel_id, resource_id, prime', 'numerical', 'integerOnly'=>true),
+            array('id', 'required'),
+            array('id, index', 'numerical', 'integerOnly'=>true),
+            array('table', 'length', 'max'=>25),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, uid, channel_id, resource_id, prime', 'safe', 'on'=>'search'),
+            array('id, table, index', 'safe', 'on'=>'search'),
         );
     }
 
@@ -59,10 +58,8 @@ class Prime extends MongoDocument
     {
         return array(
             'id' => 'ID',
-            'uid' => 'Uid',
-            'channel_id' => 'Channel',
-            'resource_id' => 'Resource',
-            'prime' => 'Prime',
+            'table' => 'Table',
+            'index' => 'Index',
         );
     }
 }

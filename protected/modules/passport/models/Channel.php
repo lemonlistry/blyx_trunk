@@ -5,6 +5,7 @@
  */
 class Channel extends MongoDocument
 {
+    public $id;
     public $name;
     public $desc;
 
@@ -15,6 +16,14 @@ class Channel extends MongoDocument
     public static function model($className=__CLASS__)
     {
         return parent::model($className);
+    }
+
+    /**
+     * returns the primary key field for this model
+     */
+    public function primaryKey()
+    {
+        return 'id';
     }
 
     /**
@@ -37,7 +46,7 @@ class Channel extends MongoDocument
             array('name, desc', 'length', 'max'=>20),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('name, desc', 'safe', 'on'=>'search'),
+            array('id, name, desc', 'safe', 'on'=>'search'),
         );
     }
 
@@ -47,6 +56,7 @@ class Channel extends MongoDocument
     public function attributeLabels()
     {
         return array(
+            'id' => 'ID',
             'name' => 'Name',
             'desc' => 'Desc',
         );

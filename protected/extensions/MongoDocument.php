@@ -52,5 +52,37 @@ abstract class MongoDocument extends EMongoDocument
         $conn = $this->getMongoDBComponent()->getConnection();
         return self::$db_instance[$this->db]->setConnection($conn);
     }
-
+    
+    /**
+     * 维护自增表
+     * @see EMongoDocument::afterSave()
+     */
+    public function afterSave(){
+        if($this->getIsNewRecord()){
+            $table = $this->getCollectionName();
+            if($table == 'bl_auto_increment'){
+                return true;
+            }else{
+                $model = AutoIncrement::model()->findByAttributes(array('table' => $table));
+                if(empty($model)){
+                    $model = new AutoIncrement; 
+                    $model->table = $table;
+                    $model->index = 1;
+                    $model->save(true, array('table', 'index'));
+                }else{
+                    ++$model->index;
+                    $model->save(true, array('table', 'index'));
+                }
+            }
+        }
+    }
+    
+    /**
+     * 获取自增Key
+     */
+    public function getAutoIncrementKey(){
+        $table = $this->getCollectionName();
+        $model = AutoIncrement::model()->findByAttributes(array('table' => $table));
+        return empty($model) ? 1 : ++$model->index;
+    }
 }
