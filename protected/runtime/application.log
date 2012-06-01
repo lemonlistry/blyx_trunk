@@ -13035,3 +13035,646 @@ in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
 in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
 2012/06/01 15:42:58 [trace] [system.CModule] Loading "clientScript" application component
 in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:02 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:02 [trace] [system.base.CModule] Loading "passport" module
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:02 [trace] [ext.MongoDb.EMongoDocument] Prime.findAllByPk()
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (897)
+in E:\platform_jhs\trunk\protected\components\AuthManager.php (18)
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (11)
+2012/06/01 16:29:02 [trace] [ext.MongoDb.EMongoDocument] Prime.findAll()
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (841)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (901)
+in E:\platform_jhs\trunk\protected\components\AuthManager.php (18)
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "mongodb" application component
+in E:\platform_jhs\trunk\protected\extensions\MongoDocument.php (35)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (166)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (191)
+2012/06/01 16:29:02 [trace] [ext.MongoDb.EMongoDB] Opening MongoDB connection
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDB.php (134)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDB.php (181)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (166)
+2012/06/01 16:29:02 [error] [exception.MongoCursorException] exception 'MongoCursorException' with message 'invalid query' in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php:1234
+Stack trace:
+#0 E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(1234): MongoCursor->rewind()
+#1 E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(861): EMongoDocument->populateRecords(Object(MongoCursor))
+#2 E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(901): EMongoDocument->findAll(Object(EMongoCriteria))
+#3 E:\platform_jhs\trunk\protected\components\AuthManager.php(18): EMongoDocument->findAllByPk(1)
+#4 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(11): AuthManager::checkAuth(1, 1, 1)
+#5 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#6 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport/defaul...')
+#11 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/passport/default/index
+HTTP_REFERER=http://127.0.0.3/
+---
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:02 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:29:02 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:26 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:26 [trace] [system.base.CModule] Loading "passport" module
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:26 [trace] [ext.MongoDb.EMongoDocument] Prime.findAllByPk()
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (897)
+in E:\platform_jhs\trunk\protected\components\AuthManager.php (18)
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (11)
+2012/06/01 16:29:26 [trace] [ext.MongoDb.EMongoDocument] Prime.findAll()
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (841)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (901)
+in E:\platform_jhs\trunk\protected\components\AuthManager.php (18)
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "mongodb" application component
+in E:\platform_jhs\trunk\protected\extensions\MongoDocument.php (35)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (166)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (191)
+2012/06/01 16:29:26 [trace] [ext.MongoDb.EMongoDB] Opening MongoDB connection
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDB.php (134)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDB.php (181)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (166)
+2012/06/01 16:29:26 [error] [exception.MongoCursorException] exception 'MongoCursorException' with message 'invalid query' in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php:1234
+Stack trace:
+#0 E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(1234): MongoCursor->rewind()
+#1 E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(861): EMongoDocument->populateRecords(Object(MongoCursor))
+#2 E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(901): EMongoDocument->findAll(Object(EMongoCriteria))
+#3 E:\platform_jhs\trunk\protected\components\AuthManager.php(18): EMongoDocument->findAllByPk(1)
+#4 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(11): AuthManager::checkAuth(1, 1, 1)
+#5 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#6 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport/defaul...')
+#11 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/passport/default/index
+HTTP_REFERER=http://127.0.0.3/
+---
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:26 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:29:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:29:26 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:30:23 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:23 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:23 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:23 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:23 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:23 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/01 16:30:23 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:30:23 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:30:23 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:30:23 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:30:27 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:27 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:27 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:27 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:27 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:27 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/01 16:30:27 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:30:27 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:30:27 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:30:27 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:51 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:51 [trace] [system.base.CModule] Loading "passport" module
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:51 [trace] [ext.MongoDb.EMongoDocument] Prime.findAllByPk()
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (897)
+in E:\platform_jhs\trunk\protected\components\AuthManager.php (18)
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (11)
+2012/06/01 16:30:51 [trace] [ext.MongoDb.EMongoDocument] Prime.findAll()
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (841)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (901)
+in E:\platform_jhs\trunk\protected\components\AuthManager.php (18)
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "mongodb" application component
+in E:\platform_jhs\trunk\protected\extensions\MongoDocument.php (35)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (166)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (191)
+2012/06/01 16:30:51 [trace] [ext.MongoDb.EMongoDB] Opening MongoDB connection
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDB.php (134)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDB.php (181)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (166)
+2012/06/01 16:30:51 [error] [exception.MongoCursorException] exception 'MongoCursorException' with message 'invalid query' in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php:1234
+Stack trace:
+#0 E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(1234): MongoCursor->rewind()
+#1 E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(861): EMongoDocument->populateRecords(Object(MongoCursor))
+#2 E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(901): EMongoDocument->findAll(Object(EMongoCriteria))
+#3 E:\platform_jhs\trunk\protected\components\AuthManager.php(18): EMongoDocument->findAllByPk(1)
+#4 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(11): AuthManager::checkAuth(1, 1, 1)
+#5 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#6 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport/defaul...')
+#11 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/passport/default/index
+HTTP_REFERER=http://127.0.0.3/
+---
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:51 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:30:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:30:51 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:31:47 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:31:47 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:31:47 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:31:47 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:31:47 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:31:47 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:31:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/01 16:31:47 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:31:47 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:31:47 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:31:47 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:12 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:12 [trace] [system.base.CModule] Loading "passport" module
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "mongodb" application component
+in E:\platform_jhs\trunk\protected\extensions\MongoDocument.php (35)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (166)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (191)
+2012/06/01 16:32:12 [trace] [ext.MongoDb.EMongoDB] Opening MongoDB connection
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDB.php (134)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDB.php (181)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (166)
+2012/06/01 16:32:12 [trace] [ext.MongoDb.EMongoDocument] Prime.findAllByPk()
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (897)
+in E:\platform_jhs\trunk\protected\components\AuthManager.php (18)
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (11)
+2012/06/01 16:32:12 [trace] [ext.MongoDb.EMongoDocument] Prime.findAll()
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (841)
+in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php (901)
+in E:\platform_jhs\trunk\protected\components\AuthManager.php (18)
+2012/06/01 16:32:12 [error] [exception.MongoException] exception 'MongoException' with message 'zero-length keys are not allowed, did you use $ with double quotes?' in E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php:1234
+Stack trace:
+#0 E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(1234): MongoCursor->rewind()
+#1 E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(861): EMongoDocument->populateRecords(Object(MongoCursor))
+#2 E:\platform_jhs\trunk\protected\extensions\YiiMongoDbSuite\EMongoDocument.php(901): EMongoDocument->findAll(Object(EMongoCriteria))
+#3 E:\platform_jhs\trunk\protected\components\AuthManager.php(18): EMongoDocument->findAllByPk(Object(Prime))
+#4 E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php(11): AuthManager::checkAuth(1, 1, 1)
+#5 E:\platform_jhs\trunk\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#6 E:\platform_jhs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 E:\platform_jhs\trunk\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 E:\platform_jhs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 E:\platform_jhs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#10 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('passport/defaul...')
+#11 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/passport/default/index
+HTTP_REFERER=http://127.0.0.3/
+---
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:12 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:32:12 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:32:58 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:58 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:58 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:58 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:58 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:58 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:32:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/01 16:32:58 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:32:58 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:32:58 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:32:58 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:34:00 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:00 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:00 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:00 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:00 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:00 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/01 16:34:00 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:34:00 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:34:00 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:34:00 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:34:33 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:33 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:33 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:33 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:33 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:33 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/01 16:34:33 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:34:33 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:34:33 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:34:33 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:34:37 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:37 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:37 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:37 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:37 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:37 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:34:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/01 16:34:37 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:34:37 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:34:37 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:34:37 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.base.CModule] Loading "passport" module
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\column1.php (1)
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (12)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (12)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 16:41:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 16:41:38 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.base.CModule] Loading "passport" module
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\components\Controller.php (29)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "widgetFactory" application component
+in E:\platform_jhs\trunk\protected\views\layouts\column1.php (1)
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (12)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\modules\passport\controllers\DefaultController.php (12)
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "log" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "request" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "urlManager" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "cache" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.caching.CMemCache] Serving "Yii.CUrlManager.rules" from cache
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\platform_jhs\trunk\index.php (13)
+2012/06/01 17:08:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in E:\platform_jhs\trunk\framework\web\CWebApplication.php:280
+Stack trace:
+#0 E:\platform_jhs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 E:\platform_jhs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 E:\platform_jhs\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "errorHandler" application component
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "user" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "session" application component
+in E:\platform_jhs\trunk\protected\views\layouts\main.php (29)
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)
+2012/06/01 17:08:47 [trace] [system.CModule] Loading "clientScript" application component
+in E:\platform_jhs\trunk\protected\controllers\SiteController.php (45)

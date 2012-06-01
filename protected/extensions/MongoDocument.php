@@ -65,7 +65,7 @@ abstract class MongoDocument extends EMongoDocument
             }else{
                 $model = AutoIncrement::model()->findByAttributes(array('table' => $table));
                 if(empty($model)){
-                    $model = new AutoIncrement; 
+                    $model = new AutoIncrement(); 
                     $model->table = $table;
                     $model->index = 1;
                     $model->save(true, array('table', 'index'));

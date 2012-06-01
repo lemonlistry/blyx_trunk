@@ -23,7 +23,7 @@ class AutoIncrement extends MongoDocument
      */
     public function primaryKey()
     {
-        return 'id';
+        return 'table';
     }
 
     /**
@@ -42,12 +42,11 @@ class AutoIncrement extends MongoDocument
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('id', 'required'),
-            array('id, index', 'numerical', 'integerOnly'=>true),
+            array('index', 'numerical', 'integerOnly'=>true),
             array('table', 'length', 'max'=>25),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, table, index', 'safe', 'on'=>'search'),
+            array('table, index', 'safe', 'on'=>'search'),
         );
     }
 
@@ -57,7 +56,6 @@ class AutoIncrement extends MongoDocument
     public function attributeLabels()
     {
         return array(
-            'id' => 'ID',
             'table' => 'Table',
             'index' => 'Index',
         );
