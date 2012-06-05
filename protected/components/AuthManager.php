@@ -11,10 +11,12 @@ class AuthManager {
      * @param int $resource_id
      * @param int $channel_id
      * @param int $uid
+     * @param string $op
      * @return boolean
      */
-    public static function checkAuth($resource_id, $channel_id, $uid)
+    public static function checkAuth($uid, $resource_id, $op, $channel_id = 0)
     {
+        
         $model = Prime::model()->findByAttributes(array('uid' => $uid, 'resource_id' => $resource_id, 'channel_id' => $channel_id));
         return isset($model->prime) ? $model->prime : false;
     }
@@ -24,9 +26,10 @@ class AuthManager {
      * @param int $resource_id
      * @param int $channel_id
      * @param int $role_id
+     * @param string $op
      * @return boolean
      */
-    public static function addAuth($resource_id, $channel_id, $role_id)
+    public static function addAuth($resource_id, $op, $role_id, $channel_id = 0)
     {
     
     }
@@ -36,9 +39,10 @@ class AuthManager {
      * @param int $resource_id
      * @param int $channel_id
      * @param int $role_id
+     * @param string $op
      * @return boolean
      */
-    public static function delAuth($resource_id, $channel_id, $role_id)
+    public static function delAuth($resource_id, $op, $role_id, $channel_id = 0)
     {
     
     }
@@ -49,7 +53,7 @@ class AuthManager {
      * @param int $uid
      * @return array
      */
-    public static function getAuth($uid, $channel_id = 'all')
+    public static function getAuth($uid, $channel_id = 0)
     {
     
     }

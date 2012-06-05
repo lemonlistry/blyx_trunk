@@ -101,7 +101,7 @@ class SocketHelper{
     }
     
     /**
-     * 解析服务端响应的包
+     * 解析服务端响应的包 模拟登录  进入场景 创建角色 包含包头信息
      * @param array $response 响应包
      * @param string $response_type 响应协议号
      * @param string $format 解析格式
@@ -146,4 +146,29 @@ class SocketHelper{
         }
         return $result;
     }
+    
+    /**
+     * 解析服务端响应的包 禁言 解除禁言 禁止登录 解除禁止登录 关闭server 没有包头信息
+     * @param array $response 响应包
+     * @param string $response_type 响应协议号
+     * @param string $format 解析格式
+     * @return array
+     */
+    public function parseNoHeaderResonsePack($response, $response_type = null, $format = 'H*'){
+        if(empty($response)){
+            throw new CException('socket response error ...');
+        }
+        $v = 0;
+        //解包
+        $res = unpack($format, $response);
+        foreach ($res as $value) {
+            //每两个长度组成一个字节数组
+            $res_arr = str_split($value, 2);
+            $val = array_reverse($res_arr);
+            $v = implode('', $val);
+            $v = base_convert($v, 16, 10);
+            return $v;
+        }
+    }
+    
 }

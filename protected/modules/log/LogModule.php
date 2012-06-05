@@ -1,9 +1,7 @@
 <?php
 
-class PassportModule extends WebModule
+class LogModule extends WebModule
 {
-    public $defaultController = 'default';
-
     public function init()
     {
         // this method is called when the module is being created
@@ -11,8 +9,8 @@ class PassportModule extends WebModule
 
         // import the module-level models and components
         $this->setImport(array(
-            'passport.models.*',
-            'passport.components.*',
+            'log.models.*',
+            'log.components.*',
         ));
     }
 
@@ -20,11 +18,6 @@ class PassportModule extends WebModule
     {
         if(parent::beforeControllerAction($controller, $action))
         {
-            $controller->navMenu = array(
-                array('label' => '角色管理', 'url' => array('/system/default/rolelist')),
-                array('label' => '用户管理', 'url' => array('/system/default/userlist')),
-                array('label' => '权限管理', 'url' => array('/system/default/authlist')),
-            );
             // this method is called before any module controller action is performed
             // you may place customized code here
             return true;

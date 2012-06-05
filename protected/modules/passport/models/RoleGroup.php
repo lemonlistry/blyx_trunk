@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This is the MongoDB Document model class based on table "{{role}}".
+ * This is the MongoDB Document model class based on table "{{role_group}}".
  */
-class Role extends MongoDocument
+class RoleGroup extends MongoDocument
 {
     public $id;
     public $name;
@@ -11,7 +11,7 @@ class Role extends MongoDocument
 
     /**
      * Returns the static model of the specified AR class.
-     * @return Role the static model class
+     * @return RoleGroup the static model class
      */
     public static function model($className=__CLASS__)
     {
@@ -31,7 +31,7 @@ class Role extends MongoDocument
      */
     public function getCollectionName()
     {
-        return 'bl_role';
+        return 'bl_role_group';
     }
 
     /**

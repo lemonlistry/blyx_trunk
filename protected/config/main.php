@@ -50,6 +50,7 @@ return array(
         'install',
         'restfulApi',
         'interact',
+        'log',
     ),
 
     'defaultController' => 'passport',
@@ -156,11 +157,9 @@ return array(
     // using Yii::app()->params['paramName']
     'params'=>array(
         'adminEmail'=>'webmaster@example.com',
-        'socket_logic_ip'=>'172.16.2.74', //socket逻辑服务器IP
-        'socket_gateway_ip'=>'172.16.2.74', //socket网关服务器IP
-        'socket_logic_port'=>'20005', //socket逻辑服务器通讯端口 
-        'socket_gateway_port'=>'8002', //socket网关服务器端口
         'socket_password'=>'boluo123', //socket通讯密码
+        'socket_ip'=>'172.16.2.74', //socket通讯IP
+        'socket_port'=>'20005', //socket通讯端口
         'version'=>'1.0.0', //版本号
     ),
 );

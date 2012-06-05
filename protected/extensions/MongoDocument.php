@@ -12,6 +12,8 @@ abstract class MongoDocument extends EMongoDocument
     
     public $db = 'mongodb';
     
+    public $new = false;
+    
     /**
      * get mongodb component
      * @return string
@@ -53,12 +55,13 @@ abstract class MongoDocument extends EMongoDocument
         return self::$db_instance[$this->db]->setConnection($conn);
     }
     
+    
     /**
      * 维护自增表
      * @see EMongoDocument::afterSave()
      */
     public function afterSave(){
-        if($this->getIsNewRecord()){
+        if($this->new){
             $table = $this->getCollectionName();
             if($table == 'bl_auto_increment'){
                 return true;
@@ -84,5 +87,13 @@ abstract class MongoDocument extends EMongoDocument
         $table = $this->getCollectionName();
         $model = AutoIncrement::model()->findByAttributes(array('table' => $table));
         return empty($model) ? 1 : ++$model->index;
+    }
+    
+    /**
+     * 新增记录标识处理
+     * @see EMongoDocument::beforeSave()
+     */
+    public function beforeSave(){
+        $this->new = $this->getIsNewRecord() ? true : false;
     }
 }

@@ -2,15 +2,6 @@
 
 class DefaultController extends Controller
 {
-    public function actionIndex(){
-        $this->actionRequestLogin();
-        $this->actionForbidLogin();
-        $this->actionForbidChat();
-        $this->actionPermitLogin();
-        $this->actionPermitChat();
-        $this->actionSendAward();
-        //$this->actionCloseServer();
-    }
     
     /**
      * GM 禁止玩家登录
@@ -27,22 +18,37 @@ class DefaultController extends Controller
      * Password定长33个字节(默认填boluo123)
      * roleId  4字节(要封号的目标角色id)
      * seconds 4字节 (封号时长，秒数)
+     * 
+     * request url : http://xxx/interact/default/forbidlogin?seconds=1111&role_id=999
      */
     public function actionForbidLogin(){
-        $socket = new SocketHelper(Yii::app()->params['socket_logic_ip'], Yii::app()->params['socket_logic_port']);
-        //包头处理
-        $cmd = $socket->getLogicPackHeader(0x01032001, 41);
-        //包体处理
-        $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
-        $cmd .= pack('L',1111); //roleId
-        $cmd .= pack('L',1111); //seconds
-        //发送数据
-        $socket->send($cmd);
-        //服务端返回数据
-        $res = $socket->recv();
-        sleep(1);
-        //关闭socket链接
-        $socket->close();
+        $title = '禁止玩家登录';
+        if(Yii::app()->request->isAjaxRequest){
+            $param = $this->getParam(array('ip' => 1, 'port' => 1, 'role_id' => 1, 'seconds' => 1));
+            $socket = new SocketHelper($param['ip'], $param['port']);
+            //包头处理
+            $cmd = $socket->getLogicPackHeader(0x0A032001, 41);
+            //包体处理
+            $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
+            $cmd .= pack('L',$param['role_id']); //roleId
+            $cmd .= pack('L',$param['seconds']); //seconds
+            //发送数据
+            $socket->send($cmd);
+            //服务端返回数据
+            $res = $socket->recv();
+            $par_res = $socket->parseNoHeaderResonsePack($res);
+            if(1 == $par_res){
+                $msg = 'socket forbid login success ...';
+            }else{
+                $msg = 'socket forbid login error ... ';
+            }
+            echo json_encode(array('flag' => $par_res, 'msg' => $msg));
+            sleep(1);
+            //关闭socket链接
+            $socket->close();
+            Yii::app()->end();
+        }
+        $this->render('forbid_login', array('title' => $title));
     }
     
     /**
@@ -60,22 +66,37 @@ class DefaultController extends Controller
      * Password定长33个字节(默认填boluo123)
      * roleId  4字节(要封号的目标角色id)
      * seconds 4字节 (封号时长，秒数)
+     * 
+     * request url : http://xxx/interact/default/forbidchat?seconds=1111&role_id=999
      */
     public function actionForbidChat(){
-        $socket = new SocketHelper(Yii::app()->params['socket_logic_ip'], Yii::app()->params['socket_logic_port']);
-        //包头处理
-        $cmd = $socket->getLogicPackHeader(0x01032003, 41);
-        //包体处理
-        $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
-        $cmd .= pack('L',2222); //roleId
-        $cmd .= pack('L',2222); //seconds
-        //发送数据
-        $socket->send($cmd);
-        //服务端返回数据
-        $res = $socket->recv();
-        sleep(1);
-        //关闭socket链接
-        $socket->close();
+        $title = '禁止玩家聊天';
+        if(Yii::app()->request->isAjaxRequest){
+            $param = $this->getParam(array('ip' => 1, 'port' => 1, 'role_id' => 1, 'seconds' => 1));
+            $socket = new SocketHelper($param['ip'], $param['port']);
+            //包头处理
+            $cmd = $socket->getLogicPackHeader(0x0A032003, 41);
+            //包体处理
+            $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
+            $cmd .= pack('L',$param['role_id']); //roleId
+            $cmd .= pack('L',$param['seconds']); //seconds
+            //发送数据
+            $socket->send($cmd);
+            //服务端返回数据
+            $res = $socket->recv();
+            $par_res = $socket->parseNoHeaderResonsePack($res);
+            if(1 == $par_res){
+                $msg = 'socket forbid chat success ...';
+            }else{
+                $msg = 'socket forbid chat error ... ';
+            }
+            echo json_encode(array('flag' => $par_res, 'msg' => $msg));
+            sleep(1);
+            //关闭socket链接
+            $socket->close();
+            Yii::app()->end();
+        }
+        $this->render('forbid_chat', array('title' => $title));
     }
     
 	/**
@@ -92,21 +113,36 @@ class DefaultController extends Controller
      * 包体:
      * Password定长33个字节(默认填boluo123)
      * roleId  4字节(要封号的目标角色id)
+     * 
+     * request url : http://xxx/interact/default/permitlogin?role_id=999
      */
     public function actionPermitLogin(){
-        $socket = new SocketHelper(Yii::app()->params['socket_logic_ip'], Yii::app()->params['socket_logic_port']);
-        //包头处理
-        $cmd = $socket->getLogicPackHeader(0x01032005, 37);
-        //包体处理
-        $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
-        $cmd .= pack('L',3333); //roleId
-        //发送数据
-        $socket->send($cmd);
-        //服务端返回数据
-        $res = $socket->recv();
-        sleep(1);
-        //关闭socket链接
-        $socket->close();
+        $title = '允许玩家登录';
+        if(Yii::app()->request->isAjaxRequest){
+            $param = $this->getParam(array('ip' => 1, 'port' => 1, 'role_id' => 1));
+            $socket = new SocketHelper($param['ip'], $param['port']);
+            //包头处理
+            $cmd = $socket->getLogicPackHeader(0x0A032005, 37);
+            //包体处理
+            $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
+            $cmd .= pack('L',$param['role_id']); //roleId
+            //发送数据
+            $socket->send($cmd);
+            //服务端返回数据
+            $res = $socket->recv();
+            $par_res = $socket->parseNoHeaderResonsePack($res);
+            if(1 == $par_res){
+                $msg = 'socket permit login success ...';
+            }else{
+                $msg = 'socket permit login error ... ';
+            }
+            echo json_encode(array('flag' => $par_res, 'msg' => $msg));
+            sleep(1);
+            //关闭socket链接
+            $socket->close();
+            Yii::app()->end();
+        }
+        $this->render('permit_login', array('title' => $title));
     }
     
     /**
@@ -124,21 +160,36 @@ class DefaultController extends Controller
      * Password定长33个字节(默认填boluo123)
      * roleId  4字节(要封号的目标角色id)
      * seconds 4字节 (封号时长，秒数)
+     * 
+     * request url : http://xxx/interact/default/permitlogin?role_id=999
      */
     public function actionPermitChat(){
-        $socket = new SocketHelper(Yii::app()->params['socket_logic_ip'], Yii::app()->params['socket_logic_port']);
-        //包头处理
-        $cmd = $socket->getLogicPackHeader(0x01032007, 37);
-        //包体处理
-        $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
-        $cmd .= pack('L',4444); //roleId
-        //发送数据
-        $socket->send($cmd);
-        //服务端返回数据
-        $res = $socket->recv();
-        sleep(1);
-        //关闭socket链接
-        $socket->close();
+        $title = '允许玩家聊天';
+        if(Yii::app()->request->isAjaxRequest){
+            $param = $this->getParam(array('ip' => 1, 'port' => 1, 'role_id' => 1));
+            $socket = new SocketHelper($param['ip'], $param['port']);
+            //包头处理
+            $cmd = $socket->getLogicPackHeader(0x0A032007, 37);
+            //包体处理
+            $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
+            $cmd .= pack('L',$param['role_id']); //roleId
+            //发送数据
+            $socket->send($cmd);
+            //服务端返回数据
+            $res = $socket->recv();
+            $par_res = $socket->parseNoHeaderResonsePack($res);
+            if(1 == $par_res){
+                $msg = 'socket permit chat success ...';
+            }else{
+                $msg = 'socket permit chat error ... ';
+            }
+            echo json_encode(array('flag' => $par_res, 'msg' => $msg));
+            sleep(1);
+            //关闭socket链接
+            $socket->close();
+            Yii::app()->end();
+        }
+        $this->render('permit_chat', array('title' => $title));
     }
     
     /**
@@ -157,28 +208,43 @@ class DefaultController extends Controller
      * awardName定长25个字节  礼包名称
      * time 4字节  秒数
      * itemStruct  物品结构体（物品id，物品数量）
-     * roleList  角色列表
+     * roleList  角色列表  roleId=0 表示全服奖励
+     * 
+     * request url : http://xxx/interact/default/sendaward?award_name=xxx&time=111&item_id=222&num=11&role_id=999
      */
     public function actionSendAward(){
-        $socket = new SocketHelper(Yii::app()->params['socket_logic_ip'], Yii::app()->params['socket_logic_port']);
-        //包头处理
-        $cmd = $socket->getLogicPackHeader(0x01032023, 78);
-        //包体处理
-        $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
-        $cmd .= pack('a25',5555); //awardName
-        $cmd .= pack('L',5555); //time
-        $cmd .= pack('S',1); //数量设置 2字节 16bit 用S
-        $cmd .= pack('L','66'); //itemStruct
-        $cmd .= pack('L','77'); //itemStruct
-        $cmd .= pack('S',1); //数量设置 2字节 16bit 用S
-        $cmd .= pack('L','88'); //roleList
-        //发送数据
-        $socket->send($cmd);
-        //服务端返回数据
-        $res = $socket->recv();
-        sleep(1);
-        //关闭socket链接
-        $socket->close();
+        $title = '发送礼包';
+        if(Yii::app()->request->isAjaxRequest){
+            $param = $this->getParam(array('ip' => 1, 'port' => 1, 'role_id' => 1, 'award_name' => 1, 'time' => 1, 'item_id' => 1, 'num' => 1));
+            $socket = new SocketHelper($param['ip'], $param['port']);
+            //包头处理
+            $cmd = $socket->getLogicPackHeader(0x0A032023, 78);
+            //包体处理
+            $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
+            $cmd .= pack('a25',$param['award_name']); //awardName
+            $cmd .= pack('L',$param['time']); //time
+            $cmd .= pack('S',1); //数量设置 2字节 16bit 用S
+            $cmd .= pack('L',$param['item_id']); //itemStruct
+            $cmd .= pack('L',$param['num']); //itemStruct
+            $cmd .= pack('S',1); //数量设置 2字节 16bit 用S
+            $cmd .= pack('L',$param['role_id']); //roleList
+            //发送数据
+            $socket->send($cmd);
+            //服务端返回数据
+            $res = $socket->recv();
+            $par_res = $socket->parseNoHeaderResonsePack($res);
+            if(1 == $par_res){
+                $msg = 'socket send award success ...';
+            }else{
+                $msg = 'socket send award error ... ';
+            }
+            echo json_encode(array('flag' => $par_res, 'msg' => $msg));
+            sleep(1);
+            //关闭socket链接
+            $socket->close();
+            Yii::app()->end();
+        }
+        $this->render('send_award', array('title' => $title));
     }
     
     /**
@@ -193,20 +259,35 @@ class DefaultController extends Controller
      * int nVersion  默认填1
      * 包体:
      * Password定长33个字节(默认填boluo123)
+     * 
+     * request url : http://xxx/interact/default/closeserver
      */
     public function actionCloseServer(){
-        $socket = new SocketHelper(Yii::app()->params['socket_logic_ip'], Yii::app()->params['socket_logic_port']);
-        //包头处理
-        $cmd = $socket->getLogicPackHeader(0x01032027, 33);
-        //包体处理
-        $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
-        //发送数据
-        $socket->send($cmd);
-        //服务端返回数据
-        $res = $socket->recv();
-        sleep(1);
-        //关闭socket链接
-        $socket->close();
+        $title = '关闭服务器';
+        if(Yii::app()->request->isAjaxRequest){
+            $param = $this->getParam(array('ip' => 1, 'port' => 1));
+            $socket = new SocketHelper($param['ip'], $param['port']);
+            //包头处理
+            $cmd = $socket->getLogicPackHeader(0x0A032027, 33);
+            //包体处理
+            $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
+            //发送数据
+            $socket->send($cmd);
+            //服务端返回数据
+            $res = $socket->recv();
+            $par_res = $socket->parseNoHeaderResonsePack($res);
+            if(1 == $par_res){
+                $msg = 'socket close server success ...';
+            }else{
+                $msg = 'socket close server error ... ';
+            }
+            echo json_encode(array('flag' => $par_res, 'msg' => $msg));
+            sleep(1);
+            //关闭socket链接
+            $socket->close();
+            Yii::app()->end();
+        }
+        $this->render('close_server', array('title' => $title));
     }
     
    /**
@@ -235,7 +316,7 @@ class DefaultController extends Controller
         $key_has_role = 100001;
         //$key_role_name = 431002;
         //包头处理
-        $cmd = $socket->getGateWayPackHeader(0x01020001, 18);
+        $cmd = $socket->getGateWayPackHeader(0x0A020001, 18);
         //包体处理
         $cmd .= pack('L',$server_group_id); //serverGroupId
         $cmd .= pack('S',4); //数量设置 2字节 16bit 用S
@@ -300,7 +381,7 @@ class DefaultController extends Controller
      */
     protected function createRole($socket, $server_group_id, $role_id){
         //包头处理
-        $cmd = $socket->getGateWayPackHeader(0x01030003, 31);
+        $cmd = $socket->getGateWayPackHeader(0x0A030003, 31);
         //包体处理
         $cmd .= pack('L',$server_group_id); //serverGroupId
         $cmd .= pack('L',$role_id); //roleId
@@ -331,7 +412,7 @@ class DefaultController extends Controller
      */
     protected function enterScene($socket, $server_group_id, $role_id){
         //包头处理
-        $cmd = $socket->getGateWayPackHeader(0x01030C01, 16);
+        $cmd = $socket->getGateWayPackHeader(0x0A030C01, 16);
         //包体处理
         $cmd .= pack('L',$server_group_id); //serverGroupId
         $cmd .= pack('L',$role_id); //roleId
@@ -341,6 +422,59 @@ class DefaultController extends Controller
         $socket->send($cmd);
         //服务端返回数据
         return $socket->recv();
+    }
+    
+    /**
+     * GM 发送在线公告
+     * 
+     * 包头: 
+     * int nSock 默认填0
+     * int nUserId 默认填0
+     * int nType 协议id
+     * int nLength 包体的长度41 = 33 + 4
+     * int nSerialNo 默认填0
+     * int nVersion  默认填1
+     * 
+     * 包体:
+     * Password定长33个字节(默认填boluo123)
+     * intervalTime  4字节(间隔时间)
+     * playTimes 4字节 (播放次数)
+     * content 动长
+     * 
+     * request url : http://xxx/interact/default/onlinenotice?role_id=999
+     */
+    public function actionOnlineNotice(){
+        $title = '发送在线公告';
+        if(Yii::app()->request->isAjaxRequest){
+            $param = $this->getParam(array('ip' => 1, 'port' => 1, 'interval_time' => 1, 'playtimes' => 1, 'notice_content' => 1));
+            $socket = new SocketHelper($param['ip'], $param['port']);
+            //包头处理
+            $con_length = strlen($param['notice_content']);
+            $length = $con_length + 43;
+            $cmd = $socket->getLogicPackHeader(0x0A032011, $length);
+            //包体处理
+            $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
+            $cmd .= pack('L',$param['interval_time']); //intervalTime
+            $cmd .= pack('L',$param['playtimes']); //playTimes
+            $cmd .= pack('S',$con_length); //数量设置 2字节 16bit 用S
+            $cmd .= pack('a*',$param['notice_content']); //content
+            //发送数据
+            $socket->send($cmd);
+            //服务端返回数据
+            $res = $socket->recv();
+            $par_res = $socket->parseNoHeaderResonsePack($res);
+            if(1 == $par_res){
+                $msg = 'socket online notice success ...';
+            }else{
+                $msg = 'socket online notice error ... ';
+            }
+            echo json_encode(array('flag' => $par_res, 'msg' => $msg));
+            sleep(1);
+            //关闭socket链接
+            $socket->close();
+            Yii::app()->end();
+        }
+        $this->render('online_notice', array('title' => $title));
     }
     
 }

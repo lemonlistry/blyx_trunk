@@ -5,7 +5,6 @@
  */
 class AutoIncrement extends MongoDocument
 {
-    public $id;
     public $table;
     public $index;
 

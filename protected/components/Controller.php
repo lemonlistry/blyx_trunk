@@ -21,6 +21,8 @@ class Controller extends CController
      */
     public $breadcrumbs=array();
     
+    public $navMenu = array();
+    
     /**
      * 用户登录验证
      * @return boolean
@@ -37,7 +39,19 @@ class Controller extends CController
                 }
             }
         }
+        $this->menu = $this->getMenu();
         return true;
+    }
+    
+    /**
+     * 菜单处理
+     */
+    protected function getMenu(){
+        return array(
+                        '/passport/system/rolelist' => '系统管理',
+                        '/log/default' => '日志管理',
+                        '/interact/default/forbidlogin' => 'GM管理',
+                    );
     }
     
     /**
@@ -58,5 +72,33 @@ class Controller extends CController
         }else {
             return $model;
         }
+    }
+    
+    /**
+     * 验证参数
+     * @param array $param $k 为INDEX $v 0允许为空  1不允许为空
+     */
+    protected function getParam($param){
+        $res = array();
+        foreach ($param as $k => $v) {
+            $res[$k] = trim(Yii::app()->request->getParam($k, ''));
+            if('' === $res[$k] && $v){
+                if(Yii::app()->request->isAjaxRequest){
+                    echo json_encode(array('flag' => 0, 'msg' => '请输入参数'));
+                    Yii::app()->end();
+                }else{
+                    throw new CException('请输入参数');
+                }
+            }
+        }
+        return $res;
+    }
+    
+    /**
+     * 获取自增Key
+     */
+    public function getAutoIncrementKey($table){
+        $model = AutoIncrement::model()->findByAttributes(array('table' => $table));
+        return empty($model) ? 1 : ++$model->index;
     }
 }

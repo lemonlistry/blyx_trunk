@@ -8,6 +8,7 @@ class User extends MongoDocument
     public $id;
     public $username;
     public $password;
+    private $__identity;
 
     /**
      * Returns the static model of the specified AR class.
@@ -61,5 +62,23 @@ class User extends MongoDocument
             'username' => 'Username',
             'password' => 'Password',
         );
+    }
+    
+
+    /**
+     * Logs in the user using the given username and password in the model.
+     * @return boolean whether login is successful
+     */
+    public function login() {
+        if ($this->__identity === null) {
+            $this->__identity = new UserIdentity($this->username, $this->password);
+            $this->__identity->authenticate();
+        }
+        if ($this->__identity->errorCode === UserIdentity::ERROR_NONE) {
+            Yii::app()->user->login($this->__identity);
+            return true;
+        }else{
+            return false;
+        }
     }
 }
