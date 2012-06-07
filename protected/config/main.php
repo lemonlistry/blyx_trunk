@@ -55,7 +55,7 @@ return array(
     ),
 
     'defaultController' => 'passport',
-    'homeUrl' => array('/passport/system/rolelist'),
+    'homeUrl' => array('/passport/role/rolelist'),
     // application components
     'components'=>array(
         'user'=>array(
@@ -131,12 +131,11 @@ return array(
         
         'db'=>array(
             'class' => 'CDbConnection',
-            'connectionString' => 'mysql:host=localhost;dbname=platform',
+            'connectionString' => 'mysql:host=172.16.0.238;dbname=ljh',
             'emulatePrepare' => true,
             'username' => 'root',
-            'password' => '',
+            'password' => '111111',
             'charset' => 'utf8',
-            'tablePrefix' => 'bl_',
         ),
         
         'errorHandler'=>array(

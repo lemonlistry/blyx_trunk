@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php echo Yii::app()->name; ?></title>
 <link href="<?php echo Yii::app()->request->baseUrl;?>/source/css/passport/login.css?v=<?php echo Yii::app()->params['version']; ?>" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl;?>/source/js/jquery/jquery-1.7.2.min.js?v=<?php echo Yii::app()->params['version']; ?>"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl;?>/source/js/jquery.min.js?v=<?php echo Yii::app()->params['version']; ?>"></script>
 </head>
 <body>
 <div class="login">

@@ -48,7 +48,7 @@ class Controller extends CController
      */
     protected function getMenu(){
         return array(
-                        '/passport/system/rolelist' => '系统管理',
+                        '/passport/role/rolelist' => '系统管理',
                         '/log/default' => '日志管理',
                         '/interact/default/forbidlogin' => 'GM管理',
                         '/realtime/default' => '实时数据',
