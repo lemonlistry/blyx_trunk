@@ -1,7 +1,7 @@
 <div id="page_body">
 <div id="page_title">
     <?php
-        require dirname(__FILE__) . '../_menu.php';
+        require dirname(__FILE__) . '/_menu.php';
     ?>
 </div>
 
@@ -14,6 +14,11 @@
             ?>
         </aside>
         <div class="main-container prepend5">
+            <header>
+                <div class="right">
+                    <a data-url="<?php echo $this->createUrl('/passport/system/addrole'); ?>" data-title="添加角色" href="javascript:void(0);">添加角色</a>
+                </div>
+            </header>
             <div class="main-content">
                 <div class="grid-view">
                     <table>
@@ -21,30 +26,34 @@
                             <tr>
                                 <th class="span3">序号</th>
                                 <th class="span5">名称</th>
-                                <th class="span18">描述</th>
+                                <th class="span4">类型</th>
+                                <th class="span10">描述</th>
                                 <th class="span5">创建时间</th>
+                                <th class="span4">操作</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php 
                                 if (count($list)) {
                                     foreach ($list as $k => $v) {
+                                        $group = RoleGroup::model()->findByAttributes(array('id' => floatval($v->group_id)));
                             ?>
                                         <tr>
-                                            <td class="td-left">
-                                            </td>
-                                            <td></td>
+                                            <td><?php echo $v->id; ?></td>
+                                            <td><?php echo $v->name; ?></td>
+                                            <td><?php echo $group->name; ?></td>
+                                            <td><?php echo $v->desc; ?></td>
+                                            <td><?php echo date("Y-m-d H:i:s", $v->create_time); ?></td>
                                             <td>
+                                                <a href="javascript:void(0);" class="op" data-act="delete" data-id="<?php echo $v->id; ?>">删除</a>
+                                                <a href="javascript:void(0);" class="op" data-act="update" data-id="<?php echo $v->id; ?>">编辑</a>
                                             </td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                 <?php 
                                     } 
                                 ?>
                                     <tr>
-                                        <td colspan="6"> <div class="pager"> </div></td>
+                                        <td colspan="6"> <div class="pager"><?php $this->widget('CLinkPager', array('pages'=>$pages));?> </div></td>
                                     </tr>
                             <?php 
                                 } else { 
@@ -66,21 +75,31 @@
 
 <script>
     jQuery(function($) {
-        $("#save").click(function(){
-            $("#save").prop('disabled',true);
-            $.ajax({
-                type: "POST",
-                dataType: 'JSON',
-                url: this.action,
-                data : $('#addrole').serialize(),
-                success: function(json){
-                    alert(json.msg);
-                    $("#save").prop('disabled',false);
-                },
-                error: function(xhr, status, err) {
-                    alert('请求的地址错误。');
-                }
-            });
+        $(".op").click(function(){
+            var id = $(this).data('id');
+            var act = $(this).data('act');
+            if('delete' == act){
+                $.ajax({
+                    type: "POST",
+                    dataType: 'JSON',
+                    url: '/passport/system/deleterole?id=' + id,
+                    success: function(json){
+                        Dialog.alert(json.msg);
+                        location.href = location.href;
+                    },
+                    error: function(xhr, status, err) {
+                        Dialog.alert('请求的地址错误。');
+                    }
+                });
+            }else{
+                var url = '/passport/system/updaterole?id=' + id;
+                $.urlDialog(url, '编辑角色');
+            }
+        });
+        $(".right a").click(function(){
+            var url = $(this).data('url');
+            var title = $(this).data('title');
+            $.urlDialog(url, title);
         });
     });
 </script>

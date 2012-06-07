@@ -1,7 +1,7 @@
 <div id="page_body">
 <div id="page_title">
     <?php
-        require dirname(__FILE__) . '../_menu.php';
+        require dirname(__FILE__) . '/_menu.php';
     ?>
 </div>
 
@@ -84,11 +84,11 @@
                 url: this.action,
                 data : $('#forbid_login').serialize(),
                 success: function(json){
-                    alert(json.msg);
+                    Dialog.alert(json.msg);
                     $("#save").prop('disabled',false);
                 },
                 error: function(xhr, status, err) {
-                    alert('请求的地址错误。');
+                    Dialog.alert("请求的地址错误。");
                 }
             });
         });

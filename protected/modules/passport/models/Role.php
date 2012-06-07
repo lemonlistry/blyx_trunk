@@ -8,7 +8,14 @@ class Role extends MongoDocument
     public $id;
     public $name;
     public $desc;
-
+    public $group_id;
+    public $create_time;
+    
+    public function roleGroup()
+    {
+        return RoleGroup::model()->findByPk($this->group_id);
+    }
+    
     /**
      * Returns the static model of the specified AR class.
      * @return Role the static model class
@@ -42,11 +49,11 @@ class Role extends MongoDocument
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('name, desc', 'required'),
+            array('name, desc, group_id', 'required'),
             array('name, desc', 'length', 'max'=>20),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, name, desc', 'safe', 'on'=>'search'),
+            array('id, name, desc, group_id', 'safe', 'on'=>'search'),
         );
     }
 
@@ -59,6 +66,8 @@ class Role extends MongoDocument
             'id' => 'ID',
             'name' => 'Name',
             'desc' => 'Desc',
+            'group_id' => 'GroupId',
         );
     }
+    
 }

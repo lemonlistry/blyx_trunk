@@ -51,10 +51,11 @@ return array(
         'restfulApi',
         'interact',
         'log',
+        'realtime',
     ),
 
     'defaultController' => 'passport',
-    'homeUrl' => array('/passport'),
+    'homeUrl' => array('/passport/system/rolelist'),
     // application components
     'components'=>array(
         'user'=>array(
@@ -81,6 +82,12 @@ return array(
 //            'adapter'    => 'sockets' // curl | sockets | fopen
 //        ),
 
+        'clientScript' => array(
+            'class' => 'CClientScript',
+            'corePackages' => require(__DIR__ . '/packages.php'),
+            'coreScriptUrl' => '/source',
+        ),
+        
         'cache'=>array(
             'class'=>'CMemCache',
             'servers'=>array(

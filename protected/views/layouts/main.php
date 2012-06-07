@@ -4,7 +4,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="zh-CN" />
     <title><?php echo Yii::app()->name; ?></title>
-    <link href="<?php echo Yii::app()->request->baseUrl;?>/css/global.css?v=<?php echo Yii::app()->params['version']; ?>" rel="stylesheet" type="text/css" />
+    <?php 
+        Yii::app()->clientScript->registerCoreScript('jquery');
+        Yii::app()->clientScript->registerCoreScript('platform');
+    ?>
 </head>
 <body style="min-width: 1000px; background:#F9FCFF">
     <header id="page_header">
@@ -14,8 +17,10 @@
             <ul>
                 <?php 
                     foreach ($this->menu as $k => $v) {
+                        $index_arr = explode('/', $k);
+                        $index = $index_arr[0] . '/' . $index_arr[1];
                 ?>
-                        <li><a href="<?php echo $this->createUrl($k); ?>"><?php echo $v; ?></a></li>
+                        <li class="<?php echo strpos(Yii::app()->request->url, $index) === false ? '' : 'active'; ?>"><a href="<?php echo $this->createUrl($k); ?>"><?php echo $v; ?></a></li>
                 <?php 
                     }
                 ?>
@@ -36,10 +41,9 @@
     </div>
 
     <footer id="page_footer">
-        Copyright &copy; 2009-<?php echo date('Y'); ?> By blyx . All Rights Reserved.<br/>
+        Copyright &copy; 2011-<?php echo date('Y'); ?> By blyx . All Rights Reserved.<br/>
         <p>版本：<?php echo Yii::app()->params['version']; ?> &nbsp;&nbsp; 执行时间：<?php echo printf("%.2f", Yii::getLogger()->getExecutionTime()); ?>秒 </p>
     </footer>
 
-    <?php Yii::app()->clientScript->registerCoreScript('jquery');?>
 </body>
 </html>

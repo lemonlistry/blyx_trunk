@@ -51,6 +51,7 @@ class Controller extends CController
                         '/passport/system/rolelist' => '系统管理',
                         '/log/default' => '日志管理',
                         '/interact/default/forbidlogin' => 'GM管理',
+                        '/realtime/default' => '实时数据',
                     );
     }
     
@@ -63,7 +64,7 @@ class Controller extends CController
      * @return ActiveModel
      */
     protected function loadModel($id, $model_name, $scenario=null) {
-        $model = $model_name::model()->findByPk($id);
+        $model = $model_name::model()->findByAttributes(array('id' => floatval($id)));
         if($scenario) {
             $model->scenario = $scenario;
         }
@@ -81,7 +82,10 @@ class Controller extends CController
     protected function getParam($param){
         $res = array();
         foreach ($param as $k => $v) {
-            $res[$k] = trim(Yii::app()->request->getParam($k, ''));
+            $res[$k] = Yii::app()->request->getParam($k, '');
+            if(!is_array($res[$k])){
+                $res[$k] = trim($res[$k]);
+            }
             if('' === $res[$k] && $v){
                 if(Yii::app()->request->isAjaxRequest){
                     echo json_encode(array('flag' => 0, 'msg' => '请输入参数'));

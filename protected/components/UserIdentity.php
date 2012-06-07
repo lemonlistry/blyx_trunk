@@ -21,7 +21,7 @@ class UserIdentity extends CUserIdentity
         //ActiveRecord
         //$user = User::model()->find('username = :username AND password = :password', array(':username' => $this->username, ':password' => md5($this->password)));
         //EMongoDocument
-        $user = User::model()->find(array('username' => $this->username, 'password' => md5($this->password)));
+        $user = User::model()->findByAttributes(array('username' => $this->username, 'password' => md5($this->password)));
         if(empty($user)){
             $this->errorCode = self::ERROR_USERNAME_INVALID;
         }else{

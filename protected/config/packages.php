@@ -1,0 +1,21 @@
+<?php
+/**
+ * Built-in client script packages.
+ *
+ * Please see {@link CClientScript::packages} for explanation of the structure
+ * of the returned array.
+ *
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright &copy; 2008-2011 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
+ */
+return array(
+    'jquery' => array(
+        'js' => array(YII_DEBUG ? 'js/jquery.js' : 'js/jquery.min.js'),
+    ),
+    'platform' => array(
+        'js' => array('js/zDrag.js', 'js/zDialog.js', 'js/common.js'),
+        'css' => array('css/global.css'),
+    ),
+);

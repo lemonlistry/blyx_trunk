@@ -78,6 +78,7 @@ abstract class MongoDocument extends EMongoDocument
                 }
             }
         }
+        return parent::afterSave();
     }
     
     /**
@@ -95,5 +96,6 @@ abstract class MongoDocument extends EMongoDocument
      */
     public function beforeSave(){
         $this->new = $this->getIsNewRecord() ? true : false;
+        return parent::beforeSave();
     }
 }
