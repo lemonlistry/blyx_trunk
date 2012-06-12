@@ -21,7 +21,7 @@ class PrimeController extends Controller
             array_push($role_menu, array('label' => $role->name, 'url' => array('/passport/prime/primelist', 'role_id' => $role->id), 
                                         'active' => $role->id == $role_id ? true : false));
         }
-        $prime_resource = Prime::model()->findAllByAttributes(array('prime' => true, 'role_id' => $role_id));
+        $prime_resource = Prime::model()->findAllByAttributes(array('role_id' => $role_id));
         $prime = array();
         if(count($prime_resource)){
             foreach ($prime_resource as $v) {
@@ -44,7 +44,6 @@ class PrimeController extends Controller
             if(count($resource)){
                 foreach ($resource as $k => $v) {
                     $prime = new Prime();
-                    $prime->prime = true;
                     $prime->role_id = $role_id;
                     $prime->id = $this->getAutoIncrementKey('bl_prime');
                     $prime->resource_id = $k;

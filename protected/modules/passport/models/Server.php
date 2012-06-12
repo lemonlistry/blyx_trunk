@@ -98,10 +98,18 @@ class Server extends MongoDocument
     }
     
     /**
+     * @see EMongoDocument::afterDelete()
+     */
+    public function afterDelete(){
+        $this->generateDbConfig();
+        return parent::afterDelete();
+    }
+    
+    /**
      * 生成数据库配置文件
      */
     protected function generateDbConfig(){
-        $content = '<?php return array()';
+        $content = '<?php return array();';
         $list = $this->findAll();
         if(count($list)){
             $content = '<?php return array("components"=>array(';

@@ -24,7 +24,7 @@ class DefaultController extends Controller
     public function actionLook(){
         $id = $this->getParam('id');
         $model = $this->loadModel($id , 'Log');
-        $this->renderPartial('lookinfo', array('model' => $model,), false, true);
+        $this->renderPartial('loginfo', array('model' => $model,), false, true);
     }
 }
 

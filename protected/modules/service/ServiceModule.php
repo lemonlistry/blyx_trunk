@@ -11,6 +11,7 @@ class ServiceModule extends CWebModule
         $this->setImport(array(
             'service.models.*',
             'service.components.*',
+            'passport.models.Server',
         ));
     }
 

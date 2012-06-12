@@ -17,13 +17,17 @@
             <header>
                 <div class="right">
                     <label>开始时间:</label>
-                        <input type="text" id="begintime" name="begintime" value="<?php echo $begintime;?>" />
-                        <label>结束时间:</label>
-                        <input type="text" id="endtime" name="endtime" value="<?php echo $endtime;?>" />
-                        <label>用户:</label>
-                        <input type="text" id="operator" name="operator" value="<?php echo $operator;?>" />
-                        <input type="submit" value='查询' />
-                    </div>
+                    <?php 
+                        echo Html5::timeField('begintime', $begintime);
+                    ?>
+                    <label>结束时间:</label>
+                    <?php 
+                        echo Html5::timeField('endtime', $endtime);
+                    ?>
+                    <label>用户:</label>
+                    <input type="text" id="operator" name="operator" value="<?php echo $operator;?>" />
+                    <input type="submit" value='查询' />
+                </div>
             </header>
             <?php $this->endWidget(); ?>
             <div class="main-content">

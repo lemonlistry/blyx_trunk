@@ -8,7 +8,6 @@ class Prime extends MongoDocument
     public $id;
     public $role_id;
     public $resource_id;
-    public $prime;
 
     /**
      * Returns the static model of the specified AR class.
@@ -43,11 +42,11 @@ class Prime extends MongoDocument
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('id, role_id, resource_id, prime', 'required'),
-            array('role_id, resource_id, prime', 'numerical', 'integerOnly'=>true),
+            array('id, role_id, resource_id', 'required'),
+            array('role_id, resource_id', 'numerical', 'integerOnly'=>true),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, role_id, resource_id, prime', 'safe', 'on'=>'search'),
+            array('id, role_id, resource_id', 'safe', 'on'=>'search'),
         );
     }
 
@@ -59,9 +58,7 @@ class Prime extends MongoDocument
         return array(
             'id' => 'ID',
             'uid' => 'Uid',
-            'channel_id' => 'Channel',
             'resource_id' => 'Resource',
-            'prime' => 'Prime',
         );
     }
     

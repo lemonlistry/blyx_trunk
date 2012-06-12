@@ -2,6 +2,22 @@
 
 class DefaultController extends Controller
 {
+    public $select;
+    
+    /**
+     * 初始化服务器信息
+     */
+    protected function initServer()
+    {
+        $servers = Server::model()->findAll();
+        $select = array();
+        if(count($servers)){
+            foreach ($servers as $k => $v) {
+                $select[$v->id] = $v->sname;
+            }
+        }
+        $this->select = $select;
+    }
     
     /**
      * GM 禁止玩家登录
@@ -25,8 +41,9 @@ class DefaultController extends Controller
     {
         $title = 'GM管理';
         if(Yii::app()->request->isAjaxRequest){
-            $param = $this->getParam(array('ip', 'port', 'role_id', 'seconds'));
-            $socket = new SocketHelper($param['ip'], $param['port']);
+            $param = $this->getParam(array('server_id', 'role_id', 'seconds'));
+            $server = Server::model()->findByAttributes(array('id' => $param['server_id']));
+            $socket = new SocketHelper($server->web_ip, $server->web_socket_port);
             //包头处理
             $cmd = $socket->getLogicPackHeader(0x0A032001, 41);
             //包体处理
@@ -44,7 +61,8 @@ class DefaultController extends Controller
             $socket->close();
             Yii::app()->end();
         }
-        $this->render('forbid_login', array('title' => $title));
+        $this->initServer();
+        $this->render('forbid_login', array('title' => $title, 'select' => $this->select));
     }
     
     /**
@@ -69,8 +87,9 @@ class DefaultController extends Controller
     {
         $title = 'GM管理';
         if(Yii::app()->request->isAjaxRequest){
-            $param = $this->getParam(array('ip', 'port', 'role_id', 'seconds'));
-            $socket = new SocketHelper($param['ip'], $param['port']);
+            $param = $this->getParam(array('server_id', 'role_id', 'seconds'));
+            $server = Server::model()->findByAttributes(array('id' => $param['server_id']));
+            $socket = new SocketHelper($server->web_ip, $server->web_socket_port);
             //包头处理
             $cmd = $socket->getLogicPackHeader(0x0A032003, 41);
             //包体处理
@@ -88,7 +107,8 @@ class DefaultController extends Controller
             $socket->close();
             Yii::app()->end();
         }
-        $this->render('forbid_chat', array('title' => $title));
+        $this->initServer();
+        $this->render('forbid_chat', array('title' => $title, 'select' => $this->select));
     }
     
 	/**
@@ -112,8 +132,9 @@ class DefaultController extends Controller
     {
         $title = 'GM管理';
         if(Yii::app()->request->isAjaxRequest){
-            $param = $this->getParam(array('ip', 'port', 'role_id'));
-            $socket = new SocketHelper($param['ip'], $param['port']);
+            $param = $this->getParam(array('server_id', 'role_id'));
+            $server = Server::model()->findByAttributes(array('id' => $param['server_id']));
+            $socket = new SocketHelper($server->web_ip, $server->web_socket_port);
             //包头处理
             $cmd = $socket->getLogicPackHeader(0x0A032005, 37);
             //包体处理
@@ -130,7 +151,8 @@ class DefaultController extends Controller
             $socket->close();
             Yii::app()->end();
         }
-        $this->render('permit_login', array('title' => $title));
+        $this->initServer();
+        $this->render('permit_login', array('title' => $title, 'select' => $this->select));
     }
     
     /**
@@ -155,8 +177,9 @@ class DefaultController extends Controller
     {
         $title = 'GM管理';
         if(Yii::app()->request->isAjaxRequest){
-            $param = $this->getParam(array('ip', 'port', 'role_id'));
-            $socket = new SocketHelper($param['ip'], $param['port']);
+            $param = $this->getParam(array('server_id', 'role_id'));
+            $server = Server::model()->findByAttributes(array('id' => $param['server_id']));
+            $socket = new SocketHelper($server->web_ip, $server->web_socket_port);
             //包头处理
             $cmd = $socket->getLogicPackHeader(0x0A032007, 37);
             //包体处理
@@ -173,7 +196,8 @@ class DefaultController extends Controller
             $socket->close();
             Yii::app()->end();
         }
-        $this->render('permit_chat', array('title' => $title));
+        $this->initServer();
+        $this->render('permit_chat', array('title' => $title, 'select' => $this->select));
     }
     
     /**
@@ -200,8 +224,9 @@ class DefaultController extends Controller
     {
         $title = 'GM管理';
         if(Yii::app()->request->isAjaxRequest){
-            $param = $this->getParam(array('ip', 'port', 'role_id', 'award_name', 'time', 'item_id', 'num'));
-            $socket = new SocketHelper($param['ip'], $param['port']);
+            $param = $this->getParam(array('server_id', 'role_id', 'award_name', 'time', 'item_id', 'num'));
+            $server = Server::model()->findByAttributes(array('id' => $param['server_id']));
+            $socket = new SocketHelper($server->web_ip, $server->web_socket_port);
             //包头处理
             $cmd = $socket->getLogicPackHeader(0x0A032023, 78);
             //包体处理
@@ -224,7 +249,8 @@ class DefaultController extends Controller
             $socket->close();
             Yii::app()->end();
         }
-        $this->render('send_award', array('title' => $title));
+        $this->initServer();
+        $this->render('send_award', array('title' => $title, 'select' => $this->select));
     }
     
     /**
@@ -246,8 +272,9 @@ class DefaultController extends Controller
     {
         $title = 'GM管理';
         if(Yii::app()->request->isAjaxRequest){
-            $param = $this->getParam(array('ip', 'port'));
-            $socket = new SocketHelper($param['ip'], $param['port']);
+            $param = $this->getParam(array('server_id'));
+            $server = Server::model()->findByAttributes(array('id' => $param['server_id']));
+            $socket = new SocketHelper($server->web_ip, $server->web_socket_port);
             //包头处理
             $cmd = $socket->getLogicPackHeader(0x0A032027, 33);
             //包体处理
@@ -263,7 +290,8 @@ class DefaultController extends Controller
             $socket->close();
             Yii::app()->end();
         }
-        $this->render('close_server', array('title' => $title));
+        $this->initServer();
+        $this->render('close_server', array('title' => $title, 'select' => $this->select));
     }
     
    /**
@@ -426,8 +454,9 @@ class DefaultController extends Controller
     {
         $title = 'GM管理';
         if(Yii::app()->request->isAjaxRequest){
-            $param = $this->getParam(array('ip', 'port', 'interval_time', 'playtimes', 'notice_content'));
-            $socket = new SocketHelper($param['ip'], $param['port']);
+            $param = $this->getParam(array('server_id', 'interval_time', 'playtimes', 'notice_content'));
+            $server = Server::model()->findByAttributes(array('id' => $param['server_id']));
+            $socket = new SocketHelper($server->web_ip, $server->web_socket_port);
             //包头处理
             $con_length = strlen($param['notice_content']);
             $length = $con_length + 43;
@@ -449,7 +478,8 @@ class DefaultController extends Controller
             $socket->close();
             Yii::app()->end();
         }
-        $this->render('online_notice', array('title' => $title));
+        $this->initServer();
+        $this->render('online_notice', array('title' => $title, 'select' => $this->select));
     }
     
 }

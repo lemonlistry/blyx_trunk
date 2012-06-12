@@ -22,21 +22,12 @@
                 
                 <div class="clearfix">
                     <div class="cell">
-                        <label>请输入服务器IP:</label>
+                        <label>请选择服务器:</label>
                         <div class="item">
                             <div class="main">
-                                <input type="text" id="ip" name="ip" value="<?php echo Yii::app()->params['socket_ip']; ?>" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="clearfix">
-                    <div class="cell">
-                        <label>请输入服务器端口:</label>
-                        <div class="item">
-                            <div class="main">
-                                <input type="text" id="port" name="port" value="<?php echo Yii::app()->params['socket_port']; ?>" />
+                                <?php 
+                                    echo Html5::dropDownList('server_id', '', $select, array('class'=>'span3'));
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -111,6 +102,10 @@
 <script>
     jQuery(function($) {
         $("#save").click(function(){
+            if(!$("#server_id").val()){
+                Dialog.alert('请选择服务器');
+                return false;
+            }
             $("#save").prop('disabled',true);
             $.ajax({
                 type: "POST",

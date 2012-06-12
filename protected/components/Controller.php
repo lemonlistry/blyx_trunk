@@ -83,21 +83,36 @@ class Controller extends CController
             $res = array();
             foreach ($param as $v) {
                 $res[$v] = Yii::app()->request->getParam($v);
-                if(strpos($v, 'time') !== false || strpos($v, 'id') !== false){
-                    $res[$v] = intval($res[$v]);
-                }
+                $res[$v] = $this->changeFieldType($v, $res[$v]);
             }
         }else{
             $res = Yii::app()->request->getParam($param);
             if(is_array($res) && count($res)){
                 foreach ($res as $k => $v) {
-                    $res[$k] =  (strpos($k, 'time') !== false || strpos($k, 'id') !== false) ? intval($res[$k]) : $res[$k];
+                    $res[$k] = $this->changeFieldType($k, $v);
                 }
             }else{
-                $res = (strpos($res, 'time') !== false || strpos($res, 'id') !== false) ? intval($res) : $res;
+                $res = $this->changeFieldType($param, $res);
             }
         }
         return $res;
+    }
+    
+    /**
+     * 更改字段类型
+     * @param string $field
+     */
+    protected function changeFieldType($key, $field){
+        //浮点数验证
+        $arr = explode('.', $field);
+        if(strpos($field, '.') > 0 && count($arr) == 2){
+            $field = floatval($field);
+        }
+        //整数验证
+        if(strpos($key, 'id') !== false){
+            $field = intval($field);
+        }
+        return $field;
     }
     
     /**
