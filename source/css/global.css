@@ -66,7 +66,7 @@ ul {list-style-type:none;}
 .quick-container { border-top: 1px solid #C2D1CF; line-height: 28px; background: #FBFBFB; padding: 10px; }
 .inner-container { margin: 20px; }
 .quote-split { margin-bottom: 15px; }
-.info-header { line-height: 30px; background: #F2F4F6; }
+.info-header { line-height: 30px; background: #F2F4F6; padding-left:10px;}
 .main-title {   height: 35px; line-height: 35px; padding: 0 10px; }
 .main-panel {  margin: 5px 10px;  }
 .main-panel a {  margin-right:10px;  }

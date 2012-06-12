@@ -19,7 +19,7 @@ class DefaultController extends Controller
     {
         $this->layout = false;
         if (isset($_POST['login'])){
-            $model = new User();
+            $model = new User('search');
             $model->attributes = Yii::app()->request->getParam('user');
             if ($model->validate() && $model->login()) {
                 $this->redirect(Yii::app()->createUrl('/passport/role/rolelist'));

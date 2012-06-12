@@ -6,9 +6,9 @@
  */
 class ActiveRecord extends CActiveRecord 
 {
-    public static $database = array(); 
+    public static $db_instance = array(); 
     
-    public $dbname = 'db';
+    private $db_component = 'db';
     
     /**
      * Returns the database connection used by active record.
@@ -18,16 +18,16 @@ class ActiveRecord extends CActiveRecord
      */
     public function getDbConnection()
     {
-        $dbname = $this->dbname;
-        if(isset(self::$database[$dbname]) && self::$database[$dbname] instanceof CDbConnection){
-            return self::$database[$dbname];
+        $db_component = $this->db_component;
+        if(isset(self::$db_instance[$db_component]) && self::$db_instance[$db_component] instanceof CDbConnection){
+            return self::$db_instance[$db_component];
         }else{
-            self::$database[$dbname] = Yii::app()->$dbname;
+            self::$db_instance[$db_component] = Yii::app()->$db_component;
         }
 
-        if(self::$database[$dbname] instanceof CDbConnection){
-            self::$database[$dbname]->setActive(true); 
-            return self::$database[$dbname];
+        if(self::$db_instance[$db_component] instanceof CDbConnection){
+            self::$db_instance[$db_component]->setActive(true); 
+            return self::$db_instance[$db_component];
         }else{
             throw new CDbException(Yii::t('yii','Active Record requires a "db" CDbConnection application component.'));
         }
@@ -38,8 +38,14 @@ class ActiveRecord extends CActiveRecord
      * @param string $dbname
      * @return CDbConnection the database connection used by active record.
      */
-    public function setDbConnection($dbname){
-        $this->dbname = $dbname;
-        return $this->getDbConnection();
+    public function setDbConnection($server_id){
+        Yii::import('passport.models.Server');
+        $model = Server::model()->findByAttributes(array('id' => $server_id));
+        if(empty($model)){
+            throw new CDbException('Active Record load server config error ...');
+        }else{
+            $this->db_component = 'db' . $server_id;
+            return $this->getDbConnection();
+        }
     }
 }

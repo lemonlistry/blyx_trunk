@@ -23,8 +23,9 @@ return array(
         'ext.MongoDocument',
         'ext.ActiveForm',
         'ext.ActiveRecord',
-        //'ext.FormModel',
-        //'ext.Html5',
+        'ext.FormModel',
+        'ext.Html5',
+        'ext.Tree',
     ),
 
     'modules'=>array(
@@ -45,13 +46,13 @@ return array(
                 'ext.YiiMongoDbSuite.gii'
             ),
         ),
-        'passport',
-        'core',
-        'install',
-        'restfulApi',
-        'interact',
-        'log',
-        'realtime',
+        'passport',     //运维模块 系统信息 账号 密码 
+        'core',         //运营模块  核心数据分析
+        'install',      //数据初始化模块
+        'restfulApi',   //api模块 提交接口供游戏请求
+        'service',      //客服模块 包含玩家交互 已经GM管理
+        'log',          //日志模块
+        'realtime',     //实时数据查询模块
     ),
 
     'defaultController' => 'passport',

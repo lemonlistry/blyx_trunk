@@ -6,8 +6,7 @@
 class Prime extends MongoDocument
 {
     public $id;
-    public $uid;
-    public $channel_id;
+    public $role_id;
     public $resource_id;
     public $prime;
 
@@ -44,11 +43,11 @@ class Prime extends MongoDocument
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('channel_id, resource_id, prime', 'required'),
-            array('uid, channel_id, resource_id, prime', 'numerical', 'integerOnly'=>true),
+            array('id, role_id, resource_id, prime', 'required'),
+            array('role_id, resource_id, prime', 'numerical', 'integerOnly'=>true),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, uid, channel_id, resource_id, prime', 'safe', 'on'=>'search'),
+            array('id, role_id, resource_id, prime', 'safe', 'on'=>'search'),
         );
     }
 
@@ -64,5 +63,16 @@ class Prime extends MongoDocument
             'resource_id' => 'Resource',
             'prime' => 'Prime',
         );
+    }
+    
+    /**
+     * 根据角色ID 设置 CRUD 条件
+     * @param int $role_id
+     */
+    public function byRoleId($role_id){
+        $criteria = new EMongoCriteria();
+        $criteria->role_id('==', $role_id);
+        $this->setDbCriteria($criteria);
+        return $this;
     }
 }

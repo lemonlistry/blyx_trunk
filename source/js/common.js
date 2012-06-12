@@ -198,8 +198,6 @@ $.extend({
      * urlDialog
      */
     urlDialog:function(url, title, width, height){
-        width = width || 600;
-        height = height || 300;
         var diag = new Dialog();
         diag.Width = width;
         diag.Height = height;
@@ -207,5 +205,6 @@ $.extend({
         diag.URL = url;
         diag.show();
     }
-    
+
 });
+

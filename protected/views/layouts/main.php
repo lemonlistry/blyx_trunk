@@ -5,7 +5,7 @@
     <meta name="language" content="zh-CN" />
     <title><?php echo Yii::app()->name; ?></title>
     <?php 
-        Yii::app()->clientScript->registerCoreScript('jquery');
+        Yii::app()->clientScript->registerCoreScript('jquery.ui');
         Yii::app()->clientScript->registerCoreScript('platform');
     ?>
 </head>

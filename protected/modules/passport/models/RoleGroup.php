@@ -8,6 +8,7 @@ class RoleGroup extends MongoDocument
     public $id;
     public $name;
     public $desc;
+    public $create_time;
 
     /**
      * Returns the static model of the specified AR class.
@@ -42,7 +43,7 @@ class RoleGroup extends MongoDocument
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('name, desc', 'required'),
+            array('id, name, desc, create_time', 'required'),
             array('name, desc', 'length', 'max'=>20),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
@@ -57,8 +58,8 @@ class RoleGroup extends MongoDocument
     {
         return array(
             'id' => 'ID',
-            'name' => 'Name',
-            'desc' => 'Desc',
+            'name' => '角色类型名称',
+            'desc' => '角色类型描述',
         );
     }
 }

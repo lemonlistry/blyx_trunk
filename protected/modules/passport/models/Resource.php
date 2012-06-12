@@ -8,6 +8,7 @@ class Resource extends MongoDocument
     public $id;
     public $name;
     public $desc;
+    public $create_time;
 
     /**
      * Returns the static model of the specified AR class.
@@ -42,11 +43,11 @@ class Resource extends MongoDocument
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('name, desc', 'required'),
+            array('id, name, desc, create_time', 'required'),
             array('name, desc', 'length', 'max'=>20),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, name, desc', 'safe', 'on'=>'search'),
+            array('id, name, desc, create_time', 'safe', 'on'=>'search'),
         );
     }
 
@@ -57,8 +58,9 @@ class Resource extends MongoDocument
     {
         return array(
             'id' => 'ID',
-            'name' => 'Name',
-            'desc' => 'Desc',
+            'name' => '资源名称',
+            'desc' => '资源描述',
+        	'create_time' => 'Create Time',
         );
     }
 }

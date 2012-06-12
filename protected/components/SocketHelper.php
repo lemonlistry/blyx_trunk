@@ -111,7 +111,8 @@ class SocketHelper{
      */
     public function parseResponsePack($response, $response_type = null, $head_length = 32, $kv_state_length = 4, $format = 'H*'){
         if(empty($response)){
-            throw new CException('socket response error ...');
+            $this->returnJson(0);
+            Yii::app()->end();
         }
         //解包
         $res = unpack($format, $response);
@@ -156,7 +157,8 @@ class SocketHelper{
      */
     public function parseNoHeaderResonsePack($response, $response_type = null, $format = 'H*'){
         if(empty($response)){
-            throw new CException('socket response error ...');
+            $this->returnJson(0);
+            Yii::app()->end();
         }
         $v = 0;
         //解包
@@ -169,6 +171,32 @@ class SocketHelper{
             $v = base_convert($v, 16, 10);
             return $v;
         }
+    }
+    
+    /**
+     * 解析socket响应信息, 并记录日志
+     * @param int $flag
+     */
+    public function returnJson($flag, $msg = ''){
+        switch ($flag) {
+            case 0:
+                $msg .= '数据响应错误';
+                break;
+            case 1:
+                $msg .= '操作成功';
+                break;
+            case 2:
+                $msg .= '鉴权错误';
+                break;
+            case 3:
+                $msg .= '角色不存在';
+                break;
+            case 4:
+                $msg .= '其他错误';
+            break;
+        }
+        Util::log($msg, 'service', __FILE__, __LINE__);
+        echo json_encode(array('flag' => $flag, 'msg' => $msg));
     }
     
 }

@@ -10,16 +10,16 @@ abstract class MongoDocument extends EMongoDocument
 
     public static $db_instance = array(); 
     
-    public $db = 'mongodb';
+    private $db_component = 'mongodb';
     
-    public $new = false;
+    private $new = false;
     
     /**
      * get mongodb component
      * @return string
      */
     public function getDbComponent(){
-        return $this->db;
+        return $this->db_component;
     }
     
     /**
@@ -30,15 +30,15 @@ abstract class MongoDocument extends EMongoDocument
      */
     public function getMongoDBComponent()
     {
-        $db = $this->getDbComponent();
-        if(isset(self::$db_instance[$db]) && self::$db_instance[$db] instanceof EMongoDB){
-            return self::$db_instance[$db];
+        $db_component = $this->getDbComponent();
+        if(isset(self::$db_instance[$db_component]) && self::$db_instance[$db_component] instanceof EMongoDB){
+            return self::$db_instance[$db_component];
         }else{
-            self::$db_instance[$db] = Yii::app()->$db;
+            self::$db_instance[$db_component] = Yii::app()->$db_component;
         }
 
-        if(self::$db_instance[$db] instanceof EMongoDB){
-            return self::$db_instance[$db];
+        if(self::$db_instance[$db_component] instanceof EMongoDB){
+            return self::$db_instance[$db_component];
         }else{
             throw new CDbException(Yii::t('yii','EMongoDB requires a "db" CDbConnection application component.'));
         }
@@ -49,8 +49,8 @@ abstract class MongoDocument extends EMongoDocument
      * @param string $db
      * @return CDbConnection the database connection used by EMongoDB.
      */
-    public function setMongoDBConnection($db){
-        $this->db = $db;
+    public function setMongoDBConnection($db_component){
+        $this->db_component = $db_component;
         $conn = $this->getMongoDBComponent()->getConnection();
         return self::$db_instance[$this->db]->setConnection($conn);
     }

@@ -8,6 +8,8 @@ class User extends MongoDocument
     public $id;
     public $username;
     public $password;
+    public $role_id;
+    public $create_time;
     private $__identity;
 
     /**
@@ -43,7 +45,8 @@ class User extends MongoDocument
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('username, password', 'required'),
+            array('id, username, password, role_id, create_time', 'required', 'on' => 'insert'),
+            array('username, password', 'required', 'on' => 'search'),
             array('username', 'length', 'max'=>20),
             array('password', 'length', 'max'=>32),
             // The following rule is used by search().
@@ -59,8 +62,9 @@ class User extends MongoDocument
     {
         return array(
             'id' => 'ID',
-            'username' => 'Username',
-            'password' => 'Password',
+            'username' => '用户名',
+            'password' => '密码',
+            'role_id' => '角色',
         );
     }
     

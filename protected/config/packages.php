@@ -14,8 +14,13 @@ return array(
     'jquery' => array(
         'js' => array(YII_DEBUG ? 'js/jquery.js' : 'js/jquery.min.js'),
     ),
+    'jquery.ui' => array(
+        'js' => array('js/jquery-ui.min.js'),
+        'css' => array('css/jui/jquery.ui.all.css'),
+        'depends' => array('jquery'),
+    ),
     'platform' => array(
-        'js' => array('js/zDrag.js', 'js/zDialog.js', 'js/common.js'),
+        'js' => array('js/zDrag.js', 'js/zDialog.js', 'js/common.js', 'js/zzbegin.js'),
         'css' => array('css/global.css'),
     ),
 );

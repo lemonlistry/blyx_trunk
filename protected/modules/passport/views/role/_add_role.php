@@ -1,68 +1,50 @@
 <?php 
-    Yii::app()->clientScript->registerScriptfile('/source/js/jquery.min.js');
-    Yii::app()->clientScript->registerScriptfile('/source/js/zDialog.js');
+    Yii::app()->clientScript->registerCoreScript('jquery.ui');
+    Yii::app()->clientScript->registerCoreScript('platform');
     $form = $this->beginWidget('ActiveForm', array('id' => 'role_form'));
 ?>
 
 <div class="clearfix">
     <div class="cell">
-        <label>请选择角色类型:</label>
+        <?php echo $form->labelEx($model, 'group_id'); ?>
         <div class="item">
             <div class="main">
                 <?php echo $form->dropDownList($model, 'group_id', $group_list); ?>
             </div>
         </div>
+        <?php echo $form->error($model, 'group_id'); ?>
     </div>
 </div>
 
 <div class="clearfix">
     <div class="cell">
-        <label>请输入角色名称:</label>
+         <?php echo $form->labelEx($model, 'name'); ?>
         <div class="item">
             <div class="main">
                 <?php echo $form->textField($model, 'name'); ?>
             </div>
         </div>
+        <?php echo $form->error($model, 'name'); ?>
     </div>
 </div>
 
 <div class="clearfix">
     <div class="cell">
-        <label>请输入角色描述:</label>
+        <?php echo $form->labelEx($model, 'desc'); ?>
         <div class="item">
             <div class="main">
                 <?php echo $form->textField($model, 'desc'); ?>
             </div>
         </div>
+        <?php echo $form->error($model, 'desc'); ?>
     </div>
 </div>
 
 <input type="hidden" id="role_id" name="Role[id]" value="<?php echo $model->isNewRecord ? 0 : $model->id; ?>" />
 
 <div class="actions">
-    <button type="button" id="save_role" name="save_role">提交</button>
+    <input type="submit" value="提交" />
 </div>
 
 <?php $this->endWidget(); ?>
 
-<script>
-jQuery(function($) {
-    $("#save_role").bind('click', function(){
-        $("#save_role").prop('disabled',true);
-        $.ajax({
-            type: "POST",
-            dataType: 'JSON',
-            url: $('#role_form').action,
-            data : $('#role_form').serialize(),
-            success: function(json){
-                Dialog.alert(json.msg);
-                $("#save_role").prop('disabled',false);
-                parent.location.href = parent.location.href;
-            },
-            error: function(xhr, status, err) {
-                Dialog.alert('请求的地址错误。');
-            }
-        });
-    });
-});
-</script>

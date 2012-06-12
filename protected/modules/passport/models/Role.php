@@ -49,7 +49,8 @@ class Role extends MongoDocument
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('name, desc, group_id', 'required'),
+            array('id, name, desc, group_id, create_time', 'required'),
+            array('id, create_time', 'numerical', 'integerOnly'=>true),
             array('name, desc', 'length', 'max'=>20),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
@@ -64,9 +65,9 @@ class Role extends MongoDocument
     {
         return array(
             'id' => 'ID',
-            'name' => 'Name',
-            'desc' => 'Desc',
-            'group_id' => 'GroupId',
+            'name' => '角色名称',
+            'desc' => '角色描述',
+            'group_id' => '角色类型',
         );
     }
     

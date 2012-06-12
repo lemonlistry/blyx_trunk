@@ -7,14 +7,25 @@ class DefaultController extends Controller
     {     
         $title = '角色信息查询';
         $list = array();
-        $param = $this->getParam(array('server_id' => 0, 'role_name' => 0));
-        $server_id = $param['server_id'];
+        $param = $this->getParam(array('server_group_id', 'role_name'));
+        $server_group_id= $param['server_group_id'];
         $role_name = $param['role_name'];
-        if(!empty($param['server_id']) && !empty($param['role_name'])){
-            $list = UserRole::model()->findAll('server_group_id = :server_group_id AND role_name = :role_name', 
-                                            array(':server_group_id' => $param['server_id'], ':role_name' => $param['role_name']));
+        Yii::import('passport.models.Server');
+        $servers = Server::model()->findAll();
+        $select = array();
+        if(count($servers)){
+            foreach ($servers as $k => $v) {
+                $select[$v->id] = $v->sname;
+            }
         }
-        $this->render('userlook',array('title' => $title,'list' => $list,'server_id' => $server_id, 'role_name' => $role_name));
+        if(!empty($param['server_group_id']) && !empty($param['role_name'])){
+            $model = new UserRoleAR();
+            $model->setDbConnection($server_group_id);
+            $list = $model->findAll('server_group_id = :server_group_id AND role_name = :role_name', 
+                                                    array(':server_group_id' => $param['server_group_id'], ':role_name' => $param['role_name']));
+        }
+        $this->render('userinfo',array('title' => $title,'list' => $list,'server_group_id' => $server_group_id, 
+                                               'role_name' => $role_name, 'select' =>$select));
     }
     
 }

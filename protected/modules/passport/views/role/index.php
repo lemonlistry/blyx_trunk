@@ -16,7 +16,7 @@
         <div class="main-container prepend5">
             <header>
                 <div class="right">
-                    <a data-url="<?php echo $this->createUrl('/passport/role/addrole'); ?>" data-title="添加角色" href="javascript:void(0);">添加角色</a>
+                    <?php echo Html5::link('添加角色', array('/passport/role/addrole'), array('class' => 'js-dialog-link')); ?>
                 </div>
             </header>
             <div class="main-content">
@@ -36,17 +36,19 @@
                             <?php 
                                 if (count($list)) {
                                     foreach ($list as $k => $v) {
-                                        $group = RoleGroup::model()->findByAttributes(array('id' => floatval($v->group_id)));
+                                        $group = RoleGroup::model()->findByAttributes(array('id' => $v->group_id));
                             ?>
                                         <tr>
                                             <td><?php echo $v->id; ?></td>
                                             <td><?php echo $v->name; ?></td>
-                                            <td><?php echo $group->name; ?></td>
+                                            <td><?php echo isset($group->name) ? $group->name : '' ; ?></td>
                                             <td><?php echo $v->desc; ?></td>
                                             <td><?php echo date("Y-m-d H:i:s", $v->create_time); ?></td>
                                             <td>
-                                                <a href="javascript:void(0);" class="op" data-act="delete" data-id="<?php echo $v->id; ?>">删除</a>
-                                                <a href="javascript:void(0);" class="op" data-act="update" data-id="<?php echo $v->id; ?>">编辑</a>
+                                                <?php
+                                                    echo Html5::link('编辑', array('/passport/role/updaterole', 'id' => $v->id), array('class' => 'js-dialog-link')) . ' ' .
+                                                    Html5::link('删除', array('/passport/role/deleterole', 'id' => $v->id), array('class' => 'js-confirm-link', 'data-title' => "您确定要删除当前角色吗？"));
+                                                ?>
                                             </td>
                                         </tr>
                                 <?php 
@@ -72,34 +74,3 @@
     </div>
 </div>
 </div>
-
-<script>
-    jQuery(function($) {
-        $(".op").click(function(){
-            var id = $(this).data('id');
-            var act = $(this).data('act');
-            if('delete' == act){
-                $.ajax({
-                    type: "POST",
-                    dataType: 'JSON',
-                    url: '/passport/role/deleterole?id=' + id,
-                    success: function(json){
-                        Dialog.alert(json.msg);
-                        location.href = location.href;
-                    },
-                    error: function(xhr, status, err) {
-                        Dialog.alert('请求的地址错误。');
-                    }
-                });
-            }else{
-                var url = '/passport/role/updaterole?id=' + id;
-                $.urlDialog(url, '编辑角色');
-            }
-        });
-        $(".right a").click(function(){
-            var url = $(this).data('url');
-            var title = $(this).data('title');
-            $.urlDialog(url, title);
-        });
-    });
-</script>

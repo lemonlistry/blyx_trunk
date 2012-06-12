@@ -1,14 +1,81 @@
-<?php
-$this->breadcrumbs=array(
-	$this->module->id,
-);
-?>
-<h1><?php echo $this->uniqueId . '/' . $this->action->id; ?></h1>
+<div id="page_body">
+<div id="page_title">
+    <?php
+        $this->widget('zii.widgets.CBreadcrumbs', array('links' => array(
+                '系统管理',
+                $title,
+                )));
+    ?>
+</div>
 
-<p>
-This is the view content for action "<?php echo $this->action->id; ?>".
-The action belongs to the controller "<?php echo get_class($this); ?>" in the "<?php echo $this->module->id; ?>" module.
-</p>
-<p>
-You may customize this page by editing <tt><?php echo __FILE__; ?></tt>
-</p>
+<div class="main-box">
+    <div class="main-body">
+        <div class="main-container">
+            <?php 
+                $form = $this->beginWidget('ActiveForm', array('id' => 'userlook', 'method' => 'get', 'action' => '/log/default'));
+            ?>
+            <header>
+                <div class="right">
+                    <label>开始时间:</label>
+                        <input type="text" id="begintime" name="begintime" value="<?php echo $begintime;?>" />
+                        <label>结束时间:</label>
+                        <input type="text" id="endtime" name="endtime" value="<?php echo $endtime;?>" />
+                        <label>用户:</label>
+                        <input type="text" id="operator" name="operator" value="<?php echo $operator;?>" />
+                        <input type="submit" value='查询' />
+                    </div>
+            </header>
+            <?php $this->endWidget(); ?>
+            <div class="main-content">
+                <div class="grid-view">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="span4">序号</th>
+                                <th class="span6">模块</th>
+                                <th class="span8">记录</th>
+                                <th class="span6">操作者</th>
+                                <th class="span6">创建时间</th>
+                                <th class="span6">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php 
+                                if (count($list)) {
+                                    foreach ($list as $k => $v) {
+                            ?>
+                                        <tr>
+                                            <td><?php echo $k + 1; ?></td>
+                                            <td><?php echo $v->module; ?></td>
+                                            <td><?php echo $v->msg; ?></td>
+                                            <td><?php echo $v->operator; ?></td>
+                                            <td><?php echo date("Y-m-d H:i:s", $v->create_time); ?></td>
+                                            <td>
+                                               <?php
+                                                    echo Html5::link('查看', array('/log/default/look', 'id' => $v['id']), array('class' => 'js-dialog-link'));
+                                                ?>
+                                            </td>  
+                                        </tr>
+                                <?php 
+                                    } 
+                                ?>
+                                    <tr>
+                                        <td colspan="6"> <div class="pager"><?php $this->widget('CLinkPager', array('pages'=>$pages));?> </div></td>
+                                    </tr>
+                            <?php 
+                                } else { 
+                            ?>
+                                    <tr>
+                                        <td colspan="10">暂无数据!</td>
+                                    </tr>
+                            <?php 
+                                } 
+                            ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

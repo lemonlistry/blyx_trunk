@@ -49,8 +49,8 @@ class Controller extends CController
     protected function getMenu(){
         return array(
                         '/passport/role/rolelist' => '系统管理',
-                        '/log/default' => '日志管理',
-                        '/interact/default/forbidlogin' => 'GM管理',
+                        '/log/default/loglist' => '日志管理',
+                        '/service/default/forbidlogin' => '客服管理',
                         '/realtime/default' => '实时数据',
                     );
     }
@@ -64,7 +64,7 @@ class Controller extends CController
      * @return ActiveModel
      */
     protected function loadModel($id, $model_name, $scenario=null) {
-        $model = $model_name::model()->findByAttributes(array('id' => floatval($id)));
+        $model = $model_name::model()->findByAttributes(array('id' => intval($id)));
         if($scenario) {
             $model->scenario = $scenario;
         }
@@ -77,22 +77,24 @@ class Controller extends CController
     
     /**
      * 验证参数
-     * @param array $param $k 为INDEX $v 0允许为空  1不允许为空
      */
     protected function getParam($param){
-        $res = array();
-        foreach ($param as $k => $v) {
-            $res[$k] = Yii::app()->request->getParam($k, '');
-            if(!is_array($res[$k])){
-                $res[$k] = trim($res[$k]);
-            }
-            if('' === $res[$k] && $v){
-                if(Yii::app()->request->isAjaxRequest){
-                    echo json_encode(array('flag' => 0, 'msg' => '请输入参数'));
-                    Yii::app()->end();
-                }else{
-                    throw new CException('请输入参数');
+        if(is_array($param)){
+            $res = array();
+            foreach ($param as $v) {
+                $res[$v] = Yii::app()->request->getParam($v);
+                if(strpos($v, 'time') !== false || strpos($v, 'id') !== false){
+                    $res[$v] = intval($res[$v]);
                 }
+            }
+        }else{
+            $res = Yii::app()->request->getParam($param);
+            if(is_array($res) && count($res)){
+                foreach ($res as $k => $v) {
+                    $res[$k] =  (strpos($k, 'time') !== false || strpos($k, 'id') !== false) ? intval($res[$k]) : $res[$k];
+                }
+            }else{
+                $res = (strpos($res, 'time') !== false || strpos($res, 'id') !== false) ? intval($res) : $res;
             }
         }
         return $res;
