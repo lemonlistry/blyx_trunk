@@ -7,13 +7,25 @@
 
 <div class="clearfix">
     <div class="cell">
-		<?php echo $form->labelEx($model, 'name'); ?>
+        <?php echo $form->labelEx($model, 'name'); ?>
         <div class="item">
             <div class="main">
                 <?php echo $form->textField($model, 'name'); ?>
             </div>
         </div>
         <?php echo $form->error($model, 'name'); ?>
+    </div>
+</div>
+
+<div class="clearfix">
+    <div class="cell">
+        <?php echo $form->labelEx($model, 'tag'); ?>
+        <div class="item">
+            <div class="main">
+                <?php echo $form->textField($model, 'tag'); ?>
+            </div>
+        </div>
+        <?php echo $form->error($model, 'tag'); ?>
     </div>
 </div>
 

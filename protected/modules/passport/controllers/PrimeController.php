@@ -54,10 +54,8 @@ class PrimeController extends Controller
                         $prime->save();
                     }
                 }
-                echo json_encode(array('status' => 1));
-            }else{
-                echo json_encode(array('status' => 0, 'msg' => '请选择资源'));
             }
+            echo json_encode(array('status' => 1));
             Yii::app()->end();
         }else{
             throw new CHttpException('无效的请求...');

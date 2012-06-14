@@ -1,7 +1,7 @@
 <?php
 return array (
   'template' => 'default',
-  'tablePrefix' => 'bl_',
+  'tablePrefix' => '',
   'modelPath' => 'application.modules.passport.models',
-  'baseClass' => 'EMongoDocument',
+  'baseClass' => 'MongoDocument',
 );

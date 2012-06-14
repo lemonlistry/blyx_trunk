@@ -24,6 +24,8 @@ class UserRoleAR extends ActiveRecord
     public $role_name;
     public $user_account;
     public $role_id;
+    public $attributes;
+    public $scene_info;
     /**
      * Returns the static model of the specified AR class.
      * @param string $className active record class name.

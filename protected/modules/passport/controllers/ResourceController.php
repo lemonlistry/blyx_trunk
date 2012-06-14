@@ -70,5 +70,78 @@ class ResourceController extends Controller
         }
     }
 
+    /**
+     * 资源绑定列表
+     */
+    public function actionResourceBindList(){
+        $title = '资源绑定';
+        $list = ResourceRelate::model()->findAll();
+        $result = Pages::initArray($list);
+        $this->render('resource_bind', array('title' => $title, 'list' => $result['list'], 'pages' => $result['pages']));
+    }
+    
+    /**
+     * 添加资源绑定
+     */
+    public function actionAddResourceBind(){
+        $model = new ResourceRelate();
+        $resource_list = array();
+        $res = Resource::model()->findAll();
+        if (count($res)){
+            foreach ($res as $v) {
+                $resource_list[$v['id']] = $v['name'];
+            }
+        }
+        if(Yii::app()->request->isPostRequest){
+            $param = $this->getParam('ResourceRelate');
+            $param['id'] = $this->getAutoIncrementKey('bl_resource_relate');
+            $model->attributes = $param;
+            if($model->validate()){
+                $model->save();
+                Util::log('资源绑定添加成功', 'passport', __FILE__, __LINE__);
+                Util::header($this->createUrl('/passport/resource/resourcebindlist'));
+            }
+        }
+        $this->renderPartial('_add_resource_bind', array('model' => $model, 'resource_list' => $resource_list), false, true);
+    }
 
+    /**
+     * 修改资源绑定
+     */
+    public function actionUpdateResourceBind(){
+        if(Yii::app()->request->isPostRequest){
+            $param = $this->getParam('ResourceRelate');
+            $model = $this->loadModel($param['id'], 'ResourceRelate');
+            $model->attributes = $param;
+            if($model->validate()){
+                $model->save();
+                Util::log('资源绑定更新成功', 'passport', __FILE__, __LINE__);
+                Util::header($this->createUrl('/passport/resource/resourcebindlist'));
+            }
+        }else{
+            $resource_list = array();
+            $res = Resource::model()->findAll();
+            if (count($res)){
+                foreach ($res as $v) {
+                    $resource_list[$v['id']] = $v['name'];
+                }
+            }
+            $id = $this->getParam('id');
+            $model = $this->loadModel($id , 'ResourceRelate');
+        }
+        $this->renderPartial('_add_resource_bind', array('model' => $model, 'resource_list' => $resource_list), false, true);
+    }
+    
+    public function actionDeleteResourceBind(){
+        if(Yii::app()->request->isAjaxRequest){
+            $id = $this->getParam('id');
+            $role = $this->loadModel($id, 'ResourceRelate');
+            $role->delete();
+            Util::log('资源绑定删除成功', 'passport', __FILE__, __LINE__);
+            echo json_encode(array('status' => 1, 'location' => $this->createUrl('/passport/resource/resourcebindlist')));
+            Yii::app()->end();
+        }else{
+            throw new CHttpException('无效的请求...');
+        }
+    }
 }

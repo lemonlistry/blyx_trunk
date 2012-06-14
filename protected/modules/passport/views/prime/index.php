@@ -30,15 +30,16 @@
                         <div>
                             <?php 
                                 if(count($resource_list)){
-                                    foreach ($resource_list as $v) {
+                                    foreach ($resource_list as $k => $v) {
                             ?>
                                         <label title="<?php echo $v->desc; ?>">
                             <?php 
-                                            echo Html5::checkbox("Resource[{$v->id}]", in_array($v->id, $prime));
+                                            echo Html5::checkbox("Resource[{$v->id}]", in_array($v->id, $prime) || $current_role['id'] == 1);
                                             echo $v->name;
                             ?>
                                         </label>
                             <?php 
+                                        echo ++$k % 8 == 0 ? '<br/>' : '';
                                     }
                                 }
                             ?>
@@ -64,7 +65,7 @@
                     </div>
                     <input type="hidden" value="<?php echo $current_role['id']; ?>" id="role_id" name="role_id" />
                     <div class="actions">
-                        <button type="submit" class="hightlight ajax-submit">保存授权</button> <button type="reset">重置</button>
+                        <button type="submit" class="hightlight ajax-submit" <?php echo $current_role['id'] == 1 ? 'disabled' : ''; ?> >保存授权</button> <button type="reset">重置</button>
                     </div>
                 </form>
             </div>

@@ -47,16 +47,82 @@ class Util {
     
     /**
      * 提示信息 并跳转父页面
-     * @param boolean 
+     * @param $url 
      */
-    public static function header($url){
+    public static function header($url, $msg = ''){
+        if(!empty($msg)){
+            $msg = "alert('{$msg}');";
+        }
         $str = <<<EOF
 <script language="javascript" charset="utf-8">
+{$msg}
 parent.location.href = '{$url}';
-</script>;
+</script>
+EOF;
+        echo $str;
+        Yii::app()->end();
+    }
+    
+     /**
+     * 切割字符串
+     * @param array $array
+     */
+    public static function getSplit($array){
+        $str = str_replace(' ', '', $array);
+        $str = str_replace('{{', '{', $str);
+        preg_match_all('/\{(.*?)\}/',$str,$arr);
+        foreach ($arr[1] as $k => $v){
+            $arr = explode(',',$v);
+            $list[$arr[0]] = $arr[1];
+        }
+        return $list;
+    }
+    
+    /**
+     * 切割字符串
+     * @param array $array
+     */
+    public static function getOneSplit($array){
+        $str = str_replace(' ', '', $array);
+        $str = str_replace('{{', '{', $str);
+        preg_match_all('/\{(.*?)\}/',$str,$arr);
+        return $arr[1];
+    }
+    
+    /**
+     * 跳转到上一页面
+     * @param string $msg
+     */
+    public static function history($msg = ''){
+        if(!empty($msg)){
+            $msg = "alert('{$msg}');";
+        }
+        $str = <<<EOF
+<script language="javascript" charset="utf-8">
+{$msg}
+history.go(-1);
+</script>
 EOF;
         echo $str;
         Yii::app()->end();
     }
 
+    /**
+     * 重新加载页面
+     * @param string $msg
+     */
+    public static function reload($msg = ''){
+        if(!empty($msg)){
+            $msg = "alert('{$msg}');";
+        }
+        $str = <<<EOF
+<script language="javascript" charset="utf-8">
+{$msg}
+location.href = location.href;
+</script>
+EOF;
+        echo $str;
+        Yii::app()->end();
+    }
+    
 }

@@ -55,7 +55,7 @@ class Server extends MongoDocument
         // will receive user inputs.
         return array(
             array('id, gname, sname, create_time, status, recommend, type, db_ip, db_port, db_name, db_user, db_passwd, script, web_ip, web_socket_port', 'required'),
-            array('id, create_time, status, recommend, type, db_port, web_socket_port', 'numerical', 'integerOnly'=>true),
+            array('id, status, recommend, type, db_port, web_socket_port', 'numerical', 'integerOnly'=>true),
             array('gname, db_name, db_user, db_passwd', 'length', 'max'=>19),
             array('sname', 'length', 'max'=>33),
             array('web_ip, db_ip, script', 'length', 'max'=>100),
@@ -117,7 +117,7 @@ class Server extends MongoDocument
                 $content .= <<<EOF
 'db{$v->id}' => array(
     'class' => 'CDbConnection',
-    'connectionString' => 'mysql:host={$v->db_ip};dbname={$v->db_name};dbport={$v->db_port}',
+    'connectionString' => 'mysql:host={$v->db_ip};dbname={$v->db_name};port={$v->db_port}',
     'emulatePrepare' => true,
     'username' => '{$v->db_user}',
     'password' => '{$v->db_passwd}',

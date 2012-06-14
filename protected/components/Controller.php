@@ -24,12 +24,13 @@ class Controller extends CController
     public $navMenu = array();
     
     /**
-     * 用户登录验证
+     * 用户登录以及权限验证
      * @return boolean
      */
-    protected function beforeAction($action) {
+    protected function beforeAction($action) 
+    {
         if (Yii::app()->user->isGuest) {
-            if (isset($this->module->id) && $this->module->id == 'passport' && $this->id == 'default' && $action->id == 'login') {
+            if($this->module->id == 'install' || ($this->module->id == 'passport' && $this->id == 'default' && $action->id == 'login')){
                 return true;
             } else {
                 if (YII_DEBUG) {
@@ -38,15 +39,32 @@ class Controller extends CController
                     throw new CHttpException(403);
                 }
             }
+        }else{
+            $this->menu = $this->getMenu();
+            if($this->module->id == 'install' || ($this->module->id == 'passport' && $this->id == 'default' && in_array($action->id, array('nopermission', 'logout')))){
+                return true;
+            }else{
+                if(!Account::isAdmin(Yii::app()->user->getUid())){
+                    $resource_id = AuthManager::getResourceId($this->module->id, $this->id, $action->id);
+                    if(empty($resource_id)){
+                        return true;
+                    }else{
+                        $auth = AuthManager::checkAuth(Yii::app()->user->getUid(), $resource_id);
+                        if(!$auth){
+                            $this->redirect($this->createUrl('/passport/default/nopermission'));
+                        }
+                    }
+                }
+            }
         }
-        $this->menu = $this->getMenu();
         return true;
     }
     
     /**
      * 菜单处理
      */
-    protected function getMenu(){
+    protected function getMenu()
+    {
         return array(
                         '/passport/role/rolelist' => '系统管理',
                         '/log/default/loglist' => '日志管理',
@@ -63,7 +81,8 @@ class Controller extends CController
      * @param stirng $scenario 应用场景
      * @return ActiveModel
      */
-    protected function loadModel($id, $model_name, $scenario=null) {
+    protected function loadModel($id, $model_name, $scenario=null)
+     {
         $model = $model_name::model()->findByAttributes(array('id' => intval($id)));
         if($scenario) {
             $model->scenario = $scenario;
@@ -78,7 +97,8 @@ class Controller extends CController
     /**
      * 验证参数
      */
-    protected function getParam($param){
+    protected function getParam($param)
+    {
         if(is_array($param)){
             $res = array();
             foreach ($param as $v) {
@@ -102,7 +122,8 @@ class Controller extends CController
      * 更改字段类型
      * @param string $field
      */
-    protected function changeFieldType($key, $field){
+    protected function changeFieldType($key, $field)
+    {
         //浮点数验证
         $arr = explode('.', $field);
         if(strpos($field, '.') > 0 && count($arr) == 2){
@@ -118,7 +139,8 @@ class Controller extends CController
     /**
      * 获取自增Key
      */
-    public function getAutoIncrementKey($table){
+    public function getAutoIncrementKey($table)
+    {
         $model = AutoIncrement::model()->findByAttributes(array('table' => $table));
         return empty($model) ? 1 : ++$model->index;
     }

@@ -39,4 +39,10 @@ class DefaultController extends Controller
         $this->redirect(Yii::app()->homeUrl);
     }
 
+    /**
+     * 没有权限页面渲染
+     */
+    public function actionNopermission(){
+        $this->render('nopermission');
+    }
 }

@@ -16,7 +16,7 @@
         <div class="main-container prepend5">
             <header>
                 <div class="right">
-                    <?php echo Html5::link('添加资源', array('/passport/resource/addresource'), array('class' => 'js-dialog-link')); ?>
+                    <?php echo Html5::link('添加资源绑定', array('/passport/resource/addresourcebind'), array('class' => 'js-dialog-link')); ?>
                 </div>
             </header>
             <div class="main-content">
@@ -26,28 +26,25 @@
                             <tr>
                                 <th class="span4">编号</th>
                                 <th class="span6">资源名称</th>
-                                <th class="span4">标签</th>
-                                <th class="span8">资源描述</th>
-                                <th class="span4">创建时间</th>
-                                <th class="span4">操作</th>
+                                <th class="span16">绑定路径</th>
+                                <th class="span5">操作</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php 
                                 if (count($list)) {
                                     foreach ($list as $k => $v) {
+                                        $resource = Resource::model()->findByAttributes(array('id' => $v->resource_id));
                                        
                             ?>
                                         <tr> 
                                             <td><?php echo $v->id; ?></td>
-                                            <td><?php echo $v->name; ?></td>
-                                            <td><?php echo $v->tag; ?></td>
-                                            <td><?php echo $v->desc; ?></td>
-                                            <td><?php echo date("Y-m-d H:i:s",$v->create_time); ?></td>
+                                            <td><?php echo $resource->name; ?></td>
+                                            <td><?php echo $v->path; ?></td>
                                             <td>
                                                 <?php
-                                                    echo Html5::link('编辑', array('/passport/resource/updateresource', 'id' => $v->id), array('class' => 'js-dialog-link')) . ' ' .
-                                                    Html5::link('删除', array('/passport/resource/deleteresource', 'id' => $v->id), array('class' => 'js-confirm-link', 'data-title' => "您确定要删除当前资源吗？"));
+                                                    echo Html5::link('编辑', array('/passport/resource/updateresourcebind', 'id' => $v->id), array('class' => 'js-dialog-link')) . ' ' .
+                                                    Html5::link('删除', array('/passport/resource/deleteresourcebind', 'id' => $v->id), array('class' => 'js-confirm-link', 'data-title' => "您确定要删除当前资源绑定吗？"));
                                                 ?>
                                             </td>
                                         </tr>

@@ -20,6 +20,7 @@ return array(
         'application.models.*',
         'application.components.*',
         'ext.YiiMongoDbSuite.*',
+        'ext.YiiMongoDbSuite.extra.*',
         'ext.MongoDocument',
         'ext.ActiveForm',
         'ext.ActiveRecord',
@@ -132,7 +133,7 @@ return array(
         
         'db'=>array(
             'class' => 'CDbConnection',
-            'connectionString' => 'mysql:host=172.16.0.238;dbname=ljh',
+            'connectionString' => 'mysql:host=172.16.2.56;dbname=ljh',
             'emulatePrepare' => true,
             'username' => 'root',
             'password' => '111111',

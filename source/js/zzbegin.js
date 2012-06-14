@@ -61,7 +61,7 @@ $(document).ready(function(){
     
     //初始化时间插件
     $("input[type='time']").datepicker({
-        dateFormat: 'yy-mm-dd',
+        dateFormat: 'yy-mm-dd'
     });
 });
 

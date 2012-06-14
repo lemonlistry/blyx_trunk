@@ -33,7 +33,7 @@
         <?php echo $form->labelEx($model, 'create_time'); ?>
         <div class="item">
             <div class="main">
-                <?php echo $form->textField($model, 'create_time'); ?>
+                <?php echo Html5::timeField('Server[create_time]',$model->create_time, array('id' => 'Server_create_time')); ?>
             </div>
         </div>
         <?php echo $form->error($model, 'create_time'); ?>

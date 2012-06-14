@@ -4,18 +4,22 @@ class WebUser extends CWebUser {
 
     private $_user;
 
+    /**
+     * 获取当前用户UID
+     */
     public function getUid() {
         $user = $this->loadUser();
         return $user->id;
     }
 
-    protected function loadUser() {
+    /**
+     * 获取当前用户信息
+     */
+    public function loadUser() {
         if ($this->_user === null) {
-            $this->_user = Account::user($this->id);
+            $this->_user = Account::user('username', $this->id);
         }
         return $this->_user;
     }
-
-    
 
 }

@@ -1,19 +1,17 @@
 <?php
 
 /**
- * This is the MongoDB Document model class based on table "{{resource}}".
+ * This is the MongoDB Document model class based on table "bl_resource_relate".
  */
-class Resource extends MongoDocument
+class ResourceRelate extends MongoDocument
 {
     public $id;
-    public $name;
-    public $tag;
-    public $desc;
-    public $create_time;
+    public $resource_id;
+    public $path;
 
     /**
      * Returns the static model of the specified AR class.
-     * @return Resource the static model class
+     * @return ResourceRelate the static model class
      */
     public static function model($className=__CLASS__)
     {
@@ -33,7 +31,7 @@ class Resource extends MongoDocument
      */
     public function getCollectionName()
     {
-        return 'bl_resource';
+        return 'bl_resource_relate';
     }
 
     /**
@@ -44,12 +42,12 @@ class Resource extends MongoDocument
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('id, name, tag, desc, create_time', 'required'),
-            array('name, tag', 'EMongoUniqueValidator'),
-            array('tag, name, desc', 'length', 'max'=>20),
+            array('id', 'required'),
+            array('id, resource_id', 'numerical', 'integerOnly'=>true),
+            array('path', 'length', 'max'=>100),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, tag, name, desc, create_time', 'safe', 'on'=>'search'),
+            array('id, resource_id, path', 'safe', 'on'=>'search'),
         );
     }
 
@@ -60,10 +58,8 @@ class Resource extends MongoDocument
     {
         return array(
             'id' => 'ID',
-            'tag' => '标签',
-            'name' => '资源名称',
-            'desc' => '资源描述',
-        	'create_time' => 'Create Time',
+            'resource_id' => '资源类型',
+            'path' => '资源路径',
         );
     }
 }

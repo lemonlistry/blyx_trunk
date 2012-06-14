@@ -29,11 +29,11 @@ class UserController extends Controller
         }
         if(Yii::app()->request->isPostRequest){
             $param = $this->getParam('User');
-            $param['id'] = $this->getAutoIncrementKey('bl_user');
-            $param['password'] = md5($param['password']);
-            $param['create_time'] = time();
             $model->attributes = $param;
+            $model->id = $this->getAutoIncrementKey('bl_user');
+            $model->create_time = time();
             if ($model->validate()) {
+                $model->password = md5($param['password']);
                 $model->save();
                 Util::log('用户添加成功', 'passport', __FILE__, __LINE__);
                 Util::header($this->createUrl('/passport/user/userlist'));

@@ -45,7 +45,8 @@ class User extends MongoDocument
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('id, username, password, role_id, create_time', 'required', 'on' => 'insert'),
+            array('id, username, password, role_id, create_time', 'required', 'on' => 'insert, update'),
+            array('username', 'EMongoUniqueValidator', 'on' => 'insert, update'),
             array('username, password', 'required', 'on' => 'search'),
             array('username', 'length', 'max'=>20),
             array('password', 'length', 'max'=>32),

@@ -45,13 +45,6 @@ class RoleController extends Controller
      * @param int $role_id
      */
     public function actionUpdateRole(){
-        $group_list = array();
-        $res = RoleGroup::model()->findAll();
-        if (count($res)){
-            foreach ($res as $v) {
-                $group_list[$v['id']] = $v['name'];
-            }
-        }
         if(Yii::app()->request->isPostRequest){
             $param = $this->getParam('Role');
             $model = $this->loadModel($param['id'], 'Role');
@@ -62,6 +55,13 @@ class RoleController extends Controller
                 Util::header($this->createUrl('/passport/role/rolelist'));
             }
         }else{
+            $group_list = array();
+            $res = RoleGroup::model()->findAll();
+            if (count($res)){
+                foreach ($res as $v) {
+                    $group_list[$v['id']] = $v['name'];
+                }
+            }
             $id = $this->getParam('id');
             $model = $this->loadModel($id , 'Role');
         }
