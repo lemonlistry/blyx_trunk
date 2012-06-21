@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--2012-6-11 -5-22增加了刷新随从 -->
+<prices>
+	<price type="vitality" amount="15"/>
+	<price type="bagSlot" amount="3"/>
+	<price type="storeSlot" amount="3"/>
+	<price type="bookSlot" amount="3"/>
+	<price type="equipmentStrengthen" amount="1.5"/>
+	<price type="removeStrengthenCD" amount="1.5"/>
+	<price type="accelerateSweep" amount="1.5"/>
+	<price type="refreshKillEliteBoss" amount="75"/>
+	<price type="exchangeSilver" amount="3"/>
+	<price type="addChallengeTimes" amount="8"/>
+	<price type="removeChallengeCD" amount="1.5"/>
+	<price type="remoteOpenStore" amount="3"/>
+	<price type="remoteOpenShop" amount="3"/>
+	<price type="reviveInWorldBoss" amount="3"/>
+	<price type="level1Encourage" amount="8"/>
+	<price type="level2Encourage" amount="15"/>
+	<price type="level3Encourage" amount="30"/>
+	<price type="level4Encourage" amount="75"/>
+	<price type="level5Encourage" amount="150"/>
+	<price type="enrollFactionMember" amount="3"/>
+	<price type="removeRefreshDailyTaskTypeCD" amount="1.5"/>
+	<price type="refreshStarLevelInDailyTask" amount="8"/>
+	<price type="removeFationBattleCD" amount="1.5"/>
+	<price type="visit4thMaster" amount="300"/>
+	<price type="refreshPartnerGold" amount="15"/>
+	<price type="finishDailyTask" amount="75"/>
+	<price type="exchangeSilver2" amount="30"/>
+	<price type="exchangeSilver3" amount="60"/>
+	<price type="exchangeSilver4" amount="90"/>
+	<price type="exchangeSilver5" amount="150"/>
+	<price type="exchangeSilver6" amount="300"/>
+	<price type="refreshToClassFourPartnerCost" amount="8888"/>
+	<!---------------------------------------------------------->
+	<price type="refreshPartnerSilver" amount="50000"/>
+</prices>

@@ -199,8 +199,8 @@ $.extend({
      */
     urlDialog:function(url, title, width, height){
         var diag = new Dialog();
-        diag.Width = width;
-        diag.Height = height;
+        diag.Width = parseInt(width);
+        diag.Height = parseInt(height);
         diag.Title = title;
         diag.URL = url;
         diag.show();

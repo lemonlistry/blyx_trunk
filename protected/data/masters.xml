@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<masters>
+    <master visitNpcId="472021" visitNpcName="1级NPC" visitNpcLevel="1" visitNpcSilver="8000" visitNpcSucceedOdds="50" iconId="253311"/>
+    <master visitNpcId="472022" visitNpcName="2级NPC" visitNpcLevel="2" visitNpcSilver="10000" visitNpcSucceedOdds="40" iconId="253312"/>
+    <master visitNpcId="472023" visitNpcName="3级NPC" visitNpcLevel="3" visitNpcSilver="20000" visitNpcSucceedOdds="30" iconId="253313"/>
+    <master visitNpcId="472024" visitNpcName="4级NPC" visitNpcLevel="4" visitNpcSilver="30000" visitNpcSucceedOdds="30" iconId="253314"/>
+    <master visitNpcId="472025" visitNpcName="5级NPC" visitNpcLevel="5" visitNpcSilver="50000" visitNpcSucceedOdds="0" iconId="253315"/>
+</masters>
+

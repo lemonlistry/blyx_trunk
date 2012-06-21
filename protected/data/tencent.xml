@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tencent>
+	<discount>
+		8
+	</discount>
+	<silverAwardForNewbie>
+		10000
+	</silverAwardForNewbie>
+	<reputationForAnnualDiamond>
+		20
+	</reputationForAnnualDiamond>
+	<RMBPerMouth>
+		188
+	</RMBPerMouth>
+	<silver>
+		{300, 400, 500, 600, 700, 800, 900, 1000}
+	</silver>
+	<reputation>
+		{5, 10, 15, 20, 25, 30, 35, 40}
+	</reputation>
+	<upgradeToSilverAward>
+		{20000, 50000, 100000, 150000, 200000, 250000, 500000, 1000000, 2000000, 5000000}
+	</upgradeToSilverAward>
+</tencent>

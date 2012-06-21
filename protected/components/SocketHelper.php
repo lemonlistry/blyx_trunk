@@ -196,7 +196,12 @@ class SocketHelper{
             break;
         }
         Util::log($msg, 'service', __FILE__, __LINE__);
-        echo json_encode(array('flag' => $flag, 'msg' => $msg));
+        $res = array('flag' => $flag, 'msg' => $msg);
+        if(Yii::app()->request->isAjaxRequest){
+            echo json_encode($res);
+        }else{
+            return $res;
+        }
     }
     
 }

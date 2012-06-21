@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<roleAttributes>
+	<careerType>
+		<Item careerTypeId="431201" careerTypeName="豪杰" moraleEffectResourceId="731020"/>
+		<Item careerTypeId="431202" careerTypeName="侠客" moraleEffectResourceId="731020"/>
+		<Item careerTypeId="431203" careerTypeName="女侠" moraleEffectResourceId="731020"/>
+		<Item careerTypeId="431204" careerTypeName="宗师" moraleEffectResourceId="731040"/>
+		<Item careerTypeId="431205" careerTypeName="乐师" moraleEffectResourceId="731040"/>
+	</careerType>
+	<clanType>
+		<Item clanId="431301" clanName="少林寺" attackNatureId="431311"/>
+		<Item clanId="431302" clanName="武当派" attackNatureId="431312"/>
+		<Item clanId="431303" clanName="五毒教" attackNatureId="431313"/>
+		<Item clanId="431304" clanName="明教" attackNatureId="431314"/>
+	</clanType>
+	<role>
+		<Item roleId="0" roleName="0" defaultSceneId="441101" moveSpeed="288" reputation="0" titleId="0" factionId="0" currentVitality="200" maxVitality="200" items="{}" gold="0" silver="0" cultivation="0" knowledge="0" contribution="0" attackNatureId="0" roleDirection="2"/>
+	</role>
+	<roleType maxLevel="60">
+		<Item roleTypeId="431601" roleTypeName="0" careerTypeId="431201" clanId="0" gender="1" resourceId="311108" roleTypeDescription="龙牙在手，肝胆满身。刀落石走惊天地，一腔豪情薄云天" isMainRole="1" experience="0" normalSkillId="421100" aptitudeSkillId="0" wears="0" muscle="105" spirit="90" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="253191" roleIconId="253101" bustResourceId="311101" taskId="0"/>
+		<Item roleTypeId="431602" roleTypeName="0" careerTypeId="431202" clanId="0" gender="1" resourceId="312108" roleTypeDescription="狭义不悔，巨阙无锋。世浪翻覆何足虑，仗剑乘风踏不平" isMainRole="1" experience="0" normalSkillId="421100" aptitudeSkillId="0" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="253192" roleIconId="253102" bustResourceId="312101" taskId="0"/>
+		<Item roleTypeId="431603" roleTypeName="0" careerTypeId="431203" clanId="0" gender="0" resourceId="314108" roleTypeDescription="宛转蛾眉，三尺青锋。剑盈皓月花间影，风尘江湖女儿香" isMainRole="1" experience="0" normalSkillId="421100" aptitudeSkillId="0" wears="0" muscle="115" spirit="90" aptitude="95" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="253193" roleIconId="253103" bustResourceId="314101" taskId="0"/>
+		<Item roleTypeId="431604" roleTypeName="0" careerTypeId="431204" clanId="0" gender="1" resourceId="313108" roleTypeDescription="一袭青衣、满腹经纶。拥有较高的爆发力，不动则已，一动惊人" isMainRole="1" experience="0" normalSkillId="421100" aptitudeSkillId="0" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="253194" roleIconId="253104" bustResourceId="313101" taskId="0"/>
+		<Item roleTypeId="431605" roleTypeName="0" careerTypeId="431205" clanId="0" gender="0" resourceId="315108" roleTypeDescription="红袖盈香，弦歌三弄。娉婷花月谁解语，死生阴阳一梦中" isMainRole="1" experience="0" normalSkillId="421100" aptitudeSkillId="0" wears="0" muscle="90" spirit="110" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="253195" roleIconId="253105" bustResourceId="315101" taskId="0"/>
+		<Item roleTypeId="431606" roleTypeName="黄蓉" careerTypeId="431203" clanId="0" gender="0" resourceId="330028" roleTypeDescription="黄药师爱女，冰雪聪明，武功轻灵飘逸" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421601" wears="0" muscle="115" spirit="90" aptitude="95" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253202" bustResourceId="330021" taskId="451012"/>
+		<Item roleTypeId="431607" roleTypeName="虚竹" careerTypeId="431204" clanId="431301" gender="1" resourceId="330088" roleTypeDescription="少林弟子，性格善良敦厚，极具武学天份" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421615" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="0" roleIconId="253204" bustResourceId="330081" taskId="451054"/>
+		<Item roleTypeId="431631" roleTypeName="玄难大师" careerTypeId="431204" clanId="431301" gender="1" resourceId="330998" roleTypeDescription="达摩远掌座，数十年精研武艺，修为深不可测" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421256" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="0" roleIconId="253205" bustResourceId="330991" taskId="451059"/>
+		<Item roleTypeId="431632" roleTypeName="慕容博" careerTypeId="431201" clanId="431301" gender="1" resourceId="330138" roleTypeDescription="燕国皇室后裔，武艺高强，为达目的不择手段" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421257" wears="0" muscle="105" spirit="90" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="0" roleIconId="253206" bustResourceId="330131" taskId="451064"/>
+		<Item roleTypeId="431608" roleTypeName="萧远山" careerTypeId="431201" clanId="431301" gender="1" resourceId="331008" roleTypeDescription="辽国高手，武艺高强，身负血海深仇" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421608" wears="0" muscle="105" spirit="90" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="0" roleIconId="253207" bustResourceId="331001" taskId="451067"/>
+		<Item roleTypeId="431633" roleTypeName="玄寂大师" careerTypeId="431204" clanId="431301" gender="1" resourceId="331018" roleTypeDescription="少林高僧，为人谦和冲淡，武艺高强" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421258" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="0" roleIconId="253208" bustResourceId="331011" taskId="451072"/>
+		<Item roleTypeId="431634" roleTypeName="玄慈方丈" careerTypeId="431204" clanId="431301" gender="1" resourceId="331028" roleTypeDescription="少林方丈，谦和仁慈，武功亦深不可测" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421259" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="0" roleIconId="253209" bustResourceId="331021" taskId="451077"/>
+		<Item roleTypeId="431609" roleTypeName="张翠山" careerTypeId="431202" clanId="431302" gender="1" resourceId="330148" roleTypeDescription="武当七侠之一，为人洒脱不羁，武学造诣出众" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421622" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253210" bustResourceId="330141" taskId="451104"/>
+		<Item roleTypeId="431635" roleTypeName="张松溪" careerTypeId="431202" clanId="431302" gender="1" resourceId="331038" roleTypeDescription="武当七侠之一，为人冷静沉稳，武学造诣出众" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421260" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253211" bustResourceId="331031" taskId="451109"/>
+		<Item roleTypeId="431636" roleTypeName="殷素素" careerTypeId="431203" clanId="431302" gender="0" resourceId="330128" roleTypeDescription="殷天正之女，武艺高强，行事泼辣狠厉" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421261" wears="0" muscle="115" spirit="90" aptitude="95" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253212" bustResourceId="330121" taskId="451114"/>
+		<Item roleTypeId="431610" roleTypeName="火工头陀" careerTypeId="431204" clanId="431302" gender="1" resourceId="330058" roleTypeDescription="来自西域的神秘高手，武功古怪，但威力惊人" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421603" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253213" bustResourceId="330051" taskId="451117"/>
+		<Item roleTypeId="431637" roleTypeName="宋远桥" careerTypeId="431202" clanId="431302" gender="1" resourceId="330118" roleTypeDescription="武当七侠之首，武艺高强，谦和儒雅" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421262" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253214" bustResourceId="330111" taskId="451122"/>
+		<Item roleTypeId="431638" roleTypeName="张三丰" careerTypeId="431204" clanId="431302" gender="1" resourceId="330158" roleTypeDescription="武当掌门，德高望重，武功亦深不可测" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421263" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253215" bustResourceId="330151" taskId="451127"/>
+		<Item roleTypeId="431611" roleTypeName="金蛇郎君" careerTypeId="431202" clanId="431303" gender="1" resourceId="330218" roleTypeDescription="神秘的少年剑客，性格孤傲，资质出众" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421625" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431313" roleUIIconId="0" roleIconId="253216" bustResourceId="330211" taskId="451154"/>
+		<Item roleTypeId="431639" roleTypeName="齐云傲" careerTypeId="431202" clanId="431303" gender="1" resourceId="331048" roleTypeDescription="五毒教大师兄，狂妄自大，一身毒术出神入化" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421264" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431313" roleUIIconId="0" roleIconId="253217" bustResourceId="331041" taskId="451159"/>
+		<Item roleTypeId="431640" roleTypeName="胡青牛" careerTypeId="431204" clanId="431303" gender="1" resourceId="331058" roleTypeDescription="江湖人称“蝶谷医仙”的世外奇人，医术精妙" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421265" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431313" roleUIIconId="0" roleIconId="253218" bustResourceId="331051" taskId="451164"/>
+		<Item roleTypeId="431612" roleTypeName="王难姑" careerTypeId="431204" clanId="431303" gender="0" resourceId="331068" roleTypeDescription="医仙胡青牛之妻，一手毒术出神入化" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421611" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431313" roleUIIconId="0" roleIconId="253219" bustResourceId="331061" taskId="451167"/>
+		<Item roleTypeId="431641" roleTypeName="何红药" careerTypeId="431204" clanId="431303" gender="0" resourceId="331078" roleTypeDescription="五毒教弟子，刻薄少言，武艺高强" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421266" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431313" roleUIIconId="0" roleIconId="253220" bustResourceId="331071" taskId="451172"/>
+		<Item roleTypeId="431642" roleTypeName="蓝凤凰" careerTypeId="431204" clanId="431303" gender="0" resourceId="330188" roleTypeDescription="五毒教教主，处事果决，武艺高强" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421267" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431313" roleUIIconId="0" roleIconId="253221" bustResourceId="330181" taskId="451177"/>
+		<Item roleTypeId="431613" roleTypeName="韦一笑" careerTypeId="431204" clanId="431304" gender="1" resourceId="331088" roleTypeDescription="四大法王之一，修为精湛，轻功身法奇妙诡异" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421619" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253222" bustResourceId="331081" taskId="451204"/>
+		<Item roleTypeId="431643" roleTypeName="杨逍" careerTypeId="431202" clanId="431304" gender="1" resourceId="330558" roleTypeDescription="明教光明左使，为人洒脱不羁，武艺过人" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421268" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253223" bustResourceId="330551" taskId="451209"/>
+		<Item roleTypeId="431644" roleTypeName="谢逊" careerTypeId="431201" clanId="431304" gender="1" resourceId="330048" roleTypeDescription="明教四大法王之一，武艺高强，为人最讲义气" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421269" wears="0" muscle="105" spirit="90" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253224" bustResourceId="330041" taskId="451214"/>
+		<Item roleTypeId="431614" roleTypeName="成昆" careerTypeId="431204" clanId="431304" gender="1" resourceId="331098" roleTypeDescription="神秘僧人，心思诡谲，出手狠辣无情" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421605" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253225" bustResourceId="331091" taskId="451217"/>
+		<Item roleTypeId="431645" roleTypeName="范遥" careerTypeId="431204" clanId="431304" gender="1" resourceId="331108" roleTypeDescription="明教光明右使，为人亦正亦邪，武艺过人" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421270" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253226" bustResourceId="331101" taskId="451222"/>
+		<Item roleTypeId="431646" roleTypeName="阳顶天" careerTypeId="431204" clanId="431304" gender="1" resourceId="330278" roleTypeDescription="明教教主，为人豪爽狂妄，武艺高强" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421272" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253227" bustResourceId="330271" taskId="451227"/>
+		<Item roleTypeId="431615" roleTypeName="茅十八" careerTypeId="431201" clanId="0" gender="1" resourceId="330288" roleTypeDescription="江洋大盗，武艺高强，耿直重义，嫉恶如仇" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421614" wears="0" muscle="105" spirit="90" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253228" bustResourceId="330281" taskId="451252"/>
+		<Item roleTypeId="431616" roleTypeName="陈近南" careerTypeId="431202" clanId="0" gender="1" resourceId="330298" roleTypeDescription="天地会总舵主，义薄云天，武艺高强" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421279" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253229" bustResourceId="330291" taskId="451255"/>
+		<Item roleTypeId="431647" roleTypeName="九难师太" careerTypeId="431202" clanId="0" gender="0" resourceId="331118" roleTypeDescription="大明皇朝遗孤，武艺高强，誓要杀尽满清皇室" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421273" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253230" bustResourceId="331111" taskId="451258"/>
+		<Item roleTypeId="431648" roleTypeName="阿珂" careerTypeId="431203" clanId="0" gender="0" resourceId="330168" roleTypeDescription="吴三桂与陈圆圆之女，美貌无双，武功亦不错" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421274" wears="0" muscle="115" spirit="90" aptitude="95" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253231" bustResourceId="330161" taskId="451261"/>
+		<Item roleTypeId="431617" roleTypeName="双儿" careerTypeId="431203" clanId="0" gender="0" resourceId="330318" roleTypeDescription="韦小宝的大老婆，蕙质兰心，武艺高强" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421624" wears="0" muscle="115" spirit="90" aptitude="95" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253232" bustResourceId="330311" taskId="451265"/>
+		<Item roleTypeId="431618" roleTypeName="韦小宝" careerTypeId="431204" clanId="0" gender="1" resourceId="330368" roleTypeDescription="江湖混混，武功一般，但智计过人" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421627" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431313" roleUIIconId="0" roleIconId="253233" bustResourceId="330361" taskId="451267"/>
+		<Item roleTypeId="431649" roleTypeName="韦春花" careerTypeId="431205" clanId="0" gender="0" resourceId="330358" roleTypeDescription="韦小宝之母，多年混迹江湖，武艺了得" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421275" wears="0" muscle="90" spirit="110" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253234" bustResourceId="330351" taskId="451269"/>
+		<Item roleTypeId="431650" roleTypeName="玄烨" careerTypeId="431204" clanId="0" gender="1" resourceId="331128" roleTypeDescription="少年天子，谋略过人，身手也甚是不错" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421276" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253235" bustResourceId="331121" taskId="451270"/>
+		<Item roleTypeId="431651" roleTypeName="鳌拜" careerTypeId="431201" clanId="0" gender="1" resourceId="331138" roleTypeDescription="满清武将之首，力大无穷，万人莫敌" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421277" wears="0" muscle="105" spirit="90" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="0" roleIconId="253236" bustResourceId="331131" taskId="451271"/>
+		<Item roleTypeId="431652" roleTypeName="张菁" careerTypeId="431203" clanId="0" gender="0" resourceId="330388" roleTypeDescription="娇艳灵动的江湖女侠，十分爱慕江小鱼" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421278" wears="0" muscle="115" spirit="90" aptitude="95" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253237" bustResourceId="330381" taskId="451302"/>
+		<Item roleTypeId="431653" roleTypeName="江小鱼" careerTypeId="431202" clanId="0" gender="1" resourceId="330378" roleTypeDescription="来自恶人谷的英俊少年，武艺高强，智计过人" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421280" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="0" roleIconId="253238" bustResourceId="330371" taskId="451304"/>
+		<Item roleTypeId="431619" roleTypeName="铁心兰" careerTypeId="431203" clanId="0" gender="0" resourceId="330398" roleTypeDescription="江湖侠女，秀美绝伦且武艺高强，性格倔强" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421609" wears="0" muscle="115" spirit="90" aptitude="95" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253239" bustResourceId="330391" taskId="451306"/>
+		<Item roleTypeId="431620" roleTypeName="花无缺" careerTypeId="431202" clanId="0" gender="1" resourceId="330408" roleTypeDescription="移花宫主之徒，丰神俊朗，武艺也甚是不凡" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421607" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253240" bustResourceId="330401" taskId="451308"/>
+		<Item roleTypeId="431654" roleTypeName="江别鹤" careerTypeId="431202" clanId="0" gender="1" resourceId="330418" roleTypeDescription="江南大侠，表面满口仁义，实为卑鄙小人一个" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421281" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253241" bustResourceId="330411" taskId="451312"/>
+		<Item roleTypeId="431621" roleTypeName="燕南天" careerTypeId="431201" clanId="0" gender="1" resourceId="330428" roleTypeDescription="曾经的一代大侠，义薄云天，修为过人" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421284" wears="0" muscle="105" spirit="90" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="0" roleIconId="253242" bustResourceId="330421" taskId="451314"/>
+		<Item roleTypeId="431655" roleTypeName="怜星宫主" careerTypeId="431205" clanId="0" gender="0" resourceId="330438" roleTypeDescription="移花宫二宫主，看似威严，实则心性温和善良" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421282" wears="0" muscle="90" spirit="110" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253243" bustResourceId="330431" taskId="451315"/>
+		<Item roleTypeId="431656" roleTypeName="邀月宫主" careerTypeId="431203" clanId="0" gender="0" resourceId="330448" roleTypeDescription="移花宫大宫主，为人凌厉狠绝，武艺高强" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421283" wears="0" muscle="115" spirit="90" aptitude="95" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253244" bustResourceId="330441" taskId="451316"/>
+		<Item roleTypeId="431657" roleTypeName="慕容复" careerTypeId="431202" clanId="0" gender="1" resourceId="330458" roleTypeDescription="武艺高强的贵公子，但为人却十分刻薄狭隘" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421285" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="0" roleIconId="253245" bustResourceId="330451" taskId="451352"/>
+		<Item roleTypeId="431622" roleTypeName="王语嫣" careerTypeId="431205" clanId="0" gender="0" resourceId="330468" roleTypeDescription="生于江南，阅遍天下武功典籍，熟悉各派武功" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421629" wears="0" muscle="90" spirit="110" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253246" bustResourceId="330461" taskId="451354"/>
+		<Item roleTypeId="431658" roleTypeName="向问天" careerTypeId="431204" clanId="0" gender="1" resourceId="330498" roleTypeDescription="苗疆神教护法，生性豪爽，武功亦是不弱" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421286" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="0" roleIconId="253247" bustResourceId="330491" taskId="451356"/>
+		<Item roleTypeId="431623" roleTypeName="令狐冲" careerTypeId="431202" clanId="0" gender="1" resourceId="330508" roleTypeDescription="华山派弟子，生性放浪不羁，剑术造诣了得" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421271" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431312" roleUIIconId="0" roleIconId="253248" bustResourceId="330501" taskId="451358"/>
+		<Item roleTypeId="431659" roleTypeName="丹青生" careerTypeId="431201" clanId="0" gender="1" resourceId="330478" roleTypeDescription="梅庄四友之一儒雅风流，最爱名家字画" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421288" wears="0" muscle="105" spirit="90" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253249" bustResourceId="330471" taskId="451360"/>
+		<Item roleTypeId="431660" roleTypeName="秃笔翁" careerTypeId="431204" clanId="0" gender="1" resourceId="330518" roleTypeDescription="梅庄四友之一，钟爱书法，以毛笔为武器" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421289" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253250" bustResourceId="330511" taskId="451362"/>
+		<Item roleTypeId="431661" roleTypeName="黑白子" careerTypeId="431202" clanId="0" gender="1" resourceId="330488" roleTypeDescription="梅庄四友之一，深谙棋道，并以之入武" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421602" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253251" bustResourceId="330481" taskId="451363"/>
+		<Item roleTypeId="431624" roleTypeName="黄钟公" careerTypeId="431205" clanId="0" gender="1" resourceId="330528" roleTypeDescription="梅庄四友之首，武艺高强，颇通音律" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421630" wears="0" muscle="90" spirit="110" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="0" roleIconId="253252" bustResourceId="330521" taskId="451364"/>
+		<Item roleTypeId="431625" roleTypeName="任我行" careerTypeId="431204" clanId="0" gender="1" resourceId="330548" roleTypeDescription="苗疆神教教主，性格狂妄，修为过人" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421632" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253253" bustResourceId="330541" taskId="451365"/>
+		<Item roleTypeId="431662" roleTypeName="欧阳克" careerTypeId="431202" clanId="0" gender="1" resourceId="330568" roleTypeDescription="欧阳锋的侄子，狡诈阴险，武学造诣出众" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421604" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431313" roleUIIconId="0" roleIconId="253254" bustResourceId="330561" taskId="451402"/>
+		<Item roleTypeId="431663" roleTypeName="欧阳锋" careerTypeId="431204" clanId="0" gender="1" resourceId="330608" roleTypeDescription="天下五绝之一，为人阴险刻毒，武艺超群" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421606" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431313" roleUIIconId="0" roleIconId="253255" bustResourceId="330601" taskId="451404"/>
+		<Item roleTypeId="431664" roleTypeName="陈玄风" careerTypeId="431204" clanId="0" gender="1" resourceId="330538" roleTypeDescription="黄药师之徒，修习《九阴真经》，出手狠辣" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421610" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431313" roleUIIconId="0" roleIconId="253256" bustResourceId="330531" taskId="451406"/>
+		<Item roleTypeId="431626" roleTypeName="梅超风" careerTypeId="431204" clanId="0" gender="0" resourceId="330618" roleTypeDescription="黄药师之徒，所习九阴白骨爪，招招狠辣无情" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421287" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431313" roleUIIconId="0" roleIconId="253257" bustResourceId="330611" taskId="451407"/>
+		<Item roleTypeId="431665" roleTypeName="郭靖" careerTypeId="431201" clanId="0" gender="1" resourceId="330578" roleTypeDescription="洪七公之徒，为人耿直正义，武功刚猛浑厚" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421612" wears="0" muscle="105" spirit="90" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="0" roleIconId="253258" bustResourceId="330571" taskId="451411"/>
+		<Item roleTypeId="431627" roleTypeName="洪七公" careerTypeId="431204" clanId="0" gender="1" resourceId="330588" roleTypeDescription="丐帮帮主，为人豪爽，武艺超群，最爱美食" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421628" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431311" roleUIIconId="0" roleIconId="253259" bustResourceId="330581" taskId="451413"/>
+		<Item roleTypeId="431666" roleTypeName="一灯大师" careerTypeId="431204" clanId="0" gender="1" resourceId="330598" roleTypeDescription="天下五绝之一，慈祥温厚，武艺高强" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421613" wears="0" muscle="90" spirit="105" aptitude="105" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253260" bustResourceId="330591" taskId="451414"/>
+		<Item roleTypeId="431628" roleTypeName="黄药师" careerTypeId="431205" clanId="0" gender="1" resourceId="330988" roleTypeDescription="桃花岛岛主，为人孤高傲慢，武艺超群" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421631" wears="0" muscle="90" spirit="110" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253261" bustResourceId="330981" taskId="451415"/>
+		<Item roleTypeId="431667" roleTypeName="王重阳" careerTypeId="431202" clanId="0" gender="1" resourceId="330628" roleTypeDescription="华山掌门，为人稳重端方，武艺冠绝天下" isMainRole="0" experience="0" normalSkillId="421100" aptitudeSkillId="421616" wears="0" muscle="110" spirit="90" aptitude="100" level="1" currentHp="0" maxHp="0" attackNatureId="431314" roleUIIconId="0" roleIconId="253262" bustResourceId="330621" taskId="451416"/>
+	</roleType>
+	<attackNature>
+		<Item attackNatureId="431311" attackNatureName="阳系"/>
+		<Item attackNatureId="431312" attackNatureName="阴系"/>
+		<Item attackNatureId="431313" attackNatureName="毒系"/>
+		<Item attackNatureId="431314" attackNatureName="玄系"/>
+	</attackNature>
+	<surface>
+		<item input="311108" equipmentId="411002" output="311208"/>
+		<item input="311108" equipmentId="411008" output="311208"/>
+		<item input="311108" equipmentId="411014" output="311208"/>
+		<item input="311108" equipmentId="411003" output="311308"/>
+		<item input="311108" equipmentId="411009" output="311308"/>
+		<item input="311108" equipmentId="411015" output="311308"/>
+		<item input="311108" equipmentId="411004" output="311408"/>
+		<item input="311108" equipmentId="411010" output="311408"/>
+		<item input="311108" equipmentId="411016" output="311408"/>
+		<item input="311108" equipmentId="411005" output="311508"/>
+		<item input="311108" equipmentId="411011" output="311508"/>
+		<item input="311108" equipmentId="411017" output="311508"/>
+		<item input="311108" equipmentId="411006" output="311608"/>
+		<item input="311108" equipmentId="411012" output="311608"/>
+		<item input="311108" equipmentId="411018" output="311608"/>
+		<item input="312108" equipmentId="411002" output="312208"/>
+		<item input="312108" equipmentId="411008" output="312208"/>
+		<item input="312108" equipmentId="411014" output="312208"/>
+		<item input="312108" equipmentId="411003" output="312308"/>
+		<item input="312108" equipmentId="411009" output="312308"/>
+		<item input="312108" equipmentId="411015" output="312308"/>
+		<item input="312108" equipmentId="411004" output="312408"/>
+		<item input="312108" equipmentId="411010" output="312408"/>
+		<item input="312108" equipmentId="411016" output="312408"/>
+		<item input="312108" equipmentId="411005" output="312508"/>
+		<item input="312108" equipmentId="411011" output="312508"/>
+		<item input="312108" equipmentId="411017" output="312508"/>
+		<item input="312108" equipmentId="411006" output="312608"/>
+		<item input="312108" equipmentId="411012" output="312608"/>
+		<item input="312108" equipmentId="411018" output="312608"/>
+		<item input="314108" equipmentId="411002" output="314208"/>
+		<item input="314108" equipmentId="411008" output="314208"/>
+		<item input="314108" equipmentId="411014" output="314208"/>
+		<item input="314108" equipmentId="411003" output="314308"/>
+		<item input="314108" equipmentId="411009" output="314308"/>
+		<item input="314108" equipmentId="411015" output="314308"/>
+		<item input="314108" equipmentId="411004" output="314408"/>
+		<item input="314108" equipmentId="411010" output="314408"/>
+		<item input="314108" equipmentId="411016" output="314408"/>
+		<item input="314108" equipmentId="411005" output="314508"/>
+		<item input="314108" equipmentId="411011" output="314508"/>
+		<item input="314108" equipmentId="411017" output="314508"/>
+		<item input="314108" equipmentId="411006" output="314608"/>
+		<item input="314108" equipmentId="411012" output="314608"/>
+		<item input="314108" equipmentId="411018" output="314608"/>
+		<item input="315108" equipmentId="411002" output="315208"/>
+		<item input="315108" equipmentId="411008" output="315208"/>
+		<item input="315108" equipmentId="411014" output="315208"/>
+		<item input="315108" equipmentId="411003" output="315308"/>
+		<item input="315108" equipmentId="411009" output="315308"/>
+		<item input="315108" equipmentId="411015" output="315308"/>
+		<item input="315108" equipmentId="411004" output="315408"/>
+		<item input="315108" equipmentId="411010" output="315408"/>
+		<item input="315108" equipmentId="411016" output="315408"/>
+		<item input="315108" equipmentId="411005" output="315508"/>
+		<item input="315108" equipmentId="411011" output="315508"/>
+		<item input="315108" equipmentId="411017" output="315508"/>
+		<item input="315108" equipmentId="411006" output="315608"/>
+		<item input="315108" equipmentId="411012" output="315608"/>
+		<item input="315108" equipmentId="411018" output="315608"/>
+	</surface>
+	<meditationTime>
+		<item vipLevel="0" time="0"/>
+		<item vipLevel="1" time="14400"/>
+		<item vipLevel="2" time="28800"/>
+		<item vipLevel="3" time="43200"/>
+		<item vipLevel="4" time="57600"/>
+		<item vipLevel="5" time="57600"/>
+		<item vipLevel="6" time="57600"/>
+		<item vipLevel="7" time="57600"/>
+		<item vipLevel="8" time="57600"/>
+		<item vipLevel="9" time="57600"/>
+		<item vipLevel="10" time="57600"/>
+	</meditationTime>
+	<RoleMeditationTime>
+		<item level="1" time="14400"/>
+		<item level="2" time="14400"/>
+		<item level="3" time="14400"/>
+		<item level="4" time="14400"/>
+		<item level="5" time="14400"/>
+		<item level="6" time="14400"/>
+		<item level="7" time="14400"/>
+		<item level="8" time="14400"/>
+		<item level="9" time="14400"/>
+		<item level="10" time="14400"/>
+		<item level="11" time="14400"/>
+		<item level="12" time="14400"/>
+		<item level="13" time="14400"/>
+		<item level="14" time="14400"/>
+		<item level="15" time="14400"/>
+		<item level="16" time="14400"/>
+		<item level="17" time="14400"/>
+		<item level="18" time="14400"/>
+		<item level="19" time="14400"/>
+		<item level="20" time="14400"/>
+		<item level="21" time="14400"/>
+		<item level="22" time="14400"/>
+		<item level="23" time="14400"/>
+		<item level="24" time="14400"/>
+		<item level="25" time="14400"/>
+		<item level="26" time="14400"/>
+		<item level="27" time="14400"/>
+		<item level="28" time="14400"/>
+		<item level="29" time="14400"/>
+		<item level="30" time="18000"/>
+		<item level="31" time="18000"/>
+		<item level="32" time="18000"/>
+		<item level="33" time="18000"/>
+		<item level="34" time="18000"/>
+		<item level="35" time="18000"/>
+		<item level="36" time="18000"/>
+		<item level="37" time="18000"/>
+		<item level="38" time="18000"/>
+		<item level="39" time="18000"/>
+		<item level="40" time="21600"/>
+		<item level="41" time="21600"/>
+		<item level="42" time="21600"/>
+		<item level="43" time="21600"/>
+		<item level="44" time="21600"/>
+		<item level="45" time="21600"/>
+		<item level="46" time="21600"/>
+		<item level="47" time="21600"/>
+		<item level="48" time="21600"/>
+		<item level="49" time="21600"/>
+		<item level="50" time="25200"/>
+		<item level="51" time="25200"/>
+		<item level="52" time="25200"/>
+		<item level="53" time="25200"/>
+		<item level="54" time="25200"/>
+		<item level="55" time="25200"/>
+		<item level="56" time="25200"/>
+		<item level="57" time="25200"/>
+		<item level="58" time="25200"/>
+		<item level="59" time="25200"/>
+		<item level="60" time="28800"/>
+		<item level="61" time="28800"/>
+		<item level="62" time="28800"/>
+		<item level="63" time="28800"/>
+		<item level="64" time="28800"/>
+		<item level="65" time="28800"/>
+		<item level="66" time="28800"/>
+		<item level="67" time="28800"/>
+		<item level="68" time="28800"/>
+		<item level="69" time="28800"/>
+		<item level="70" time="28800"/>
+		<item level="71" time="28800"/>
+		<item level="72" time="28800"/>
+		<item level="73" time="28800"/>
+		<item level="74" time="28800"/>
+		<item level="75" time="28800"/>
+		<item level="76" time="28800"/>
+		<item level="77" time="28800"/>
+		<item level="78" time="28800"/>
+		<item level="79" time="28800"/>
+		<item level="80" time="28800"/>
+		<item level="81" time="28800"/>
+		<item level="82" time="28800"/>
+		<item level="83" time="28800"/>
+		<item level="84" time="28800"/>
+		<item level="85" time="28800"/>
+		<item level="86" time="28800"/>
+		<item level="87" time="28800"/>
+		<item level="88" time="28800"/>
+		<item level="89" time="28800"/>
+		<item level="90" time="28800"/>
+		<item level="91" time="28800"/>
+		<item level="92" time="28800"/>
+		<item level="93" time="28800"/>
+		<item level="94" time="28800"/>
+		<item level="95" time="28800"/>
+		<item level="96" time="28800"/>
+		<item level="97" time="28800"/>
+		<item level="98" time="28800"/>
+		<item level="99" time="28800"/>
+		<item level="100" time="28800"/>
+	</RoleMeditationTime>
+
+	<upgrade>
+		{0 ,100 ,200 ,300 ,400 ,500 ,600 ,700 ,800 ,900 ,1000 ,1500 ,2000 ,3000 ,4000 ,5000 ,6000 ,7000 ,8000 ,9000 ,10000 ,12000 ,14000 ,17000 ,20000 ,25000 ,30000 ,36000 ,43200 ,51840 ,62208 ,74650 ,89580 ,107495 ,128995 ,154793 ,185752 ,222903 ,267483 ,320980 ,385176 ,462211 ,554653 ,665583 ,798700 ,958440 ,1150128 ,1380154 ,1656184 ,1987421 ,2384905 ,2623396 ,2885736 ,3174309 ,3491740 ,3840914 ,4225005 ,4647506 ,5112257 ,5623482 ,6185830 ,6804413 ,7484855 ,8233340 ,9056674 ,9962342 ,10958576 ,12054434 ,13259877 ,14585865 ,16044451 ,17648896 ,19413786 ,21355164 ,23490681 ,25839749 ,28423724 ,31266096 ,34392706 ,37831976 ,39723575 ,41709754 ,43795242 ,45985004 ,48284254 ,50698467 ,53233390 ,55895059 ,58689812 ,61624303 ,64705518 ,67940794 ,71337834 ,74904725 ,78649962 ,82582460 ,86711583 ,91047162 ,95599520 ,100379496 }
+	</upgrade>
+	<privateBank>
+		{0,30500 ,31000 ,31500 ,32000 ,32500 ,33000 ,33500 ,34000 ,34500 ,35000 ,35500 ,36000 ,36500 ,37000 ,37500 ,38000 ,38500 ,39000 ,39500 ,40000 ,40500 ,41000 ,41500 ,42000 ,42500 ,43000 ,43500 ,44000 ,44500 ,45000 ,45500 ,46000 ,46500 ,47000 ,47500 ,48000 ,48500 ,49000 ,49500 ,50000 ,50500 ,51000 ,51500 ,52000 ,52500 ,53000 ,53500 ,54000 ,54500 ,55000 ,55500 ,56000 ,56500 ,57000 ,57500 ,58000 ,58500 ,59000 ,59500 ,60000 ,60500 ,61000 ,61500 ,62000 ,62500 ,63000 ,63500 ,64000 ,64500 ,65000 ,65500 ,66000 ,66500 ,67000 ,67500 ,68000 ,68500 ,69000 ,69500 ,70000 ,70500 ,71000 ,71500 ,72000 ,72500 ,73000 ,73500 ,74000 ,74500 ,75000 ,75500 ,76000 ,76500 ,77000 ,77500 ,78000 ,78500 ,79000 ,79500 ,80000 }
+	</privateBank>
+	<arenaSilverAward>
+		{0 ,30500 ,31000 ,31500 ,32000 ,32500 ,33000 ,33500 ,34000 ,34500 ,35000 ,35500 ,36000 ,36500 ,37000 ,37500 ,38000 ,38500 ,39000 ,39500 ,40000 ,40500 ,41000 ,41500 ,42000 ,42500 ,43000 ,43500 ,44000 ,44500 ,45000 ,45500 ,46000 ,46500 ,47000 ,47500 ,48000 ,48500 ,49000 ,49500 ,50000 ,50500 ,51000 ,51500 ,52000 ,52500 ,53000 ,53500 ,54000 ,54500 ,55000 ,55500 ,56000 ,56500 ,57000 ,57500 ,58000 ,58500 ,59000 ,59500 ,60000 ,60500 ,61000 ,61500 ,62000 ,62500 ,63000 ,63500 ,64000 ,64500 ,65000 ,65500 ,66000 ,66500 ,67000 ,67500 ,68000 ,68500 ,69000 ,69500 ,70000 ,70500 ,71000 ,71500 ,72000 ,72500 ,73000 ,73500 ,74000 ,74500 ,75000 ,75500 ,76000 ,76500 ,77000 ,77500 ,78000 ,78500 ,79000 ,79500 ,80000 }
+	</arenaSilverAward>
+	<!-- 声望=基础*(10+110/(名称+10))-->
+	<arenaReputationAward>
+			{0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100,102,104,106,108,110,112,114,116,118,120,122,124,126,128,130,132,134,136,138,140,142,144,146,148,150,152,154,156,158,160,162,164,166,168,170,172,174,176,178,180,182,184,186,188,190,192,194,196,198,200}
+	</arenaReputationAward>
+	<attendAwardList>
+		<attendSilver>
+			{0 ,30500 ,31000 ,31500 ,32000 ,32500 ,33000 ,33500 ,34000 ,34500 ,35000 ,35500 ,36000 ,36500 ,37000 ,37500 ,38000 ,38500 ,39000 ,39500 ,40000 ,40500 ,41000 ,41500 ,42000 ,42500 ,43000 ,43500 ,44000 ,44500 ,45000 ,45500 ,46000 ,46500 ,47000 ,47500 ,48000 ,48500 ,49000 ,49500 ,50000 ,50500 ,51000 ,51500 ,52000 ,52500 ,53000 ,53500 ,54000 ,54500 ,55000 ,55500 ,56000 ,56500 ,57000 ,57500 ,58000 ,58500 ,59000 ,59500 ,60000 ,60500 ,61000 ,61500 ,62000 ,62500 ,63000 ,63500 ,64000 ,64500 ,65000 ,65500 ,66000 ,66500 ,67000 ,67500 ,68000 ,68500 ,69000 ,69500 ,70000 ,70500 ,71000 ,71500 ,72000 ,72500 ,73000 ,73500 ,74000 ,74500 ,75000 ,75500 ,76000 ,76500 ,77000 ,77500 ,78000 ,78500 ,79000 ,79500 ,80000 }
+		</attendSilver>
+		<attendSilver>
+			{0 ,45750 ,46500 ,47250 ,48000 ,48750 ,49500 ,50250 ,51000 ,51750 ,52500 ,53250 ,54000 ,54750 ,55500 ,56250 ,57000 ,57750 ,58500 ,59250 ,60000 ,60750 ,61500 ,62250 ,63000 ,63750 ,64500 ,65250 ,66000 ,66750 ,67500 ,68250 ,69000 ,69750 ,70500 ,71250 ,72000 ,72750 ,73500 ,74250 ,75000 ,75750 ,76500 ,77250 ,78000 ,78750 ,79500 ,80250 ,81000 ,81750 ,82500 ,83250 ,84000 ,84750 ,85500 ,86250 ,87000 ,87750 ,88500 ,89250 ,90000 ,90750 ,91500 ,92250 ,93000 ,93750 ,94500 ,95250 ,96000 ,96750 ,97500 ,98250 ,99000 ,99750 ,100500 ,101250 ,102000 ,102750 ,103500 ,104250 ,105000 ,105750 ,106500 ,107250 ,108000 ,108750 ,109500 ,110250 ,111000 ,111750 ,112500 ,113250 ,114000 ,114750 ,115500 ,116250 ,117000 ,117750 ,118500 ,119250 ,120000 }
+		</attendSilver>
+		<attendSilver>
+			{0 ,61000 ,62000 ,63000 ,64000 ,65000 ,66000 ,67000 ,68000 ,69000 ,70000 ,71000 ,72000 ,73000 ,74000 ,75000 ,76000 ,77000 ,78000 ,79000 ,80000 ,81000 ,82000 ,83000 ,84000 ,85000 ,86000 ,87000 ,88000 ,89000 ,90000 ,91000 ,92000 ,93000 ,94000 ,95000 ,96000 ,97000 ,98000 ,99000 ,100000 ,101000 ,102000 ,103000 ,104000 ,105000 ,106000 ,107000 ,108000 ,109000 ,110000 ,111000 ,112000 ,113000 ,114000 ,115000 ,116000 ,117000 ,118000 ,119000 ,120000 ,121000 ,122000 ,123000 ,124000 ,125000 ,126000 ,127000 ,128000 ,129000 ,130000 ,131000 ,132000 ,133000 ,134000 ,135000 ,136000 ,137000 ,138000 ,139000 ,140000 ,141000 ,142000 ,143000 ,144000 ,145000 ,146000 ,147000 ,148000 ,149000 ,150000 ,151000 ,152000 ,153000 ,154000 ,155000 ,156000 ,157000 ,158000 ,159000 ,160000 }
+		</attendSilver>
+		<attendSilver>
+			{0 ,76250 ,77500 ,78750 ,80000 ,81250 ,82500 ,83750 ,85000 ,86250 ,87500 ,88750 ,90000 ,91250 ,92500 ,93750 ,95000 ,96250 ,97500 ,98750 ,100000 ,101250 ,102500 ,103750 ,105000 ,106250 ,107500 ,108750 ,110000 ,111250 ,112500 ,113750 ,115000 ,116250 ,117500 ,118750 ,120000 ,121250 ,122500 ,123750 ,125000 ,126250 ,127500 ,128750 ,130000 ,131250 ,132500 ,133750 ,135000 ,136250 ,137500 ,138750 ,140000 ,141250 ,142500 ,143750 ,145000 ,146250 ,147500 ,148750 ,150000 ,151250 ,152500 ,153750 ,155000 ,156250 ,157500 ,158750 ,160000 ,161250 ,162500 ,163750 ,165000 ,166250 ,167500 ,168750 ,170000 ,171250 ,172500 ,173750 ,175000 ,176250 ,177500 ,178750 ,180000 ,181250 ,182500 ,183750 ,185000 ,186250 ,187500 ,188750 ,190000 ,191250 ,192500 ,193750 ,195000 ,196250 ,197500 ,198750 ,200000 }
+		</attendSilver>
+		<attendSilver>
+			{0 ,91500 ,93000 ,94500 ,96000 ,97500 ,99000 ,100500 ,102000 ,103500 ,105000 ,106500 ,108000 ,109500 ,111000 ,112500 ,114000 ,115500 ,117000 ,118500 ,120000 ,121500 ,123000 ,124500 ,126000 ,127500 ,129000 ,130500 ,132000 ,133500 ,135000 ,136500 ,138000 ,139500 ,141000 ,142500 ,144000 ,145500 ,147000 ,148500 ,150000 ,151500 ,153000 ,154500 ,156000 ,157500 ,159000 ,160500 ,162000 ,163500 ,165000 ,166500 ,168000 ,169500 ,171000 ,172500 ,174000 ,175500 ,177000 ,178500 ,180000 ,181500 ,183000 ,184500 ,186000 ,187500 ,189000 ,190500 ,192000 ,193500 ,195000 ,196500 ,198000 ,199500 ,201000 ,202500 ,204000 ,205500 ,207000 ,208500 ,210000 ,211500 ,213000 ,214500 ,216000 ,217500 ,219000 ,220500 ,222000 ,223500 ,225000 ,226500 ,228000 ,229500 ,231000 ,232500 ,234000 ,235500 ,237000 ,238500 ,240000 }	    </attendSilver>
+		<awardVitality>
+			{10,10,10,10,10}
+		</awardVitality>
+	</attendAwardList>
+</roleAttributes>

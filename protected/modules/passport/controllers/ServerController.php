@@ -9,9 +9,11 @@ class ServerController extends Controller
     public function actionServerList()
     {
         $title = '服务器管理';
-        $list = Server::model()->findAll();
+        $model = Server::model();
+        $list = $model->findAll();
         $result = Pages::initArray($list);
-        $this->render('index', array('title' => $title, 'list' => $result['list'], 'pages' => $result['pages']));
+        $this->render('index', array('title' => $title, 'list' => $result['list'], 
+        'pages' => $result['pages'], 'model' => $model));
     }
     
     /**
@@ -57,7 +59,6 @@ class ServerController extends Controller
     /**
      * 删除服务器
      */
-
    public function actionDeleteServer(){
         if(Yii::app()->request->isAjaxRequest){
             $id = $this->getParam('id');

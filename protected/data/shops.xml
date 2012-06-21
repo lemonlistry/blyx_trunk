@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shops>
+	<shop functionPointId="437103" type="silver">
+		<item id="410307"/>
+		<item id="410507"/>
+		<item id="410707"/>
+		<item id="410807"/>
+		<item id="410907"/>
+		<item id="411007"/>
+		<item id="411107"/>
+		<item id="411207"/>
+		<item id="411307"/>
+	</shop>
+	<shop functionPointId="437112" type="silver">
+		<item id="410307"/>
+		<item id="410507"/>
+		<item id="410707"/>
+		<item id="410807"/>
+		<item id="410907"/>
+		<item id="411007"/>
+		<item id="411107"/>
+		<item id="411207"/>
+		<item id="411307"/>
+	</shop>
+	<shop functionPointId="437113" type="silver">
+		<item id="410307"/>
+		<item id="410507"/>
+		<item id="410707"/>
+		<item id="410807"/>
+		<item id="410907"/>
+		<item id="411007"/>
+		<item id="411107"/>
+		<item id="411207"/>
+		<item id="411307"/>
+	</shop>
+	<shop functionPointId="437114" type="silver">
+		<item id="410307"/>
+		<item id="410507"/>
+		<item id="410707"/>
+		<item id="410807"/>
+		<item id="410907"/>
+		<item id="411007"/>
+		<item id="411107"/>
+		<item id="411207"/>
+		<item id="411307"/>
+	</shop>
+	<shop functionPointId="437115" type="silver">
+		<item id="410307"/>
+		<item id="410507"/>
+		<item id="410707"/>
+		<item id="410807"/>
+		<item id="410907"/>
+		<item id="411007"/>
+		<item id="411107"/>
+		<item id="411207"/>
+		<item id="411307"/>
+	</shop>
+	<shop functionPointId="437116" type="silver">
+		<item id="410307"/>
+		<item id="410507"/>
+		<item id="410707"/>
+		<item id="410807"/>
+		<item id="410907"/>
+		<item id="411007"/>
+		<item id="411107"/>
+		<item id="411207"/>
+		<item id="411307"/>
+	</shop>
+	<shop functionPointId="437117" type="silver">
+		<item id="410307"/>
+		<item id="410507"/>
+		<item id="410707"/>
+		<item id="410807"/>
+		<item id="410907"/>
+		<item id="411007"/>
+		<item id="411107"/>
+		<item id="411207"/>
+		<item id="411307"/>
+	</shop>
+	<shop functionPointId="437118" type="silver">
+		<item id="410307"/>
+		<item id="410507"/>
+		<item id="410707"/>
+		<item id="410807"/>
+		<item id="410907"/>
+		<item id="411007"/>
+		<item id="411107"/>
+		<item id="411207"/>
+		<item id="411307"/>
+	</shop>
+	<shop functionPointId="437119" type="silver">
+		<item id="410307"/>
+		<item id="410507"/>
+		<item id="410707"/>
+		<item id="410807"/>
+		<item id="410907"/>
+		<item id="411007"/>
+		<item id="411107"/>
+		<item id="411207"/>
+		<item id="411307"/>
+	</shop>
+	<shop functionPointId="437120" type="silver">
+		<item id="410307"/>
+		<item id="410507"/>
+		<item id="410707"/>
+		<item id="410807"/>
+		<item id="410907"/>
+		<item id="411007"/>
+		<item id="411107"/>
+		<item id="411207"/>
+		<item id="411307"/>
+	</shop>
+	<shop functionPointId="437104" type="silver">
+		<item id="410301"/>
+	</shop>
+	<shop functionPointId="437121" type="silver">
+		<item id="410301"/>
+	</shop>
+	<shop functionPointId="437122" type="silver">
+		<item id="410301"/>
+	</shop>
+	<shop functionPointId="437123" type="silver">
+		<item id="410301"/>
+	</shop>
+	<shop functionPointId="437124" type="silver">
+		<item id="410301"/>
+	</shop>
+	<shop functionPointId="437125" type="silver">
+		<item id="410301"/>
+	</shop>
+	<shop functionPointId="437126" type="silver">
+		<item id="410301"/>
+	</shop>
+	<shop functionPointId="437127" type="silver">
+		<item id="410301"/>
+	</shop>
+	<shop functionPointId="437128" type="silver">
+		<item id="410301"/>
+	</shop>
+	<shop functionPointId="437129" type="silver">
+		<item id="410301"/>
+	</shop>
+</shops>

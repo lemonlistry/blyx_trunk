@@ -15,7 +15,7 @@ return array(
         'js' => array(YII_DEBUG ? 'js/jquery.js' : 'js/jquery.min.js'),
     ),
     'jquery.ui' => array(
-        'js' => array('js/jquery-ui.min.js', 'js/jquery-ui-datepicker.js'),
+        'js' => array('js/jquery-ui.min.js', 'js/jquery-ui-timepicker-addon.js'),
         'css' => array('css/jui/jquery.ui.all.css'),
         'depends' => array('jquery'),
     ),

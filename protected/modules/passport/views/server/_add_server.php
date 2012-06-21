@@ -45,7 +45,7 @@
         <?php echo $form->labelEx($model, 'status'); ?>
         <div class="item">
             <div class="main">
-                <?php echo $form->textField($model, 'status'); ?>
+                <?php echo $form->dropDownList($model, 'status',$model->getServerStatus(), array('class' => 'medium')); ?>
             </div>
         </div>
         <?php echo $form->error($model, 'status'); ?>
@@ -57,7 +57,7 @@
         <?php echo $form->labelEx($model, 'recommend'); ?>
         <div class="item">
             <div class="main">
-                <?php echo $form->textField($model, 'recommend'); ?>
+                <?php echo $form->dropDownList($model, 'recommend',$model->getServerRecommend(), array('class' => 'medium')); ?>
             </div>
         </div>
         <?php echo $form->error($model, 'recommend'); ?>
@@ -69,12 +69,14 @@
         <?php echo $form->labelEx($model, 'type'); ?>
         <div class="item">
             <div class="main">
-                <?php echo $form->textField($model, 'type'); ?>
+                <?php echo $form->dropDownList($model, 'type',$model->getServerType(), array('class' => 'medium')); ?>
             </div>
         </div>
         <?php echo $form->error($model, 'type'); ?>
     </div>
 </div>
+
+
 
 <div class="clearfix">
     <div class="cell">
@@ -133,18 +135,6 @@
             </div>
         </div>
         <?php echo $form->error($model, 'db_passwd'); ?>
-    </div>
-</div>
-
-<div class="clearfix">
-    <div class="cell">
-        <?php echo $form->labelEx($model, 'script'); ?>
-        <div class="item">
-            <div class="main">
-                <?php echo $form->textField($model, 'script'); ?>
-            </div>
-        </div>
-        <?php echo $form->error($model, 'script'); ?>
     </div>
 </div>
      

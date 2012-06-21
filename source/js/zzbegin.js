@@ -60,8 +60,10 @@ $(document).ready(function(){
     });
     
     //初始化时间插件
-    $("input[type='time']").datepicker({
-        dateFormat: 'yy-mm-dd'
+    $("input[type='time']").datetimepicker({
+        dateFormat: 'yy-mm-dd',
+        showSecond: false, //显示秒
+        timeFormat: 'hh:mm:ss'
     });
 });
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+  <item id="1" url="/assets/activityList.swf" description="加载活动列表"/>
+  <item id="1" url="/assets/almaDuplicate.swf" description="加载英雄榜面板"/>
+  <item id="1" url="/assets/aloneChat.swf" description="加载私聊信息"/>
+  <item id="1" url="/assets/bag.swf" description="加载背包信息"/>
+  <item id="1" url="/assets/clan.swf" description="加载门派选择"/>
+  <item id="1" url="/assets/clanFight.swf" description="加载门派竞技"/>
+  <item id="1" url="/assets/dailyTask.swf" description="加载日常任务"/>
+  <item id="1" url="/assets/drama.swf" description="加载剧情对话"/>
+  <item id="1" url="/assets/duplicate.swf" description="加载副本信息"/>
+  <item id="1" url="/assets/esoterica.swf" description="加载秘籍信息"/>
+  <item id="1" url="/assets/everyDaySign.swf" description="加载签到信息"/>
+  <item id="1" url="/assets/faction.swf" description="加载帮派信息"/>
+  <item id="1" url="/assets/finery.swf" description="加载强化信息"/>
+  <item id="1" url="/assets/forge.swf" description="加载合成信息"/>
+  <item id="1" url="/assets/friend.swf" description="加载社交信息"/>
+  <item id="1" url="/assets/garden.swf" description="加载药园信息"/>
+  <item id="1" url="/assets/gm.swf" description="加载GM信息"/>
+  <item id="1" url="/assets/inn.swf" description="加载客栈信息"/>
+  <item id="1" url="/assets/martialArts.swf" description="加载武林大会"/>
+  <item id="1" url="/assets/matrix.swf" description="加载阵法信息"/>
+  <item id="1" url="/assets/moneyBank.swf" description="加载钱庄信息"/>
+  <item id="1" url="/assets/npc.swf" description="加载NPC对话框"/>
+  <item id="1" url="/assets/otherProperty.swf" description="加载查看资料"/>
+  <item id="1" url="/assets/present.swf" description="加载礼包信息"/>
+  <item id="1" url="/assets/property.swf" description="加载人物信息"/>
+  <item id="1" url="/assets/raiders.swf" description="加载攻略信息"/>
+  <item id="1" url="/assets/task.swf" description="加载任务信息"/>
+  <item id="1" url="/assets/vessel.swf" description="加载经脉信息"/>
+  <item id="1" url="/assets/visitState.swf" description="加载拜访信息"/>
+  <item id="1" url="/assets/wallow.swf" description="加载防沉迷信息"/>
+  <item id="1" url="/assets/wipe.swf" description="加载挂机信息"/>
+  <item id="1" url="/assets/worldBoss.swf" description="加载天罡北斗场景"/>
+  <item id="1" url="/assets/systemOpenGuide.swf" description="加载系统开启指引"/>
+  <item id="1" url="/assets/maps/worldMap/worldMap.swf" description="加载世界地图"/>
+  <item id="1" url="/assets/yellowDiamond.swf" description="加载黄钻信息"/>
+  <item id="1" url="/assets/vein.swf" description="加载经脉信息"/>
+  <item id="1" url="/assets/title.swf" description="加载称号信息"/>
+  <item id="1" url="/assets/drama.swf" description="加载剧情资源"/>
+  <item id="1" url="/assets/tenDemon.swf" description="加载十大恶人"/>
+  <item id="1" url="/assets/entourage.swf" description="加载随从信息"/>
+  <item id="1" url="/assets/factionFight.swf" description="加载帮派争霸赛信息"/>
+</items>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+在线奖励 onlineAward
+强化 finery_btn
+阵法 formation_btn
+洗髓 XI_SUI  xiSui
+购买精力  purchaseVitality
+练功 meditation_btn
+好友 friend_mc
+钱庄 PRIVATE_BANK privateBank
+日常活动 DAILY_ACTIVITIES dailyActivities
+世界BOSS WORLD_BOSS worldBoss
+拜访 VISIT visit
+秘籍 esoterica_btn
+帮派 faction_btn
+帮会战 factionWar
+武林大会 ARENA arena
+十大恶人 TEN_DEMON tenDemon
+每日签到 CHECK_IN checkIn
+英雄榜 ELITE_DUNGEON eliteDungeon
+药园 FARM farm
+门派竞技 CLAN_FIGHT clanFight
+日常任务 DAILY_TASK dailyTask
+经脉 vein_btn
+称号 icon_mc
+技能 skill
+ -->
+<modules>
+	<module id="1" name="onlineAward_mc" task="{451062,451112,451162,451212}" state="{3,3,3,3}" resourceId = "0" />
+	<module id="2" name="finery_btn" task="{451009,451009}" state="{2,3}" resourceId = "260202" />
+	<module id="3" name="formation_btn"  task="{451013}" state="{3}" resourceId = "260203" />
+	<module id="4" name="xiSui" task="{451017,451017}" state="{2,3}" resourceId = "0" />
+	<module id="5" name="purchaseVitality_btn" task="{451261}" state="{3}" resourceId = "260205" />
+	<module id="6" name="meditation_btn" task="{451056,451106,451156,451206}" state="{3,3,3,3}" resourceId = "260206" />
+	<module id="7" name="friend_mc" task="{451055,451105,451155,451205}" state="{3,3,3,3}" resourceId = "260207" />
+	<module id="8" name="bank_mc" task="{451063,451113,451163,451213}" state="{3,3,3,3}" resourceId = "260208" />
+	<module id="9" name="dailyActivities" task="{451067,451117,451167,451217}" state="{3,3,3,3}" resourceId = "0" />
+	<module id="10"  name="activity_mc" task="{451067,451117,451167,451217}" state="{3,3,3,3}" resourceId = "260210" />
+	<module id="11"  name="esoterica_btn" task="{451078,451128,451178,451228}" state="{3,3,3,3}" resourceId = "0" />
+	<module id="12"  name="visit_mc" task="{451078,451128,451178,451228}" state="{3,3,3,3}" resourceId = "260211" />
+	<module id="13"  name="factionWar" task="{451079,451129,451179,451229}" state="{3,3,3,3}" resourceId = "0" />
+	<module id="14"  name="faction_btn" task="{451079,451129,451179,451229}" state="{3,3,3,3}" resourceId = "260213" />
+	<module id="15"  name="arena_mc" task="{451064,451114,451164,451214}" state="{3,3,3,3}" resourceId = "260215" />
+	<module id="16"  name="tenDemon" task="{451254}" state="{3}" resourceId = "260216" />
+	<module id="17"  name="everyDayDign_mc" task="{451253}" state="{3}" resourceId = "260217" />
+	<module id="18"  name="eliteDungeon" task="{451252}" state="{3}" resourceId = "260218" />
+	<module id="19"  name="farm_btn" task="{451054,451104,451154,451204}" state="{3,3,3,3}" resourceId = "260219" />
+	<module id="20"  name="clanFight" task="{451257}" state="{3}" resourceId = "260220" />
+	<module id="21"  name="dailyTask_mc" task="{451263}" state="{3}" resourceId = "260221" />
+	<module id="22"  name="vein_btn" task="{451021,451022,451023,451024}" state="{3,3,3,3}" resourceId = "260222" />
+	<module id="23"  name="icon_mc" task="{451065,451115,451165,451215}" state="{3,3,3,3}" resourceId = "260223" />
+	<module id="24"  name="skill" task="{451018}" state="{3}" resourceId = "0" />
+</modules>
+

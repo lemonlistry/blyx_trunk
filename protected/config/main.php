@@ -51,9 +51,12 @@ return array(
         'core',         //运营模块  核心数据分析
         'install',      //数据初始化模块
         'restfulApi',   //api模块 提交接口供游戏请求
-        'service',      //客服模块 包含玩家交互 已经GM管理
+        'service',      //客服模块 包含玩家交互 以及GM管理
         'log',          //日志模块
         'realtime',     //实时数据查询模块
+        'cron',         //计划任务模块
+        'approve',      //事务审批模块
+        'tools',        //日常维护模块
     ),
 
     'defaultController' => 'passport',
@@ -133,11 +136,12 @@ return array(
         
         'db'=>array(
             'class' => 'CDbConnection',
-            'connectionString' => 'mysql:host=172.16.2.56;dbname=ljh',
+            'connectionString' => 'mysql:host=localhost;dbname=platform',
             'emulatePrepare' => true,
             'username' => 'root',
-            'password' => '111111',
+            'password' => '',
             'charset' => 'utf8',
+            'schemaCachingDuration' => 3600,
         ),
         
         'errorHandler'=>array(

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+行为：
+enterWorldMap:打开世界地图
+talkNPC:对话NPC
+chooseDungeon:打开选择副本界面
+changeMap:切换地图
+beginMeditating:开始打坐
+enterArena:打开武林大会
+openActivityList:打开日常活动
+条件：
+sweeping:挂机系统工作中
+clanBattle:门派战工作中
+factionManager:帮派战工作中
+tenDemonManager:十大恶人工作中
+-->
+
+<actions>
+  <item id="1" name="enterWorldMap">
+    <condition name="sweeping"/>
+	<failedActions>
+	  <notice id="481906"/>
+	  <exitSystem id="" name="Meditation"/>
+	</failedActions>
+  </item>  
+  <item id="2" name="enterWorldMap">
+    <condition name="clanBattle"/>
+	<failedActions>
+	  <notice id="483814"/>
+	  <exitSystem id="" name="Meditation"/>
+	</failedActions>
+  </item>  
+  <item id="3" name="talkNPC">
+    <condition name="clanBattle"/>
+	<failedActions>
+	  <notice id="483814"/>
+	</failedActions>
+  </item>  
+  <item id="4" name="talkNPC">
+    <condition name="sweeping"/>
+	<failedActions>
+	  <notice id="481906"/>
+	</failedActions>
+  </item>
+  <item id="5" name="chooseDungeon">
+    <condition name="sweeping"/>
+	<failedActions>
+	  <notice id="481906"/>
+	</failedActions>
+  </item>
+  <item id="6" name="chooseDungeon">
+    <condition name="clanBattle"/>
+	<failedActions>
+	  <notice id="483814"/>
+	</failedActions>
+  </item>
+  <item id="7" name="changeMap">
+    <condition name="sweeping"/>
+	<failedActions>
+	  <notice id="481906"/>
+	</failedActions>
+  </item>
+  <item id="8" name="changeMap">
+    <condition name="clanBattle"/>
+	<failedActions>
+	  <notice id="483814"/>
+	</failedActions>
+  </item>
+  <item id="9" name="beginMeditating">
+    <condition name="sweeping"/>
+	<failedActions>
+	  <notice id="481906"/>
+	</failedActions>
+  </item>
+  <item id="10" name="enterArena">
+    <condition name="clanBattle"/>
+	<failedActions>
+	  <notice id="483814"/>
+	</failedActions>
+  </item>
+    <item id="11" name="openActivityList">
+    <condition name="sweeping"/>
+	<failedActions>
+	  <notice id="481906"/>
+	</failedActions>
+  </item>
+    <item id="12" name="openActivityList">
+    <condition name="clanBattle"/>
+	<failedActions>
+	  <notice id="483814"/>
+	</failedActions>
+  </item>
+      <item id="13" name="enterArena">
+    <condition name="factionManager"/>
+	<failedActions>
+	  <notice id="484244"/>
+	</failedActions>
+  </item>
+      <item id="14" name="openActivityList">
+    <condition name="factionManager"/>
+	<failedActions>
+	  <notice id="484244"/>
+	</failedActions>
+  </item>
+      <item id="15" name="enterWorldMap">
+    <condition name="factionManager"/>
+	<failedActions>
+	  <notice id="484244"/>
+	</failedActions>
+  </item>
+      <item id="16" name="chooseDungeon">
+    <condition name="factionManager"/>
+	<failedActions>
+	  <notice id="484244"/>
+	</failedActions>
+  </item>
+      <item id="17" name="changeMap">
+    <condition name="factionManager"/>
+	<failedActions>
+	  <notice id="484244"/>
+	</failedActions>
+  </item>
+      <item id="18" name="talkNPC">
+    <condition name="factionManager"/>
+	<failedActions>
+	  <notice id="484244"/>
+	</failedActions>
+  </item>
+        <item id="19" name="enterArena">
+    <condition name="tenDemonManager"/>
+	<failedActions>
+	  <notice id="484106"/>
+	</failedActions>
+  </item>
+      <item id="20" name="openActivityList">
+    <condition name="tenDemonManager"/>
+	<failedActions>
+	  <notice id="484106"/>
+	</failedActions>
+  </item>
+      <item id="21" name="enterWorldMap">
+    <condition name="tenDemonManager"/>
+	<failedActions>
+	  <notice id="484106"/>
+	</failedActions>
+  </item>
+      <item id="22" name="chooseDungeon">
+    <condition name="tenDemonManager"/>
+	<failedActions>
+	  <notice id="484106"/>
+	</failedActions>
+  </item>
+      <item id="23" name="changeMap">
+    <condition name="tenDemonManager"/>
+	<failedActions>
+	  <notice id="484106"/>
+	</failedActions>
+  </item>
+      <item id="24" name="talkNPC">
+    <condition name="tenDemonManager"/>
+	<failedActions>
+	  <notice id="484106"/>
+	</failedActions>
+  </item>
+</actions>

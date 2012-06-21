@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<errors>
+	<errorList>
+		<error id="481001" text="含有非法字符" style="480111" font="宋体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="481002" text="已达到字符上限" style="480111" font="宋体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="481003" text="不得以数字开头" style="480111" font="宋体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="481004" text="名字重复" style="480111" font="宋体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="481005" text="不得少于4个字符" style="480111" font="宋体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="481101" text="&lt;font color='#FEFF00'&gt;{场景名称}&lt;/font&gt;" style="480110" font="黑体" size="20" color="#E1DBBB" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="481103" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481104" text="&lt;font color='#FEFF00'&gt;【提示】发言时间太快&lt;/font&gt;" style="480117" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481105" text="&lt;font color='#FEFF00'&gt;【提示】不能发送空信息&lt;/font&gt;" style="480117" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481106" text="&lt;font color='#FEFF00'&gt;{服务器提示文字}&lt;/font&gt;" style="480102" font="黑体" size="15" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481107" text="&lt;font color='#FEFF00'&gt;{角色名}&lt;/font&gt;添加你为好友，是否同意？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481112" text="&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;在竞技场击败了你，你已&lt;font color='#FEFF00'&gt;退出排行榜&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481113" text="&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;在竞技场击败了你，你的名次降至&lt;font color='#FEFF00'&gt;{竞技场名次}名&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481114" text="你在&lt;font color='#FEFF00'&gt;{活动名称}活动&lt;/font&gt;中获得了&lt;font color='#FEFF00'&gt;{声望数值}声望{银两数值}银两&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481117" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金购买8精力？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481118" text="购买次数已达上限" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481119" text="确定要让&lt;font color='#FEFF00'&gt;{随从名称}&lt;/font&gt;离队？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481120" text="&lt;font color='#FEFF00'&gt;{随从名称}&lt;/font&gt;已成功离队" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481122" text="精力不足，确定打坐？" style="480105" font="宋体" size="13" color="#FEFF00" position="0" time="0" level="0" priority="12" okLabel="开始打坐"/>
+		<error id="481123" text="有装备未卸下，无法离队" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481124" text="有秘籍未卸下，无法离队" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481125" text="&lt;font color='#FEFF00'&gt;【提示】战斗中不可在当前频道发言&lt;/font&gt;" style="480117" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481201" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481202" text="是否消耗&lt;font color='#FEFF00'&gt;{黄金数值}&lt;/font&gt;黄金开启&lt;font color='#FEFF00'&gt;{格子数}&lt;/font&gt;个新格子？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481205" text="道具店可出售、购买道具，确认消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金开启？&lt;font color='#FEFF00'&gt;(VIP1可免费开启）&lt;/font&gt;" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481206" text="仓库可存、取道具，确认消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金开启？&lt;font color='#FEFF00'&gt;(VIP1可免费开启）&lt;/font&gt;" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481207" text="仓库已满" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481208" text="背包已满" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481209" text="恭喜获得VIP奖励：&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481210" text="恭喜获得VIP奖励：&lt;font color='#FEFF00'&gt;{声望数值}声望&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481301" text="携带随从已满，无法招募" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481302" text="招募成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481303" text="您可以去客栈招募新的随从了！" style="480105" font="宋体" size="14" color="#FEFF00" position="0" time="0" level="0" priority="7" okLabel="前往客栈"/>
+		<error id="481304" text="品质未提升，幸运值+{增加数值}" style="480126" font="宋体" size="16" color="#FEFF00" position="50" time="1" level="0" priority="0" okLabel="0"/>
+		<error id="481305" text="恭喜您刷新成功，{随从名字}品质提升到&lt;font color='{颜色名称}'&gt;{品质名称}&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481306" text="很遗憾，未能刷新至目标品质，自动刷新结束" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481307" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481308" text="恭喜您刷新成功，品质提升至&lt;font color='{品质名称}'&gt;{颜色名称}&lt;/font&gt;，本次共刷新&lt;font color='#FFFF00'&gt;{刷新次数}次&lt;/font&gt;，消耗&lt;font color='#FFFF00'&gt;{黄金数值}黄金&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481309" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;鸿运当头，刷新获得&lt;font color='{颜色名称}'&gt;{品质名称}&lt;/font&gt;随从&lt;font color='{颜色名称}'&gt;{随从名称}&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481310" text="银两不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481311" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}黄金&lt;/font&gt;一键将{随从名字}刷新至&lt;font color='#FF9900'&gt;史诗&lt;/font&gt;品质？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481312" text="免费刷新冷却中" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481401" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481402" text="是否消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金开始洗髓？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481403" text="银两不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481404" text="保存成功" style="480118" font="宋体" size="16" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481501" text="等级不可超出主角" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481503" text="银两不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481504" text="银两不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481505" text="升级成功" style="480124" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="0" priority="0" okLabel="0"/>
+		<error id="481506" text="恭喜你，新领悟了{阵法名称}" style="480105" font="宋体" size="13" color="#E1DBBB" position="0" time="0" level="0" priority="6" okLabel="打开阵法"/>
+		<error id="481510" text="主角不可下阵" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481511" text="人数已达上限" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481601" text="修为不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481602" text="激活成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481603" text="升级成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481604" text="您有经脉可以升级" style="480105" font="黑体" size="13" color="#E1DBBB" position="0" time="0" level="0" priority="11" okLabel="打开经脉"/>
+		<error id="481605" text="请点击当前经脉" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481611" text="恭喜你，现开启腰俞、命门两个新穴位" style="480105" font="黑体" size="13" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481612" text="等级不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481701" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;打败&lt;font color='#FEFF00'&gt;{怪物名称}&lt;/font&gt;获得&lt;font color='#FEFF00'&gt;&lt;u&gt;&lt;a href='event:item:{itemId}:{itemLevel}:{itemName}'&gt;{itemName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481702" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;经过千锤百炼，合成出&lt;font color='{color}'&gt;&lt;u&gt;&lt;a href='event:item:{itemId}:{itemLevel}:{itemName}'&gt;{itemName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481704" text="合成成功，获得&lt;font color='#FEFF00'&gt;&lt;u&gt;&lt;a href='event:itemId:{itemId}'&gt;{物品名称}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="0" priority="0" okLabel="0"/>
+		<error id="481705" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481706" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金一键合成？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481708" text="地图未开启" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481801" text="强化成功" style="480124" font="宋体" size="16" color="#FEFF00" position="50" time="1" level="0" priority="0" okLabel="0"/>
+		<error id="481802" text="强化失败，返还&lt;font color='#FEFF00' &gt;{银两数值}银两&lt;/font&gt;" style="480124" font="宋体" size="18" color="#FF0000" position="50" time="1" level="0" priority="0" okLabel="0"/>
+		<error id="481803" text="强化成功率已变更" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="1" level="0" priority="0" okLabel="0"/>
+		<error id="481804" text="已达人物等级上限，不可强化" style="480116" font="宋体" size="18" color="#FF0000" position="50" time="1" level="0" priority="0" okLabel="0"/>
+		<error id="481805" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481806" text="银两不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481808" text="&lt;font color='#FEFF00'&gt;【通告】亲爱的各位玩家，12:00-12:15强化装备有几率双倍强化，请抓紧时间强化&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481809" text="&lt;font color='#FEFF00'&gt;【通告】亲爱的各位玩家，19:00-19:15强化装备有冷却时间优惠，请抓紧时间强化&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481810" text="&lt;font color='#FEFF00'&gt;【通告】亲爱的各位玩家，0:00-0:15强化装备的银两消耗减少，请抓紧时间强化&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481811" text="银两不足，您可以去钱庄兑换银两" style="480105" font="宋体" size="13" color="#FEFF00" position="0" time="0" level="0" priority="5" okLabel="前往钱庄"/>
+		<error id="481812" text="&lt;font color='#66CCOO'&gt;强化成功，装备等级+2&lt;/font&gt;" style="480124" font="宋体" size="16" color="#FEFF00" position="50" time="1" level="0" priority="0" okLabel="0"/>
+		<error id="481901" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481902" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}黄金&lt;/font&gt;加速完成？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481903" text="加速成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481904" text="剩余精力不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481905" text="背包满，无法挂机" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481906" text="副本挂机开启中" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481907" text="精力不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481909" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金重置一次该英雄榜？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481910" text="已达刷新次数上限" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481911" text="是否再次挑战该副本" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481912" text="你已通关该副本，无需查看" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481913" text="背包剩余空间不多，确定继续挂机？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481914" text="背包剩余空间不多，确定加速？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481915" text="正在挂机中，确定停止挂机？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481916" text="副本场景中不可自动寻路" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481917" text="精力不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481918" text="无可挂机对象" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481919" text="可以通过强化装备提升自己的战斗力" style="480105" font="宋体" size="13" color="#FEFF00" position="0" time="0" level="0" priority="9" okLabel="我知道了"/>
+		<error id="481920" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;在&lt;font color='#FEFF00'&gt;{副本名称}&lt;/font&gt;副本获得&lt;font color='#FEFF00'&gt;{礼金数值}礼金&lt;/font&gt;" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="481921" text="请先回到城镇场景" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482001" text="秘籍背包已满" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482002" text="临时背包已满" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482003" text="获得&lt;font color='#FEFF00'&gt;{学识数值}学识&lt;/font&gt;" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="0" priority="0" okLabel="0"/>
+		<error id="482004" text="寻访&lt;font color='#FEFF00'&gt;逍遥派宗师&lt;/font&gt;，需要花费&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金，确认寻访？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482005" text="已达寻访次数上限" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482006" text="你天赋奇佳，得到高人点拨，获得学识500" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="0" priority="0" okLabel="0"/>
+		<error id="482007" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482008" text="获得&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="0" priority="0" okLabel="0"/>
+		<error id="482009" text="银两不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482010" text="获得&lt;font color='{秘籍颜色}' size = '16'&gt;{秘籍名称}&lt;/font&gt;！" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="0" priority="0" okLabel="0"/>
+		<error id="482011" text="确定参悟全部可参悟秘籍？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482012" text="拥有&lt;font color='#FEFF00'&gt;高品质秘籍&lt;/font&gt;，确定卖出？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482013" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;洪福齐天，拜访获得绝世武功秘籍&lt;font color='{color}'&gt;&lt;u&gt;&lt;a href='event:book:{bookId}:{bookLevel}:{bookName}'&gt;{bookName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="20" priority="0" okLabel="0"/>
+		<error id="482014" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482015" text="是否消耗&lt;font color='#FEFF00'&gt;{黄金数值}&lt;/font&gt;黄金开启&lt;font color='#FEFF00'&gt;{格子数}&lt;/font&gt;个新格子？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482016" text="参悟该秘籍可获得&lt;font color='#FEFF00'&gt;{学识数值}&lt;/font&gt;学识，是否参悟？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482017" text="学识不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482018" text="&lt;font color='{秘籍颜色}' size = '16'&gt;{秘籍名称}&lt;/font&gt;升到{秘籍等级}级" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="0" priority="0" okLabel="0"/>
+		<error id="482019" text="是否参悟所有秘籍？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482020" text="拥有&lt;font color='#FEFF00'&gt;高品质秘籍&lt;/font&gt;，确定参悟？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482021" text="获得&lt;font color='#FEFF00'&gt;{学识数值}&lt;/font&gt;学识" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="0" priority="0" okLabel="0"/>
+		<error id="482022" text="同属性秘籍只可装备一本" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482023" text="无多余装备空间" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482024" text="秘籍背包已满" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482025" text="恭喜你拜访到达摩祖师！" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482026" text="接取&lt;font color='#FEFF00'&gt;19级任务{任务名称}&lt;/font&gt;后开启" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482027" text="获得&lt;font color='{秘籍颜色}' size = '16'&gt;{秘籍名称}&lt;/font&gt;，遇到&lt;font color='#FEFF00'&gt;{NPC名字}&lt;/font&gt;！" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="0" priority="0" okLabel="0"/>
+		<error id="482028" text="&lt;font color='#FEFF00'&gt;高品质秘籍&lt;/font&gt;，确定卖出？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482201" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金开荒一位置？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482202" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482203" text="开垦成功" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="0" priority="0" okLabel="0"/>
+		<error id="482208" text="至少携带一名随从" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482210" text="刷新成功" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="0" priority="0" okLabel="0"/>
+		<error id="482211" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金，让品质达到最高？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482213" text="&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="0" priority="0" okLabel="0"/>
+		<error id="482214" text="&lt;font color='#FEFF00'&gt;{随从名称}获得{经验数值}经验&lt;/font&gt;" style="480118" font="宋体" size="16" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482215" text="清除成功" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="0" priority="0" okLabel="0"/>
+		<error id="482216" text="随从等级不可超出主角" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482217" text="&lt;font color='#FEFF00'&gt;{随从名称}升到{等级数值}级&lt;/font&gt;" style="480118" font="宋体" size="16" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482218" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金清除冷却时间？" style="480108" font="宋体" size="14" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482224" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金进行刷新？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482225" text="品质已达上限" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482301" text="确认加入&lt;font color='#FEFF00'&gt;{门派名称}&lt;/font&gt;？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482302" text="恭喜你，成功加入&lt;font color='#FEFF00'&gt;{门派名称}&lt;/font&gt;" style="480104" font="黑体" size="16" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482303" text="非本门派弟子不可进入" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482304" text="你的等级为&lt;font color='#FEFF00'&gt;{等级数值}&lt;/font&gt;，获得俸禄：&lt;font color='#FEFF00'&gt;{银两数值}&lt;/font&gt;银两" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482401" text="等级不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482402" text="职业不符" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482403" text="不可存储" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482404" text="该物品不可丢弃" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482405" text="确定丢弃该物品？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482406" text="背包已满" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482407" text="主角不可使用经验丹" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482408" text="确定给&lt;font color='#FEFF00'&gt;{随从名称}&lt;/font&gt;使用&lt;font color='#FEFF00'&gt;{经验丹名称}&lt;/font&gt;？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482409" text="使用后&lt;font color='#FEFF00'&gt;{随从名称}&lt;/font&gt;经验值达到主角当前经验，多余经验不会返还，确定使用？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482410" text="银两不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482411" text="&lt;font color='#FEFF00'&gt;+{银两数值}银两&lt;/font&gt;" style="480126" font="宋体" size="14" color="#00FF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="482412" text="您有礼包可以开启" style="480105" font="宋体" size="13" color="#FEFF00" position="0" time="0" level="0" priority="8" okLabel="打开背包"/>
+		<error id="482413" text="无法购买！" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482414" text="目标经验已满" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482415" text="主角不可使用随从经验丹" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482501" text="黄金不足" style="480124" font="黑体" size="14" color="#00CCFF" position="50" time="1" level="0" priority="0" okLabel="0"/>
+		<error id="482502" text="&lt;font color='#00FF00'&gt;获得{银两数值}银两&lt;/font&gt;" style="480124" font="宋体" size="18" color="#FF0000" position="50" time="1" level="0" priority="0" okLabel="0"/>
+		<error id="482601" text="+&lt;font color='#FEFF00'&gt;{经验数值}经验&lt;/font&gt;" style="480119" font="宋体" size="14" color="#00FF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="482602" text="+&lt;font color='#FEFF00'&gt;{修为数值}修为&lt;/font&gt;" style="480120" font="宋体" size="14" color="#FF9900" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="482701" text="已达挑战次数上限" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482702" text="已达挑战次数上限，确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金继续挑战？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482703" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金清除冷却时间？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482704" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482706" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金清除冷却时间？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482707" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;在武林大会上势不可挡，取得&lt;font color='#FEFF00'&gt;{名次数值}连胜&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="15" priority="0" okLabel="0"/>
+		<error id="482708" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;在武林大会连胜&lt;font color='#FEFF00'&gt;{名次数值}名&lt;/font&gt;，已疯狂杀戮" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="15" priority="0" okLabel="0"/>
+		<error id="482709" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;在武林大会连胜&lt;font color='#FEFF00'&gt;{名次数值}名&lt;/font&gt;，已经超神" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="15" priority="0" okLabel="0"/>
+		<error id="482710" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;在武林大会上连升&lt;font color='#FEFF00'&gt;{名次数值}名&lt;/font&gt;，成为&lt;font color='#FEFF00'&gt;武林新秀&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="15" priority="0" okLabel="0"/>
+		<error id="482711" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;在武林大会上连升&lt;font color='#FEFF00'&gt;{名次数值}名&lt;/font&gt;，成为&lt;font color='#FEFF00'&gt;武林悍将&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="15" priority="0" okLabel="0"/>
+		<error id="482712" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;在武林大会提升&lt;font color='#FEFF00'&gt;{名次数值}名&lt;/font&gt;，成为&lt;font color='#FEFF00'&gt;武林泰斗&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="15" priority="0" okLabel="0"/>
+		<error id="482713" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;击败&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;成为武林大会第一名" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="15" priority="0" okLabel="0"/>
+		<error id="482714" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;VS&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="15" priority="0" okLabel="0"/>
+		<error id="482715" text="&lt;font color='#FEFF00'&gt;【提示】{时间数值}内无法操作&lt;/font&gt;" style="480111" font="宋体" size="12" color="#FF0000" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="482716" text="成功领取武林大会奖励，获得&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;，&lt;font color='#FEFF00'&gt;{声望数值}声望&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482717" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金，增加一次挑战次数？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482802" text="删除成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482803" text="确定屏蔽&lt;font color='#FEFF00'&gt;{玩家名称}&lt;/font&gt;？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482804" text="屏蔽成功，已添至黑名单" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482805" text="名称&lt;font color='#FEFF00'&gt;{玩家名称}&lt;/font&gt;复制成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482806" text="添加好友成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482807" text="&lt;font color='#FEFF00'&gt;{玩家名称}&lt;/font&gt;已添加你为好友，是否添加对方为好友？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482808" text="添加好友成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482809" text="好友数量已达上限" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482810" text="无该玩家" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482811" text="该玩家已在好友列表" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482812" text="添加好友成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482813" text="不能添加自己为好友" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482814" text="确定将该玩家移至黑名单？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482815" text="已添至黑名单" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482902" text="恭喜您获得&lt;font color='#FEFF00'&gt;{礼金数值}礼金&lt;/font&gt;！封测期间，每日上线即可领取&lt;font color='#FEFF00'&gt;{礼金数值}礼金&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482903" text="恭喜您获得&lt;font color='#FEFF00'&gt;{精力数值}精力&lt;/font&gt;，&lt;font color='#FEFF00'&gt;{{时间数值}分钟&lt;/font&gt;后领取下一份在线奖励！" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482904" text="酒足饭饱，获得&lt;font color='#FEFF00'&gt;10精力&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482905" text="倒计时中…" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="482906" text="恭喜您获得&lt;font color='#FEFF00'&gt;{精力数值}精力&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483001" text="勾选后其他玩家将不能添加您为好友，确定勾选？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483002" text="该玩家拒绝添加好友" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483101" text="&lt;font color='#FEFF00'&gt;+{经验数值}经验，{银两数值}银两&lt;/font&gt;" style="480126" font="宋体" size="14" color="#00FF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="483102" text="&lt;font color='#FEFF00'&gt;+{银两数值}银两，{修为数值}修为&lt;/font&gt;" style="480126" font="宋体" size="14" color="#FF9900" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="483110" text="&lt;font color='#FEFF00'&gt;+{修为数值}修为，{经验数值}经验&lt;/font&gt;" style="480126" font="宋体" size="14" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="483103" text="已达次数上限" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483104" text="刷新成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483105" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金清除冷却时间？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483106" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483107" text="成功清除冷却" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483108" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金清除冷却" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483109" text="有满星任务未接，是否刷新？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483110" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金完成该任务？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483201" text="等级不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483202" text="不可出售" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483203" text="不可丢弃" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483204" text="背包空间不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483205" text="{道具名称}*{道具数量}" style="480118" font="宋体" size="16" color="#FEFF00" position="50" time="3" level="0" priority="0" okLabel="0"/>
+		<error id="483206" text="领取失败，礼包已过期" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483207" text="CDKEY错误" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483208" text="请输入CDKEY" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483209" text="领取成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483210" text="该CDKEY已被使用" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483211" text="该CDKEY已失效" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483212" text="恭喜您获得VIP1奖励：&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483213" text="恭喜您获得VIP2奖励：&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483214" text="恭喜您获得VIP3奖励：&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483301" text="申请成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483302" text="超出申请次数上限" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483303" text="不得少于2个字符" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483304" text="含有非法字符" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483305" text="银两不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483306" text="创建成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483307" text="密码错误" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483308" text="&lt;font color='#FEFF00'&gt;【通告】帮派公告已变更&lt;/font&gt;" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483309" text="捐献成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483310" text="领取帮派俸禄&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483311" text="解散后不可恢复，确定解散？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483312" text="帮派已解散" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483313" text="确定退出帮派？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483314" text="您的职位已变更" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483315" text="您已被踢出帮派" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483316" text="恭喜您加入了&lt;font color='#FEFF00'&gt;{帮派名称}&lt;/font&gt;帮派" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483317" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;为帮派捐献了&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483318" text="&lt;font color='#FEFF00'&gt;【通告】帮派群号已变更&lt;/font&gt;" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483319" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;与本帮志不同，道不合，离开了帮派" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483320" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;被踢出帮派" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483321" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;加入帮派" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483322" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金发布一次招人信息吗？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483323" text="&lt;font color='#FEFF00'&gt;&lt;u&gt;&lt;a href=event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;玩家已加入帮派" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483324" text="帮派人员已满" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483325" text="该帮派申请数量已达上限" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483326" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483327" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#FEFF00'&gt;&lt;u&gt;&lt;a href='event:factionId:{factionId}'&gt;{帮派名称}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;帮派诚邀有志之士加盟，共创大业！&lt;font color='#FEFF00'&gt;&lt;u&gt;&lt;a href='event:factionId:{factionId}'&gt;点击查看帮派&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483328" text="目标职位人数已满" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483329" text="帮派名称重复" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483330" text="该申请信息已过期" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483331" text="该帮派已申请" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483332" text="该帮派已解散" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483401" text="您已断开服务器" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483501" text="【系统】您累计在线时间已满1小时" style="480111" font="宋体" size="12" color="#FF0000" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483502" text="【系统】您累计在线时间已满2小时" style="480111" font="宋体" size="12" color="#FF0000" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483503" text="【系统】您累计在线时间已满3小时，请您下线休息，做适当身体活动" style="480111" font="宋体" size="12" color="#FF0000" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483504" text="【系统】您已经进入疲劳游戏时间，您的游戏收益将降为正常值的50％，为了您的健康，请尽快下线休息，做适当身体活动，合理安排学习生活" style="480111" font="宋体" size="12" color="#FF0000" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483505" text="【系统】您已进入不健康游戏时间，为了您的健康，请您立即下线休息。如不下线，您的身体将受到损害，您的所有收益已降为0，直到您的累计下线时间满5小时后，才能恢复正常" style="480111" font="宋体" size="12" color="#FF0000" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483506" text="验证已成功" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483507" text="信息不符，请重新验证" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483508" text="您已暂时被纳入防沉迷系统" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483509" text="您累计在线时间已满3小时，已被强制离线，您休息5小时后，在{hh:mm:ss}可重新登录游戏" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483510" text="因您未通过防沉迷验证，目前正处于不健康游戏时间期间，为了您的健康，请在{hh:mm:ss}后登陆游戏。给您造成的不便还请见谅！" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483601" text="您提交的问题已回复，请注意查看，谢谢！" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483602" text="请输入标题" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483606" text="提交成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483607" text="提交失败" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483608" text="处理中问题已达上限" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483609" text="评价成功！" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483610" text="&lt;font color='#FF0000'&gt;【系统】{text}&lt;/font&gt;" style="480102" font="黑体" size="15" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483611" text="&lt;font color='#FF0000'&gt;【系统】{text}&lt;/font&gt;" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483612" text="&lt;font color='#FF0000'&gt;【系统】{text}&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="483603" text="您已断开服务器" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483604" text="&lt;font color='#FEFF00'&gt;【系统】&lt;/font&gt;亲爱的玩家：您的账号因故已被冻结，冻结期限&lt;font color='#FEFF00'&gt;{分钟数值}分钟&lt;/font&gt;如有任何疑问，请通过GM渠道与游戏客服联系，谢谢！" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483605" text="【系统】亲爱的玩家：您因故已被禁言，禁言时间还剩下&lt;font color='#FEFF00'&gt;{小时数值}小时&lt;/font&gt;，如有任何疑问，请在官网与游戏客服联系。谢谢！" style="480111" font="宋体" size="12" color="#FF0000" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483701" text="&lt;font color='#FEFF00'&gt;【通告】距离天罡北斗阵开启还有{时间数值}分钟&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="16" priority="0" okLabel="0"/>
+		<error id="483726" text="&lt;font color='#FEFF00'&gt;【通告】距离金刚伏魔圈开启还有{时间数值}分钟&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="16" priority="0" okLabel="0"/>
+		<error id="483702" text="&lt;font color='#FEFF00'&gt;【通告】天罡北斗阵开启，请大家进入准备&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="16" priority="0" okLabel="0"/>
+		<error id="483727" text="&lt;font color='#FEFF00'&gt;【通告】金刚伏魔圈开启，请大家进入准备&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="16" priority="0" okLabel="0"/>
+		<error id="483703" text="确定消耗&lt;font color='#FEFF00'&gt;{黄金数值}黄金&lt;/font&gt;立即复活？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483704" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483705" text="&lt;font color='#FEFF00'&gt;【通告】天罡北斗阵已开始，请大家从日常活动里参与，奖励丰厚的经验与银两哦亲！&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="16" priority="0" okLabel="0"/>
+		<error id="483728" text="&lt;font color='#FEFF00'&gt;【通告】金刚伏魔圈已开始，请大家从日常活动里参与，奖励丰厚的经验与银两哦亲！&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="16" priority="0" okLabel="0"/>
+		<error id="483706" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;大展神威，击杀了&lt;font color='#FEFF00'&gt;{NPC名称}&lt;/font&gt;，获得击杀奖一份。" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="16" priority="0" okLabel="0"/>
+		<error id="483707" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;大展神威，击杀了&lt;font color='#FEFF00'&gt;{NPC名称}&lt;/font&gt;，获得&lt;font color='#FEFF00'&gt;击杀奖&lt;/font&gt;一份(活动结束后发放奖励），&lt;font color='#FEFF00'&gt;天罡北斗阵&lt;/font&gt;中剩余BOSS属性已变更" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="16" priority="0" okLabel="0"/>
+		<error id="483729" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;大展神威，击杀了&lt;font color='#FEFF00'&gt;{NPC名称}&lt;/font&gt;，获得&lt;font color='#FEFF00'&gt;击杀奖&lt;/font&gt;一份（活动结束后发放奖励）" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="16" priority="0" okLabel="0"/>
+		<error id="483708" text="&lt;font color='#FEFF00'&gt;【通告】天罡北斗阵已结束&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="16" priority="0" okLabel="0"/>
+		<error id="483730" text="&lt;font color='#FEFF00'&gt;【通告】金刚伏魔圈已结束&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="16" priority="0" okLabel="0"/>
+		<error id="483709" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;本次&lt;font color='#FEFF00'&gt;天罡北斗阵&lt;/font&gt;总伤害最高前三名：&lt;br&gt;第一名：&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt; 总伤害：&lt;font color='#FEFF00'&gt;{伤害总数值}&lt;/font&gt;&lt;br&gt;第二名：&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt; 总伤害：&lt;font color='#FEFF00'&gt;{伤害总数值}&lt;/font&gt;&lt;br&gt;第三名：&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt; 总伤害：&lt;font color='#FEFF00'&gt;{伤害总数值}&lt;/font&gt;&lt;br&gt;以上玩家将各获得&lt;font color='#FEFF00'&gt;击退奖&lt;/font&gt;一份" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="16" priority="0" okLabel="0"/>
+		<error id="483724" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;本次&lt;font color='#FEFF00'&gt;天罡北斗阵&lt;/font&gt;总伤害最高前三名：&lt;br&gt;第一名：&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt; 总伤害：&lt;font color='#FEFF00'&gt;{伤害总数值}&lt;/font&gt;&lt;br&gt;第二名：&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt; 总伤害：&lt;font color='#FEFF00'&gt;{伤害总数值}&lt;/font&gt;&lt;br&gt;第三名：无&lt;br&gt;以上玩家将各获得&lt;font color='#FEFF00'&gt;击退奖&lt;/font&gt;一份" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="16" priority="0" okLabel="0"/>
+		<error id="483725" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;本次&lt;font color='#FEFF00'&gt;天罡北斗阵&lt;/font&gt;总伤害最高前三名：&lt;br&gt;第一名：&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt; 总伤害：&lt;font color='#FEFF00'&gt;{伤害总数值}&lt;/font&gt;&lt;br&gt;第二名：无&lt;br&gt;第三名：无&lt;br&gt;以上玩家将各获得&lt;font color='#FEFF00'&gt;击退奖&lt;/font&gt;一份" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="16" priority="0" okLabel="0"/>
+		<error id="483731" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;本次&lt;font color='#FEFF00'&gt;金刚伏魔圈&lt;/font&gt;总伤害最高前三名：&lt;br&gt;第一名：&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt; 总伤害：&lt;font color='#FEFF00'&gt;{伤害总数值}&lt;/font&gt;&lt;br&gt;第二名：&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt; 总伤害：&lt;font color='#FEFF00'&gt;{伤害总数值}&lt;/font&gt;&lt;br&gt;第三名：&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt; 总伤害：&lt;font color='#FEFF00'&gt;{伤害总数值}&lt;/font&gt;&lt;br&gt;以上玩家将各获得&lt;font color='#FEFF00'&gt;击退奖&lt;/font&gt;一份" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="16" priority="0" okLabel="0"/>
+		<error id="483732" text="&lt;font color='#FEFF00'&gt;【通告】本次金刚伏魔圈总伤害最高前三名：&lt;/font&gt;&lt;br&gt;第一名：&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt; 总伤害：&lt;font color='#FEFF00'&gt;{伤害总数值}&lt;/font&gt;&lt;br&gt;第二名：&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt; 总伤害：&lt;font color='#FEFF00'&gt;{伤害总数值}&lt;/font&gt;&lt;br&gt;第三名：无&lt;br&gt;以上玩家将各获得&lt;font color='#FEFF00'&gt;击退奖&lt;/font&gt;一份" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="16" priority="0" okLabel="0"/>
+		<error id="483733" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;本次&lt;font color='#FEFF00'&gt;金刚伏魔圈&lt;/font&gt;总伤害最高前三名：&lt;br&gt;第一名：&lt;font color='#66CC00'&gt;&lt;u&gt;&lt;a href='event:role:{roleId}:{careerTypeId}:{level}:{roleName}'&gt;{roleName}&lt;/a&gt;&lt;/u&gt;&lt;/font&gt; 总伤害：&lt;font color='#FEFF00'&gt;{伤害总数值}&lt;/font&gt;&lt;br&gt;第二名：无&lt;br&gt;第三名：无&lt;br&gt;以上玩家将各获得&lt;font color='#FEFF00'&gt;击退奖&lt;/font&gt;一份" style="480103" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="16" priority="0" okLabel="0"/>
+		<error id="483710" text="获得&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;，&lt;font color='#FEFF00'&gt;{声望数值}声望&lt;/font&gt;" style="480122" font="黑体" size="12" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483711" text="获得&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;，声望已达上限" style="480122" font="黑体" size="12" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483712" text="你在&lt;font color='#FEFF00'&gt;天罡北斗阵&lt;/font&gt;中排名&lt;font color='#FEFF00'&gt;第1&lt;/font&gt;，获得奖励&lt;font color='{color}'&gt;{物品名称}&lt;/font&gt;，&lt;font color='{color}'&gt;{物品名称}&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483713" text="你在&lt;font color='#FEFF00'&gt;天罡北斗阵&lt;/font&gt;中排名&lt;font color='#FEFF00'&gt;第{名次数值}&lt;/font&gt;，获得奖励&lt;font color='{color}'&gt;{物品名称}&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483714" text="你在&lt;font color='#FEFF00'&gt;天罡北斗阵&lt;/font&gt;中击杀&lt;font color='#FEFF00'&gt;{击杀数量}&lt;/font&gt;个BOSS，获得&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483734" text="你在&lt;font color='#FEFF00'&gt;金刚伏魔圈&lt;/font&gt;中排名&lt;font color='#FEFF00'&gt;第1&lt;/font&gt;，获得奖励&lt;font color='{color}'&gt;{物品名称}&lt;/font&gt;，&lt;font color='{color}'&gt;{物品名称}&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483735" text="你在&lt;font color='#FEFF00'&gt;金刚伏魔圈&lt;/font&gt;中排名&lt;font color='#FEFF00'&gt;第{名次数值}&lt;/font&gt;，获得奖励&lt;font color='{color}'&gt;{物品名称}&lt;/font&gt;，&lt;font color='{color}'&gt;{物品名称}&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483736" text="你在&lt;font color='#FEFF00'&gt;金刚伏魔圈&lt;/font&gt;中击杀&lt;font color='#FEFF00'&gt;{击杀数量}&lt;/font&gt;个BOSS，获得奖励&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483715" text="背包空间不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483716" text="获得&lt;font color='#FEFF00'&gt;天罡北斗阵&lt;/font&gt;和&lt;font color='#FEFF00'&gt;金刚伏魔圈&lt;/font的活动资格" style="480105" font="宋体" size="13" color="#FEFF00" position="0" time="0" level="0" priority="1" okLabel="我知道了"/>
+		<error id="483717" text="获得&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;，&lt;font color='#FEFF00'&gt;{声望数值}声望&lt;/font&gt;" style="480121" font="黑体" size="12" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483718" text="获得&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;，声望已达上限" style="480121" font="黑体" size="12" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483719" text="确定消耗&lt;font color='#FEFF00'&gt;{修为数值}修为&lt;/font&gt;增加20%战斗力？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483720" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}&lt;/font&gt;黄金增加20%战力？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483721" text="修为不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483722" text="&lt;font color='#FEFF00'&gt;【通告】战报连连，{NPC名称}内力损耗过大，血量已降至10%。&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="0" time="0" level="16" priority="0" okLabel="0"/>
+		<error id="483723" text="&lt;font color='#FEFF00'&gt;【通告】{NPC名称}使出了成名绝技{BUFF名称}，{加成BUFF名称}+{加成百分比}&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="0" time="0" level="16" priority="0" okLabel="0"/>
+		<error id="483737" text="该BOSS已被击杀" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483738" text="&lt;font color='#FEFF00'&gt;天罡北斗阵已结束&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483739" text="&lt;font color='#FEFF00'&gt;金刚伏魔圈已结束&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483801" text="获得&lt;font color='#FEFF00'&gt;门派竞技&lt;/font&gt;活动资格" style="480105" font="宋体" size="13" color="#FEFF00" position="0" time="0" level="0" priority="2" okLabel="我知道了"/>
+		<error id="483802" text="&lt;font color='#FEFF00'&gt;【通告】距离门派竞技开启还有{时间数值}分钟&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="0" time="0" level="23" priority="0" okLabel="0"/>
+		<error id="483803" text="&lt;font color='#FEFF00'&gt;【通告】门派竞技已开始，请大家从日常活动里参与，奖励丰厚的银两与声望哦亲！&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="0" time="0" level="23" priority="0" okLabel="0"/>
+		<error id="483804" text="战斗胜利，获得&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;，&lt;font color='#FEFF00'&gt;{声望数值}声望&lt;/font&gt;，&lt;font color='#FEFF00'&gt;{积分数值}积分&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483805" text="战斗失败，获得&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;，&lt;font color='#FEFF00'&gt;{声望数值}声望&lt;/font&gt;，&lt;font color='#FEFF00'&gt;{积分数值}积分&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483806" text="鼓舞成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483807" text="鼓舞失败" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483808" text="修为不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483809" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483810" text="&lt;font color='#FEFF00'&gt;门派竞技&lt;/font&gt;结束" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483811" text="&lt;font color='#FEFF00'&gt;{门派名称}&lt;/font&gt;在本次门派竞技中勇夺第一，门派参战弟子获得奖励&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;，&lt;font color='#FEFF00'&gt;{声望数值}声望&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483812" text="您在本次&lt;font color='#FEFF00'&gt;门派竞技&lt;/font&gt;中奋勇杀敌，为本门增光，获得奖励&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;，&lt;font color='#FEFF00'&gt;{声望数值}声望&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483813" text="活动参与奖:&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;，&lt;font color='#FEFF00'&gt;{声望数值}声望&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483814" text="门派竞技开启中" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483815" text="参战人数已满" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483816" text="&lt;font color='#FEFF00'&gt;门派竞技&lt;/font&gt;结束" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483901" text="获得每日签到活动资格" style="480105" font="宋体" size="13" color="#FEFF00" position="0" time="0" level="0" priority="3" okLabel="我知道了"/>
+		<error id="483902" text="签到成功！获得&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;，&lt;font color='#FEFF00'&gt;{精力数值}精力&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="483903" text="签到成功！获得&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;，&lt;font color='#FEFF00'&gt;{精力数值}精力，&lt;/font&gt;&lt;font color='#FEFF00'&gt;{礼金数值}礼金&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E2DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484001" text="通缉榜未开启" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484002" text="您的账号出现异常，请重新登录" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484003" text="检测到数据异常，为保证您的账号安全请耐心等待系统核对…" style="480128" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484101" text="获得十大恶人活动资格" style="480105" font="宋体" size="13" color="#FEFF00" position="0" time="0" level="0" priority="4" okLabel="我知道了"/>
+		<error id="484102" text="&lt;font color='#FEFF00'&gt;【通告】距离十大恶人活动还有{时间数值}分钟&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="0" time="0" level="22" priority="0" okLabel="0"/>
+		<error id="484103" text="&lt;font color='#FEFF00'&gt;【通告】十大恶人活动已开始，请大家从日常活动里参与，奖励丰厚的银两与经验，还可能获得紫色装备卷轴哦亲！&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FEFF00" position="0" time="0" level="22" priority="0" okLabel="0"/>
+		<error id="484104" text="无队伍可加入" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484105" text="十大恶人活动结束" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484106" text="十大恶人开启中" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484107" text="目标队伍人数已满" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484108" text="队伍数量已达上限" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484201" text="请先加入帮派" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484202" text="确定消耗&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;报名参加帮派战？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="我知道了"/>
+		<error id="484203" text="银两不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484204" text="报名成功！" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484205" text="恭喜！您所在帮派获得&lt;font color='#FEFF00'&gt;帮派战参赛资格&lt;/font&gt;！" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484206" text="很遗憾，您所在帮派未能获得&lt;font color='#FEFF00'&gt;帮派战参赛资格&lt;/font&gt;，退还报名费用&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484207" text="很遗憾，您所在帮派未能获得帮派战参赛资格，退还报名费用&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;" style="480115" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484208" text="很遗憾，您所在帮派未能获得&lt;font color='#FEFF00'&gt;帮派战参赛资格&lt;/font&gt;，请多加努力！" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484209" text="很遗憾，您所在帮派未能获得帮派战参赛资格，请多加努力！" style="480115" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484210" text="距离战斗开始还有&lt;font color='#FEFF00'&gt;{倒计时时间}秒&lt;/font&gt;，请做好准备！" style="480127" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484211" text="战斗开始" style="480104" font="黑体" size="16" color="#FFFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484212" text="&lt;font color='#FFFF00'&gt;{玩家名六个字}&lt;/font&gt;进入了战场" style="480127" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484213" text="&lt;font color='#FF0000'&gt;{玩家名六个字}&lt;/font&gt;进入了战场" style="480127" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484214" text="&lt;font color='#FFFF00'&gt;{玩家名六个字}&lt;/font&gt;离开了战场" style="480127" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484215" text="&lt;font color='#FF0000'&gt;{玩家名六个字}&lt;/font&gt;离开了战场" style="480127" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484216" text="&lt;font color='#FFFF00'&gt;{玩家名六个字}&lt;/font&gt;表现英勇，成功攻击了一次&lt;font color='#FF0000'&gt;敌方旗帜&lt;/font&gt;" style="480127" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484217" text="&lt;font color='#FF0000'&gt;{玩家名六个字}&lt;/font&gt;攻击了一次&lt;font color='#FFFF00'&gt;我方旗帜&lt;/font&gt;" style="480127" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484218" text="确定消耗&lt;font color='#FFFF00'&gt;{黄金数值}黄金&lt;/font&gt;消除冷却时间？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484219" text="黄金不足" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484220" text="&lt;font color='#FFFF00'&gt;{玩家名六个字}&lt;/font&gt;奋勇杀敌，成功击杀了&lt;font color='#FF0000'&gt;{玩家名六个字}&lt;/font&gt;" style="480127" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484221" text="你已被&lt;font color='#FF0000'&gt;{玩家名六个字}&lt;/font&gt;击杀" style="480127" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484222" text="&lt;font color='#FF0000'&gt;{玩家名六个字}&lt;/font&gt;击杀了我方成员&lt;font color='#FFFF00'&gt;{玩家名六个字}&lt;/font&gt;" style="480127" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484223" text="经过大家的努力奋战，&lt;font color='#FF0000'&gt;敌方旗帜&lt;/font&gt;已被击倒，战斗胜利！" style="480127" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484224" text="很遗憾，&lt;font color='#FFFF00'&gt;我方旗帜&lt;/font&gt;已被击倒，战斗失败" style="480127" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484225" text="战场剩余时间不足，&lt;font color='#FEFF00'&gt;{倒计时时间}秒&lt;/font&gt;后战斗结束！" style="480127" font="宋体" size="12" color="#FFFFFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484241" text="恭喜！您所在帮派在&lt;font color='#FEFF00'&gt;本届帮派战{比赛场次}&lt;/font&gt;中获得胜利！" style="480115" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484242" text="很遗憾，您所在帮派在&lt;font color='#FEFF00'&gt;本届帮派战{比赛场次}&lt;/font&gt;中战斗失利" style="480115" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484226" text="您所在帮派获得本届&lt;font color='#FEFF00'&gt;帮派战冠军&lt;/font&gt;，获得奖励&lt;font color='#FEFF00'&gt;{银两数值}银两，{声望数值}声望&lt;/font&gt;，通关副本&lt;font color='#FEFF00'&gt;20%经验、银两&lt;/font&gt;加成" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484227" text="您所在帮派获得本届&lt;font color='#FEFF00'&gt;帮派战亚军&lt;/font&gt;，获得奖励&lt;font color='#FEFF00'&gt;{银两数值}银两，{声望数值}声望&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484240" text="帮派晋级奖：您所在帮派在本届&lt;font color='#FEFF00'&gt;帮派战&lt;/font&gt;晋级&lt;font color='#FEFF00'&gt;{比赛场次}强&lt;/font&gt;，获得奖励&lt;font color='#FEFF00'&gt;{银两数值}银两，{声望数值}声望&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484228" text="击杀排名奖：您在本届&lt;font color='#FEFF00'&gt;帮派战&lt;/font&gt;奋勇杀敌，为本帮增光，获得奖励&lt;font color='#FEFF00'&gt;{银两数值}银两&lt;/font&gt;，&lt;font color='#FEFF00'&gt;{声望值}声望&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484229" text="&lt;font color='#FFFF00'&gt;【通告】距离帮派战战场开启还有{倒计时时间}分钟，请大家做好准备&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FFFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484230" text="&lt;font color='#FFFF00'&gt;【通告】帮派战战场已经开启，请大家入场准备&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FFFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484231" text="&lt;font color='#FFFF00'&gt;【通告】距离帮派战十六强赛开始还有{倒计时时间}分钟，请大家入场准备&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FFFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484232" text="&lt;font color='#FFFF00'&gt;【通告】距离帮派战八强赛开始还有{倒计时时间}分钟，请大家入场准备&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FFFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484233" text="&lt;font color='#FFFF00'&gt;【通告】距离帮派战半决赛开始还有{倒计时时间}分钟，请大家入场准备&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FFFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484234" text="&lt;font color='#FFFF00'&gt;【通告】距离帮派战决赛开始还有{倒计时时间}分钟，请大家入场准备&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FFFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484235" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;恭喜&lt;font color='#FEFF00'&gt;{帮派名六个字}&lt;/font&gt;帮派战胜对手晋级&lt;font color='#FEFF00'&gt;帮派战八强赛&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FFFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484236" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;恭喜&lt;font color='#FEFF00'&gt;{帮派名六个字}&lt;/font&gt;帮派战胜对手晋级&lt;font color='#FEFF00'&gt;帮派战半决赛&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FFFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484237" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;恭喜&lt;font color='#FEFF00'&gt;{帮派名六个字}&lt;/font&gt;帮派战胜对手晋级&lt;font color='#FEFF00'&gt;帮派战决赛&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FFFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484238" text="&lt;font color='#FEFF00'&gt;【通告】&lt;/font&gt;经过一番激烈的角逐，&lt;font color='#FEFF00'&gt;{帮派名六个字}&lt;/font&gt;帮派众志成城，最终获得了本届&lt;font color='#FEFF00'&gt;帮派战冠军&lt;/font&gt;" style="480101" font="黑体" size="20" color="#FFFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484239" text="帮派战活动期间不可操作" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484243" text="战场无法打坐" style="480106" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484244" text="帮派战开启中" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484245" text="下一轮战场未开启" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484246" text="确定消耗&lt;font color='#FEFF00'&gt;{黄金数值}黄金&lt;/font&gt;增加&lt;font color='#FEFF00'&gt;{战力百分比}战力&lt;/font&gt;？" style="480108" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484227" text="鼓舞成功" style="480106" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484301" text="获得天下第一活动资格" style="480105" font="宋体" size="13" color="#FEFF00" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484302" text="距离天下第一资格赛第一轮进场还有{时间数值}分钟" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484303" text="天下第一资格赛将于10分钟后正式开始，请各位玩家入场准备" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484304" text="距离天下第一资格赛第一轮开始还有{时间数值}分钟，请各位玩家入场准备" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484305" text="资格赛第一轮已结束，请晋级玩家入场准备第二轮" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484306" text="距离天下第一资格赛第二轮开始还有{时间数值}分钟，请晋级玩家入场准备" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484307" text="今日天下第一资格赛已结束" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484308" text="离开后视为弃权，不可再进，确认离开？" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484309" text="战斗结束" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484310" text="你在今日天下第一资格赛总共获得{银两数值}银两，{声望数值}声望" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484311" text="银两不足！" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484312" text="下注失败！" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484313" text="下注成功！" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484314" text="【通告】恭喜{玩家名字}获得本届天下第一的冠军" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484315" text="【通告】天下第一冠军{玩家名}上线了！" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484316" text="【通告】天下第一冠军{玩家名}下线了！" style="480101" font="黑体" size="20" color="#FEFF00" position="50" time="5" level="0" priority="0" okLabel="0"/>
+		<error id="484317" text="恭喜您获得本届天下第一的冠军，奖励{银两数值}银两，{声望数值}声望，上下线全服广播的特权" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484318" text="恭喜您在本届天下第一中位列{数值}强，奖励{银两数值}银两，{声望数值}声望" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484319" text="战斗失败，已离开活动场景" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484401" text="&lt;error id=&quot;484401&quot; text=&quot;未知错误：{错误ID}&quot; style=&quot;480109&quot; font=&quot;宋体&quot; size=&quot;12&quot; color=&quot;#E1DBBB&quot; position=&quot;0&quot; time=&quot;0&quot; level=&quot;0&quot; priority=&quot;0&quot; okLabel=&quot;0&quot;/&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484402" text="包格式出错" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484403" text="ID出错" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484404" text="类型出错" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484405" text="脚本调用出错" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484406" text="状态出错" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484407" text="位置出错" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484408" text="数量出错" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484409" text="等级出错" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484410" text="时间出错" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484501" text="成功领取黄钻新手奖励，获得&lt;font color='#FFFF00'&gt;{银两数值}银两&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484502" text="成功领取黄钻每日奖励，获得&lt;font color='#FFFF00'&gt;{银两数值}银两&lt;/font&gt;，&lt;font color='#FFFF00'&gt;{声望数值}声望&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484503" text="成功领取黄钻升级级奖励，获得&lt;font color='#FFFF00'&gt;{银两数值}银两&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484504" text="成功领取黄钻每日奖励，获得&lt;font color='#FFFF00'&gt;{银两数值}银两&lt;/font&gt;，&lt;font color='#FFFF00'&gt;{声望数值}声望&lt;/font&gt;&lt;br&gt;年费黄钻额外奖励&lt;font color='#FFFF00'&gt;{声望数值}声望&lt;/font&gt;" style="0" font="0" size="0" color="0" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484601" text="成功领取俸禄" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484602" text="您当前称号为&lt;font color='#FFFF00'&gt;{称号名六个字}&lt;/font&gt;，获得俸禄&lt;font color='#FFFF00'&gt;{银两数值}银两&lt;/font&gt;，&lt;font color='#FFFF00'&gt;{修为数值}修为&lt;/font&gt;" style="480109" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484603" text="升级称号成功" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484604" text="您有新的称号可以升级" style="480105" font="黑体" size="13" color="#FFFF00" position="0" time="0" level="0" priority="10" okLabel="提升称号"/>
+		<error id="484605" text="声望不足，无法升级" style="480106" font="黑体" size="14" color="#00CCFF" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="484701" text="您有一个资源加载失败：{资源名称}，【确定】重新加载，【取消】则重新登录" style="480107" font="宋体" size="12" color="#E1DBBB" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="0" text="0" style="0" font="0" size="0" color="0" position="0" time="0" level="0" priority="0" okLabel="0"/>
+		<error id="0" text="0" style="0" font="0" size="0" color="0" position="0" time="0" level="0" priority="0" okLabel="0"/>
+	</errorList>
+	<styles>
+		<style id="480101" font="黑体" size="20" color="#FFFF00"/>
+		<style id="480102" font="黑体" size="15" color="#FFFF00"/>
+		<style id="480103" font="宋体" size="12" color="#E1DBBB"/>
+		<style id="480104" font="黑体" size="16" color="#FFFF00"/>
+		<style id="480105" font="黑体" size="14" color="#FFFF00"/>
+		<style id="480106" font="黑体" size="14" color="#00CCFF"/>
+		<style id="480107" font="宋体" size="12" color="#E1DBBB"/>
+		<style id="480108" font="宋体" size="12" color="#E1DBBB"/>
+		<style id="480109" font="宋体" size="12" color="#E1DBBB"/>
+		<style id="480110" font="黑体" size="20" color="#E1DBBB"/>
+		<style id="480111" font="宋体" size="12" color="#FF0000"/>
+		<style id="480112" font="宋体" size="12" color="#FFFF00"/>
+		<style id="480113" font="宋体" size="14" color="#FFFF00"/>
+		<style id="480114" font="" size="" color=""/>
+		<style id="480115" font="" size="" color=""/>
+		<style id="480116" font="宋体" size="18" color="#FF0000"/>
+		<style id="480117" font="" size="" color=""/>
+		<style id="480118" font="宋体" size="16" color="#FFFF00"/>
+		<style id="480119" font="宋体" size="14" color="#00FF00"/>
+		<style id="480120" font="宋体" size="14" color="#FF9900"/>
+		<style id="480121" font="" size="" color=""/>
+		<style id="480122" font="" size="" color=""/>
+		<style id="480123" font="" size="" color=""/>
+		<style id="480124" font="宋体" size="" color=""/>
+		<style id="480125" font="黑体" size="14" color="#00CCFF"/>
+		<style id="480126" font="宋体" size="14" color="#FFFF00"/>
+		<style id="480127" font="宋体" size="12" color="#FFFFFF"/>
+		<style id="480128" font="黑体" size="14" color="#00CCFF"/>
+	</styles>
+</errors>

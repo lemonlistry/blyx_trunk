@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--2012-5-4 -4-18更新黄金价格 -4-5-3-28 -3-17　-3-14 -2-13 2-11 11-12-31更新
+收益的银两公式：levelFactor*silver；
+收益的经验公式：levelFactor*exp；
+2011-12-14 增加作物的ID和name-->
+<farm landCDTime="28800" clearCDTimeCoefficient="120">
+	<plantTypes>
+		<plantType id="471142" typeName="money" iconId="260501" seedling="260502" growth="260503" mature="260504" levelFactor="{12200 ,12400 ,12600 ,12800 ,13000 ,13200 ,13400 ,13600 ,13800 ,14000 ,14200 ,14400 ,14600 ,14800 ,15000 ,15200 ,15400 ,15600 ,15800 ,16000 ,16200 ,16400 ,16600 ,16800 ,17000 ,17200 ,17400 ,17600 ,17800 ,18000 ,18200 ,18400 ,18600 ,18800 ,19000 ,19200 ,19400 ,19600 ,19800 ,20000 ,20200 ,20400 ,20600 ,20800 ,21000 ,21200 ,21400 ,21600 ,21800 ,22000 ,22200 ,22400 ,22600 ,22800 ,23000 ,23200 ,23400 ,23600 ,23800 ,24000 ,24200 ,24400 ,24600 ,24800 ,25000 ,25200 ,25400 ,25600 ,25800 ,26000 ,26200 ,26400 ,26600 ,26800 ,27000 ,27200 ,27400 ,27600 ,27800 ,28000 ,28200 ,28400 ,28600 ,28800 ,29000 ,29200 ,29400 ,29600 ,29800 ,30000 ,30200 ,30400 ,30600 ,30800 ,31000 ,31200 ,31400 ,31600 ,31800 ,32000 }"/>
+		<plantType id="471144" typeName="exp" iconId="260505" seedling="260506" growth="260507" mature="260508" levelFactor="{7200,7300,7400,7500,7600,7700,7800,7900,8000,8100,8200,8300,8400,8500,8600,8700,8800,8900,9000,9100,9200,9300,9400,9500,9600,9700,9800,9900,10000,10000,11000,12000,13000,14000,15000,16000,17000,18000,19000,20000,21000,22000,23000,24000,25000,26000,27000,28000,29000,30000,31000,32000,33000,34000,35000,36000,37000,38000,39000,40000,42000,44000,46000,48000,50000,52000,54000,56000,58000,60000,62000,64000,66000,68000,70000,72000,74000,76000,78000,80000,82000,84000,86000,88000,90000,92000,94000,96000,98000,100000,102000,104000,106000,108000,110000,112000,114000,116000,118000,120000}"/>
+	</plantTypes>
+	<plants maxRobTimes="2" pricePercent="20" growth="10">
+		<plant id="471141" name="银两" itemId="" type="471142" mature="0" levelprerequisite="10"/>
+		<plant id="471140" name="经验" itemId="" type="471144" mature="0" levelprerequisite="10"/>
+	</plants>
+	<grounds>
+		<ground id="1" levelprerequisite="10" gold="0"/>
+		<ground id="2" levelprerequisite="10" gold="225"/>
+		<ground id="3" levelprerequisite="10" gold="450"/>
+		<ground id="4" levelprerequisite="10" gold="675"/>
+		<ground id="5" levelprerequisite="10" gold="900"/>
+		<ground id="6" levelprerequisite="10" gold="1125"/>
+		<ground id="7" levelprerequisite="10" gold="1350"/>
+		<ground id="8" levelprerequisite="10" gold="1575"/>
+		<ground id="9" levelprerequisite="10" gold="0"/>
+	</grounds>
+	<qualities>
+		<quality qualityType="471301" plantType="471142" price="8" probability="100" quantity="0" silver="2" exp="0"/>
+		<quality qualityType="471302" plantType="471142" price="8" probability="70" quantity="0" silver="3" exp="0"/>
+		<quality qualityType="471303" plantType="471142" price="8" probability="50" quantity="0" silver="4" exp="0"/>
+		<quality qualityType="471304" plantType="471142" price="8" probability="25" quantity="0" silver="5" exp="0"/>
+		<quality qualityType="471305" plantType="471142" price="0" probability="0" quantity="0" silver="6" exp="0"/>
+		<quality qualityType="471301" plantType="471144" price="8" probability="100" quantity="0" silver="0" exp="1"/>
+		<quality qualityType="471302" plantType="471144" price="8" probability="70" quantity="0" silver="0" exp="2"/>
+		<quality qualityType="471303" plantType="471144" price="8" probability="50" quantity="0" silver="0" exp="4"/>
+		<quality qualityType="471304" plantType="471144" price="8" probability="25" quantity="0" silver="0" exp="8"/>
+		<quality qualityType="471305" plantType="471144" price="0" probability="0" quantity="0" silver="0" exp="16"/>
+	</qualities>
+</farm>

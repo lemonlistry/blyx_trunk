@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+quickLinksOrg 快速链接
+navigationOrg 导航栏
+navigationTopOrg 功能图标
+playerInfoOrg 左上角人物
+taskTracerOrg 任务追踪
+chatorg 聊天框
+preferenceOrg 右上角地图
+messageOrg 消息提示图标
+-->
+<items>
+	<uiBar>
+		<item id="0" name="critical" displayMembers=""/>
+		<item id="1" name="preparing" displayMembers=""/>
+		<item id="3" name="mainCity" displayMembers="quickLinksOrg,navigationOrg,navigationTopOrg,playerInfoOrg,taskTracerOrg,chatorg,preferenceOrg,meditationOrg,messageOrg,factionFightOrg"/>
+		<item id="4" name="field" displayMembers="quickLinksOrg,navigationOrg,playerInfoOrg,taskTracerOrg,chatorg,preferenceOrg,meditationOrg,messageOrg,factionFightOrg"/>
+		<item id="5" name="fight" displayMembers="chatorg"/>
+		<item id="6" name="visit" displayMembers=""/>
+		<item id="7" name="farm" displayMembers="navigationOrg,playerInfoOrg,chatorg,messageOrg"/>
+		<item id="8" name="arena" displayMembers="chatorg"/>
+		<item id="9" name="worldBoss" displayMembers="navigationOrg,playerInfoOrg,chatorg,meditationOrg,messageOrg"/>
+		<item id="10" name="drama" displayMembers=""/>
+		<item id="11" name="clanBattle" displayMembers="quickLinksOrg,navigationOrg,navigationTopOrg,playerInfoOrg,taskTracerOrg,chatorg,preferenceOrg,meditationOrg"/>
+		<item id="12" name="worldMap" displayMembers=""/>
+		<item id="13" name="factionBattle" displayMembers="chatorg,navigationOrg,factionFightOrg"/>
+	</uiBar>
+	<clear>
+		<item id="0" name="critical" clearMembers="veinOrg,promotionTitlePanel,titlePanel,entouragePanel,wipeOrg,characterOrg,formationOrg,bookOrg,wallowPanel,fineryOrg,duplicateOrg,almaDuplicatePanel,bagOrg,vesselOrg,forgeOrg,taskOrg,npcTalkOrg,factionPanelOrg,factionMessageOrg,innOrg,friendPanel,p2pChatPanel,gmPanelOrg,otherPropertyPanel,activityPanel,presentPanel,dailyTaskPanel,raidersPanel,moneyBankPanel,tenDemonPanel,attendancePanel"/>
+	</clear>
+	</items>

@@ -30,7 +30,7 @@ class Controller extends CController
     protected function beforeAction($action) 
     {
         if (Yii::app()->user->isGuest) {
-            if($this->module->id == 'install' || ($this->module->id == 'passport' && $this->id == 'default' && $action->id == 'login')){
+            if(in_array($this->module->id, array('install', 'cron')) || ($this->module->id == 'passport' && $this->id == 'default' && $action->id == 'login')){
                 return true;
             } else {
                 if (YII_DEBUG) {
@@ -41,7 +41,7 @@ class Controller extends CController
             }
         }else{
             $this->menu = $this->getMenu();
-            if($this->module->id == 'install' || ($this->module->id == 'passport' && $this->id == 'default' && in_array($action->id, array('nopermission', 'logout')))){
+            if(in_array($this->module->id, array('install', 'cron')) || ($this->module->id == 'passport' && $this->id == 'default' && in_array($action->id, array('nopermission', 'logout')))){
                 return true;
             }else{
                 if(!Account::isAdmin(Yii::app()->user->getUid())){
@@ -70,6 +70,7 @@ class Controller extends CController
                         '/log/default/loglist' => '日志管理',
                         '/service/default/forbidlogin' => '客服管理',
                         '/realtime/default' => '实时数据',
+                        '/approve/default' => '事务审批',
                     );
     }
     
@@ -130,8 +131,8 @@ class Controller extends CController
             $field = floatval($field);
         }
         //整数验证
-        if(strpos($key, 'id') !== false){
-            $field = intval($field);
+        if(strpos($key, 'id') !== false || strpos($key, 'status') !== false){
+            $field = $field === '' ? '' : intval($field);
         }
         return $field;
     }
@@ -143,5 +144,20 @@ class Controller extends CController
     {
         $model = AutoIncrement::model()->findByAttributes(array('table' => $table));
         return empty($model) ? 1 : ++$model->index;
+    }
+    
+    /**
+     * 设置DB连接
+     * @param string $dbname
+     * @return CDbConnection the database connection used by active record.
+     */
+    public function setDbConnection($server_id){
+        Yii::import('passport.models.Server');
+        $model = Server::model()->findByAttributes(array('id' => $server_id));
+        if(empty($model)){
+            throw new CDbException('Active Record load server config error ...');
+        }else{
+            Yii::app()->cache->set('db_component', 'db' . $server_id);
+        }
     }
 }

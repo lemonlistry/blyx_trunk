@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worldBosses>
+	<item id="441501" name="天罡北斗阵">
+        <strategies>
+			<item npcId="435101" level="7" effect="阳防+60%"/>
+			<item npcId="435101" level="6" effect="抵挡+60%"/>
+			<item npcId="435101" level="5" effect="阴防+60%"/>
+			<item npcId="435101" level="4" effect="毒防+60%"/>
+			<item npcId="435101" level="3" effect="反击+60%"/>
+			<item npcId="435101" level="2" effect="玄防+60%"/>
+			<item npcId="435101" level="1" effect="闪避+60%"/>
+			<item npcId="435102" level="7" effect="阴防+60%"/>
+			<item npcId="435102" level="6" effect="阳防+60%"/>
+			<item npcId="435102" level="5" effect="反击+60%"/>
+			<item npcId="435102" level="4" effect="毒防+60%"/>
+			<item npcId="435102" level="3" effect="玄防+60%"/>
+			<item npcId="435102" level="2" effect="阴防+60%"/>
+			<item npcId="435102" level="1" effect="闪避+60%"/>
+			<item npcId="435103" level="7" effect="反击+60%"/>
+			<item npcId="435103" level="6" effect="阴防+60%"/>
+			<item npcId="435103" level="5" effect="毒防+60%"/>
+			<item npcId="435103" level="4" effect="抵挡+60%"/>
+			<item npcId="435103" level="3" effect="玄防+60%"/>
+			<item npcId="435103" level="2" effect="阳防+60%"/>
+			<item npcId="435103" level="1" effect="反击+60%"/>
+			<item npcId="435104" level="7" effect="闪避+60%"/>
+			<item npcId="435104" level="6" effect="阴防+60%"/>
+			<item npcId="435104" level="5" effect="阳防+60%"/>
+			<item npcId="435104" level="4" effect="抵挡+60%"/>
+			<item npcId="435104" level="3" effect="玄防+60%"/>
+			<item npcId="435104" level="2" effect="反击+60%"/>
+			<item npcId="435104" level="1" effect="闪避+60%"/>
+			<item npcId="435105" level="7" effect="抵挡+60%"/>
+			<item npcId="435105" level="6" effect="玄防+60%"/>
+			<item npcId="435105" level="5" effect="阴防+60%"/>
+			<item npcId="435105" level="4" effect="阳防+60%"/>
+			<item npcId="435105" level="3" effect="毒防+60%"/>
+			<item npcId="435105" level="2" effect="阴防+60%"/>
+			<item npcId="435105" level="1" effect="抵挡+60%"/>
+			<item npcId="435106" level="7" effect="毒防+60%"/>
+			<item npcId="435106" level="6" effect="玄防+60%"/>
+			<item npcId="435106" level="5" effect="阴防+60%"/>
+			<item npcId="435106" level="4" effect="毒防+60%"/>
+			<item npcId="435106" level="3" effect="阴防+60%"/>
+			<item npcId="435106" level="2" effect="阳防+60%"/>
+			<item npcId="435106" level="1" effect="抵挡+60%"/>
+			<item npcId="435107" level="7" effect="玄防+60%"/>
+			<item npcId="435107" level="6" effect="阳防+60%"/>
+			<item npcId="435107" level="5" effect="玄防+60%"/>
+			<item npcId="435107" level="4" effect="毒防+60%"/>
+			<item npcId="435107" level="3" effect="阳防+60%"/>
+			<item npcId="435107" level="2" effect="阴防+60%"/>
+			<item npcId="435107" level="1" effect="反击+60%"/>
+		</strategies>
+		<npcTeam>
+			<npc id="435101" name="马钰" />
+			<npc id="435102" name="谭处端" />
+			<npc id="435103" name="刘处玄" />
+			<npc id="435104" name="丘处机" />
+			<npc id="435105" name="王处一" />
+			<npc id="435106" name="郝大通" />
+			<npc id="435107" name="孙不二" />
+		</npcTeam>
+	</item>
+	<item id = "441502" name="金刚伏魔圈">
+        <strategies>
+			<item npcId="435108" level="95" effect=""/>
+			<item npcId="435108" level="75" effect="反击+60%"/>
+			<item npcId="435108" level="50" effect="阳防+80%"/>
+			<item npcId="435108" level="25" effect="抵挡+60%"/>
+			<item npcId="435108" level="5" effect="玄防+80%"/>
+			<item npcId="435108" level="0" effect="闪避+60%"/>
+			<item npcId="435109" level="95" effect=""/>
+			<item npcId="435109" level="75" effect="阳防+80%"/>
+			<item npcId="435109" level="50" effect="闪避+60%"/>
+			<item npcId="435109" level="25" effect="毒防+80%"/>
+			<item npcId="435109" level="5" effect="阴防+80%"/>
+			<item npcId="435109" level="0" effect="抵挡+60%"/>
+			<item npcId="435110" level="95" effect=""/>
+			<item npcId="435110" level="75" effect="阴防+80%"/>
+			<item npcId="435110" level="50" effect="玄防+80%"/>
+			<item npcId="435110" level="25" effect="毒防+80%"/>
+			<item npcId="435110" level="5" effect="抵挡+60%"/>
+			<item npcId="435110" level="0" effect="反击+60%"/>
+		</strategies>
+		<npcTeam>
+			<npc id="435108" name="渡厄神僧" />
+			<npc id="435109" name="渡难神僧" />
+			<npc id="435110" name="渡劫神僧" />
+		</npcTeam>
+		<nameToEffect>
+			<item name="阿罗汉神功" effect="阳防+80%"/>
+			<item name="降龙伏象功" effect="阴防+80%"/>
+			<item name="菩提心法" effect="毒防+80%"/>
+			<item name="金刚不坏体神功" effect="玄防+80%"/>
+			<item name="大挪移身法" effect="闪避+60%"/>
+			<item name="金钟罩" effect="抵挡+60%"/>
+			<item name="袈裟伏魔功" effect="反击+60%"/>
+		</nameToEffect>
+	</item>
+</worldBosses>

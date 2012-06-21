@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--2012-6-12  -5-19 -->
+<veins>
+	<vein id="473011" name="阳维脉" maxLevel="10" effectDescription="增加生命上限{value}" effect="{100,300,500,700,1000,1300,1600,2000,2500,3000}" cultivationToUpgrade="{100,900,2500,5500,16000,33000,57000,95000,240000,400000}"/>
+	<vein id="473012" name="阴维脉" maxLevel="10" effectDescription="增加筋骨{value}" effect="{10,30,50,70,100,130,160,200,250,300}" cultivationToUpgrade="{200,1000,2800,6000,18000,36000,60000,100000,260000,450000}"/>
+	<vein id="473013" name="阳跷脉" maxLevel="10" effectDescription="增加心法{value}" effect="{10,30,50,70,100,130,160,200,250,300}" cultivationToUpgrade="{300,1200,3200,7000,20000,39000,65000,120000,280000,500000}"/>
+	<vein id="473014" name="阴跷脉" maxLevel="10" effectDescription="增加悟性{value}" effect="{10,30,50,70,100,130,160,200,250,300}" cultivationToUpgrade="{400,1400,3500,8000,22000,42000,70000,140000,300000,550000}"/>
+	<vein id="473015" name="带脉" maxLevel="10" effectDescription="增加命中{value}%" effect="{1,2,3,4,5,6,7,8,9,10}" cultivationToUpgrade="{500,1600,3800,9000,24000,45000,75000,160000,320000,600000}"/>
+	<vein id="473016" name="冲脉" maxLevel="10" effectDescription="增加闪避{value}%" effect="{1,2,3,4,5,6,7,8,9,10}" cultivationToUpgrade="{600,1800,4100,10000,26000,48000,80000,180000,340000,650000}"/>
+	<vein id="473017" name="督脉" maxLevel="10" effectDescription="增加暴击{value}%" effect="{1,2,3,4,5,6,7,8,9,10}" cultivationToUpgrade="{700,2000,4500,12000,28000,51000,85000,200000,360000,700000}"/>
+	<vein id="473018" name="任脉" maxLevel="10" effectDescription="增加韧性{value}%" effect="{1,2,3,4,5,6,7,8,9,10}" cultivationToUpgrade="{800,2200,5000,14000,30000,54000,90000,220000,380000,750000}"/>
+</veins>

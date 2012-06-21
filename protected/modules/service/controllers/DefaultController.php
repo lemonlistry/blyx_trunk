@@ -4,6 +4,20 @@ class DefaultController extends Controller
 {
     public $select;
     
+    public function actions()
+    {
+        return array(
+            // captcha action renders the CAPTCHA image displayed on the contact page
+            'captcha'=>array(
+                'class'=>'CCaptchaAction',
+                'backColor'=>0xFFFFFF,  //背景颜色
+                //'minLength'=>4,  //最短为4位
+                //'maxLength'=>4,   //是长为4位
+                'transparent'=>true,  //显示为透明，当关闭该选项，才显示背景颜色
+            ),
+        );
+    }
+
     /**
      * 初始化服务器信息
      */
@@ -55,7 +69,7 @@ class DefaultController extends Controller
             //服务端返回数据
             $res = $socket->recv();
             $par_res = $socket->parseNoHeaderResonsePack($res);
-            $socket->returnJson($par_res, '禁止玩家登陆');
+            $socket->returnJson($par_res, 'socket请求: 禁止玩家登陆');
             sleep(1);
             //关闭socket链接
             $socket->close();
@@ -101,7 +115,7 @@ class DefaultController extends Controller
             //服务端返回数据
             $res = $socket->recv();
             $par_res = $socket->parseNoHeaderResonsePack($res);
-            $socket->returnJson($par_res, '禁止玩家聊天');
+            $socket->returnJson($par_res, 'socket请求: 禁止玩家聊天');
             sleep(1);
             //关闭socket链接
             $socket->close();
@@ -145,7 +159,7 @@ class DefaultController extends Controller
             //服务端返回数据
             $res = $socket->recv();
             $par_res = $socket->parseNoHeaderResonsePack($res);
-            $socket->returnJson($par_res, '允许玩家登陆');
+            $socket->returnJson($par_res, 'socket请求: 允许玩家登陆');
             sleep(1);
             //关闭socket链接
             $socket->close();
@@ -190,7 +204,7 @@ class DefaultController extends Controller
             //服务端返回数据
             $res = $socket->recv();
             $par_res = $socket->parseNoHeaderResonsePack($res);
-            $socket->returnJson($par_res, '允许玩家聊天');
+            $socket->returnJson($par_res, 'socket请求: 允许玩家聊天');
             sleep(1);
             //关闭socket链接
             $socket->close();
@@ -234,7 +248,7 @@ class DefaultController extends Controller
             $cmd .= pack('a25',$param['award_name']); //awardName
             $cmd .= pack('L',$param['time']); //time
             $cmd .= pack('S',1); //数量设置 2字节 16bit 用S
-            $cmd .= pack('L',$param['item_id']); //itemStruct
+            $cmd .= pack('L',410228); //itemStruct  $param['item_id']
             $cmd .= pack('L',$param['num']); //itemStruct
             $cmd .= pack('S',1); //数量设置 2字节 16bit 用S
             $cmd .= pack('L',$param['role_id']); //roleList
@@ -243,7 +257,7 @@ class DefaultController extends Controller
             //服务端返回数据
             $res = $socket->recv();
             $par_res = $socket->parseNoHeaderResonsePack($res);
-            $socket->returnJson($par_res, '发送礼包');
+            $socket->returnJson($par_res, 'socket请求: 发送礼包');
             sleep(1);
             //关闭socket链接
             $socket->close();
@@ -272,22 +286,27 @@ class DefaultController extends Controller
     {
         $title = 'GM管理';
         if(Yii::app()->request->isAjaxRequest){
-            $param = $this->getParam(array('server_id'));
-            $server = Server::model()->findByAttributes(array('id' => $param['server_id']));
-            $socket = new SocketHelper($server->web_ip, $server->web_socket_port);
-            //包头处理
-            $cmd = $socket->getLogicPackHeader(0x0A032027, 33);
-            //包体处理
-            $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
-            //发送数据
-            $socket->send($cmd);
-            //服务端返回数据
-            $res = $socket->recv();
-            $par_res = $socket->parseNoHeaderResonsePack($res);
-            $socket->returnJson($par_res, '关闭服务器');
-            sleep(1);
-            //关闭socket链接
-            $socket->close();
+            $code = $this->createAction('captcha')->getVerifyCode();
+            $param = $this->getParam(array('server_id', 'code'));
+            if($code != $param['code']){
+                 echo json_encode(array('flag' => 0, 'msg' => '请输入正确的验证码'));
+            }else{
+                $server = Server::model()->findByAttributes(array('id' => $param['server_id']));
+                $socket = new SocketHelper($server->web_ip, $server->web_socket_port);
+                //包头处理
+                $cmd = $socket->getLogicPackHeader(0x0A032027, 33);
+                //包体处理
+                $cmd .= pack('a33', Yii::app()->params['socket_password']); //Password
+                //发送数据
+                $socket->send($cmd);
+                //服务端返回数据
+                $res = $socket->recv();
+                $par_res = $socket->parseNoHeaderResonsePack($res);
+                $socket->returnJson($par_res, 'socket请求: 关闭服务器');
+                sleep(1);
+                //关闭socket链接
+                $socket->close();
+            }
             Yii::app()->end();
         }
         $this->initServer();
@@ -472,7 +491,7 @@ class DefaultController extends Controller
             //服务端返回数据
             $res = $socket->recv();
             $par_res = $socket->parseNoHeaderResonsePack($res);
-            $socket->returnJson($par_res, '发送在线公告');
+            $socket->returnJson($par_res, 'socket请求: 发送在线公告');
             sleep(1);
             //关闭socket链接
             $socket->close();

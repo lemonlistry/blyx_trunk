@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<-- 
+行为：
+enterWorldMap:打开世界地图
+talkNPC:对话NPC
+chooseDungeon:打开选择副本界面
+changeMap:切换地图
+beginMeditating:开始打坐
+enterArena:打开武林大会
+条件：
+sweeping:挂机系统工作中
+clanBattle:门派战工作中
+!-->
+<actions>
+  <item id="1" name="enterWorldMap">
+    <condition name="sweeping"/>
+	<failedActions>
+	  <notice id="481906"/>
+	  <exitSystem id="" name="Meditation"/>
+	</failedActions>
+  </item>  
+  <item id="2" name="enterWorldMap">
+    <condition name="clanBattle"/>
+	<failedActions>
+	  <notice id="483814"/>
+	  <exitSystem id="" name="Meditation"/>
+	</failedActions>
+  </item>  
+  <item id="3" name="talkNPC">
+    <condition name="clanBattle"/>
+	<failedActions>
+	  <notice id="483814"/>
+	</failedActions>
+  </item>  
+  <item id="4" name="talkNPC">
+    <condition name="sweeping"/>
+	<failedActions>
+	  <notice id="481906"/>
+	</failedActions>
+  </item>
+  <item id="5" name="chooseDungeon">
+    <condition name="sweeping"/>
+	<failedActions>
+	  <notice id="481906"/>
+	</failedActions>
+  </item>
+  <item id="6" name="chooseDungeon">
+    <condition name="clanBattle"/>
+	<failedActions>
+	  <notice id="483814"/>
+	</failedActions>
+  </item>
+  <item id="7" name="changeMap">
+    <condition name="sweeping"/>
+	<failedActions>
+	  <notice id="481906"/>
+	</failedActions>
+  </item>
+  <item id="8" name="changeMap">
+    <condition name="clanBattle"/>
+	<failedActions>
+	  <notice id="483814"/>
+	</failedActions>
+  </item>
+  <item id="9" name="beginMeditating">
+    <condition name="sweeping"/>
+	<failedActions>
+	  <notice id="481906"/>
+	</failedActions>
+  </item>
+  <item id="10" name="enterArena">
+    <condition name="clanBattle"/>
+	<failedActions>
+	  <notice id="483814"/>
+	</failedActions>
+  </item>
+</actions>

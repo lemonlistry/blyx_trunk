@@ -33,6 +33,19 @@
                     </div>
                 </div>
                 
+                <div class="clearfix">
+                    <div class="cell">
+                        <label>请输入验证码:</label>
+                        <div class="item" style="margin-top: -15px;">
+                            <div class="main">
+                                <?php 
+                                    echo Html5::textField('code', '', array('style' => 'float:left; margin-top:15px; '));  $this->widget('CCaptcha'); 
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="actions">
                     <button type="button" id="save" name="save">提交</button>
                 </div>
@@ -50,6 +63,10 @@
         $("#save").click(function(){
             if(!$("#server_id").val()){
                 Dialog.alert('请选择服务器');
+                return false;
+            }
+            if(!$("#code").val()){
+                Dialog.alert('请输入验证码');
                 return false;
             }
             $("#save").prop('disabled',true);

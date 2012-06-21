@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+		<Item id="3" name="官方网址" url="http://app27076-1.qzoneapp.com/jhs/" enabled="true"/>
+		<Item id="4" name="江湖论坛" url="http://app27076-1.qzoneapp.com/jhs/" enabled="true"/>
+
+-->
+<contextMenus>
+	<contextMenu>
+		<Item id="1" name="菠萝游戏出品" url="" enabled="true"/>
+		<Item id="2" name="201206082045" url="" enabled="false"/>
+		<Item id="4" name="论坛地址" url="http://sobar.soso.com/b/3007483_1971" enabled="true"/>
+	</contextMenu>
+</contextMenus>

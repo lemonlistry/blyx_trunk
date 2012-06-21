@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xisui>
+	
+	<item phrase="1" minTotalNum="0" maxTotalNum="30" price1="100" price2="1" price3="3"/>
+	<item phrase="2" minTotalNum="31" maxTotalNum="60" price1="500" price2="2" price3="6"/>
+	<item phrase="3" minTotalNum="61" maxTotalNum="90" price1="1000" price2="3" price3="9"/>
+	<item phrase="4" minTotalNum="91" maxTotalNum="120" price1="2000" price2="4" price3="12"/>
+	<item phrase="5" minTotalNum="121" maxTotalNum="150" price1="5000" price2="5" price3="15"/>
+	<item phrase="6" minTotalNum="151" maxTotalNum="180" price1="10000" price2="6" price3="18"/>
+	<item phrase="7" minTotalNum="181" maxTotalNum="210" price1="15000" price2="7" price3="21"/>
+	<item phrase="8" minTotalNum="211" maxTotalNum="240" price1="20000" price2="8" price3="24"/>
+	<item phrase="9" minTotalNum="241" maxTotalNum="270" price1="25000" price2="9" price3="27"/>
+	<item phrase="10" minTotalNum="271" maxTotalNum="300" price1="30000" price2="10" price3="30"/>
+	<item phrase="11" minTotalNum="301" maxTotalNum="330" price1="35000" price2="11" price3="33"/>
+	<item phrase="12" minTotalNum="331" maxTotalNum="360" price1="40000" price2="12" price3="36"/>
+	<item phrase="13" minTotalNum="361" maxTotalNum="390" price1="45000" price2="13" price3="39"/>
+	<item phrase="14" minTotalNum="391" maxTotalNum="420" price1="50000" price2="14" price3="42"/>
+	<item phrase="15" minTotalNum="421" maxTotalNum="450" price1="55000" price2="15" price3="45"/>
+	<item phrase="16" minTotalNum="451" maxTotalNum="480" price1="60000" price2="16" price3="48"/>
+	<item phrase="17" minTotalNum="481" maxTotalNum="510" price1="65000" price2="17" price3="51"/>
+	<item phrase="18" minTotalNum="511" maxTotalNum="540" price1="70000" price2="18" price3="54"/>
+	<item phrase="19" minTotalNum="541" maxTotalNum="570" price1="75000" price2="19" price3="57"/>
+	<item phrase="20" minTotalNum="571" maxTotalNum="600" price1="80000" price2="20" price3="60"/>
+	<item phrase="21" minTotalNum="601" maxTotalNum="630" price1="85000" price2="21" price3="63"/>
+	<item phrase="22" minTotalNum="631" maxTotalNum="660" price1="90000" price2="22" price3="66"/>
+	<item phrase="23" minTotalNum="661" maxTotalNum="690" price1="95000" price2="23" price3="69"/>
+	<item phrase="24" minTotalNum="691" maxTotalNum="720" price1="100000" price2="24" price3="72"/>
+	<item phrase="25" minTotalNum="721" maxTotalNum="750" price1="105000" price2="25" price3="75"/>
+	<item phrase="26" minTotalNum="751" maxTotalNum="780" price1="110000" price2="26" price3="78"/>
+	<item phrase="27" minTotalNum="781" maxTotalNum="810" price1="115000" price2="27" price3="81"/>
+	<item phrase="28" minTotalNum="811" maxTotalNum="840" price1="120000" price2="28" price3="84"/>
+	<item phrase="29" minTotalNum="841" maxTotalNum="870" price1="125000" price2="29" price3="87"/>
+	<item phrase="30" minTotalNum="871" maxTotalNum="900" price1="130000" price2="30" price3="90"/>
+	<item phrase="31" minTotalNum="901" maxTotalNum="930" price1="135000" price2="31" price3="93"/>
+	<item phrase="32" minTotalNum="931" maxTotalNum="960" price1="140000" price2="32" price3="96"/>
+	<item phrase="33" minTotalNum="961" maxTotalNum="990" price1="145000" price2="33" price3="99"/>
+	<item phrase="34" minTotalNum="991" maxTotalNum="1020" price1="150000" price2="34" price3="102"/>
+	<item phrase="35" minTotalNum="1021" maxTotalNum="1050" price1="155000" price2="35" price3="105"/>
+	<item phrase="36" minTotalNum="1051" maxTotalNum="1080" price1="160000" price2="36" price3="108"/>
+	<item phrase="37" minTotalNum="1081" maxTotalNum="1110" price1="165000" price2="37" price3="111"/>
+	<item phrase="38" minTotalNum="1111" maxTotalNum="1140" price1="170000" price2="38" price3="114"/>
+	<item phrase="39" minTotalNum="1141" maxTotalNum="1170" price1="175000" price2="39" price3="117"/>
+	<item phrase="40" minTotalNum="1171" maxTotalNum="1200" price1="180000" price2="40" price3="120"/>
+	<item phrase="41" minTotalNum="1201" maxTotalNum="1230" price1="185000" price2="41" price3="123"/>
+	<item phrase="42" minTotalNum="1231" maxTotalNum="1260" price1="190000" price2="42" price3="126"/>
+	<item phrase="43" minTotalNum="1261" maxTotalNum="1290" price1="195000" price2="43" price3="129"/>
+	<item phrase="44" minTotalNum="1291" maxTotalNum="1320" price1="200000" price2="44" price3="132"/>
+	
+</xisui>

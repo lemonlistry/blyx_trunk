@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vips>
+	<vip level="1" totalGold="70" description="升级为VIP1，可使用以下消费项目：&lt;br&gt;1.每天可在钱庄兑换3次&lt;br&gt;2.每天可购买精力2次&lt;br&gt;3.每次练功时间延长4小时&lt;br&gt;4.强化累计冷却时间延长至25分钟&lt;br&gt;5.获得10万银两和500声望&lt;br&gt;6.每天武林大会可购买挑战次数5次&lt;br&gt;7.获得10%的修为加成BUFF&lt;br&gt;8.免费开启道具店&lt;br&gt;9.免费开启仓库&lt;br&gt;10.已通关副本战斗中可直接查看结果&lt;br&gt;11.随从刷新可使用银两刷新"/>
+	<vip level="2" totalGold="750" description="升级为VIP2，可使用以下消费项目：&lt;br&gt;1.每天可在钱庄兑换5次&lt;br&gt;2.每天可购买精力3次&lt;br&gt;3.每次练功时间延长8小时&lt;br&gt;4.强化累计冷却时间延长至30分钟&lt;br&gt;5.获得20万银两和1000声望&lt;br&gt;6.每天武林大会可购买挑战次数10次&lt;br&gt;7.获得12%的修为加成BUFF&lt;br&gt;8.日常任务可刷新星级&lt;br&gt;9.门派竞技，帮派战，天罡北斗阵和金刚伏魔圈可用黄金鼓舞&lt;br&gt;10.十大恶人副本战斗中可直接查看结果&lt;br&gt;11.高级VIP包含所有低级VIP的功能"/>
+	<vip level="3" totalGold="1500" description="升级为VIP3，可使用以下消费项目：&lt;br&gt;1.每天可在钱庄兑换7次&lt;br&gt;2.每天可购买精力5次&lt;br&gt;3.每次练功时间延长12小时&lt;br&gt;4.强化累计冷却时间延长至35分钟&lt;br&gt;5.获得50万银两和1500声望&lt;br&gt;6.每天武林大会可购买挑战次数15次&lt;br&gt;7.获得14%的修为加成BUFF&lt;br&gt;8.随从刷新可使用黄金刷新&lt;br&gt;9.强化成功率可固定为100%&lt;br&gt;10.每天可刷新英雄榜1次&lt;br&gt;11.武林大会战斗中可直接查看结果"/>
+	<vip level="4" totalGold="7500" description="升级为VIP4，可使用以下消费项目：&lt;br&gt;1.每天可在钱庄兑换10次&lt;br&gt;2.每天可购买精力7次&lt;br&gt;3.合成中可用一键合成，用黄金代替不足的材料&lt;br&gt;4.每次练功时间延长16小时&lt;br&gt;5.获得2000声望&lt;br&gt;6.每天武林大会可购买挑战次数15次&lt;br&gt;7.获得16%的修为加成BUFF&lt;br&gt;8.拜访中可用自动拜访和全部卖出&lt;br&gt;9.洗髓增加白金模式，更容易洗出高属性&lt;br&gt;10.门派竞技战斗中可直接查看结果&lt;br&gt;11.随从刷新可使用自动刷新"/>
+	<vip level="5" totalGold="15000" description="升级为VIP5，可使用以下消费项目：&lt;br&gt;1.每天可在钱庄兑换20次&lt;br&gt;2.每天可购买精力10次&lt;br&gt;3.获得2500声望&lt;br&gt;4.获得18%的修为加成BUFF&lt;br&gt;5.药园中可用一键满星，让作物直接到达最高品质&lt;br&gt;6.拜访中可用寻访，直接点亮逍遥派宗师&lt;br&gt;7.每天可刷新英雄榜2次&lt;br&gt;8.天罡北斗阵和金刚伏魔圈战斗中可直接查看结果&lt;br&gt;9.日常任务可一键完成"/>
+	<vip level="6" totalGold="30000" description="升级为VIP6，可使用以下消费项目：&lt;br&gt;1.每天可在钱庄兑换30次&lt;br&gt;2.每天可购买精力15次&lt;br&gt;3.获得3000声望&lt;br&gt;4.获得20%的修为加成BUFF&lt;br&gt;5.随从刷新可使用一键史诗"/>
+	<vip level="7" totalGold="75000" description="升级为VIP7，可使用以下消费项目：&lt;br&gt;1.每天可在钱庄兑换50次&lt;br&gt;2.每天可购买精力20次&lt;br&gt;3.每天可刷新英雄榜3次"/>
+	<vip level="8" totalGold="150000" description="升级为VIP8，可使用以下消费项目：&lt;br&gt;1.每天可在钱庄兑换100次&lt;br&gt;2.每天可购买精力25次&lt;br&gt;3.未通关副本战斗中可直接查看结果"/>
+	<vip level="9" totalGold="750000" description="升级为VIP9，可使用以下消费项目：&lt;br&gt;1.每天可在钱庄兑换200次&lt;br&gt;2.每天可购买精力30次"/>
+	<vip level="10" totalGold="1500000" description="升级为VIP10，可使用以下消费项目：&lt;br&gt;1.每天可在钱庄兑换400次&lt;br&gt;2.每天可购买精力40次"/>
+	<vip level="10" totalGold="0" description="当前已达最高等级VIP10，可使用以下消费项目：&lt;br&gt;1.每天可在钱庄兑换400次&lt;br&gt;2.每天可购买精力40次"/>
+</vips>

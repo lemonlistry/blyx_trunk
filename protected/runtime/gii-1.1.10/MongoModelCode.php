@@ -2,6 +2,6 @@
 return array (
   'template' => 'default',
   'tablePrefix' => '',
-  'modelPath' => 'application.modules.passport.models',
+  'modelPath' => 'application.modules.service.models',
   'baseClass' => 'MongoDocument',
 );

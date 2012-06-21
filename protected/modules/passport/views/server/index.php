@@ -30,7 +30,6 @@
                                 <th class="span2">数据库名字</th>
                                 <th class="span2">账号</th>
                                 <th class="span2">密码</th>
-                                <th class="span2">脚本</th>
                                 <th class="span3">web服务器IP</th>
                                 <th class="span2">socket端口</th>
                                 <th class="span2">操作</th>
@@ -46,20 +45,19 @@
                                             <td><?php echo $v->gname; ?></td>
                                             <td><?php echo $v->sname; ?></td>
                                             <td><?php echo $v->create_time; ?></td>
-                                            <td><?php echo $v->status; ?></td>
-                                            <td><?php echo $v->recommend; ?></td>
-                                            <td><?php echo $v->type; ?></td>
+                                            <td><?php echo $model->getServerStatus($v->status); ?></td>
+                                            <td><?php echo $model->getServerRecommend($v->recommend); ?></td>
+                                            <td><?php echo $model->getServerType($v->type); ?></td>
                                             <td><?php echo $v->db_ip; ?></td>
                                             <td><?php echo $v->db_port; ?></td>
                                             <td><?php echo $v->db_name; ?></td>
                                             <td><?php echo $v->db_user; ?></td>
                                             <td><?php echo $v->db_passwd; ?></td>
-                                            <td><?php echo $v->script; ?></td>
                                             <td><?php echo $v->web_ip; ?></td>
                                             <td><?php echo $v->web_socket_port; ?></td>
                                             <td>
                                                     <?php
-                                                    echo Html5::link('编辑', array('/passport/server/updateserver', 'id' => $v->id), array('class' => 'js-dialog-link')) . ' ' .
+                                                    echo Html5::link('编辑', array('/passport/server/updateserver', 'id' => $v->id), array('class' => 'js-dialog-link', 'data-width' => 600, 'data-height' => 600)) . ' ' .
                                                     Html5::link('删除', array('/passport/server/deleteserver', 'id' => $v->id), array('class' => 'js-confirm-link', 'data-title' => "您确定要删除当前服务器吗？"));
                                                 ?>
                                             </td>

@@ -44,4 +44,13 @@ class Account {
         return empty($attribute) ? $role : $role->$attribute;
     }
     
+    /**
+     * 根据角色属性获取角色信息
+     * @param string $attribute
+     * @param string $value
+     */
+    public static function allUser(){
+        Yii::import('passport.models.User');
+        return User::model()->findAll();
+    }
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--2012-5-9 -->
+<demons>
+	<demon id="491001" name="杜杀" levelPrerequisite="20" monsterId="435301" silver="20000" exp="2500" headIcon="260103" bodyIcon="260123"/>
+	<demon id="491002" name="白开心" levelPrerequisite="30" monsterId="435302" silver="25000" exp="5000" headIcon="260102" bodyIcon="260122"/>
+	<demon id="491003" name="李大嘴" levelPrerequisite="40" monsterId="435303" silver="30000" exp="10000" headIcon="260104" bodyIcon="260124"/>
+	<demon id="491004" name="铁战" levelPrerequisite="50" monsterId="435304" silver="35000" exp="15000" headIcon="260105" bodyIcon="260125"/>
+	<demon id="491005" name="萧咪咪" levelPrerequisite="60" monsterId="435305" silver="40000" exp="20000" headIcon="260101" bodyIcon="260121"/>
+	
+</demons>

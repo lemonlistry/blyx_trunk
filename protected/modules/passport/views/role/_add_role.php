@@ -9,7 +9,7 @@
         <?php echo $form->labelEx($model, 'group_id'); ?>
         <div class="item">
             <div class="main">
-                <?php echo $form->dropDownList($model, 'group_id', $group_list); ?>
+                <?php echo $form->dropDownList($model, 'group_id', $group_list, array('class' => 'medium')); ?>
             </div>
         </div>
         <?php echo $form->error($model, 'group_id'); ?>

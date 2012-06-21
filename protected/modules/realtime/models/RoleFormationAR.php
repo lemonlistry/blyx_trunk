@@ -12,8 +12,7 @@
  */
 class RoleFormationAR extends ActiveRecord
 {
-    public $role_formationlist;
-	/**
+    /**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
 	 * @return RoleFormationAR the static model class

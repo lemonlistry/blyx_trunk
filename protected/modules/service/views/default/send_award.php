@@ -60,7 +60,7 @@
                         <label>请输入时间:</label>
                         <div class="item">
                             <div class="main">
-                                <input type="text" id="time" name="time" value="<?php echo date('Y-m-d H:i:s'); ?>" />
+                                <input type="text" id="time" name="time" value="604800" />
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                         <label>请输入物品ID:</label>
                         <div class="item">
                             <div class="main">
-                                <input type="text" id="item_id" name="item_id" value="" />
+                                <input type="text" id="item_id" name="item_id" value="410228" />
                             </div>
                         </div>
                     </div>

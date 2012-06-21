@@ -5,39 +5,41 @@
 <!--</style>-->
 <center>
 <font size="5" face ="隶书">物品包</font>
-</center>  
+ 
 <hr>
-<table>
+<table border = 1>
     <tr>
        <?php 
           if (count($list)){
               for($i = 0;$i <= 36;$i++){
-                  if ($i%4 == 0){
+                  if ($i%5 == 0){
                     echo '</tr><tr>';
                   }
-                  echo '<td>';
-                  echo isset($list['bag'.$i])?$list['bag'.$i]:'';
-                  echo '</td>';
+                  if (isset($list['bag'.$i])){
+                    echo '<td>';
+                    echo $list['bag'.$i];
+                    echo '</td>';
+                  }
               }
           }
         ?>
 </table>
 <br>
-<center>
 <font size="5" face ="隶书">秘籍包</font>
-</center>
 <hr>
-<table>
+<table border = 1>
     <tr>
        <?php 
           if (count($list)){
-              for($i = 0;$i <= 36;$i++){
-                  if ($i%4 == 0){
+              for($i = 0;$i <= 20;$i++){
+                  if ($i%6 == 0){
                     echo '</tr><tr>';
                   }
-                  echo '<td>';
-                  echo isset($list['book'.$i])?$list['book'.$i]:'';
-                  echo '</td>';
+                  if (isset($list['book'.$i])){
+                    echo '<td>';
+                    echo $list['book'.$i];
+                    echo '</td>';
+                  }
               }
           }
         ?>

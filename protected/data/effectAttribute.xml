@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skills>
+	<skillList>
+		<skill skillId="0" skillName="无" effectResourceId="0" skillDescription="完成9级主线任务可学会绝技" effectPlaceId="0" startEffectId="0"/>
+		<skill skillId="421100" skillName="普通攻击" effectResourceId="707101" skillDescription="" effectPlaceId="423314" startEffectId="0"/>
+		<skill skillId="421101" skillName="蓄力一击" effectResourceId="701038" skillDescription="单体攻击，积蓄力量给予目标致命打击" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421102" skillName="裂云刀法" effectResourceId="701048" skillDescription="单体攻击，一旦斩下，穿石裂云，威力惊人" effectPlaceId="423315" startEffectId="708002"/>
+		<skill skillId="421103" skillName="一字电剑" effectResourceId="701093" skillDescription="单体攻击，出手刹那疾如闪电，让对方避无可避" effectPlaceId="423314" startEffectId="708003"/>
+		<skill skillId="421104" skillName="柔云剑术" effectResourceId="701075" skillDescription="单体攻击，轻灵迅捷，讲究以柔克刚，适合女子修习" effectPlaceId="423314" startEffectId="708004"/>
+		<skill skillId="421105" skillName="劈空掌" effectResourceId="701032" skillDescription="单体攻击，只此一式，凌空而来，劈天而下，威力强大" effectPlaceId="423315" startEffectId="0"/>
+		<skill skillId="421106" skillName="琴觞" effectResourceId="701092" skillDescription="单体攻击，魅人心智，让人在不知不觉中沦为琴下亡魂" effectPlaceId="423314" startEffectId="708006"/>
+		<skill skillId="421201" skillName="刚烈" effectResourceId="701001" skillDescription="单体攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421202" skillName="撕裂" effectResourceId="701012" skillDescription="单体攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421203" skillName="狂暴" effectResourceId="701003" skillDescription="单体攻击，提升自己暴击率50%" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421204" skillName="摄魄" effectResourceId="701004" skillDescription="单体攻击，晕眩，持续1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421205" skillName="猛击" effectResourceId="701005" skillDescription="单体攻击，晕眩，持续1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421206" skillName="刺击" effectResourceId="701006" skillDescription="单体攻击，提升自己绝技攻击50%" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421207" skillName="志坚" effectResourceId="701007" skillDescription="单体攻击，偷取对方的怒气为己所用" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421208" skillName="霸体" effectResourceId="701008" skillDescription="单体攻击，提升自己基础外功攻击力" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421209" skillName="二段击" effectResourceId="701009" skillDescription="单体攻击，连续两次伤害，第二次伤害为第一次伤害的50%" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421210" skillName="御风" effectResourceId="701010" skillDescription="提升自己闪避，持续3回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421211" skillName="反击" effectResourceId="701011" skillDescription="提升自己反击几率，持续3回合" effectPlaceId="423313" startEffectId="708001"/>
+		<skill skillId="421212" skillName="影袭" effectResourceId="701012" skillDescription="攻击目标队列最后一个位置，晕眩，持续1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421213" skillName="狂煞" effectResourceId="701013" skillDescription="单体攻击，提升自己暴击50%" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421214" skillName="勾魂" effectResourceId="701014" skillDescription="单体攻击，混乱，持续1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421215" skillName="碎甲" effectResourceId="701015" skillDescription="单体攻击，让目标降低绝技防御，持续2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421216" skillName="破甲" effectResourceId="701016" skillDescription="单体攻击，让目标降低外功防御，持续2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421217" skillName="魄散" effectResourceId="701017" skillDescription="单体攻击，降低目标怒气34" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421218" skillName="吸血" effectResourceId="701018" skillDescription="单体攻击，自己恢复伤害一定比例的生命" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421219" skillName="淬毒" effectResourceId="701019" skillDescription="单体攻击，中毒，持续2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421220" skillName="自爆" effectResourceId="701020" skillDescription="以损失自己当前所有生命的代价，对目标造成自己当前血量50%生命" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421221" skillName="散魂" effectResourceId="701021" skillDescription="单体攻击，定身，持续1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421222" skillName="恐惧" effectResourceId="701021" skillDescription="单体攻击，让对方减少当前10%怒气" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421223" skillName="混乱" effectResourceId="701022" skillDescription="混乱，持续1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421224" skillName="催眠" effectResourceId="701023" skillDescription="催眠，持续1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421225" skillName="魅惑" effectResourceId="701024" skillDescription="混乱，持续1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421226" skillName="治疗" effectResourceId="701025" skillDescription="治疗自己，恢复最大生命20%" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421227" skillName="回春" effectResourceId="701025" skillDescription="治疗己方随机一个目标，恢复其最大生命的20%" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421228" skillName="绝对防御" effectResourceId="701026" skillDescription="绝对防御，持续1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421229" skillName="定身" effectResourceId="701027" skillDescription="定身，持续1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421230" skillName="赤焰" effectResourceId="701028" skillDescription="单体攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421231" skillName="地煞" effectResourceId="701029" skillDescription="单体攻击，晕眩，持续1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421232" skillName="花祭" effectResourceId="701091" skillDescription="单体攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421233" skillName="星芒" effectResourceId="701060" skillDescription="单体攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421234" skillName="光耀" effectResourceId="701028" skillDescription="单体攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421235" skillName="逆天" effectResourceId="701001" skillDescription="单体攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421236" skillName="驱散" effectResourceId="701001" skillDescription="单体攻击，如对方有增益BUFF，驱散该BUFF" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421237" skillName="流星" effectResourceId="701084" skillDescription="单体攻击，且会让对方减少命中10%，持续2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421238" skillName="坚韧" effectResourceId="701001" skillDescription="提高自身韧性20%，持续3回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421239" skillName="鼓舞" effectResourceId="701025" skillDescription="提高我方全体外功攻击力，持续2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421240" skillName="膝裂" effectResourceId="701008" skillDescription="单体攻击，且让对方减少内功防御，持续2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421241" skillName="重击" effectResourceId="701017" skillDescription="单体攻击，有几率晕眩对方，持续1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421242" skillName="血誓" effectResourceId="701090" skillDescription="单体攻击，持续掉血，持续2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421243" skillName="横扫" effectResourceId="701028" skillDescription="横排攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421244" skillName="穿刺" effectResourceId="701012" skillDescription="纵排攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421245" skillName="挫志" effectResourceId="701001" skillDescription="单体攻击，且会减少对方抵挡，持续2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421246" skillName="蛮力" effectResourceId="701001" skillDescription="单体攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421247" skillName="战兢" effectResourceId="701003" skillDescription="单体攻击，减少对方绝技攻击力，持续2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421248" skillName="咆哮" effectResourceId="701003" skillDescription="单体攻击，且增加自己绝技攻击力，持续2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421249" skillName="强击" effectResourceId="701032" skillDescription="单体攻击，晕眩，持续1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421250" skillName="狂战" effectResourceId="701001" skillDescription="单体攻击，提高暴击2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421251" skillName="幻影" effectResourceId="701010" skillDescription="提高闪避，持续3回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421252" skillName="幻舞" effectResourceId="701010" skillDescription="自己闪避达到最高值，不能被打到，持续1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421253" skillName="庇护" effectResourceId="701010" skillDescription="提升自己绝技防御力，持续3回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421254" skillName="大剪刀刀法" effectResourceId="701030" skillDescription="南海鳄神独门绝技，凶猛霸道，单体攻击" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421255" skillName="空明拳" effectResourceId="701009" skillDescription="周伯通自创道家绝学，看似平常，实则内蕴深厚，单体攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421256" skillName="太祖长拳" effectResourceId="701032" skillDescription="单体攻击，降低对方绝技防御2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421257" skillName="参合指" effectResourceId="701033" skillDescription="少林绝学，刚猛无敌，纵排攻击" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421258" skillName="般若掌" effectResourceId="701034" skillDescription="少林绝学，刚猛无敌，单体攻击，提高自身暴击2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421259" skillName="伏魔杖法" effectResourceId="701035" skillDescription="少林绝学，刚猛无敌，全体攻击" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421260" skillName="神门十三剑" effectResourceId="701036" skillDescription="武当派武学，专攻手腕神门穴，单体攻击，降低对方绝技防御2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421261" skillName="回头望月" effectResourceId="701037" skillDescription="江湖绝学，横排攻击，轻灵飘逸，适合女子修习" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421262" skillName="太极剑法" effectResourceId="701038" skillDescription="武当绝学，单体攻击，提高自身暴击2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421263" skillName="太极功" effectResourceId="701039" skillDescription="武当绝学，张三丰所创，全体攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421264" skillName="五毒手印" effectResourceId="701040" skillDescription="五毒教绝学，单体攻击，降低对方绝技防御2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421265" skillName="见死不救" effectResourceId="701041" skillDescription="胡青牛自创绝学，纵排攻击" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421266" skillName="万蛇噬咬" effectResourceId="701042" skillDescription="单体攻击，提高自身暴击2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421267" skillName="千劫万毒手" effectResourceId="701043" skillDescription="五毒教绝学，万毒齐发，全体攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421268" skillName="大挪移掌法" effectResourceId="701044" skillDescription="单体攻击，降低对方绝技防御2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421269" skillName="屠龙刀法" effectResourceId="701045" skillDescription="江湖绝学，刚猛霸道，横排攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421270" skillName="乾坤一击" effectResourceId="701046" skillDescription="单体攻击，提高自身暴击2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421271" skillName="独孤九剑" effectResourceId="701062" skillDescription="剑魔独孤求败所创，大开大阖，全体攻击，降低对方外攻防御2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421272" skillName="乾坤大挪移" effectResourceId="701048" skillDescription="明教教主阳顶天独门绝学，威力无穷，全体攻击" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421273" skillName="神行百变" effectResourceId="701049" skillDescription="单体攻击，定身对方1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421274" skillName="连环三仙剑" effectResourceId="701050" skillDescription="单体攻击，混乱对方1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421275" skillName="如意香香功" effectResourceId="701088" skillDescription="丽春院绝学，横排攻击，催眠对方1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421276" skillName="小擒拿手" effectResourceId="701045" skillDescription="皇家绝学，凌厉霸道，十字攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421277" skillName="金钟罩" effectResourceId="701052" skillDescription="单体攻击，降低对方绝技攻击2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421278" skillName="蛮腰纤纤" effectResourceId="701053" skillDescription="单体攻击，轻灵纤巧，适合女子修习，降低对方内功攻击2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421279" skillName="凝血神剑" effectResourceId="701054" skillDescription="江湖绝学，横排攻击，威力强大，混乱对方1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421280" skillName="五绝神功" effectResourceId="701055" skillDescription="江湖绝学，全体攻击，威力强大，混乱对方1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421281" skillName="苍松迎客" effectResourceId="701056" skillDescription="江湖剑法绝学，剑式苍劲凌厉，单体攻击，提高自身外功攻击2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421282" skillName="明月功" effectResourceId="701057" skillDescription="纵排攻击，降低对方绝技防御2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421283" skillName="落叶飞花" effectResourceId="701058" skillDescription="移花宫绝学，威力强大，单体攻击，提高自身绝技攻击2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421284" skillName="嫁衣神功" effectResourceId="701059" skillDescription="移花宫镇宫绝学，单体攻击，威力强大，降低对方外功攻击2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421285" skillName="斗转星移" effectResourceId="701060" skillDescription="江湖绝学，纵排攻击，威力强大，混乱对方1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421286" skillName="吸攻入地小法" effectResourceId="701061" skillDescription="江湖绝学，威力强大，横排攻击，降低对方内功防御2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421287" skillName="九阴白骨爪" effectResourceId="701047" skillDescription="九阴真经所载武功绝学，全体攻击，晕眩目标1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421288" skillName="白虹贯日" effectResourceId="701063" skillDescription="江湖绝学，威猛霸道，十字攻击，混乱对方1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421289" skillName="石鼓打穴笔法" effectResourceId="701064" skillDescription="从书法中演变出来的武功绝学，单体攻击，降低对方命中2回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421601" skillName="落英神剑" effectResourceId="701021" skillDescription="落英剑法最终式，单体攻击，提高自身闪避1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421602" skillName="棋盘招式" effectResourceId="701066" skillDescription="从棋谱中演变出来的武功绝学，单体攻击，提高自身反击1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421603" skillName="九阳神功" effectResourceId="701067" skillDescription="先人黄裳所传武功绝学，单体攻击，晕眩对方1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421604" skillName="灵蛇飞舞" effectResourceId="701068" skillDescription="白驼山绝学，单体攻击，让对方中毒2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421605" skillName="混元功" effectResourceId="701068" skillDescription="武林绝学，单体攻击，伤人心脉，极为阴毒霸道，晕眩对方1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421606" skillName="白驼杖法" effectResourceId="701070" skillDescription="白驼山绝学，单体攻击，提高自身内攻1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421607" skillName="移花接玉" effectResourceId="701071" skillDescription="移花宫绝学之一，擅长借力打力，纵排攻击，催眠对方1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421608" skillName="降魔刀法" effectResourceId="701072" skillDescription="江湖绝学，单体攻击，晕眩对方1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421609" skillName="西子捧心" effectResourceId="701073" skillDescription="江湖绝学，单体攻击，恐惧对方1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421610" skillName="摧心掌" effectResourceId="701074" skillDescription="江湖绝学，凌厉霸道，纵排攻击，降低对方内功防御2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421611" skillName="万毒穿心" effectResourceId="701075" skillDescription="南疆毒术绝学，中招之后犹如万虫噬心，单体攻击，晕眩对方1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421612" skillName="降龙十八掌" effectResourceId="701076" skillDescription="丐帮两大绝学之一，单体攻击，降低对方怒气2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421613" skillName="一阳指" effectResourceId="701077" skillDescription="大理佛家绝学，威力强大，纵排攻击，晕眩对方1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421614" skillName="五虎断门刀" effectResourceId="701078" skillDescription="江湖绝学，单体攻击，霸道威猛，势不可挡，提高自身抵挡1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421615" skillName="罗汉拳" effectResourceId="701079" skillDescription="少林绝学，横排攻击，使用时上下相随，身如摆舵，灵活多变" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421616" skillName="全真剑法" effectResourceId="701072" skillDescription="全真绝学，纵排攻击，降低对方外功防御2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421617" skillName="全真彩舟云淡" effectResourceId="701080" skillDescription="单体" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421618" skillName="天地任逍遥" effectResourceId="701081" skillDescription="全体攻击" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421619" skillName="寒冰绵掌" effectResourceId="701082" skillDescription="纵排攻击，掌劲如冰，一经着身，对方劲力立卸" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421620" skillName="大力金刚指" effectResourceId="701083" skillDescription="单体" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421621" skillName="全真罗带同心" effectResourceId="701084" skillDescription="单体" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421622" skillName="铁画银钩" effectResourceId="701085" skillDescription="从书法中演变而来的武功绝学，刚若铁画，媚如银钩，纵排攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421623" skillName="追风剑法" effectResourceId="701086" skillDescription="单体" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421624" skillName="空灵剑法" effectResourceId="701087" skillDescription="江湖绝学，单体攻击，身法飘逸，一击必中，提高自身命中2回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421625" skillName="金蛇剑法" effectResourceId="701027" skillDescription="五毒教密传剑法，横排攻击，身法诡异，招式凌厉" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421626" skillName="天龙八音" effectResourceId="701089" skillDescription="全体攻击" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421627" skillName="狐假虎威" effectResourceId="701094" skillDescription="江湖混混专用绝技，威力强大，十字攻击，眩晕对方1回合" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421628" skillName="打狗棒法" effectResourceId="701091" skillDescription="历代丐帮帮主嫡传绝学，全体攻击，定身对方1回合" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421629" skillName="武学分解" effectResourceId="701095" skillDescription="曼陀山庄独门绝学，我方全体增加怒气" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421630" skillName="七弦魔音" effectResourceId="701025" skillDescription="治疗我方全体，恢复一定生命" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421631" skillName="玉箫剑法" effectResourceId="701051" skillDescription="桃花岛绝学，攻击对方最后1人" effectPlaceId="423315" startEffectId="708001"/>
+		<skill skillId="421632" skillName="吸星大法" effectResourceId="701018" skillDescription="单体攻击，自身恢复一定生命" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421633" skillName="全真张帆举棹" effectResourceId="701072" skillDescription="单体" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421634" skillName="全真春意阑珊" effectResourceId="701074" skillDescription="单体" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421635" skillName="全真素月分辉" effectResourceId="701072" skillDescription="单体" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421636" skillName="全真试请悲风" effectResourceId="701074" skillDescription="单体" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421637" skillName="全真桃花流水" effectResourceId="701072" skillDescription="单体" effectPlaceId="423314" startEffectId="708001"/>
+		<skill skillId="421641" skillName="万戟归心" effectResourceId="701100" skillDescription="单体" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421642" skillName="墨杀" effectResourceId="701097" skillDescription="单体" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421643" skillName="刀魄苍穹" effectResourceId="701096" skillDescription="单体" effectPlaceId="423315" startEffectId="708007"/>
+		<skill skillId="421644" skillName="颠倒阴阳" effectResourceId="701086" skillDescription="单体" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421645" skillName="血战天下" effectResourceId="701099" skillDescription="单体" effectPlaceId="423314" startEffectId="708009"/>
+		<skill skillId="421646" skillName="倾家荡产" effectResourceId="701086" skillDescription="单体" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421647" skillName="死亡炼狱" effectResourceId="701098" skillDescription="单体" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421648" skillName="笑里藏刀" effectResourceId="701086" skillDescription="单体" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421649" skillName="阴风泣月" effectResourceId="701086" skillDescription="单体" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421650" skillName="宁死不吃亏" effectResourceId="701086" skillDescription="单体" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421651" skillName="天煞斩" effectResourceId="701059" skillDescription="十字攻击，恐惧对方1回合" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421652" skillName="雨恨云愁" effectResourceId="701055" skillDescription="横排攻击，让对方中毒2回合" effectPlaceId="423314" startEffectId="708009"/>
+		<skill skillId="421653" skillName="小李飞刀" effectResourceId="701060" skillDescription="全体攻击，恐惧对方1回合" effectPlaceId="423314" startEffectId="708009"/>
+		<skill skillId="421654" skillName="流云飞袖" effectResourceId="701058" skillDescription="十字攻击，降低对方外功防御2回合" effectPlaceId="423314" startEffectId="708009"/>
+		<skill skillId="421655" skillName="灵犀一指" effectResourceId="701034" skillDescription="全体攻击，降低对方内功防御2回合" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421656" skillName="貂蝉拜月" effectResourceId="701036" skillDescription="横排攻击，降低对方绝技防御2回合" effectPlaceId="423314" startEffectId="708009"/>
+		<skill skillId="421657" skillName="一剑西来" effectResourceId="701071" skillDescription="纵排攻击，定身对方1回合" effectPlaceId="423314" startEffectId="708009"/>
+		<skill skillId="421658" skillName="剑转流云" effectResourceId="701040" skillDescription="十字攻击，降低对方内功防御2回合" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421659" skillName="天外飞仙" effectResourceId="701070" skillDescription="纵排攻击，恐惧对方1回合" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421660" skillName="七绝诛魔剑" effectResourceId="701049" skillDescription="十字攻击，催眠对方1回合" effectPlaceId="423314" startEffectId="708009"/>
+		<skill skillId="421661" skillName="九星定形针" effectResourceId="701075" skillDescription="横排攻击，降低对方外功防御2回合" effectPlaceId="423314" startEffectId="708009"/>
+		<skill skillId="421662" skillName="天瀑剑法" effectResourceId="701062" skillDescription="全体攻击，催眠对方1回合" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421663" skillName="回旋连环剑" effectResourceId="701050" skillDescription="十字攻击，降低对方绝技防御2回合" effectPlaceId="423314" startEffectId="708009"/>
+		<skill skillId="421664" skillName="细胸巧翻云" effectResourceId="701054" skillDescription="横排攻击，晕眩对方1回合" effectPlaceId="423314" startEffectId="708009"/>
+		<skill skillId="421665" skillName="须弥剑法" effectResourceId="701066" skillDescription="纵排攻击，让对方中毒2回合" effectPlaceId="423314" startEffectId="708009"/>
+		<skill skillId="421666" skillName="火焰连环斩" effectResourceId="701048" skillDescription="十字攻击，定身对方1回合" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421667" skillName="魔音泣血" effectResourceId="701047" skillDescription="全体攻击，让对方中毒2回合" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421668" skillName="水月无间" effectResourceId="701051" skillDescription="横排攻击，恐惧对方1回合" effectPlaceId="423315" startEffectId="708009"/>
+		<skill skillId="421669" skillName="破军卸甲" effectResourceId="701030" skillDescription="全体攻击，降低对方绝技防御2回合" effectPlaceId="423315" startEffectId="708009"/>
+	</skillList>
+	<buff>
+		<buff buffId="423101" buffName="降低外攻" buffResourceId="702001" effectPlaceId="423315"/>
+		<buff buffId="423102" buffName="降低外防" buffResourceId="702002" effectPlaceId="423315"/>
+		<buff buffId="423103" buffName="降低内攻" buffResourceId="702003" effectPlaceId="423315"/>
+		<buff buffId="423104" buffName="降低内防" buffResourceId="702004" effectPlaceId="423315"/>
+		<buff buffId="423105" buffName="降低绝攻" buffResourceId="702005" effectPlaceId="423315"/>
+		<buff buffId="423106" buffName="降低绝防" buffResourceId="702006" effectPlaceId="423315"/>
+		<buff buffId="423107" buffName="降低阳攻" buffResourceId="702007" effectPlaceId="423315"/>
+		<buff buffId="423108" buffName="降低阴攻" buffResourceId="702008" effectPlaceId="423315"/>
+		<buff buffId="423109" buffName="降低毒攻" buffResourceId="702009" effectPlaceId="423315"/>
+		<buff buffId="423110" buffName="降低玄攻" buffResourceId="702010" effectPlaceId="423315"/>
+		<buff buffId="423111" buffName="降低阳防" buffResourceId="702011" effectPlaceId="423315"/>
+		<buff buffId="423112" buffName="降低阴防" buffResourceId="702012" effectPlaceId="423315"/>
+		<buff buffId="423113" buffName="降低毒防" buffResourceId="702013" effectPlaceId="423315"/>
+		<buff buffId="423114" buffName="降低玄防" buffResourceId="702014" effectPlaceId="423315"/>
+		<buff buffId="423115" buffName="降低气势" buffResourceId="702015" effectPlaceId="423315"/>
+		<buff buffId="423116" buffName="中毒" buffResourceId="706007" effectPlaceId="423313"/>
+		<buff buffId="423117" buffName="降低命中" buffResourceId="702016" effectPlaceId="423315"/>
+		<buff buffId="423118" buffName="降低闪避" buffResourceId="702017" effectPlaceId="423315"/>
+		<buff buffId="423119" buffName="降低暴击" buffResourceId="702018" effectPlaceId="423315"/>
+		<buff buffId="423120" buffName="降低韧性" buffResourceId="702019" effectPlaceId="423315"/>
+		<buff buffId="423121" buffName="降低格挡" buffResourceId="702020" effectPlaceId="423315"/>
+		<buff buffId="423122" buffName="降低反击" buffResourceId="702021" effectPlaceId="423315"/>
+		<buff buffId="423123" buffName="定身" buffResourceId="706002" effectPlaceId="423314"/>
+		<buff buffId="423124" buffName="晕眩" buffResourceId="706006" effectPlaceId="423313"/>
+		<buff buffId="423125" buffName="催眠" buffResourceId="706005" effectPlaceId="423313"/>
+		<buff buffId="423126" buffName="恐惧" buffResourceId="706001" effectPlaceId="423314"/>
+		<buff buffId="423127" buffName="冰冻" buffResourceId="706001" effectPlaceId="423315"/>
+		<buff buffId="423128" buffName="混乱" buffResourceId="706003" effectPlaceId="423313"/>
+		<buff buffId="423201" buffName="提高外攻" buffResourceId="702022" effectPlaceId="423315"/>
+		<buff buffId="423202" buffName="提高外防" buffResourceId="702023" effectPlaceId="423315"/>
+		<buff buffId="423203" buffName="提高内攻" buffResourceId="702024" effectPlaceId="423315"/>
+		<buff buffId="423204" buffName="提高内防" buffResourceId="702025" effectPlaceId="423315"/>
+		<buff buffId="423205" buffName="提高绝攻" buffResourceId="702026" effectPlaceId="423315"/>
+		<buff buffId="423206" buffName="提高绝防" buffResourceId="702027" effectPlaceId="423315"/>
+		<buff buffId="423207" buffName="提高阳攻" buffResourceId="702028" effectPlaceId="423315"/>
+		<buff buffId="423208" buffName="提高阴攻" buffResourceId="702029" effectPlaceId="423315"/>
+		<buff buffId="423209" buffName="提高毒攻" buffResourceId="702030" effectPlaceId="423315"/>
+		<buff buffId="423210" buffName="提高玄功" buffResourceId="702031" effectPlaceId="423315"/>
+		<buff buffId="423211" buffName="提高阳防" buffResourceId="702032" effectPlaceId="423315"/>
+		<buff buffId="423212" buffName="提高阴防" buffResourceId="702033" effectPlaceId="423315"/>
+		<buff buffId="423213" buffName="提高毒防" buffResourceId="702034" effectPlaceId="423315"/>
+		<buff buffId="423214" buffName="提高玄防" buffResourceId="702035" effectPlaceId="423315"/>
+		<buff buffId="423215" buffName="提高气势" buffResourceId="702036" effectPlaceId="423315"/>
+		<buff buffId="423216" buffName="恢复血量" buffResourceId="702037" effectPlaceId="423315"/>
+		<buff buffId="423217" buffName="提高命中" buffResourceId="702038" effectPlaceId="423315"/>
+		<buff buffId="423218" buffName="提高闪避" buffResourceId="702039" effectPlaceId="423315"/>
+		<buff buffId="423219" buffName="提高暴击" buffResourceId="702040" effectPlaceId="423315"/>
+		<buff buffId="423220" buffName="提高韧性" buffResourceId="702041" effectPlaceId="423315"/>
+		<buff buffId="423221" buffName="提高格挡" buffResourceId="702042" effectPlaceId="423315"/>
+		<buff buffId="423222" buffName="增加反击" buffResourceId="702043" effectPlaceId="423315"/>
+		<buff buffId="423223" buffName="绝对防御" buffResourceId="702044" effectPlaceId="423314"/>
+		<buff buffId="423224" buffName="撕裂" buffResourceId="706001" effectPlaceId="423314"/>
+		<buff buffId="423225" buffName="绝对闪避" buffResourceId="706009" effectPlaceId="423314"/>
+	</buff>
+	<effectPlace>
+		<effectPlace effectPlaceId="423313" effectPlaceName="上"/>
+		<effectPlace effectPlaceId="423314" effectPlaceName="中"/>
+		<effectPlace effectPlaceId="423315" effectPlaceName="下"/>
+	</effectPlace>
+</skills>

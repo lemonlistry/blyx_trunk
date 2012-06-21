@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<newbieGuides>
+	<!-- 
+	prevGuide:前置指引id 
+	showTaskStateCondition:显示新手指引的任务和状态({任务id, 任务状态}) 
+	1 : 未接任务 2 : 已接未完成任务 3:可提交任务
+	displayObjectName : 要指引的组件名称
+	isRight : true/false 表示指引箭头的方向 true 向右指向 false 向左指向
+	text : 指引的内容
+	 xOffset : 偏移量x
+	yOffset : 偏移量y
+	-->
+    <newbieGuide id="1" prevGuide="0" showTaskStateCondition="{451001,1}" displayObjectName="gameStage.middleLayer.mapLayer.middleMap.npc_433002" isRight="true" triggerEvent="" text="点击开始任务"  xOffset="-20" yOffset="-220">
+    </newbieGuide>
+    <newbieGuide id="2" prevGuide="" showTaskStateCondition="{451001,1}" displayObjectName="gameStage.poplayer.npcTalkOrg.npcFaceCell.txtContainer_mc.content0_mc" isRight="true" triggerEvent="null" text="点击对话"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+	<newbieGuide id="3" prevGuide="" showTaskStateCondition="{451001,3}" displayObjectName="gameStage.poplayer.npcTalkOrg.npcFaceCell.txtContainer_mc.content0_mc" isRight="true" triggerEvent="null" text="点击完成任务"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+	<newbieGuide id="4" prevGuide="" showTaskStateCondition="{451003,1}" displayObjectName="gameStage.poplayer.npcTalkOrg.npcFaceCell.txtContainer_mc.content0_mc" isRight="true" triggerEvent="null" text="点击对话"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+    <newbieGuide id="5" prevGuide="" showTaskStateCondition="{451003,3}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="" text="点击自动寻路"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+    <newbieGuide id="6" prevGuide="" showTaskStateCondition="{451003,3}" displayObjectName="gameStage.poplayer.npcTalkOrg.npcFaceCell.txtContainer_mc.content0_mc" isRight="true" triggerEvent="null" text="点击完成任务"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+    <newbieGuide id="7" prevGuide="" showTaskStateCondition="{451004,1}" displayObjectName="gameStage.poplayer.npcTalkOrg.npcFaceCell.txtContainer_mc.content0_mc" isRight="true" triggerEvent="null" text="点击对话"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+	<newbieGuide id="8" prevGuide="" showTaskStateCondition="{451004,2}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="" text="点击自动寻路"  xOffset="0" yOffset="-4">
+    </newbieGuide>
+    <newbieGuide id="9" prevGuide="" showTaskStateCondition="{451004,2}" displayObjectName="gameStage.poplayer.duplicateOrg.duplicateFaceCell.bottomContainer.item0.aloneEnterBtn" isRight="true" triggerEvent="click" text="点击进入副本"  xOffset="-6" yOffset="-17">
+    </newbieGuide>
+	<newbieGuide id="10" prevGuide="9" showTaskStateCondition="{451004,2}" displayObjectName="gameStage.middleLayer.mapLayer.middleMap.monster_438001" isRight="true" triggerEvent="click" text="点击怪物战斗"  xOffset="-40" yOffset="-100">
+    </newbieGuide>
+	<newbieGuide id="11" prevGuide="10" showTaskStateCondition="{451004,2}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="click" text="点击寻找怪物"  xOffset="0" yOffset="-4">
+    </newbieGuide>
+    <newbieGuide id="12" prevGuide="" showTaskStateCondition="{451004,3}" displayObjectName="gameStage.toplayer.maskLayerOrg.fightReportMediator.fightReport_evaluationFrame.leaveBtn" isRight="true" triggerEvent="click" text="点击离开副本"  xOffset="-40" yOffset="-28">
+    </newbieGuide>
+	<newbieGuide id="13" prevGuide="12" showTaskStateCondition="{451004,3}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="" text="点击自动寻路"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+    <newbieGuide id="14" prevGuide="" showTaskStateCondition="{451004,3}" displayObjectName="gameStage.poplayer.npcTalkOrg.npcFaceCell.txtContainer_mc.content0_mc" isRight="true" triggerEvent="null" text="点击完成任务"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+	<newbieGuide id="15" prevGuide="" showTaskStateCondition="{451005,1}" displayObjectName="gameStage.poplayer.npcTalkOrg.npcFaceCell.txtContainer_mc.content0_mc" isRight="true" triggerEvent="null" text="点击对话"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+	<newbieGuide id="16" prevGuide="" showTaskStateCondition="{451005,2}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="" text="点击自动寻路"  xOffset="0" yOffset="-4">
+    </newbieGuide>
+	<newbieGuide id="17" prevGuide="" showTaskStateCondition="{451005,2}" displayObjectName="gameStage.poplayer.duplicateOrg.duplicateFaceCell.bottomContainer.item0.aloneEnterBtn" isRight="true" triggerEvent="click" text="点击进入副本"  xOffset="144" yOffset="-17">
+    </newbieGuide>
+	<newbieGuide id="18" prevGuide="17" showTaskStateCondition="{451005,2}" displayObjectName="gameStage.middleLayer.mapLayer.middleMap.monster_438003" isRight="true" triggerEvent="click" text="点击怪物战斗"  xOffset="-40" yOffset="-100">
+    </newbieGuide>
+	<newbieGuide id="19" prevGuide="18" showTaskStateCondition="{451005,2}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="click" text="点击寻找怪物"  xOffset="0" yOffset="-4">
+    </newbieGuide>
+	<newbieGuide id="20" prevGuide="" showTaskStateCondition="{451005,3}" displayObjectName="gameStage.toplayer.maskLayerOrg.fightReportMediator.fightReport_evaluationFrame.leaveBtn" isRight="true" triggerEvent="click" text="点击离开副本"  xOffset="-40" yOffset="-28">
+    </newbieGuide>
+	<newbieGuide id="21" prevGuide="20" showTaskStateCondition="{451005,3}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="" text="点击自动寻路"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+    <newbieGuide id="22" prevGuide="" showTaskStateCondition="{451005,3}" displayObjectName="gameStage.poplayer.npcTalkOrg.npcFaceCell.txtContainer_mc.content0_mc" isRight="true" triggerEvent="null" text="点击完成任务"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+	<newbieGuide id="23" prevGuide="" showTaskStateCondition="{451006,1}" displayObjectName="gameStage.poplayer.npcTalkOrg.npcFaceCell.txtContainer_mc.content0_mc" isRight="true" triggerEvent="null" text="点击对话"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+	<newbieGuide id="24" prevGuide="" showTaskStateCondition="{451006,2}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="" text="点击自动寻路"  xOffset="0" yOffset="-4">
+    </newbieGuide>
+	<newbieGuide id="25" prevGuide="" showTaskStateCondition="{451006,2}" displayObjectName="gameStage.poplayer.duplicateOrg.duplicateFaceCell.bottomContainer.item0.aloneEnterBtn" isRight="true" triggerEvent="click" text="点击进入副本"  xOffset="284" yOffset="-17">
+    </newbieGuide>
+	<newbieGuide id="26" prevGuide="25" showTaskStateCondition="{451006,2}" displayObjectName="gameStage.middleLayer.mapLayer.middleMap.monster_438005" isRight="true" triggerEvent="click" text="点击怪物战斗"  xOffset="-40" yOffset="-100">
+    </newbieGuide>
+	<newbieGuide id="27" prevGuide="26" showTaskStateCondition="{451006,2}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="click" text="点击寻找怪物"  xOffset="0" yOffset="-4">
+    </newbieGuide>
+	<newbieGuide id="28" prevGuide="" showTaskStateCondition="{451006,3}" displayObjectName="gameStage.toplayer.maskLayerOrg.fightReportMediator.fightReport_evaluationFrame.leaveBtn" isRight="true" triggerEvent="click" text="点击离开副本"  xOffset="-40" yOffset="-28">
+    </newbieGuide>
+	<newbieGuide id="29" prevGuide="28" showTaskStateCondition="{451006,3}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="" text="点击自动寻路"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+    <newbieGuide id="30" prevGuide="" showTaskStateCondition="{451006,3}" displayObjectName="gameStage.poplayer.npcTalkOrg.npcFaceCell.txtContainer_mc.content0_mc" isRight="true" triggerEvent="null" text="点击完成任务"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+	<newbieGuide id="31" prevGuide="" showTaskStateCondition="{451007,1}" displayObjectName="gameStage.poplayer.npcTalkOrg.npcFaceCell.txtContainer_mc.content0_mc" isRight="true" triggerEvent="null" text="点击对话"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+	<newbieGuide id="32" prevGuide="" showTaskStateCondition="{451007,3}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="" text="点击自动寻路"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+	<newbieGuide id="33" prevGuide="" showTaskStateCondition="{451007,3}" displayObjectName="gameStage.poplayer.npcTalkOrg.npcFaceCell.txtContainer_mc.content0_mc" isRight="true" triggerEvent="null" text="点击完成任务"  xOffset="0" yOffset="-19">
+    </newbieGuide>
+	<newbieGuide id="34" prevGuide="" showTaskStateCondition="{451009,2}" displayObjectName="gameStage.toplayer.maskLayerOrg.systemOpenGuideOrg.systemOpenGuideCell.know_btn" isRight="true" triggerEvent="click" text="点击这里"  xOffset="-37" yOffset="-30">
+    </newbieGuide>
+	<newbieGuide id="35" prevGuide="34" showTaskStateCondition="{451009,2}" displayObjectName="gameStage.frolayer.navigationOrg.navigationBarFaceCell.functionContainer_mc.finery_btn" isRight="true" triggerEvent="" text="点击打开强化"  xOffset="-22" yOffset="-28">
+    </newbieGuide>
+	<newbieGuide id="36" prevGuide="" showTaskStateCondition="{451009,2}" displayObjectName="gameStage.poplayer.fineryOrg.fineryFaceCell.rightContainer_mc.strengthen_btn" isRight="true" triggerEvent="click" text="点击强化1次"  xOffset="-43" yOffset="-27">
+    </newbieGuide>
+	<newbieGuide id="37" prevGuide="36" showTaskStateCondition="{451009,2}" displayObjectName="gameStage.poplayer.fineryOrg.fineryFaceCell.rightContainer_mc.strengthen_btn" isRight="true" triggerEvent="click" text="点击强化2次"  xOffset="-43" yOffset="-27">
+    </newbieGuide>
+	<newbieGuide id="38" prevGuide="37" showTaskStateCondition="{451009,2}" displayObjectName="gameStage.poplayer.fineryOrg.fineryFaceCell.rightContainer_mc.strengthen_btn" isRight="true" triggerEvent="click" text="点击强化3次"  xOffset="-43" yOffset="-27">
+    </newbieGuide>
+    <newbieGuide id="39" prevGuide="" showTaskStateCondition="{451009,3}" displayObjectName="gameStage.poplayer.fineryOrg.fineryFaceCell.close_btn" isRight="true" triggerEvent="click" text="点击关闭界面"  xOffset="-20" yOffset="-28">
+    </newbieGuide>
+	<newbieGuide id="40" prevGuide="39" showTaskStateCondition="{451009,3}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="" text="点击自动寻路"  xOffset="0" yOffset="-17">
+    </newbieGuide>
+	<newbieGuide id="41" prevGuide="" showTaskStateCondition="{451013,2}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="" text="点击自动寻路"  xOffset="0" yOffset="-4">
+    </newbieGuide>
+    <newbieGuide id="42" prevGuide="" showTaskStateCondition="{451013,2}" displayObjectName="gameStage.poplayer.npcTalkOrg.npcFaceCell.txtContainer_mc.content0_mc" isRight="true" triggerEvent="" text="点击打开客栈"  xOffset="1" yOffset="-24">
+    </newbieGuide>
+	<newbieGuide id="43" prevGuide="" showTaskStateCondition="{451013,2}" displayObjectName="gameStage.poplayer.innOrg.innFaceCell.partnerContainer_mc.partner_0.invite_btn" isRight="true" triggerEvent="click" text="点击查看"  xOffset="4" yOffset="-21">
+    </newbieGuide>
+	<newbieGuide id="44" prevGuide="" showTaskStateCondition="{451013,2}" displayObjectName="gameStage.poplayer.entouragePanel.entourageFaceCell.recruit_btn" isRight="true" triggerEvent="click" text="点击招募"  xOffset="-36" yOffset="-25">
+    </newbieGuide>
+	<newbieGuide id="45" prevGuide="44" showTaskStateCondition="{451013,3}" displayObjectName="gameStage.poplayer.entouragePanel.entourageFaceCell.close_btn" isRight="true" triggerEvent="click" text="点击关闭界面"  xOffset="-14" yOffset="-28">
+    </newbieGuide>
+	<newbieGuide id="46" prevGuide="45" showTaskStateCondition="{451013,3}" displayObjectName="gameStage.poplayer.innOrg.innFaceCell.close_btn" isRight="true" triggerEvent="click" text="点击关闭界面"  xOffset="-18" yOffset="-26">
+    </newbieGuide>
+	<newbieGuide id="47" prevGuide="46" showTaskStateCondition="{451013,3}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="" text="点击自动寻路"  xOffset="0" yOffset="-17">
+    </newbieGuide>
+	<newbieGuide id="48" prevGuide="" showTaskStateCondition="{451014,1}" displayObjectName="gameStage.toplayer.maskLayerOrg.systemOpenGuideOrg.systemOpenGuideCell.know_btn" isRight="true" triggerEvent="click" text="点击这里"  xOffset="-37" yOffset="-30">
+    </newbieGuide>
+	<newbieGuide id="49" prevGuide="" showTaskStateCondition="{451017,2}" displayObjectName="gameStage.frolayer.navigationOrg.navigationBarFaceCell.functionContainer_mc.roleProperty_btn" isRight="true" triggerEvent="click" text="点击打开人物"  xOffset="-25" yOffset="-23">
+    </newbieGuide>
+	<newbieGuide id="50" prevGuide="" showTaskStateCondition="{451017,2}" displayObjectName="gameStage.poplayer.characterOrg.characterFaceCell.characterContainer_mc.xisui_btn" isRight="true" triggerEvent="click" text="点击打开洗髓"  xOffset="-40" yOffset="-27">
+    </newbieGuide>
+	<newbieGuide id="51" prevGuide="50" showTaskStateCondition="{451017,2}" displayObjectName="gameStage.poplayer.xisuiPanel.xisuiFaceCell.beginXiSui_btn" isRight="true" triggerEvent="click" text="点击洗髓"  xOffset="-40" yOffset="-27">
+    </newbieGuide>
+    <newbieGuide id="52" prevGuide="" showTaskStateCondition="{451017,3}" displayObjectName="gameStage.poplayer.xisuiPanel.xisuiFaceCell.save_btn" isRight="true" triggerEvent="click" text="点击保存"  xOffset="-40" yOffset="-27">
+    </newbieGuide>
+	<newbieGuide id="53" prevGuide="52" showTaskStateCondition="{451017,3}" displayObjectName="gameStage.poplayer.characterOrg.characterFaceCell.close_btn" isRight="true" triggerEvent="click" text="点击关闭界面"  xOffset="-20" yOffset="-28">
+    </newbieGuide>
+	<newbieGuide id="54" prevGuide="53" showTaskStateCondition="{451017,3}" displayObjectName="gameStage.frolayer.taskTracerOrg.bodyMC.textBox.textField" isRight="true" triggerEvent="" text="点击自动寻路"  xOffset="0" yOffset="-17">
+    </newbieGuide>
+</newbieGuides>
