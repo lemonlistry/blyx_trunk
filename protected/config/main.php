@@ -136,10 +136,10 @@ return array(
         
         'db'=>array(
             'class' => 'CDbConnection',
-            'connectionString' => 'mysql:host=localhost;dbname=platform',
+            'connectionString' => 'mysql:host=172.16.7.12;dbname=platform',
             'emulatePrepare' => true,
             'username' => 'root',
-            'password' => '',
+            'password' => '111111',
             'charset' => 'utf8',
             'schemaCachingDuration' => 3600,
         ),

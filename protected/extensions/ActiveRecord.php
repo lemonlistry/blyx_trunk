@@ -18,7 +18,7 @@ class ActiveRecord extends CActiveRecord
      */
     public function getDbConnection()
     {
-        $cache_component = Yii::app()->cache->get('db_component');
+        $cache_component = Yii::app()->session->get('db_component');
         $db_component = empty($cache_component) ? $this->db_component : $cache_component;
         if(isset(self::$db_instance[$db_component]) && self::$db_instance[$db_component] instanceof CDbConnection){
             return self::$db_instance[$db_component];
@@ -45,7 +45,7 @@ class ActiveRecord extends CActiveRecord
         if(empty($model)){
             throw new CDbException('Active Record load server config error ...');
         }else{
-            Yii::app()->cache->set('db_component', 'db' . $server_id);
+            Yii::app()->session->add('db_component', 'db' . $server_id);
             return $this->getDbConnection();
         }
     }

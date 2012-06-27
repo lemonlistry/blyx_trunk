@@ -11,7 +11,7 @@
         <div class="main-container">
             <header>
                 <div class="right">
-                    <?php echo Html5::link('添加服务器', array('/passport/server/addServer'), array('class' => 'js-dialog-link')); ?>
+                    <?php echo Html5::link('添加服务器', array('/passport/server/addServer'), array('class' => 'js-dialog-link', 'data-width' => 600, 'data-height' => 600)); ?>
                 </div>
             </header>
             <div class="main-content">
@@ -57,8 +57,8 @@
                                             <td><?php echo $v->web_socket_port; ?></td>
                                             <td>
                                                     <?php
-                                                    echo Html5::link('编辑', array('/passport/server/updateserver', 'id' => $v->id), array('class' => 'js-dialog-link', 'data-width' => 600, 'data-height' => 600)) . ' ' .
-                                                    Html5::link('删除', array('/passport/server/deleteserver', 'id' => $v->id), array('class' => 'js-confirm-link', 'data-title' => "您确定要删除当前服务器吗？"));
+                                                    echo Html5::link('编辑', array('/passport/server/updateserver', 'id' => $v->id), array('class' => 'js-dialog-link', 'data-width' => 600, 'data-height' => 600));
+                                                    //Html5::link('删除', array('/passport/server/deleteserver', 'id' => $v->id), array('class' => 'js-confirm-link', 'data-title' => "您确定要删除当前服务器吗？"));
                                                 ?>
                                             </td>
                                         </tr>

@@ -26,7 +26,9 @@ class NoticeController extends Controller
     {
         $title = 'GM管理';
         $model = new Notice();
-        $list = $model->findAll();
+        $criteria = new EMongoCriteria();
+        $criteria->sort('id', EMongoCriteria::SORT_DESC);
+        $list = $model->findAll($criteria);
         $result = Pages::initArray($list);
         $this->render('list', array('title' => $title, 'list' => $result['list'], 'pages' => $result['pages'], 'model' => $model));
     }
@@ -67,9 +69,14 @@ class NoticeController extends Controller
         if(Yii::app()->request->isAjaxRequest){
             $id = $this->getParam('id');
             $notice = $this->loadModel($id, 'Notice');
-            $notice->delete();
-            Util::log('公告删除成功', 'service', __FILE__, __LINE__);
-            echo json_encode(array('status' => 1, 'location' => $this->createUrl('/service/notice/list')));
+            if($notice->status != 0 || !WorkFlow::isAllowDelete($notice->id, 'Notice')){
+                echo json_encode(array('status' => 0, 'msg' => '公告已经产生审批数据,不能删除'));
+            }else{
+                $notice->delete();
+                Util::log('公告删除成功', 'service', __FILE__, __LINE__);
+                WorkFlow::deleteTask($notice->id, 'Notice');
+                echo json_encode(array('status' => 1, 'location' => $this->createUrl('/service/notice/list')));
+            }
             Yii::app()->end();
         }else{
             throw new CHttpException('无效的请求...');

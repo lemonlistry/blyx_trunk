@@ -11,7 +11,7 @@ class Gift extends MongoDocument
     public $name;
     public $item_id;
     public $num;
-    public $time;
+    public $time = 86400;
     public $status = 0; //0 审核中  1 通过   2 拒绝
     public $create_time;
 
@@ -68,7 +68,7 @@ class Gift extends MongoDocument
             'name' => '礼包名称',
             'item_id' => '物品ID',
             'num' => '数量',
-            'time' => '时间',
+            'time' => '有效时间',
             'server_id' => '服务器',
             'status' => 'Status',
             'create_time' => 'Create Time',

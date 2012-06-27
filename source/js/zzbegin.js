@@ -14,12 +14,12 @@ function ajaxRequest() {
                     location.reload();
                 }
             } else {
-                alert(json.msg);
+                Dialog.alert(json.msg);
             }
         },
         error: function(xhr, status, err) {
             console.warn(arguments);
-            alert('请求的地址错误');
+            Dialog.alert('请求的地址错误');
         }
     });
 }
@@ -64,6 +64,10 @@ $(document).ready(function(){
         dateFormat: 'yy-mm-dd',
         showSecond: false, //显示秒
         timeFormat: 'hh:mm:ss'
+    });
+    
+    $("form").submit(function(e){
+        $(this).find("button[type='submit']").prop('disabled',true);
     });
 });
 

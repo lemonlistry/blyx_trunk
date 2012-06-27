@@ -106,7 +106,8 @@ class WorkFlow {
     /**
      * 获取流程的第一个节点
      */
-    protected static function getFirstNode($flow_id){
+    protected static function getFirstNode($flow_id)
+    {
         Yii::import('approve.models.Node');
         $node = Node::model()->findByAttributes(array('flow_id' => $flow_id));
         if(empty($node)){
@@ -119,7 +120,8 @@ class WorkFlow {
     /**
      * 获取流程的下一个节点
      */
-    protected static function getNextNode($flow_id, $node_id){
+    protected static function getNextNode($flow_id, $node_id)
+    {
         Yii::import('approve.models.Node');
         $criteria = new EMongoCriteria();
         $criteria->addCond('flow_id', '==', $flow_id);
@@ -135,7 +137,8 @@ class WorkFlow {
     /**
      * 获取流程的最后一个节点
      */
-    protected static function getLastNode($flow_id, $node_id){
+    protected static function getLastNode($flow_id, $node_id)
+    {
         Yii::import('approve.models.Node');
         $criteria = new EMongoCriteria();
         $criteria->addCond('flow_id', '==', $flow_id);
@@ -149,4 +152,69 @@ class WorkFlow {
         }
     }
     
+    /**
+     * 删除任务
+     * @param int $relate_id 要删除的关联对象
+     * @param string $tag 流程标签
+     */
+    public static function deleteTask($relate_id, $tag)
+    {
+        Yii::import('approve.models.Task');
+        $flow = self::getFlowByTag($tag);
+        if(empty($flow)){
+            throw new CException('flow is not exist....');
+        }else{
+            $criteria = new EMongoCriteria();
+            $criteria->addCond('relate_id', '==', $relate_id);
+            $criteria->addCond('flow_id', '==', $flow->id);
+            Task::model()->deleteAll($criteria);
+            Util::log('任务删除成功', 'approve', __FILE__, __LINE__);
+        }
+    }
+    
+    /**
+     * 删除任务审批记录
+     * @param int $task_id
+     */
+    public static function deleteApproveRecord($task_id)
+    {
+        Yii::import('approve.models.Approve');
+        $criteria = new EMongoCriteria();
+        $criteria->addCond('task_id', '==', $task_id);
+        Approve::model()->deleteAll($criteria);
+        Util::log('审批记录删除成功', 'approve', __FILE__, __LINE__);
+    }
+    
+    /**
+     * 判断流程是否可以删除
+     * @param int $relate_id 要删除的关联对象
+     * @param string $tag 流程标签
+     */
+    public static function isAllowDelete($relate_id, $tag)
+    {
+        Yii::import('approve.models.Task');
+        Yii::import('approve.models.Approve');
+        $flow = self::getFlowByTag($tag);
+        if(empty($flow)){
+            throw new CException('flow is not exist....');
+        }else{
+            $task = Task::model()->findByAttributes(array('relate_id' => $relate_id, 'flow_id' => $flow->id));
+            if(empty($task)){
+                throw new CException('task is not exist....');
+            }else{
+                $record= Approve::model()->findAllByAttributes(array('task_id' => $task->id));
+                return empty($record) ? true : false;
+            }
+        }
+    }
+    
+    /**
+     * 根据流程标签获取流程
+     * @param string $tag
+     */
+    protected static function getFlowByTag($tag)
+    {
+        Yii::import('approve.models.Flow');
+        return Flow::model()->findByAttributes(array('tag' => $tag, 'status' => 2));
+    }
 }

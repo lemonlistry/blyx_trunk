@@ -12,7 +12,7 @@
     <div class="main-body">
         <div class="main-container">
             <?php 
-                $form = $this->beginWidget('ActiveForm', array('id' => 'userlook', 'method' => 'get', 'action' => '/log/default'));
+                $form = $this->beginWidget('ActiveForm', array('id' => 'userlook', 'method' => 'get', 'action' => $this->createUrl('/log/default')));
             ?>
             <header>
                 <div class="right">

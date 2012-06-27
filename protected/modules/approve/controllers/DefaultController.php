@@ -9,7 +9,9 @@ class DefaultController extends Controller
     {
         $title= '所有事务';
         $model = new Task();
-        $list = $model->findAll();
+        $criteria = new EMongoCriteria();
+        $criteria->sort('id', EMongoCriteria::SORT_DESC);
+        $list = $model->findAll($criteria);
         $result = Pages::initArray($list);
         $this->render('index', array('title' => $title, 'list' => $result['list'], 'pages' => $result['pages'], 'model' => $model));
     }
@@ -21,7 +23,10 @@ class DefaultController extends Controller
     {
         $title= '等待审批的事务';
         $model = new Task();
-        $list = $model->findAllByAttributes(array('status' => 0));
+        $criteria = new EMongoCriteria();
+        $criteria->sort('id', EMongoCriteria::SORT_DESC);
+        $criteria->addCond('status', '==', 0);
+        $list = $model->findAll($criteria);
         if(count($list)){
             foreach ($list as $k => $v) {
                 if(!WorkFlow::verifyAuth($v->flow_id, $v->id)){
@@ -51,6 +56,7 @@ class DefaultController extends Controller
         if(count($task_arr)){
             $criteria = new EMongoCriteria();
             $criteria->addCond('id', 'in', $task_arr);
+            $criteria->sort('id', EMongoCriteria::SORT_DESC);
             $list = $model->findAll($criteria);
         }
         $result = Pages::initArray($list);
@@ -101,11 +107,16 @@ class DefaultController extends Controller
     public function actionDeleteFlow(){
         if(Yii::app()->request->isAjaxRequest){
             $id = $this->getParam('id');
-            $flow = $this->loadModel($id, 'Flow');
-            $flow->status = 1;
-            $flow->save();
-            Util::log('流程删除成功', 'approve', __FILE__, __LINE__);
-            echo json_encode(array('status' => 1, 'location' => $this->createUrl('/approve/default/flowlist')));
+            $task = Task::model()->findByAttributes(array('flow_id' => $id, 'status' => 0));
+            if(empty($task)){
+                $flow = $this->loadModel($id, 'Flow');
+                $flow->status = 1;
+                $flow->save();
+                Util::log('流程删除成功', 'approve', __FILE__, __LINE__);
+                echo json_encode(array('status' => 1, 'location' => $this->createUrl('/approve/default/flowlist')));
+            }else{
+                echo json_encode(array('status' => 0, 'msg' => '该流程存在正在审批的事务,不允许删除'));
+            }
             Yii::app()->end();
         }else{
             throw new CHttpException('无效的请求...');

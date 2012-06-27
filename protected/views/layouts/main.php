@@ -12,7 +12,7 @@
 <body style="min-width: 1000px; background:#F9FCFF">
     <header id="page_header">
         <div class="logo-panel"><a class="logo" href="/"><?php echo Yii::app()->name; ?></a></div>
-        <div id="welcome">  欢迎您，<?php echo Yii::app()->user->name; ?>！<a href="<?php echo $this->createUrl('/passport/default/logout'); ?>">退出</a></li></div>
+        <div id="welcome">  欢迎您，<?php echo Yii::app()->user->name; ?>！<?php echo Html5::link('更改密码', array('/passport/default/updatepassword'), array('class' => 'js-dialog-link')); ?> &nbsp; <a href="<?php echo $this->createUrl('/passport/default/logout'); ?>">退出</a></div>
         <nav class="menu">
             <ul>
                 <?php 

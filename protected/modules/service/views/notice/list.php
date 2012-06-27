@@ -52,7 +52,9 @@
                                             <td><?php echo $model->getStatus($v->status); ?></td>
                                             <td>
                                                 <?php
-                                                    echo Html5::link('删除', array('/service/notice/deletenotice', 'id' => $v->id), array('class' => 'js-confirm-link', 'data-title' => "您确定要删除当前公告吗？"));
+                                                    if($v->status == 0){
+                                                        echo Html5::link('删除', array('/service/notice/deletenotice', 'id' => $v->id), array('class' => 'js-confirm-link', 'data-title' => "您确定要删除当前公告吗？"));
+                                                    }
                                                 ?>
                                             </td>
                                         </tr>

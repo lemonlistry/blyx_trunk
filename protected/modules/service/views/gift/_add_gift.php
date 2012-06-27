@@ -34,6 +34,7 @@
         <div class="item">
             <div class="main">
                 <?php echo $form->textField($model, 'name'); ?>
+                <br/>限长25字节
             </div>
         </div>
         <?php echo $form->error($model, 'name'); ?>

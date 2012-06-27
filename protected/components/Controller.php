@@ -41,17 +41,30 @@ class Controller extends CController
             }
         }else{
             $this->menu = $this->getMenu();
-            if(in_array($this->module->id, array('install', 'cron')) || ($this->module->id == 'passport' && $this->id == 'default' && in_array($action->id, array('nopermission', 'logout')))){
+            Yii::app()->session->add('db_component', 'db');
+            $module_arr = array('install', 'cron');
+            $action_arr = array('nopermission', 'logout', 'updatepassword');
+            if(in_array($this->module->id, $module_arr) || ($this->module->id == 'passport' && $this->id == 'default' && in_array($action->id, $action_arr))){
                 return true;
             }else{
                 if(!Account::isAdmin(Yii::app()->user->getUid())){
                     $resource_id = AuthManager::getResourceId($this->module->id, $this->id, $action->id);
                     if(empty($resource_id)){
-                        return true;
+                        if(Yii::app()->request->isAjaxRequest){
+                            echo json_encode(array('status' => 0, 'msg' => '您没有权限操作,请联系管理员'));
+                            Yii::app()->end();
+                        }else{
+                            $this->redirect($this->createUrl('/passport/default/nopermission'));
+                        }
                     }else{
                         $auth = AuthManager::checkAuth(Yii::app()->user->getUid(), $resource_id);
                         if(!$auth){
-                            $this->redirect($this->createUrl('/passport/default/nopermission'));
+                            if(Yii::app()->request->isAjaxRequest){
+                                echo json_encode(array('status' => 0, 'msg' => '您没有权限操作,请联系管理员'));
+                                Yii::app()->end();
+                            }else{
+                                $this->redirect($this->createUrl('/passport/default/nopermission'));
+                            }
                         }
                     }
                 }
@@ -69,8 +82,9 @@ class Controller extends CController
                         '/passport/role/rolelist' => '系统管理',
                         '/log/default/loglist' => '日志管理',
                         '/service/default/forbidlogin' => '客服管理',
-                        '/realtime/default' => '实时数据',
-                        '/approve/default' => '事务审批',
+                        '/realtime/default/index' => '实时数据',
+                        '/approve/default/index' => '事务审批',
+                        '/core/default/index' => '运营管理',
                     );
     }
     
@@ -157,7 +171,7 @@ class Controller extends CController
         if(empty($model)){
             throw new CDbException('Active Record load server config error ...');
         }else{
-            Yii::app()->cache->set('db_component', 'db' . $server_id);
+            Yii::app()->session->add('db_component', 'db' . $server_id);
         }
     }
 }

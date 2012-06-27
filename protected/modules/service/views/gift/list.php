@@ -54,7 +54,9 @@
                                             <td><?php echo date("Y-m-d H:i:s",$v->create_time); ?></td>
                                             <td>
                                                 <?php
-                                                    echo Html5::link('删除', array('/service/gift/deletegift', 'id' => $v->id), array('class' => 'js-confirm-link', 'data-title' => "您确定要删除当前公告吗？"));
+                                                    if($v->status == 0){
+                                                        echo Html5::link('删除', array('/service/gift/deletegift', 'id' => $v->id), array('class' => 'js-confirm-link', 'data-title' => "您确定要删除当前礼包吗？"));
+                                                    }
                                                 ?>
                                             </td>
                                         </tr>

@@ -28,7 +28,7 @@
        <td><?php echo $model['client_ip']; ?></td>
     </tr>
     <tr> 
-       <td>file_name'</td>
+       <td>file_name</td>
        <td><?php echo $model['file_name']; ?></td>
     </tr>
     <tr> 

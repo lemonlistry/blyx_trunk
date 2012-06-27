@@ -132,7 +132,7 @@ EOF;
         $str = <<<EOF
 <script language="javascript" charset="utf-8">
 {$msg}
-location.href = location.href;
+parent.location.href = parent.location.href;
 </script>
 EOF;
         echo $str;
@@ -176,22 +176,23 @@ EOF;
      * item 递归循环的xml选项
      * attribute 匹配的属性
      * $return_key 返回的属性 
-     * $id 匹配的属性值
+     * $attribute_value 匹配的属性值
      * @return string
      */
-     public static function translation($file_name, $item, $attribute = null, $id = null, $return_key = null){
+     public static function translation($file_name, $item, $attribute, $attribute_value, $return_key = null){
         $xml = dirname(__DIR__) . '/data/' . $file_name . '.xml';
         if(file_exists($xml)){
             $result = null;
             $xml = simplexml_load_file($xml);
-            foreach ($item as $value) {
-                $xml = $xml->$value;
+            if(count($item)){
+                foreach ($item as $value) {
+                    $xml = $xml->$value;
+                }
             }
-            foreach ($xml->children() as $v) {
-                if(empty($attribute)){
-                    $result = $v;
-                }else{
-                    if($v[$attribute] == $id){
+            $childrens = $xml->children();
+            if(count($childrens)){
+                foreach ($childrens as $v) {
+                    if($v[$attribute] == $attribute_value){
                         if(empty($return_key)){
                             $result = $v;
                         }else{
@@ -327,6 +328,21 @@ EOF;
         Yii::import('passport.models.Server');
         $server = Server::model()->findByPk($server_id);
         return empty($server) ? '' : $server->sname;
+    }
+    
+    /**
+     * 获取服务器下拉框数据
+     */
+    public static function getServerSelect(){
+        Yii::import('passport.models.Server');
+        $servers = Server::model()->findAll();
+        $select = array();
+        if(count($servers)){
+            foreach ($servers as $k => $v) {
+                $select[$v->id] = $v->sname;
+            }
+        }
+        return $select;
     }
     
 }

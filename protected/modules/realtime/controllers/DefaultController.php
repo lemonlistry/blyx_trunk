@@ -6,14 +6,13 @@ class DefaultController extends Controller
     
     public function beforeAction($action){
        parent::beforeAction($action);
-       $param = $this->getParam(array('server_id'));
-       $server_id = $param['server_id'];
-       if (!empty($server_id)){
-           $this->server_id = $server_id;
-           $this->setDbConnection($server_id);
+       $this->server_id = $this->getParam('server_id');
+       if (!empty($this->server_id)){
+           $this->setDbConnection($this->server_id);
        }
        return true;
     }
+    
     /**
      * 角色信息查询
     */
@@ -23,14 +22,7 @@ class DefaultController extends Controller
         $list = array();
         $list['parter'] = array();
         $role_name = $this->getParam('role_name');
-        Yii::import('passport.models.Server');
-        $servers = Server::model()->findAll();
-        $select = array();
-        if(count($servers)){
-            foreach ($servers as $k => $v) {
-                $select[$v->id] = $v->sname;
-            }
-        }
+        $select = Util::getServerSelect();
         if(!empty($role_name)){
             $model = new UserRoleAR();
             $cotent = $model->find('role_name = BINARY :role_name',array(':role_name' => $role_name));
