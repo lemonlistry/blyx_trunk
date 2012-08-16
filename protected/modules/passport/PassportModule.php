@@ -20,13 +20,6 @@ class PassportModule extends WebModule
     {
         if(parent::beforeControllerAction($controller, $action))
         {
-            $controller->navMenu = array(
-                array('label' => '角色管理', 'url' => array('/passport/role/rolelist'), 'active' => $controller->id == 'role' ? true : false),
-                array('label' => '用户管理', 'url' => array('/passport/user/userlist'), 'active' => $controller->id == 'user' ? true : false),
-                array('label' => '权限管理', 'url' => array('/passport/prime/primelist'), 'active' => $controller->id == 'prime' ? true : false),
-                array('label' => '服务器管理', 'url' => array('/passport/server/serverlist'), 'active' => $controller->id == 'server' ? true : false),
-                array('label' => '资源管理', 'url' => array('/passport/resource/resourcelist'), 'active' => $controller->id == 'resource' ? true : false),
-            );
             // this method is called before any module controller action is performed
             // you may place customized code here
             return true;

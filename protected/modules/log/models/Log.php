@@ -108,6 +108,9 @@ class Log extends MongoDocument
         if(!empty($endtime)){
             $criteria->create_time('<=', $endtime);
         }
+        if (!empty($param['moudel'])){
+            $criteria->module('==', $param['moudel']);
+        }
         $criteria->sort('id', EMongoCriteria::SORT_DESC);
         $this->setDbCriteria($criteria);
         return $this;

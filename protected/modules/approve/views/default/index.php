@@ -1,80 +1,165 @@
-<div id="page_body">
-    <div id="page_title">
-        <?php
-        $this->widget('zii.widgets.CBreadcrumbs', array('links' => array(
-            '事务审批',
-            $title,
-            )));
-        ?>
-    </div>
+<script type="text/javascript">
+<?php
+    echo "var show_approve = ". (!isset($show_approve) ? 1 : 0) .";";
+    echo "var current_page = '". $current_page ."';";
+?>
+    
+Ext.onReady(function(){
 
-    <div class="main-box">
-        <div class="main-body">
-            <div class="main-container">
-                <div class="main-content">
-                    <div class="grid-view">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="span6">流程</th>
-                                    <th class="span6">发布人</th>
-                                    <th class="span4">状态</th>
-                                    <th class="span6">当前流转</th>
-                                    <th class="span6">创建时间</th>
-                                    <th class="span8">操作</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tbody">
-                                <?php
-                                    if (count($list)) {
-                                ?>
-                                    <?php
-                                        foreach ($list as $k => $v) {
-                                            $flow = Flow::model()->findByAttributes(array('id' => $v->flow_id));
-                                    ?>
-                                        <tr>
-                                            <td><?php echo $flow->name; ?></td>
-                                            <td><?php echo Account::user('id', $v->user_id, 'username'); ?></td>
-                                            <td><?php echo $model->getStatus($v->status); ?></td>
-                                            <td>
-                                                <?php 
-                                                    $current_node =  WorkFlow::getCurrentNode($v->flow_id, $v->id);
-                                                    echo ($v->status == 0 && !empty($current_node)) ? Account::user('id', $current_node->user_id, 'username') : ''; 
-                                                ?>
-                                            </td>
-                                            <td><?php echo date('Y-m-d H:i:s', $v->create_time); ?></td>
-                                            <td>
-                                                <?php 
-                                                    if($v->status == 0 && WorkFlow::verifyAuth($v->flow_id, $v->id)){
-                                                        echo Html5::link('审批', array('/approve/default/approve', 'task_id' => $v->id, 'flow_id' => $v->flow_id, 
-                                                                 'node_id' => $current_node->id), array('class' => 'js-dialog-link')) . '&nbsp;&nbsp;';
-                                                    }
-                                                    echo Html5::link('详细信息', array('/approve/default/relateinfo', 'relate_id' => $v->relate_id, 
-                                                                 'flow_id' => $v->flow_id), array('class' => 'js-dialog-link')) . '&nbsp;&nbsp;';
-                                                    echo Html5::link('审批记录', array('/approve/default/approverecord', 'task_id' => $v->id), array('class' => 'js-dialog-link')) . ' ';
-                                                ?>
-                                            </td>
-                                        </tr>
-                                    <?php
-                                        }
-                                    ?>
-                                    <tr>
-                                        <td colspan="6"> <div class="pager"><?php $this->widget('CLinkPager', array('pages' => $pages));?> </div></td>
-                                    </tr>
-                                <?php
-                                    } else {
-                                ?>
-                                    <tr>
-                                        <td  colspan="6">暂无事务!</td>
-                                    </tr>
-                                <?php
-                                    }
-                                ?>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+function drawTable(  ){
+    Ext.define('serverStruct', {
+        extend: 'Ext.data.Model',
+        fields: [
+            {
+                name: 'flow_name', 
+                type:'string'
+            },
+            {name: 'username', type: 'string'},
+            {name: 'status', type: 'string'},
+            {name: 'current_user', type: 'string'},
+            {name: 'flow_id', type: 'string'},
+            {name: 'relate_id', type: 'string'},
+            {name: 'prime', type: 'string'},
+            {name: 'current_node_id', type: 'string'},
+            {
+                name: 'create_time', 
+                type: 'string',
+                convert: function (value, record) {  
+                    return date.format(value,'ISO8601Long');
+                }  
+            }
+        ]
+    });
+    
+	myMask.show();
+	var currentPage = page.get() || 1;
+	//解决翻页按钮状态错误bug,c_page = parseInt( c_page );
+	currentPage = parseInt( currentPage,10 );
+	var startpage = (currentPage-1) * window.config.$page;
+    var store = Ext.create('Ext.data.Store', {
+        model: 'serverStruct',
+        proxy: {
+            type: 'ajax',
+            url: current_page,
+            reader: {
+                root: 'dataList',
+                totalProperty: 'dataCount'
+            },
+        },
+		pageSize: window.config.$page,
+		currentPage: currentPage
+    });
+    store.load({
+		params:{
+			page: currentPage,
+			start: startpage,
+        	limit: window.config.$page	
+		}
+	});
+	store.on('load',function(){
+		page.set( store.currentPage );
+	});	
+
+    var my_grid = Ext.create('Ext.grid.Panel', {
+        store: store,
+        viewConfig  : {
+			enableTextSelection:true  
+        },
+        bbar: Ext.create('Ext.PagingToolbar', {
+            store: store,
+            displayInfo: true,
+            displayMsg: '第{0}-{1}条(共{2}条)',
+            emptyMsg: "<b style='color:red;'>查询结果为空</b>"
+        }),
+        columns: [
+            {text: '流程', width:100,dataIndex:'flow_name'},
+            {text: '发布人', width:80, dataIndex:'username'},
+            {text: '状态', width:130, dataIndex:'status'},
+            {text: '当前流转',width:80,  dataIndex:'current_user'},
+            {text: '创建时间',width:150,  dataIndex:'create_time'},
+            {
+                xtype:'actioncolumn',
+                width:40,
+                text:'审批',
+                align: 'center',
+                hidden : !show_approve,
+                items: [{
+                    icon: js_source_path+'/source/js/ExtJS/shared/icons/fam/folder_go.gif',  // Use a URL in the icon config
+                    tooltip: 'Edit',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var record = store.getAt(rowIndex);
+                        var id = record.get('id');
+                        var flow_id = record.get('flow_id');
+                        var relate_id = record.get('relate_id');
+                        var current_node_id = record.get('current_node_id');
+                        openWindow({
+                            title:'审批',
+                            width:'515',
+                            height:'190',
+                            className:'test',
+                            src:js_url_path+'/index.php?r=/approve/default/approve/task_id/' + id + '/flow_id/' + flow_id + '/node_id/' + current_node_id
+                        });
+                    },
+                    getClass:function(v,m,r,rIndex,cIndex,store){  
+                        if( r.data.prime == 'false'){
+                            return 'x-hidden';
+                        }
+                    }
+                }]
+            },
+            {
+                xtype:'actioncolumn',
+                width:40,
+                text:'详情',
+                align: 'center',
+                items: [
+                {
+                    icon: js_source_path+'/source/js/ExtJS/shared/icons/fam/book.png',
+                    tooltip: 'Edit',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var record = store.getAt(rowIndex);
+                        var flow_id = record.get('flow_id');
+                        var relate_id = record.get('relate_id');
+                        openWindow({
+                            title:'详细信息',
+                            width:'550',
+                            height:'280',
+                            className:'test',
+                            src:js_url_path+'/index.php?r=/approve/default/relateinfo/relate_id/' + relate_id + '/flow_id/'+flow_id
+                        });
+                    }
+                }]
+            },
+            {
+                xtype:'actioncolumn',
+                width:40,
+                text:'记录',
+                align: 'center',
+                items: [
+                {
+                    icon: js_source_path+'/source/js/ExtJS/shared/icons/fam/grid.png',  // Use a URL in the icon config
+                    tooltip: 'Edit',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var record = store.getAt(rowIndex);
+                        var id = record.get('id');            
+                        openWindow({
+                            title:'审批记录',
+                            width:'550',
+                            height:'200',
+                            className:'test',
+                            src:js_url_path+'/index.php?r=/approve/default/approverecord/task_id/'+id
+                        });
+                    }
+                }]
+            }
+        ],
+        width: 'auto',
+        renderTo: Ext.getBody()
+    });
+    
+}
+
+drawTable();
+myMask.hide();
+});
+</script>

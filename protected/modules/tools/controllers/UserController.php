@@ -1,36 +1,31 @@
 <?php
-set_time_limit(0);
 class UserController extends Controller
 {
     /**
      * 角色信息查询
     */
     public function actionIndex()
-    {     
-        $title = '角色信息查询';
+    {
+        set_time_limit(300);
         $list = array();
         Yii::import('passport.models.Server');
         $servers = Server::model()->findAll();
         $filename = date('YmdHis'). '.xls';
-        header("Content-type:application/vnd.ms-excel;charset:utf-8;");  
+        header("Content-type:application/vnd.ms-excel;charset:utf-8;");
         header('Content-Disposition:filename='.$filename);
-        header("Pragma: no-cache");    
+        header("Pragma: no-cache");
         header("Expires: 0");
         header("Cache-control:must-revalidate,post-check=0,pre-check=0"); // 解决IE不能下载问题。
         $thead = "服务器\t角色ID\t帐号名\t角色名 \t角色等级\t称号\t帮派\t\n";
-        echo(iconv("UTF-8","GBK//IGNORE",$thead)); 
+        echo(iconv("UTF-8","GBK//IGNORE",$thead));
         if(count($servers)){
             foreach ($servers as $server) {
                 $model = new UserRoleAR();
                 $model->setDbConnection($server->id);
                 $cotent = $model->findAll('role_name' != '');
                 foreach ($cotent as $k => $v){
-                    $att = Util::getSplit($v['attributes']);  
-                    //$list['role_id']  =  $v['role_id'];//角色ID
-                    //$list['user_account']  =  $v['user_account'];//帐号名
-                    //$list['role_name']  =  $v['role_name'];//角色名 
-                    //$list['role_level']  =  intval($v['role_level']);//角色等级          
-                    if (isset($att['431008'])){    
+                    $att = Util::getSplit($v['attributes']);
+                    if (isset($att['431008'])){
                         $list['title'] = Util::translation('title', array(), 'id', $att['431008'], 'titleName');   //称号
                     }else{
                         $list['title'] = '';
@@ -50,10 +45,9 @@ class UserController extends Controller
                      echo intval($v['role_level']) . "\t";
                      echo iconv("UTF-8","GBK//IGNORE",  $list['title'] . "\t");
                      echo iconv("UTF-8","GBK//IGNORE", $list['faction'] . "\t\n");
-                       
                  }
             }
         }
-
     }
+
 }

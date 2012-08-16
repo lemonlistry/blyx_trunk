@@ -9,7 +9,7 @@
         </tar>
     </target>
     <target name="deploy" depends="package">
-        <untar src="platform${timestamp}.tar.gz" dest="/var/www/html/platform" compression="gzip"/>
+        <untar src="platform${timestamp}.tar.gz" dest="/data0/htdocs/platform" compression="gzip"/>
         <delete file="platform${timestamp}.tar.gz" />
     </target>
 </project>

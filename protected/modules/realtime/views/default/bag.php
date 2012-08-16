@@ -1,16 +1,32 @@
-<!--<style type="text/css">-->
-<!--.tableborder{border:0px; border-collapse:collapse;} -->
-<!--.tableborder td{border-top:1px #666 solid;border-right:1px #666 solid;} -->
-<!--.tableborder{border-bottom:1px #666 solid;border-left:1px #666 solid;}-->
-<!--</style>-->
-<center>
-<font size="5" face ="隶书">物品包</font>
- 
-<hr>
-<table border = 1>
+<style type="text/css">
+table.miji_table{
+	border-collapse:collapse;
+}
+.miji_table td,.miji_table th{
+	padding:4px;
+}
+.miji_table th{
+	background:#DDD;
+}
+.miji_table tr:nth-child(even){
+	background:#FFF;
+}
+.miji_table tr:nth-child(odd){
+	background:#EEE;
+}
+.miji_table tr:hover{
+	background:#9CF;
+}
+strong{
+	font-weight:bold;
+}
+</style>
+
+<table border = 1 class="miji_table">
     <tr>
        <?php 
           if (count($list)){
+          	  echo "<tr><th colspan='5'><strong>物品包</strong></th></tr>";
               for($i = 0;$i <= 36;$i++){
                   if ($i%5 == 0){
                     echo '</tr><tr>';
@@ -24,13 +40,12 @@
           }
         ?>
 </table>
-<br>
-<font size="5" face ="隶书">秘籍包</font>
-<hr>
-<table border = 1>
+
+<table border = 1 class="miji_table">
     <tr>
        <?php 
           if (count($list)){
+          	  echo "<tr><th colspan='5'><strong>秘籍包</strong></th></tr>";
               for($i = 0;$i <= 20;$i++){
                   if ($i%6 == 0){
                     echo '</tr><tr>';

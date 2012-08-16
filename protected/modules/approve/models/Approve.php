@@ -77,7 +77,7 @@ class Approve extends MongoDocument
      * 获取审批状态
      */
     public function getStatus($status = ''){
-        $list = array(1 => '通过', 2 =>'拒绝');
+        $list = array(1 => '通过', 2 => '拒绝');
         return '' === $status ? $list : $list[$status];
     }
     

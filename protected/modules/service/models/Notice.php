@@ -5,14 +5,16 @@
  */
 class Notice extends MongoDocument
 {
-    public $id;
-    public $server_id;
-    public $interval_time = 3;
-    public $play_times = 1;
-    public $content;
-    public $status = 0; //0 审核中  1 通过   2 拒绝   3 已发送
-    public $send_time;
-    public $create_time;
+    public $id;                 //主键
+    public $server_id;          //服务器ID
+    public $interval_time = 60; //间隔时间(秒)
+    public $play_times = 1;     //废弃字段 按照时间区间和间隔轮询发送公告 最短间隔1分钟
+    public $content;            //公告内容
+    public $status = 0;         //0 审核中  1 通过   2 拒绝   3 已发送
+    public $send_time = 0;      //公告发送时间 发送一次更新一次
+    public $begin_time;         //公告发送开始时间
+    public $end_time;           //公告发送结束时间
+    public $create_time;        //创建时间
 
     /**
      * Returns the static model of the specified AR class.
@@ -47,13 +49,13 @@ class Notice extends MongoDocument
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('id, server_id, interval_time, play_times, content, status, send_time, create_time', 'required'),
-            array('send_time', 'compare', 'compareValue' => time(), 'operator' => '>', 'message' => '公告发送时间必须大于当前时间', 'on'=>'insert'),
+            array('id, server_id, interval_time, play_times, content, status, send_time, create_time, begin_time, end_time', 'required'),
+            array('begin_time', 'compare', 'compareValue' => time(), 'operator' => '>', 'message' => '公告发送开始时间必须大于当前时间', 'on'=>'insert'),
             array('server_id, interval_time, play_times, status, send_time, create_time', 'numerical', 'integerOnly'=>true),
             array('content', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, server_id, interval_time, play_times, content, status, send_time, create_time', 'safe', 'on'=>'search'),
+            array('id, server_id, interval_time, play_times, content, status, send_time, create_time, begin_time, end_time', 'safe', 'on'=>'search'),
         );
     }
 
@@ -70,6 +72,8 @@ class Notice extends MongoDocument
             'content' => '公告内容',
             'status' => '状态',
             'send_time' => '发送时间',
+            'begin_time' => '公告发送开始时间',
+            'end_time' => '公告发送结束时间',
             'create_time' => '创建时间',
         );
     }

@@ -10,7 +10,7 @@ class Account {
      * @param int $user_id
      * @return boolean
      */
-    public static function isAdmin($user_id) 
+    public static function isAdmin($user_id)
     {
         Yii::import('passport.models.User');
         $user = User::model()->findByAttributes(array('id' => $user_id));
@@ -20,7 +20,7 @@ class Account {
             return false;
         }
     }
-    
+
     /**
      * 根据用户属性获取用户信息
      * @param string $attribute
@@ -43,7 +43,7 @@ class Account {
         $role = Role::model()->findByAttributes(array($condition => $value));
         return empty($attribute) ? $role : $role->$attribute;
     }
-    
+
     /**
      * 根据角色属性获取角色信息
      * @param string $attribute

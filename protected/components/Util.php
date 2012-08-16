@@ -4,7 +4,7 @@
  * 应用程序日志类
  */
 class Util {
-    
+
     /**
      * 记录日志
      * 日志格式：<系统名称>|<模块>|<日志级别>|<发生时间>|<所在机器>|<登录用户>|<客户端IP>|<浏览器信息>|<日志信息>|<其它信息(如Session、堆栈信息、POST/GET等)>
@@ -21,7 +21,7 @@ class Util {
         }else{
             $msg = $message;
         }
-       
+
         $model = new Log();
         $model->module = $module;
         $model->level = $level;
@@ -42,12 +42,12 @@ class Util {
         }else{
             throw new CException('log model validate error ...');
         }
-        
+
     }
-    
+
     /**
      * 提示信息 并跳转父页面
-     * @param $url 
+     * @param $url
      */
     public static function header($url, $msg = ''){
         if(!empty($msg)){
@@ -62,9 +62,9 @@ EOF;
         echo $str;
         Yii::app()->end();
     }
-    
+
     /**
-     * 提示信息 
+     * 提示信息
      */
     public static function message($msg){
         $msg = "alert('{$msg}');";
@@ -75,7 +75,7 @@ EOF;
 EOF;
         echo $str;
     }
-    
+
      /**
      * 切割字符串
      * @param array $array
@@ -86,12 +86,12 @@ EOF;
         $str = str_replace('{{', '{', $str);
         preg_match_all('/\{(.*?)\}/',$str,$arr);
         foreach ($arr[1] as $k => $v){
-              $arr = explode(',',$v);           
+              $arr = explode(',',$v);
               $list[$arr[0]] = $arr[1];
         }
         return $list;
     }
-    
+
     /**
      * 切割字符串
      * @param array $array
@@ -102,7 +102,7 @@ EOF;
         preg_match_all('/\{(.*?)\}/',$str,$arr);
         return $arr[1];
     }
-    
+
     /**
      * 跳转到上一页面
      * @param string $msg
@@ -138,142 +138,59 @@ EOF;
         echo $str;
         Yii::app()->end();
     }
-    
+
     /**
-     * 数据翻译
-     * <?xml version="1.0" encoding="utf-8"?>
-        <!--2012-4-28 -4-14 -3-20 -2-29 降低阵法格开启等级，减少阵法特效 -->
-        <formations>
-            <formationType>
-                <item formationTypeId="422001" formationTypeName="通用阵法"/>
-                <item formationTypeId="422002" formationTypeName="NPC阵法"/>
-            </formationType>
-            <formation openLevel="{0,6,11,36,42}">
-                <item formationId="422405" formationName="金刚伏魔阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422101,422103,422104,422106,422108}" formationDescription="增加抵挡，阵法等级越高效果越明显" formationIconId="225007" effectResourceId="{{100,705148}}" requiredLevel="30" isDefaultFormation="0">dfdf</item>
-                <item formationId="422406" formationName="真武七截阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422101,422104,422105,422108,422109}" formationDescription="增加外功攻击，阵法等级越高效果越明显" formationIconId="225002" effectResourceId="{{100,705128}}" requiredLevel="35" isDefaultFormation="0"/>
-                <item formationId="422407" formationName="万蛊噬心阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422101,422102,422103,422105,422108}" formationDescription="增加绝技攻击，阵法等级越高效果越明显" formationIconId="225003" effectResourceId="{{100,705132}}" requiredLevel="42" isDefaultFormation="0"/>
-                <item formationId="422408" formationName="五旗圣火阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422102,422103,422104,422106,422107}" formationDescription="增加暴击，阵法等级越高效果越明显" formationIconId="225004" effectResourceId="{{100,705136}}" requiredLevel="44" isDefaultFormation="0"/>
-                <item formationId="422501" formationName="天风银雨阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422102,422104,422106,422107,422109}" formationDescription="增加闪避，阵法等级越高效果越明显" formationIconId="225005" effectResourceId="{{100,705140}}" requiredLevel="46" isDefaultFormation="0"/>
-                <item formationId="422502" formationName="五都天门阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422101,422103,422105,422107,422109}" formationDescription="增加命中，阵法等级越高效果越明显" formationIconId="225006" effectResourceId="{{100,705141}}" requiredLevel="48" isDefaultFormation="0"/>
-                <item formationId="422503" formationName="大五行剑阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422102,422105,422104,422106,422108}" formationDescription="增加外功防御，阵法等级越高效果越明显" formationIconId="225001" effectResourceId="{{0,705100},{100,705124}}" requiredLevel="1" isDefaultFormation="1"/>
-                <item formationId="422504" formationName="金锁迷魂阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422101,422102,422105,422108,422109}" formationDescription="增加内功攻击，阵法等级越高效果越明显" formationIconId="225008" effectResourceId="{{100,705149}}" requiredLevel="40" isDefaultFormation="0"/>
-                <item formationId="422302" formationName="NPC阵法" formationTypeId="422002" maxLevel="100" requiredSilverToUpgrade="0" positions="0" formationDescription="0" formationIconId="0" effectResourceId="{{100,705100}}" requiredLevel="1" isDefaultFormation="0"/>
-            </formation>
-            <rolePosition>
-               <position>
-                   {90,360},{220,360},{350,360},
-                   {65,445},{195,445},{325,445},
-                   {40,530},{170,530},{300,530}
-               </position>
-               <position>
-                   {650,360},{780,360},{910,360},
-                   {675,445},{805,445},{935,445},
-                   {700,530},{830,530},{960,530}
-               </position>
-            </rolePosition>
-        </formations>
+     * 数据翻译 获取属性的value
      * $file_name 文件名称
      * item 递归循环的xml选项
      * attribute 匹配的属性
-     * $return_key 返回的属性 
+     * $return_key 返回的属性
      * $attribute_value 匹配的属性值
      * @return string
      */
      public static function translation($file_name, $item, $attribute, $attribute_value, $return_key = null){
-        $xml = dirname(__DIR__) . '/data/' . $file_name . '.xml';
-        if(file_exists($xml)){
-            $result = null;
-            $xml = simplexml_load_file($xml);
-            if(count($item)){
-                foreach ($item as $value) {
-                    $xml = $xml->$value;
-                }
-            }
-            $childrens = $xml->children();
-            if(count($childrens)){
-                foreach ($childrens as $v) {
-                    if($v[$attribute] == $attribute_value){
-                        if(empty($return_key)){
-                            $result = $v;
-                        }else{
-                            $result = $v[$return_key];
-                        }
-                        break;
+        $item_str = implode('_', $item);
+        $cache_key = 'TRANSLATION_' . $file_name . '_' . $item_str . '_' . $attribute . '_' . $attribute_value; 
+        $cache_result = Yii::app()->cache->get($cache_key);
+        if($cache_result){
+            return $cache_result;
+        }else{
+            $xml = dirname(__DIR__) . '/data/' . $file_name . '.xml';
+            if(file_exists($xml)){
+                $result = null;
+                $xml = simplexml_load_file($xml);
+                if(count($item)){
+                    foreach ($item as $value) {
+                        $xml = $xml->$value;
                     }
                 }
+                $childrens = $xml->children();
+                if(count($childrens)){
+                    foreach ($childrens as $v) {
+                        if($v[$attribute] == $attribute_value){
+                            if(empty($return_key)){
+                                $result = $v;
+                            }else{
+                                $result = $v[$return_key];
+                            }
+                            break;
+                        }
+                    }
+                }
+                Yii::app()->cache->set($cache_key, strval($result));
+                return strval($result);
+            }else{
+                throw new CException("File {$xml} not exist");
             }
-            return $result;
-        }else{
-            throw new CException("File {$xml} not exist");
         }
     }
 
     /**
-     * 数据翻译
-     * <?xml version="1.0" encoding="utf-8"?>
-        <!--2012-4-28 -4-14 -3-20 -2-29 降低阵法格开启等级，减少阵法特效 -->
-        <formations>
-            <formationType>
-                <item formationTypeId="422001" formationTypeName="通用阵法"/>
-                <item formationTypeId="422002" formationTypeName="NPC阵法"/>
-            </formationType>
-            <formation openLevel="{0,6,11,36,42}">
-                <item formationId="422405" formationName="金刚伏魔阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422101,422103,422104,422106,422108}" formationDescription="增加抵挡，阵法等级越高效果越明显" formationIconId="225007" effectResourceId="{{100,705148}}" requiredLevel="30" isDefaultFormation="0">dfdf</item>
-                <item formationId="422406" formationName="真武七截阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422101,422104,422105,422108,422109}" formationDescription="增加外功攻击，阵法等级越高效果越明显" formationIconId="225002" effectResourceId="{{100,705128}}" requiredLevel="35" isDefaultFormation="0"/>
-                <item formationId="422407" formationName="万蛊噬心阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422101,422102,422103,422105,422108}" formationDescription="增加绝技攻击，阵法等级越高效果越明显" formationIconId="225003" effectResourceId="{{100,705132}}" requiredLevel="42" isDefaultFormation="0"/>
-                <item formationId="422408" formationName="五旗圣火阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422102,422103,422104,422106,422107}" formationDescription="增加暴击，阵法等级越高效果越明显" formationIconId="225004" effectResourceId="{{100,705136}}" requiredLevel="44" isDefaultFormation="0"/>
-                <item formationId="422501" formationName="天风银雨阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422102,422104,422106,422107,422109}" formationDescription="增加闪避，阵法等级越高效果越明显" formationIconId="225005" effectResourceId="{{100,705140}}" requiredLevel="46" isDefaultFormation="0"/>
-                <item formationId="422502" formationName="五都天门阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422101,422103,422105,422107,422109}" formationDescription="增加命中，阵法等级越高效果越明显" formationIconId="225006" effectResourceId="{{100,705141}}" requiredLevel="48" isDefaultFormation="0"/>
-                <item formationId="422503" formationName="大五行剑阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422102,422105,422104,422106,422108}" formationDescription="增加外功防御，阵法等级越高效果越明显" formationIconId="225001" effectResourceId="{{0,705100},{100,705124}}" requiredLevel="1" isDefaultFormation="1"/>
-                <item formationId="422504" formationName="金锁迷魂阵" formationTypeId="422001" maxLevel="100" requiredSilverToUpgrade="{0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,125000,150000,175000,200000,225000,250000,275000,300000,320000,340000,360000,380000,400000,420000,440000,460000,480000,500000,550000,600000,650000,700000,750000,800000,850000,900000,950000,1000000,1100000,1200000,1300000,1400000,1500000,1600000,1700000,1800000,1900000,2000000,2250000,2500000,2750000,3000000,3250000,3500000,3750000,4000000,4250000,4500000,4750000,5000000,5250000,5500000,5750000,6000000,6250000,6500000,6750000,7000000,7250000,7500000,7750000,8000000,8250000,8500000,8750000,9000000,9250000,9500000,9750000,10000000,10500000,11000000,11500000,12000000,12500000,13000000,13500000,14000000,14500000,15000000}" positions="{422101,422102,422105,422108,422109}" formationDescription="增加内功攻击，阵法等级越高效果越明显" formationIconId="225008" effectResourceId="{{100,705149}}" requiredLevel="40" isDefaultFormation="0"/>
-                <item formationId="422302" formationName="NPC阵法" formationTypeId="422002" maxLevel="100" requiredSilverToUpgrade="0" positions="0" formationDescription="0" formationIconId="0" effectResourceId="{{100,705100}}" requiredLevel="1" isDefaultFormation="0"/>
-            </formation>
-            <rolePosition>
-               <position>
-                   {90,360},{220,360},{350,360},
-                   {65,445},{195,445},{325,445},
-                   {40,530},{170,530},{300,530}
-               </position>
-               <position>
-                   {650,360},{780,360},{910,360},
-                   {675,445},{805,445},{935,445},
-                   {700,530},{830,530},{960,530}
-               </position>
-            </rolePosition>
-        </formations>
-           $data = array(
-                    'formations' => array(
-                                        'item' => array('formation'),
-                                        'attribute' => array(
-                                                             'formationName' => array(
-                                                                                 	'id' => 'formationId',
-                                                                                    'value' => array('422405', '422408', '422407'),
-                                                                                ),
-                                                             'formationId' => array(
-                                                                                     'id' => 'formationName',
-                                                                                     'value' => array('大五行剑阵', '金锁迷魂阵')
-                                                                                )
-                                                          )
-                                    ),
-                    'books' => array(
-                                 'item' => array(),
-                                 'attribute' => array(
-                                                     'bookName' => array(
-                                                                         'id' => 'bookId',
-                                                                         'value' => array('472103', '472104', '472105')
-                                                                         ),
-                                                     'bookId' => array(
-                                                                         'id' => 'bookName',
-                                                                         'value' => array('洗髓经')
-                                                                         )
-                                                 )
-                                )
-                );
-     * 
+     * 数据翻译 获取属性的value 支持多个
      * formations 文件名称
      * item 递归循环的xml选项
      * attribute 匹配的属性
-     * formationName 返回的属性 
+     * formationName 返回的属性
      * formationId 匹配的属性值数组
      * Util::translation($data);
      * @return array
@@ -319,30 +236,289 @@ EOF;
         }
         return count($data) > 1 ? $list : $list[$key];
     }
-    
+
     /**
-     * 根据server_id获取服务器名称
+     * 根据主键获取服务器名称
      * @param int $server_id
      */
     public static function getServerName($server_id){
-        Yii::import('passport.models.Server');
-        $server = Server::model()->findByPk($server_id);
-        return empty($server) ? '' : $server->sname;
+        if(empty($server_id)){
+            return '全区全服';
+        }else{
+            Yii::import('passport.models.Server');
+            $server = Server::model()->findByPk(intval($server_id));
+            return empty($server) ? '' : $server->sname;
+        }
     }
-    
+
     /**
      * 获取服务器下拉框数据
      */
-    public static function getServerSelect(){
+    public static function getServerSelect($flag = true){
         Yii::import('passport.models.Server');
-        $servers = Server::model()->findAll();
+        $criteria = new EMongoCriteria();
+        $criteria->addCond('status', '==', 1);
+        $criteria->addCond('recommend', '==', '1');
+        $criteria->sort('id', EMongoCriteria::SORT_DESC);
+        $servers = Server::model()->findAll($criteria);
         $select = array();
         if(count($servers)){
             foreach ($servers as $k => $v) {
                 $select[$v->id] = $v->sname;
             }
         }
+        if($flag){
+            $select[0] = '全区全服';
+        }
         return $select;
     }
-    
+
+    /**
+     * 根据server_id获取服务器信息
+     * @param int $server_id
+     */
+    public static function getServerAttribute($server_id, $attribute = null){
+        if(empty($server_id)){
+            return '';
+        }else{
+            Yii::import('passport.models.Server');
+            $server = Server::model()->findByAttributes(array('server_id' => intval($server_id)));
+            return empty($attribute) || empty($server) ? $server : ($server->$attribute);
+        }
+    }
+
+    /**
+     * 获取server_id对应服务器下拉框数据
+     */
+    public static function getRealServerSelect($flag = true){
+        Yii::import('passport.models.Server');
+        $criteria = new EMongoCriteria();
+        $criteria->addCond('status', '==', 1);
+        $criteria->addCond('recommend', '==', '1');
+        $criteria->sort('id', EMongoCriteria::SORT_DESC);
+        $servers = Server::model()->findAll($criteria);
+        $select = array();
+        if(count($servers)){
+            foreach ($servers as $k => $v) {
+                $select[$v->server_id] = $v->sname;
+            }
+        }
+        if($flag){
+            $select[0] = '全区全服';
+        }
+        return $select;
+    }
+
+    /**
+     * 获取用户角色类型数组键值对
+     * @return array
+     */
+    public static function getRoleGroupArr(){
+        $result = array();
+        Yii::import('passport.models.RoleGroup');
+        $groups = RoleGroup::model()->findAll();
+        if(count($groups)){
+            foreach ($groups as $group) {
+                $result[$group['id']] = $group['name'];
+            }
+        }
+        return $result;
+    }
+
+    /**
+     * 获取用户角色类型数组键值对
+     * @return array
+     */
+    public static function getRoleArr(){
+        $result = array();
+        Yii::import('passport.models.Role');
+        $roles = Role::model()->findAll();
+        if(count($roles)){
+            foreach ($roles as $role) {
+                $result[$role['id']] = $role['name'];
+            }
+        }
+        return $result;
+    }
+
+    /**
+     * 获取用户角色类型数组键值对
+     * @return array
+     */
+    public static function getResourceArr(){
+        $result = array();
+        Yii::import('passport.models.Resource');
+        $resources = Resource::model()->findAll();
+        if(count($resources)){
+            foreach ($resources as $resource) {
+                $result[$resource['id']] = $resource['name'];
+            }
+        }
+        return $result;
+    }
+
+    /**
+     * 获取流程数组键值对
+     * @return array
+     */
+    public static function getFlowArr(){
+        $result = array();
+        Yii::import('approve.models.Flow');
+        $flows = Flow::model()->findAll();
+        if(count($flows)){
+            foreach ($flows as $flow) {
+                $result[$flow['id']] = $flow['name'];
+            }
+        }
+        return $result;
+    }
+
+    /**
+     * 获取用户数组键值对
+     * @return array
+     */
+    public static function getUserArr(){
+        $result = array();
+        $users = Account::allUser();
+        if(count($users)){
+            foreach ($users as $user) {
+                $result[$user->id] = $user->username;
+            }
+        }
+        return $result;
+    }
+
+    /**
+     * 根据游戏玩家角色名称获取角色ID
+     * @param string $role_name
+     * @param int $server_id 服务器ID
+     * @return int
+     */
+    public static function getPlayerRoleId($role_name, $server_id){
+        Yii::app()->getController()->setDbConnection($server_id);
+        Yii::import('realtime.models.UserRoleAR');
+        $model = UserRoleAR::model()->find('role_name = BINARY :role_name',array(':role_name' => $role_name));
+        return empty($model) ? '' : $model->role_id;
+    }
+
+    /**
+     * 根据游戏玩家账号名称获取角色名称
+     * @param string $user_account
+     * @param int $server_id 服务器ID
+     * @return int
+     */
+    public static function getPlayerRoleName($user_account, $server_id){
+        Yii::app()->getController()->setDbConnectionByServerId($server_id);
+        Yii::import('realtime.models.UserRoleAR');
+        $model = UserRoleAR::model()->find('user_account = BINARY :user_account',array(':user_account' => $user_account));
+        return empty($model) ? '' : $model->role_name;
+    }
+
+    /**
+     * 根据游戏玩家角色名称获取账号ID
+     * @param string $role_name
+     * @param int $server_id 服务器ID
+     * @return int
+     */
+    public static function getPlayerAccount($role_name, $server_id){
+        Yii::app()->getController()->setDbConnectionByServerId($server_id);
+        Yii::import('realtime.models.UserRoleAR');
+        $model = UserRoleAR::model()->find('role_name = BINARY :role_name',array(':role_name' => $role_name));
+        return empty($model) ? '' : $model->user_account;
+    }
+
+    /**
+     * 数据翻译 获取子标签的value
+     * $file_name 文件名称
+     * $item 递归循环的xml选项
+     * $attribute 匹配的属性
+     * $return_child 返回的子标签值
+     * $attribute_value 匹配的属性值
+     * @return string
+     */
+     public static function translationChildLabel($file_name, $item, $attribute, $attribute_value, $return_child){
+        $xml = dirname(__DIR__) . '/data/' . $file_name . '.xml';
+        if(file_exists($xml)){
+            $result = null;
+            $xml = simplexml_load_file($xml);
+            if(count($item)){
+                foreach ($item as $value) {
+                    $xml = $xml->$value;
+                }
+            }
+            $childrens = $xml->children();
+            if(count($childrens)){
+                foreach ($childrens as $k => $v) {
+                    if($v[$attribute] == $attribute_value){
+                        $label = $v->children();
+                        if(count($label)){
+                            foreach ($label as $key => $value) {
+                                if($key == $return_child){
+                                    $result = $value;
+                                    break;
+                                }
+                            }
+                        }
+                        break;
+                    }
+                }
+            }
+            return strval($result);
+        }else{
+            throw new CException("File {$xml} not exist");
+        }
+    }
+
+    /*
+     * 导出的类
+     * $array   标题数组  不要索引的
+     * $list 数据
+     * $arr   需要显示的数据的索引
+     */
+    public static function export($array, $list, $arr){
+        $header = '';
+        $res = '';
+        if(count($array)){
+            foreach($array as $k => $v){
+                    $header .= iconv("UTF-8","GB2312//IGNORE",$v)."\t";
+            }
+        }
+        $header = substr($header, 0, (strlen($header) - 1))."\n";
+        if(count($list)){
+            foreach ($list as $k => $v){
+                if(count($arr)){
+                    $server = Util::getServerAttribute($v['server_id']);
+                    foreach ($arr as $key => $val){
+                        if($val == 'server_id'){
+                           $v[$val] = Util::getServerAttribute($v['server_id'])->sname;
+                        }
+                        if($val == 'children_type'){
+                           $children_type = AppConst::$gold_children_type;
+                           $v[$val] = $children_type[$v['children_type']];
+                        }
+                        if($val == 'type'){
+                            $v[$val] = empty($v[$val]) ? '产出' : '消费';
+                        }
+                        if($val == 'time'){
+                            $v[$val] = date('Y-m-d H:i:s', $v[$val]);
+                        }
+                        $res .= iconv("UTF-8","GB2312//IGNORE",(isset($v[$val]) ? $v[$val] : ''))."\t" ;
+                    }
+                    $res = substr($res, 0, (strlen($res) - 1))."\n";
+                }
+            }
+        }
+        return $header.$res;
+    }
+
+    /**
+     * 获取所有服务器
+     * @param string $recommend '0' 为测试服 '1' 为正式服
+     * @param $status $status 0 为异常  1为正常
+     */
+    public static function getAllServers($recommend = '1', $status = 1){
+        Yii::import('passport.models.Server');
+        return Server::model()->findAllByAttributes(array('recommend' => $recommend, 'status' => $status));
+    }
+
 }

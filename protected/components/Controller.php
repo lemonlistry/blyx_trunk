@@ -20,14 +20,12 @@ class Controller extends CController
      * for more details on how to specify this property.
      */
     public $breadcrumbs=array();
-    
-    public $navMenu = array();
-    
+
     /**
      * 用户登录以及权限验证
      * @return boolean
      */
-    protected function beforeAction($action) 
+    protected function beforeAction($action)
     {
         if (Yii::app()->user->isGuest) {
             if(in_array($this->module->id, array('install', 'cron')) || ($this->module->id == 'passport' && $this->id == 'default' && $action->id == 'login')){
@@ -40,31 +38,29 @@ class Controller extends CController
                 }
             }
         }else{
-            $this->menu = $this->getMenu();
             Yii::app()->session->add('db_component', 'db');
             $module_arr = array('install', 'cron');
-            $action_arr = array('nopermission', 'logout', 'updatepassword');
+            $action_arr = array('nopermission', 'logout', 'updatepassword', 'main', 'welcome', 'treejson');
             if(in_array($this->module->id, $module_arr) || ($this->module->id == 'passport' && $this->id == 'default' && in_array($action->id, $action_arr))){
                 return true;
             }else{
                 if(!Account::isAdmin(Yii::app()->user->getUid())){
+                    //数据导出权限统一验证
+                    if(strpos($action->id, 'export') !== false && AuthManager::verifyExportAuth()){
+                        return true;
+                    }
+                    //其他权限验证
+                    $auth = false;
                     $resource_id = AuthManager::getResourceId($this->module->id, $this->id, $action->id);
-                    if(empty($resource_id)){
+                    if(!empty($resource_id)){
+                        $auth = AuthManager::checkAuth(Yii::app()->user->getUid(), $resource_id);
+                    }
+                    if(!$auth){
                         if(Yii::app()->request->isAjaxRequest){
-                            echo json_encode(array('status' => 0, 'msg' => '您没有权限操作,请联系管理员'));
+                            echo json_encode(array('success' => false, 'text' => '您没有权限操作,请联系管理员'));
                             Yii::app()->end();
                         }else{
                             $this->redirect($this->createUrl('/passport/default/nopermission'));
-                        }
-                    }else{
-                        $auth = AuthManager::checkAuth(Yii::app()->user->getUid(), $resource_id);
-                        if(!$auth){
-                            if(Yii::app()->request->isAjaxRequest){
-                                echo json_encode(array('status' => 0, 'msg' => '您没有权限操作,请联系管理员'));
-                                Yii::app()->end();
-                            }else{
-                                $this->redirect($this->createUrl('/passport/default/nopermission'));
-                            }
                         }
                     }
                 }
@@ -72,22 +68,7 @@ class Controller extends CController
         }
         return true;
     }
-    
-    /**
-     * 菜单处理
-     */
-    protected function getMenu()
-    {
-        return array(
-                        '/passport/role/rolelist' => '系统管理',
-                        '/log/default/loglist' => '日志管理',
-                        '/service/default/forbidlogin' => '客服管理',
-                        '/realtime/default/index' => '实时数据',
-                        '/approve/default/index' => '事务审批',
-                        '/core/default/index' => '运营管理',
-                    );
-    }
-    
+
     /**
      * 根据给出的主键返回数据模型
      * 如果没有发现模型，将触发一个404错误
@@ -108,7 +89,7 @@ class Controller extends CController
             return $model;
         }
     }
-    
+
     /**
      * 验证参数
      */
@@ -132,7 +113,7 @@ class Controller extends CController
         }
         return $res;
     }
-    
+
     /**
      * 更改字段类型
      * @param string $field
@@ -150,7 +131,7 @@ class Controller extends CController
         }
         return $field;
     }
-    
+
     /**
      * 获取自增Key
      */
@@ -159,14 +140,15 @@ class Controller extends CController
         $model = AutoIncrement::model()->findByAttributes(array('table' => $table));
         return empty($model) ? 1 : ++$model->index;
     }
-    
+
     /**
-     * 设置DB连接
+     * 设置DB连接 根据PK
      * @param string $dbname
      * @return CDbConnection the database connection used by active record.
      */
     public function setDbConnection($server_id){
         Yii::import('passport.models.Server');
+        $server_id = intval($server_id);
         $model = Server::model()->findByAttributes(array('id' => $server_id));
         if(empty($model)){
             throw new CDbException('Active Record load server config error ...');
@@ -174,4 +156,21 @@ class Controller extends CController
             Yii::app()->session->add('db_component', 'db' . $server_id);
         }
     }
+
+    /**
+     * 设置DB连接 根据SERVER_ID
+     * @param string $dbname
+     * @return CDbConnection the database connection used by active record.
+     */
+    public function setDbConnectionByServerId($server_id){
+        Yii::import('passport.models.Server');
+        $server_id = intval($server_id);
+        $model = Server::model()->findByAttributes(array('server_id' => $server_id));
+        if(empty($model)){
+            throw new CDbException('Active Record load server config error , server_id is ' . $server_id);
+        }else{
+            Yii::app()->session->add('db_component', 'db' . $model->id);
+        }
+    }
+
 }

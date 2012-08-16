@@ -10,11 +10,26 @@ class DefaultController extends Controller
     public function actionLogList()
     {
         $title = '日志管理';
-        $param = $this->getParam(array('begintime', 'endtime', 'operator'));
-        $list = Log::model()->bySearch($param)->findAll();
-        $result = Pages::initArray($list);
-        $this->render('index', array('title' => $title, 'list' => $result['list'], 'pages' => $result['pages'],
-                           'begintime' => $param['begintime'], 'endtime' =>  $param['endtime'], 'operator' =>  $param['operator']));
+        $param = $this->getParam(array('begintime', 'endtime', 'operator', 'page', 'moudel'));
+        $criteria = new EMongoCriteria();
+        $offset = empty($param['page']) ? 0 : ($param['page'] - 1) * Pages::LIMIT;
+        $criteria->offset($offset)->limit(Pages::LIMIT);
+        $list = Log::model()->bySearch($param)->findAll($criteria);
+        $count = Log::model()->bySearch($param)->count();
+        if(Yii::app()->request->isAjaxRequest){
+            echo json_encode(array(
+                "dataCount" => $count, 
+                "dataList" => $list
+            ));
+        }else{
+            $this->render('index', array('title' => $title, 
+                'list' => $list, 
+                'begintime' => $param['begintime'], 
+                'endtime' =>  $param['endtime'], 
+                'operator' =>  $param['operator'])
+            );    
+        }
+        
     }
     
     /**

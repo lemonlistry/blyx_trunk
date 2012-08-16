@@ -8,11 +8,13 @@ class Gift extends MongoDocument
     public $id;
     public $server_id;
     public $role_id;
+    public $role_name;
     public $name;
     public $item_id;
     public $num;
     public $time = 86400;
     public $status = 0; //0 审核中  1 通过   2 拒绝
+    public $user_id;
     public $create_time;
 
     /**
@@ -48,12 +50,12 @@ class Gift extends MongoDocument
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('id, server_id, role_id, name, item_id, num, time, status, create_time', 'required'),
-            array('id, server_id, role_id, item_id, num, time, status, create_time', 'numerical', 'integerOnly'=>true),
+            array('id, server_id, role_id, role_name, name, item_id, num, time, status, create_time, user_id', 'required'),
+            array('id, server_id, item_id, num, time, status, create_time', 'numerical', 'integerOnly'=>true),
             array('name', 'length', 'max'=>255),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, server_id, role_id, name, item_id, num, time, status, create_time', 'safe', 'on'=>'search'),
+            array('id, server_id, role_id, role_name, name, item_id, num, time, status, create_time, user_id', 'safe', 'on'=>'search'),
         );
     }
 
@@ -65,6 +67,7 @@ class Gift extends MongoDocument
         return array(
             'id' => 'ID',
             'role_id' => '角色ID',
+            'role_name' => '角色名称',
             'name' => '礼包名称',
             'item_id' => '物品ID',
             'num' => '数量',
@@ -74,7 +77,7 @@ class Gift extends MongoDocument
             'create_time' => 'Create Time',
         );
     }
-    
+
    /**
      * 获取礼包状态
      * @param int $status
@@ -83,5 +86,5 @@ class Gift extends MongoDocument
         $list = array('审核中', '通过', '拒绝');
         return $status === '' ? $list : $list[$status];
     }
-    
+
 }

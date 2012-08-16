@@ -18,10 +18,8 @@ class CoreModule extends WebModule
     {
         if(parent::beforeControllerAction($controller, $action))
         {
-            $controller->navMenu = array(
-                array('label' => '日常管理', 'url' => array('/core/default/index'), 'active' => $controller->id == 'default' ? true : false),
-                array('label' => '统计分析', 'url' => array('/core/statistic/index'), 'active' => $controller->id == 'statistic' ? true : false),
-            );
+            // this method is called before any module controller action is performed
+            // you may place customized code here
             return true;
         }
         else

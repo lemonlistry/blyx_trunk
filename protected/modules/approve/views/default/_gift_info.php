@@ -1,22 +1,26 @@
-<?php 
+<?php
     Yii::app()->clientScript->registerCoreScript('jquery.ui');
     Yii::app()->clientScript->registerCoreScript('platform');
 ?>
-<style type="text/css"> 
+<style type="text/css">
      table{font-size:2px;}
 </style>
 <table border=1>
-    <tr> 
+    <tr>
        <td>服务器</td>
        <td><?php echo Util::getServerName($model->server_id); ?></td>
     </tr>
-    <tr> 
+    <tr>
        <td>时间</td>
        <td><?php echo $model->time; ?></td>
     </tr>
-    <tr> 
+    <tr>
        <td>角色ID</td>
        <td><?php echo $model->role_id; ?></td>
+    </tr>
+    <tr>
+       <td>角色名称</td>
+       <td><?php echo $model->role_name; ?></td>
     </tr>
     <tr>
        <td>状态</td>
@@ -27,8 +31,8 @@
        <td><?php echo $model->name; ?></td>
     </tr>
     <tr>
-       <td>物品ID</td>
-       <td><?php echo  $model->item_id; ?></td>
+       <td>物品名称</td>
+       <td><?php echo Util::translation('itemInformation', array('items'), 'itemId', $model->item_id, 'itemName'); ?></td>
     </tr>
     <tr>
        <td>数量</td>

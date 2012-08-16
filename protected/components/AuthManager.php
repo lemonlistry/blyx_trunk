@@ -4,8 +4,8 @@
  * @author shadow
  *
  */
-class AuthManager { 
-    
+class AuthManager {
+
     /**
      * 验证权限
      * @param int $resource_id
@@ -23,7 +23,7 @@ class AuthManager {
             return empty($prime) ? false : true;
         }
     }
-    
+
     /**
      * 根据request url 获取资源ID
      * @param string $module_id
@@ -37,4 +37,40 @@ class AuthManager {
         $relate = ResourceRelate::model()->findByAttributes(array('path' => $path));
         return empty($relate) ? '' : $relate->resource_id;
     }
-} 
+
+    /**
+     * 获取当前用户权限菜单
+     */
+    public static function getPrimeUrlList(){
+        $url_list = array();
+        $resource_list = array();
+        $role_id = Yii::app()->user->getRoleId();
+        Yii::import('passport.models.*');
+        $result = Prime::model()->findAllByAttributes(array('role_id' => $role_id));
+        if(count($result)){
+            foreach ($result as $v) {
+                array_push($resource_list, $v->resource_id);
+            }
+        }
+        if(count($resource_list)){
+            $criteria = new EMongoCriteria();
+            $criteria->addCond('resource_id', 'in', $resource_list);
+            $res = ResourceRelate::model()->findAll($criteria);
+            if(count($res)){
+                foreach ($res as $value) {
+                    array_push($url_list, $value->path);
+                }
+            }
+        }
+        return $url_list;
+    }
+
+    /**
+     * 验证数据导出权限
+     */
+    public static function verifyExportAuth(){
+        $url_list = self::getPrimeUrlList();
+        return in_array(AppConst::SYSTEM_RETAIL_EXPORT, $url_list) ? true : false;
+    }
+
+}

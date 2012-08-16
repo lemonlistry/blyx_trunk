@@ -4,6 +4,7 @@
  * This is the model class for table "installation".
  *
  * The followings are the available columns in table 'installation':
+ * @property integer $id
  * @property string $openid
  * @property integer $server_id
  * @property string $ts
@@ -13,7 +14,7 @@ class InstallationAR extends ActiveRecord
     /**
      * Returns the static model of the specified AR class.
      * @param string $className active record class name.
-     * @return Installation the static model class
+     * @return InstallationAR the static model class
      */
     public static function model($className=__CLASS__)
     {
@@ -36,12 +37,12 @@ class InstallationAR extends ActiveRecord
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('openid, server_id, ts', 'required'),
+            array('ts', 'required'),
             array('server_id', 'numerical', 'integerOnly'=>true),
             array('openid', 'length', 'max'=>32),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('openid, server_id, ts', 'safe', 'on'=>'search'),
+            array('id, openid, server_id, ts', 'safe', 'on'=>'search'),
         );
     }
 
@@ -62,6 +63,7 @@ class InstallationAR extends ActiveRecord
     public function attributeLabels()
     {
         return array(
+            'id' => 'ID',
             'openid' => 'Openid',
             'server_id' => 'Server',
             'ts' => 'Ts',
@@ -79,6 +81,7 @@ class InstallationAR extends ActiveRecord
 
         $criteria=new CDbCriteria;
 
+        $criteria->compare('id',$this->id);
         $criteria->compare('openid',$this->openid,true);
         $criteria->compare('server_id',$this->server_id);
         $criteria->compare('ts',$this->ts,true);

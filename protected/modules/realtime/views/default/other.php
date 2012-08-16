@@ -1,18 +1,29 @@
-<div id="page_body">
 <style type="text/css">
-.tableborder{border:0px; border-collapse:collapse;} 
-.tableborder td{border-top:1px #666 solid;border-right:1px #666 solid;} 
-.tableborder{border-bottom:1px #666 solid;border-left:1px #666 solid;}
+.tableborder{
+	float:left;
+	border-collapse:collapse;
+	width:50%;
+}
+.tableborder td{
+	border:solid 1px #000;
+	padding:3px;
+}
+.tableborder input{
+	border:none;
+	background:none;
+}
+.tableborder tr:nth-child(even){
+	background:#FFF;
+}
+.tableborder tr:nth-child(odd){
+	background:#EEE;
+}
+.tableborder tr:hover{
+	background:#9CF;
+}
 </style>
-<div class="main-box">
-    <div class="main-body">
-        <div class="main-container prepend5">
-            <div class="main-content">
-                <div class="grid-view">
-                    <center>
-                    <table>
-                       <tr>
-                        <td>
+
+          
                         <table class='tableborder'> 
                              <tr><td>阳维脉&nbsp;:<input type="text" size = 20  id=""  value =<?php echo isset($list['473011'])?$list['473011']:''?>></td></tr>
                              <tr><td>阴维脉&nbsp;:<input type="text" size = 20  id=""  value =<?php echo isset($list['473012'])?$list['473012']:''?>></td></tr>
@@ -23,8 +34,7 @@
                              <tr><td>督脉&nbsp;&nbsp;&nbsp;:<input type="text" size = 20  id=""  value =<?php echo isset($list['473017'])?$list['473017']:''?>></td></tr>
                              <tr><td>任脉&nbsp;&nbsp;&nbsp;:<input type="text" size = 20  id=""  value =<?php echo isset($list['473018'])?$list['473018']:''?>></td></tr>
                         </table>
-                        </td>
-                        <td> 
+                      
                         <table class='tableborder'> 
                              <tr><td>金刚伏魔阵&nbsp;:<input type="text" size = 20  id=""  value =<?php echo isset($list['422405'])?$list['422405']:''?>></td></tr>
                              <tr><td>真武七截阵&nbsp;:<input type="text" size = 20  id=""  value =<?php echo isset($list['422406'])?$list['422406']:''?>></td></tr>
@@ -35,14 +45,4 @@
                              <tr><td>大五行剑阵&nbsp;:<input type="text" size = 20  id=""  value =<?php echo isset($list['422503'])?$list['422503']:''?>></td></tr>
                              <tr><td>金锁迷魂阵&nbsp;:<input type="text" size = 20  id=""  value =<?php echo isset($list['422504'])?$list['422504']:''?>></td></tr>
                         </table>       
-                        </td>
-                       </tr>
-                     </table>
-                     </center>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
+                      

@@ -9,11 +9,24 @@ class ResourceController extends Controller
     public function actionResourceList()
     {
         $title = '资源管理';
-        $list = Resource::model()->findAll();
-        $result = Pages::initArray($list);
-        $this->render('index', array('title' => $title, 'list' => $result['list'], 'pages' => $result['pages']));
+        $page = $this->getParam('page');
+        $model = new Resource();
+        $criteria = new EMongoCriteria();
+        $offset = empty($page) ? 0 : ($page - 1) * Pages::LIMIT;
+        $criteria->sort('id', EMongoCriteria::SORT_DESC);
+        $criteria->offset($offset)->limit(Pages::LIMIT);
+        $list = $model->findAll($criteria);
+        $count = $model->count();
+        if(Yii::app()->request->isAjaxRequest){
+            echo json_encode(array(
+                "dataCount" => $count,
+                "dataList" => $list
+            ));
+        }else{
+            $this->render('index', array('title' => $title, 'list' => $list, 'count' => $count, 'model' => $model));
+        }
     }
-    
+
     /**
      * 添加权限资源
      */
@@ -27,15 +40,28 @@ class ResourceController extends Controller
             if($model->validate()){
                 $model->save();
                 Util::log('资源添加成功', 'passport', __FILE__, __LINE__);
-                Util::header($this->createUrl('/passport/resource/resourcelist'));
+                echo json_encode(array(
+                        "success"=> true,
+                        "reload"=>true,
+                        "text"=>"资源添加成功"
+                    ));
+            }else{
+                echo json_encode(array(
+                        "success"=> false,
+                        "text"=>$model['_errors']
+                    ));
             }
+            Yii::app()->end();
         }
-        $this->renderPartial('_add_resource', array('model' => $model), false, true);
+        $this->renderPartial('_add_resource', array(
+            'model' => $model,
+            'action' => $this->createUrl('/passport/resource/addresource')
+        ), false, true);
     }
-    
+
     /**
      * 更新权限资源
-     * 
+     *
      */
     public function actionUpdateResource(){
         if(Yii::app()->request->isPostRequest){
@@ -45,15 +71,28 @@ class ResourceController extends Controller
             if($model->validate()){
                 $model->save();
                 Util::log('资源更新成功', 'passport', __FILE__, __LINE__);
-                Util::header($this->createUrl('/passport/resource/resourcelist'));
+                echo json_encode(array(
+                        "success"=> true,
+                        "reload"=>true,
+                        "text"=>"资源更新成功"
+                    ));
+            }else{
+                echo json_encode(array(
+                        "success"=> false,
+                        "text"=>$model['_errors']
+                    ));
             }
+            Yii::app()->end();
         }else{
             $id = $this->getParam('id');
             $model = $this->loadModel($id , 'Resource');
         }
-        $this->renderPartial('_add_resource', array('model' => $model), false, true);
+        $this->renderPartial('_add_resource', array(
+            'model' => $model,
+            'action' => $this->createUrl('/passport/resource/updateresource/id/'.$id)
+        ), false, true);
     }
-    
+
     /**
      * 删除权限资源
      */
@@ -63,7 +102,11 @@ class ResourceController extends Controller
             $role = $this->loadModel($id, 'Resource');
             $role->delete();
             Util::log('资源删除成功', 'passport', __FILE__, __LINE__);
-            echo json_encode(array('status' => 1, 'location' => $this->createUrl('/passport/resource/resourcelist')));
+            echo json_encode(array(
+                'success'=>true,
+                "reload"=>true,
+                'text'=>'资源删除成功'
+            ));
             Yii::app()->end();
         }else{
             throw new CHttpException('无效的请求...');
@@ -75,11 +118,25 @@ class ResourceController extends Controller
      */
     public function actionResourceBindList(){
         $title = '资源绑定';
-        $list = ResourceRelate::model()->findAll();
-        $result = Pages::initArray($list);
-        $this->render('resource_bind', array('title' => $title, 'list' => $result['list'], 'pages' => $result['pages']));
+        $model = new ResourceRelate();
+        $page = $this->getParam('page');
+        $criteria = new EMongoCriteria();
+        $offset = empty($page) ? 0 : ($page - 1) * Pages::LIMIT;
+        $criteria->sort('id', EMongoCriteria::SORT_DESC);
+        $criteria->offset($offset)->limit(Pages::LIMIT);
+        $list = $model->findAll($criteria);
+        $count = $model->count();
+        $resources = Util::getResourceArr();
+        if(Yii::app()->request->isAjaxRequest){
+            echo json_encode(array(
+                "dataCount" => $count,
+                "dataList" => $list
+            ));
+        }else{
+            $this->render('resource_bind', array('title' => $title, 'list' => $list, 'count' => $count, 'model' => $model, 'resources' => $resources));
+        }
     }
-    
+
     /**
      * 添加资源绑定
      */
@@ -99,10 +156,24 @@ class ResourceController extends Controller
             if($model->validate()){
                 $model->save();
                 Util::log('资源绑定添加成功', 'passport', __FILE__, __LINE__);
-                Util::header($this->createUrl('/passport/resource/resourcebindlist'));
+                echo json_encode(array(
+                        "success"=> true,
+                        "reload"=>true,
+                        "text"=>"资源绑定添加成功"
+                    ));
+            }else{
+                echo json_encode(array(
+                        "success"=> false,
+                        "text"=>$model['_errors']
+                    ));
             }
+            Yii::app()->end();
         }
-        $this->renderPartial('_add_resource_bind', array('model' => $model, 'resource_list' => $resource_list), false, true);
+        $this->renderPartial('_add_resource_bind', array(
+            'model' => $model,
+            'resource_list' => $resource_list,
+            'action' => $this->createUrl('/passport/resource/addresourcebind')
+        ), false, true);
     }
 
     /**
@@ -116,8 +187,18 @@ class ResourceController extends Controller
             if($model->validate()){
                 $model->save();
                 Util::log('资源绑定更新成功', 'passport', __FILE__, __LINE__);
-                Util::header($this->createUrl('/passport/resource/resourcebindlist'));
+                echo json_encode(array(
+                        "success"=> true,
+                        "reload"=>true,
+                        "text"=>"资源绑定更新成功"
+                    ));
+            }else{
+                echo json_encode(array(
+                        "success"=> false,
+                        "text"=>$model['_errors']
+                    ));
             }
+            Yii::app()->end();
         }else{
             $resource_list = array();
             $res = Resource::model()->findAll();
@@ -129,16 +210,27 @@ class ResourceController extends Controller
             $id = $this->getParam('id');
             $model = $this->loadModel($id , 'ResourceRelate');
         }
-        $this->renderPartial('_add_resource_bind', array('model' => $model, 'resource_list' => $resource_list), false, true);
+        $this->renderPartial('_add_resource_bind', array(
+            'model' => $model,
+            'resource_list' => $resource_list,
+            'action' => $this->createUrl('/passport/resource/updateresourcebind/id/'.$id)
+        ), false, true);
     }
-    
+
+    /**
+     * 删除资源绑定
+     */
     public function actionDeleteResourceBind(){
         if(Yii::app()->request->isAjaxRequest){
             $id = $this->getParam('id');
             $role = $this->loadModel($id, 'ResourceRelate');
             $role->delete();
             Util::log('资源绑定删除成功', 'passport', __FILE__, __LINE__);
-            echo json_encode(array('status' => 1, 'location' => $this->createUrl('/passport/resource/resourcebindlist')));
+            echo json_encode(array(
+                'success'=>true,
+                "reload"=>true,
+                'text'=>'资源绑定删除成功'
+            ));
             Yii::app()->end();
         }else{
             throw new CHttpException('无效的请求...');

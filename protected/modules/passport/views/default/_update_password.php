@@ -1,81 +1,107 @@
-<?php 
-    Yii::app()->clientScript->registerCoreScript('jquery.ui');
-    Yii::app()->clientScript->registerCoreScript('platform');;
-    $form = $this->beginWidget('ActiveForm', array('id' => 'password_form'));
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="zh-CN" />
+<title>修改密码</title>
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/source/js/ExtJS/resources/css/ext-all.css" />
+</head>
+<body>
+<div id="changpass"></div>
+
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/source/js/ExtJS/ext-all.js"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/source/js/ExtJS/main.js"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/source/js/ExtJS/locale/ext-lang-zh_CN.js"></script>
+<script type="text/javascript">
+<?php
+    echo 'var action="'.$action.'";';
 ?>
+var myMask= new Ext.LoadMask(Ext.getBody(), {msg:"loading..."});
+myMask.show();
+Ext.onReady(function(){
+Ext.QuickTips.init();
 
-<div class="clearfix">
-    <div class="cell">
-        <label for="old_password" class="required">原密码 <span class="required">*</span></label>
-        <div class="item">
-            <div class="main">
-                <input value="" name="old_password" id="old_password" type="password" maxlength="32">
-            </div>
-        </div>
-    </div>
-</div>
+var required = '<span style="color:red;font-weight:bold" data-qtip="Required">*</span>';
+var role = Ext.widget({
+	xtype: 'form',
+	id: '',
+	frame: true,
+	title: '',
+	bodyPadding: '5 5 0',
+	width: 500,
+	height:150,
+	buttonAlign : 'right',
+    labelAlign : 'right',
+	fieldDefaults: {
+		msgTarget: 'side',
+		labelWidth: 52
+	},
+	defaultType: 'textfield',
+	items: [{
+		xtype: 'fieldset',
+		title: '',
+		defaultType: 'textfield',
+		layout: 'anchor',
+		defaults: {
+			anchor: '100%',
+			labelWidth: 150,
+			allowBlank:false,
+			blankText:'此项不能为空',
+			afterLabelTextTpl: required,
+		},
+		width: '100%',
+		layout : "form",//column
+		items:[
+			{
+				fieldLabel: '原密码',
+				inputType:'password',
+				name: 'old_password',
+			},{
+				fieldLabel: '新密码',
+				inputType:'password',
+				name: 'new_password',
+				id: 'new_password',
+				minLength:6,
+                                minLengthText:'密码长度最少6位！',
+                                maxLength:20,
+                                maxLengthText:'密码长度最多20位！'
+			},{
+				fieldLabel: '确认新密码',
+				inputType:'password',
+				name: 'confirm_password',
+                                vtype:'Password',
+                                initialPassField : 'new_password'
+			}
+		]
+	}],
+	buttons: [{
+		text: '提交',
+		handler : function(){
+			 if (!role.getForm().isValid()) {
+				 Ext.Msg.alert('提示', '请正确地填写必要数据');
+				 return ;
+			 }
+			 role.getForm().submit({
+				 waitMsg: '正在提交数据',
+				 waitTitle: '提示',
+				 url: action,
+				 method: 'POST',
+				 success: function(form, action) {
+				     formCallback.alert( action.result );
+				 },
+				 failure: function(form, action) {
+				     formCallback.alert( action.result );
+				 }
+			 });
+		}
+	}]
+});
 
-<div class="clearfix">
-    <div class="cell">
-        <label for="new_password" class="required">新密码 <span class="required">*</span></label>
-        <div class="item">
-            <div class="main">
-                <input value="" name="new_password" id="new_password" type="password" maxlength="32">
-            </div>
-        </div>
-    </div>
-</div>
+role.render('changpass');
 
-<div class="clearfix">
-    <div class="cell">
-        <label for="confirm_password" class="required">确认新密码 <span class="required">*</span></label>
-        <div class="item">
-            <div class="main">
-                <input value="" name="confirm_password" id="confirm_password" type="password" maxlength="32">
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="actions">
-    <input type="submit" value="提交" id="save" name="save"/>
-</div>
-
-<?php $this->endWidget(); ?>
-
-<script>
-    jQuery(function($) {
-        $("#password_form").submit(function(){
-            var old_password = $.trim($("#old_password").val());
-            if(old_password == ''){
-                Dialog.alert('请输入原密码');
-                return false;
-            }
-            var new_password = $.trim($("#new_password").val());
-            if(new_password == ''){
-                Dialog.alert('请输入新密码');
-                return false;
-            }
-            var confirm_password = $.trim($("#confirm_password").val());
-            if(confirm_password == ''){
-                Dialog.alert('请输入确认密码');
-                return false;
-            }
-            if(confirm_password != new_password){
-                Dialog.alert('两次输入的密码不一致,请重新输入');
-                return false;
-            }
-            $.getJSON(this.action, {old_password: old_password, new_password: new_password, confirm_password: confirm_password}, function(data){
-                $("#save").prop('disabled', true);
-                if(data.flag == 1){
-                    parent.location.href = parent.location.href;
-                }else{
-                    Dialog.alert(data.msg);
-                    $("#save").prop('disabled', false);
-                }
-            });
-            return false;
-        });
-    });
+myMask.hide();
+});
 </script>
+
+</body>
+</html>

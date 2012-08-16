@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 /* typography.css */
-html {font-size:100.01%;}
+html {font-size:100.01%;-moz-user-select: text!important;-khtml-user-select: text!important;}
 body {color:#222;background:#fff;font: 10pt/1.5 arial,sans-serif,\5b8b\4f53; margin: 0;}
 h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
 h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
@@ -357,3 +357,61 @@ a.desc {background: url(oa/images/down.gif) right center no-repeat; padding-righ
 .simpleTab { height: 30px; background: #F3F7FA; border: solid 1px #C3D2D0; padding: 0 5px; }
 .simpleTab li{ float:left; padding: 0 20px; border-radius: 5px 5px 0 0; height: 25px; line-height: 30px; margin-top: 4px; }
 .simpleTab li.active, .simpleTab li.selected { background: white;  padding-bottom: 1px;  }
+.col-name{width:100%;font:normal bold 1.6em/140% "微软雅黑",sans-serif;padding:0 0 30px 80px;}
+
+.msg .x-box-mc {
+    font-size:14px;
+}
+#msg-div {
+    position:absolute;
+    left:35%;
+    top:10px;
+    width:300px;
+    z-index:20000;
+}
+#msg-div .msg {
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    background: #F6F6F6;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+    padding: 10px 15px;
+    color: #555;
+}
+#msg-div .msg h3 {
+    margin: 0 0 8px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#msg-div .msg p {
+    margin: 0;
+}
+.js-link-btn{
+	background-color: #4D90FE;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#4D90FE),to(#4787ED));
+	background-image: -webkit-linear-gradient(top,#4D90FE,#4787ED);
+	background-image: -moz-linear-gradient(top,#4D90FE,#4787ED);
+	background-image: -ms-linear-gradient(top,#4D90FE,#4787ED);
+	background-image: -o-linear-gradient(top,#4D90FE,#4787ED);
+	background-image: linear-gradient(top,#4D90FE,#4787ED);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndColorStr='#4787ed');
+	border: 1px solid #3079ED;
+	color: white !important;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	cursor: default !important;
+	display: inline-block;
+	font-weight: bold;
+	height: 29px;
+	line-height: 29px;
+	min-width: 54px;
+	padding: 0 8px;
+	text-align: center;
+	text-decoration: none !important;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+.x-grid-row td.x-grid-cell{
+    border-right:1px solid #EDEDED;
+}

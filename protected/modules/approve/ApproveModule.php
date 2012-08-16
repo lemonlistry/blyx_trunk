@@ -20,12 +20,8 @@ class ApproveModule extends CWebModule
     {
         if(parent::beforeControllerAction($controller, $action))
         {
-            $controller->navMenu = array(
-                array('label' => '所有事务', 'url' => array('/approve/default/index'), 'active' => $action->id == 'index' ? true : false),
-                array('label' => '等待审批的事务', 'url' => array('/approve/default/wait'), 'active' => $action->id == 'wait' ? true : false),
-                array('label' => '已经审批的事务', 'url' => array('/approve/default/finish'), 'active' => $action->id == 'finish' ? true : false),
-                array('label' => '流程管理', 'url' => array('/approve/default/flowlist'), 'active' => $action->id == 'flowlist' ? true : false),
-            );
+            // this method is called before any module controller action is performed
+            // you may place customized code here
             return true;
         }
         else

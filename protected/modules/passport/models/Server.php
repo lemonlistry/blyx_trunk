@@ -19,6 +19,9 @@ class Server extends MongoDocument
     public $db_passwd;
     public $web_ip;
     public $web_socket_port;
+    public $server_id;
+    public $gateway_ip;
+    public $gateway_socket_port;
 
     /**
      * Returns the static model of the specified AR class.
@@ -53,14 +56,16 @@ class Server extends MongoDocument
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('id, gname, sname, create_time, status, recommend, type, db_ip, db_port, db_name, db_user, db_passwd, web_ip, web_socket_port', 'required'),
-            array('id, status, recommend, type, db_port, web_socket_port', 'numerical', 'integerOnly'=>true),
+            array('id, gname, sname, create_time, status, recommend, type, db_ip, db_port, db_name, db_user, db_passwd, web_ip, web_socket_port, server_id,
+                    gateway_socket_port, gateway_ip', 'required'),
+            array('id, status, recommend, type, db_port, web_socket_port, gateway_socket_port', 'numerical', 'integerOnly'=>true),
             array('gname, db_name, db_user, db_passwd', 'length', 'max'=>19),
             array('sname', 'length', 'max'=>33),
-            array('web_ip, db_ip', 'length', 'max'=>100),
+            array('web_ip, db_ip, gateway_ip', 'length', 'max'=>100),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, gname, sname, create_time, status, recommend, type, address, port, dbname, account, passwd', 'safe', 'on'=>'search'),
+            array('id, gname, sname, create_time, status, recommend, type, db_ip, db_port, db_name, db_user, db_passwd, web_ip, web_socket_port, server_id,
+                    gateway_socket_port, gateway_ip', 'safe', 'on'=>'search'),
         );
     }
 
@@ -75,7 +80,7 @@ class Server extends MongoDocument
             'sname' => '服务器名称',
             'create_time' => '开服时间',
             'status' => '服务器状态',
-            'recommend' => '是否推荐',
+            'recommend' => '服务器标记',
             'type' => '服务器类型',
             'db_ip' => '数据库地址',
             'db_port' => '数据库端口',
@@ -84,9 +89,12 @@ class Server extends MongoDocument
             'db_passwd' => '数据库密码',
             'web_ip' => 'web服务器IP',
             'web_socket_port' => 'socket端口',
+            'server_id' => '服务器ID',
+            'gateway_socket_port' => '网关服务器端口',
+            'gateway_ip' => '网关服务器IP',
         );
     }
-    
+
     /**
      * @see MongoDocument::afterSave()
      */
@@ -94,7 +102,7 @@ class Server extends MongoDocument
         $this->generateDbConfig();
         return parent::afterSave();
     }
-    
+
     /**
      * @see EMongoDocument::afterDelete()
      */
@@ -102,7 +110,7 @@ class Server extends MongoDocument
         $this->generateDbConfig();
         return parent::afterDelete();
     }
-    
+
     /**
      * 生成数据库配置文件
      */
@@ -125,10 +133,10 @@ EOF;
             }
             $content .= '));';
         }
-        
+
         file_put_contents(dirname(__DIR__) . '/../../config/db_config.php', $content);
     }
-    
+
     /**
      * 返回服务器状态
      */
@@ -136,20 +144,20 @@ EOF;
         $list = array('异常', '正常');
         return $status === '' ? $list : $list[$status];
     }
-    
+
     /**
      * 返回服务器类型
      */
     public function getServerType($type = ''){
-        $list = array('日志服', '逻辑服','网关服','游戏库');
+        $list = array('日志服', '逻辑服', '网关服', '游戏服');
         return $type === '' ? $list : $list[$type];
     }
-    
+
     /**
-     * 返回服务器推荐状态
+     * 返回服务器标记
      */
     public function getServerRecommend($status = ''){
-        $list = array('不推荐', '推荐');
+        $list = array('测试服', '正式服');
         return $status === '' ? $list : $list[$status];
     }
 }

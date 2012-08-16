@@ -23,4 +23,8 @@ return array(
         'js' => array('js/zDrag.js', 'js/zDialog.js', 'js/common.js', 'js/zzbegin.js'),
         'css' => array('css/global.css'),
     ),
+    'extjs' => array(
+        'js' => array('js/ExtJS/ext-all.js','js/ExtJS/main.js'),
+        'css' => array('css/global.css','js/ExtJS/resources/css/ext-all.css'),
+    ),
 );

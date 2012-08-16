@@ -21,13 +21,21 @@ class WebUser extends CWebUser {
         }
         return $this->_user;
     }
-    
+
     /**
      * 获取当前用户密码
      */
     public function getPassword() {
         $user = $this->loadUser();
         return $user->password;
+    }
+
+    /**
+     * 获取当前角色ID
+     */
+    public function getRoleId(){
+        $user = $this->loadUser();
+        return $user->role_id;
     }
 
 }

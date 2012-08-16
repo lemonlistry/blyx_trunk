@@ -9,23 +9,30 @@ class RoleController extends Controller
     public function actionRoleList()
     {
         $title = '角色管理';
-        $list = Role::model()->findAll();
-        $result = Pages::initArray($list);
-        $this->render('index', array('title' => $title, 'list' => $result['list'], 'pages' => $result['pages']));
+        $model = new Role();
+        $criteria = new EMongoCriteria();
+        $page = $this->getParam('page');
+        $offset = empty($page) ? 0 : ($page - 1) * Pages::LIMIT;
+        $criteria->offset($offset)->limit(Pages::LIMIT);
+        $list = $model->findAll($criteria);
+        $count = $model->count();
+        $groups = Util::getRoleGroupArr();
+        if(Yii::app()->request->isAjaxRequest){
+            echo json_encode(array(
+                "dataCount" => $count,
+                "dataList" => $list
+            ));
+        }else{
+            $this->render('index', array('title' => $title, 'list' => $list,'count' => $count, 'model' => $model, 'groups' => $groups));
+        }
     }
-    
+
     /**
      * 添加角色
      */
     public function actionAddRole(){
         $model = new Role();
-        $group_list = array();
-        $res = RoleGroup::model()->findAll();
-        if (count($res)){
-            foreach ($res as $v) {
-                $group_list[$v['id']] = $v['name'];
-            }
-        }
+        $group_list = Util::getRoleGroupArr();
         if(Yii::app()->request->isPostRequest){
             $param = $this->getParam('Role');
             $param['id'] = $this->getAutoIncrementKey('bl_role');
@@ -34,12 +41,26 @@ class RoleController extends Controller
             if ($model->validate()) {
                 $model->save();
                 Util::log('角色添加成功', 'passport', __FILE__, __LINE__);
-                Util::header($this->createUrl('/passport/role/rolelist'));
+                echo json_encode(array(
+                        "success"=> true,
+                		"reload"=>true,
+                        "text"=>"角色添加成功"
+                ));
+            }else{
+                echo json_encode(array(
+                        "success"=> false,
+                        "text"=>$model['_errors']
+                ));
             }
+            Yii::app()->end();
         }
-        $this->renderPartial('_add_role', array('model' => $model, 'group_list' => $group_list), false, true);
+        $this->renderPartial('_add_role', array(
+        	'model' => $model,
+        	'group_list' => $group_list,
+        	'action' => $this->createUrl('/passport/role/addrole')
+        ), false, true);
     }
-    
+
     /**
      * 更新角色
      * @param int $role_id
@@ -52,8 +73,18 @@ class RoleController extends Controller
             if($model->validate()){
                 $model->save();
                 Util::log('角色更新成功', 'passport', __FILE__, __LINE__);
-                Util::header($this->createUrl('/passport/role/rolelist'));
+                echo json_encode(array(
+                        "success"=> true,
+                        "reload"=>true,
+                        "text"=>"角色更新成功"
+                ));
+            }else{
+                echo json_encode(array(
+                        "success"=> false,
+                        "text"=>$model['_errors']
+                ));
             }
+            Yii::app()->end();
         }else{
             $group_list = array();
             $res = RoleGroup::model()->findAll();
@@ -64,10 +95,14 @@ class RoleController extends Controller
             }
             $id = $this->getParam('id');
             $model = $this->loadModel($id , 'Role');
+            $this->renderPartial('_add_role', array(
+        	'model' => $model,
+        	'group_list' => $group_list,
+        	'action' => $this->createUrl('/passport/role/updaterole/id/'.$id)
+            ), false, true);
         }
-        $this->renderPartial('_add_role', array('model' => $model, 'group_list' => $group_list), false, true);
     }
-    
+
     /**
      * 删除角色
      */
@@ -77,25 +112,41 @@ class RoleController extends Controller
             $role = $this->loadModel($id, 'Role');
             $role->delete();
             Util::log('角色删除成功', 'passport', __FILE__, __LINE__);
-            echo json_encode(array('status' => 1, 'location' => $this->createUrl('/passport/role/rolelist')));
+            echo json_encode(array(
+                'success'=>true,
+                "reload"=>true,
+                'text'=>'角色删除成功'
+            ));
             Yii::app()->end();
         }else{
             throw new CHttpException('无效的请求...');
         }
     }
-    
+
     /**
      * 角色类型管理
      */
     public function actionRoleGroupList()
     {
         $title = '角色类型管理';
-        $list = RoleGroup::model()->findAll();
-        $result = Pages::initArray($list);
-        $this->render('role_group', array('title' => $title, 'list' => $result['list'], 'pages' => $result['pages']));
-        
+        $model = new RoleGroup();
+        $criteria = new EMongoCriteria();
+        $page = $this->getParam('page');
+        $offset = empty($page) ? 0 : ($page - 1) * Pages::LIMIT;
+        $criteria->offset($offset)->limit(Pages::LIMIT);
+        $list = $model->findAll($criteria);
+        $count = $model->count();
+        $groups = Util::getRoleGroupArr();
+        if(Yii::app()->request->isAjaxRequest){
+            echo json_encode(array(
+                "dataCount" => $count,
+                "dataList" => $list
+            ));
+        }else{
+            $this->render('role_group', array('title' => $title, 'list' => $list,'count' => $count, 'model' => $model, 'groups' => $groups));
+        }
     }
-    
+
     /**
      * 添加角色类型
      */
@@ -110,12 +161,20 @@ class RoleController extends Controller
             if ($model->validate()) {
                 $model->save();
                 Util::log('角色类型添加成功', 'passport', __FILE__, __LINE__);
-                Util::header($this->createUrl('/passport/role/rolegrouplist'));
+                echo json_encode(array(
+                    'success'=>true,
+                    "reload"=>true,
+                    'text'=>'角色类型添加成功'
+                ));
+                Yii::app()->end();
             }
         }
-        $this->renderPartial('_add_role_group', array('model' => $model), false, true);
+        $this->renderPartial('_add_role_group', array(
+        	'model' => $model,
+        	'action' => $this->createUrl('/passport/role/addrolegroup')
+        ), false, true);
     }
-    
+
     /**
      * 删除角色类型
      */
@@ -125,19 +184,22 @@ class RoleController extends Controller
             $role = $this->loadModel($id, 'RoleGroup');
             $role->delete();
             Util::log('角色类型删除成功', 'passport', __FILE__, __LINE__);
-            echo json_encode(array('status' => 1, 'location' => $this->createUrl('/passport/role/rolegrouplist')));
+            echo json_encode(array(
+                'success'=>true,
+                "reload"=>true,
+                'text'=>'角色类型删除成功'
+            ));
             Yii::app()->end();
         }else{
             throw new CHttpException('无效的请求...');
         }
     }
-    
+
     /**
      * 更新角色类型
      * @param int $role_id
      */
     public function actionUpdateRoleGroup(){
-        
         if(Yii::app()->request->isPostRequest){
             $param = $this->getParam('RoleGroup');
             $model = $this->loadModel($param['id'], 'RoleGroup');
@@ -145,13 +207,21 @@ class RoleController extends Controller
             if($model->validate()){
                 $model->save();
                 Util::log('角色类型更新成功', 'passport', __FILE__, __LINE__);
-                Util::header($this->createUrl('/passport/role/rolegrouplist'));
+                echo json_encode(array(
+                        "success"=> true,
+                        "reload"=>true,
+                        "text"=>"角色类型更新成功"
+                ));
+                Yii::app()->end();
             }
         }else{
             $id = $this->getParam('id');
             $model = $this->loadModel($id , 'RoleGroup');
         }
-        $this->renderPartial('_add_role_group', array('model' => $model), false, true);
+        $this->renderPartial('_add_role_group', array(
+        	'model' => $model,
+        	'action' => $this->createUrl('/passport/role/updaterolegroup/id/'.$id)
+        ), false, true);
     }
 
 }

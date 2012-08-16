@@ -1,19 +1,19 @@
 <?php
 
 /**
- * socket help class 
+ * socket help class
  * @author shadow
  *
  */
 class SocketHelper{
-    
+
     //IP地址
     private $ip;
     //端口号
     private $port;
     //socket链接
     private $socket;
-    
+
     /**
      * 构造方法
      * @param string $ip
@@ -24,7 +24,7 @@ class SocketHelper{
         $this->port = $port;
         $this->open();
     }
-    
+
     /**
      * 打开socket链接
      */
@@ -32,7 +32,7 @@ class SocketHelper{
         $this->socket = new ClientSocket();
         $this->socket->open($this->ip,$this->port);
     }
-    
+
     /**
      * 发送数据包
      * @param string $cmd 二进制数据包
@@ -40,7 +40,7 @@ class SocketHelper{
     public function send($cmd){
         $this->socket->send($cmd);
     }
-    
+
     /**
      * 接收响应数据 如果是二进制包返回 需要 unpack
      */
@@ -49,21 +49,21 @@ class SocketHelper{
         return $res;
         //return unpack('L',$res);
     }
-    
+
     /**
      * 获取socket错误信息
      */
     public function error(){
         return $this->socket->error();
     }
-    
+
     /**
      * 关闭socket链接
      */
     public function close(){
         $this->socket->close();
     }
-    
+
     /**
      * 获取逻辑服包头信息 打包顺序  nSock  nUserId  nType nLength nSerialNo nVersion
      * @param int $nType 协议类型
@@ -83,7 +83,7 @@ class SocketHelper{
         $cmd .= pack('L',$nVersion);
         return $cmd;
     }
-    
+
     /**
      * 获取网关包头信息 打包顺序   nType nLength nSerialNo nVersion
      * @param int $nType 协议类型
@@ -99,20 +99,19 @@ class SocketHelper{
         $cmd .= pack('L',$nVersion);
         return $cmd;
     }
-    
+
     /**
      * 解析服务端响应的包 模拟登录  进入场景 创建角色 包含包头信息
      * @param array $response 响应包
      * @param string $response_type 响应协议号
      * @param string $format 解析格式
-     * @param int $head_length 包头长度 
+     * @param int $head_length 包头长度
      * @param int $kv_state_length key value 对声明长度
      * @return array
      */
     public function parseResponsePack($response, $response_type = null, $head_length = 32, $kv_state_length = 4, $format = 'H*'){
         if(empty($response)){
-            $this->returnJson(0);
-            Yii::app()->end();
+            return $this->parseSocketResponseMsg(0);
         }
         //解包
         $res = unpack($format, $response);
@@ -137,17 +136,17 @@ class SocketHelper{
             if($key % 2 == 0){
                 $val = array_reverse($value);
                 $str = implode('', $val);
-                $k = base_convert($str, 16, 10);  
+                $k = base_convert($str, 16, 10);
             }else{
                 $val = array_reverse($value);
                 $str = implode('', $val);
-                $v = base_convert($str, 16, 10);  
+                $v = base_convert($str, 16, 10);
                 $result[$k] = $v;
             }
         }
         return $result;
     }
-    
+
     /**
      * 解析服务端响应的包 禁言 解除禁言 禁止登录 解除禁止登录 关闭server 没有包头信息
      * @param array $response 响应包
@@ -155,10 +154,9 @@ class SocketHelper{
      * @param string $format 解析格式
      * @return array
      */
-    public function parseNoHeaderResonsePack($response, $response_type = null, $format = 'H*'){
+    public function parseNoHeaderResponsePack($response, $response_type = null, $format = 'H*'){
         if(empty($response)){
-            $this->returnJson(0);
-            Yii::app()->end();
+            return $this->parseSocketResponseMsg(0);
         }
         $v = 0;
         //解包
@@ -172,17 +170,19 @@ class SocketHelper{
             return $v;
         }
     }
-    
+
     /**
      * 解析socket响应信息, 并记录日志
      * @param int $flag
      */
-    public function returnJson($flag, $msg = ''){
+    public function parseSocketResponseMsg($flag, $msg = ''){
+        $success = false;
         switch ($flag) {
             case 0:
                 $msg .= '数据响应错误';
                 break;
             case 1:
+                $success = true;
                 $msg .= '操作成功';
                 break;
             case 2:
@@ -196,12 +196,7 @@ class SocketHelper{
             break;
         }
         Util::log($msg, 'service', __FILE__, __LINE__);
-        $res = array('flag' => $flag, 'msg' => $msg);
-        if(Yii::app()->request->isAjaxRequest){
-            echo json_encode($res);
-        }else{
-            return $res;
-        }
+        return array('success' => $success, 'text' => $msg);
     }
-    
+
 }

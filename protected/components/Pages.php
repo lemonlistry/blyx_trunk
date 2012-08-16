@@ -5,6 +5,8 @@
  */
 class Pages {
 
+	const LIMIT = 30;
+
     /**
      * SQL分页 获取pages对象和结果集数组
      * @param string $sql SQL语句
@@ -54,10 +56,10 @@ class Pages {
         $list = array();
         if($num){
             $index = $pages->currentPage;
-            $result = array_chunk($result, $pages->pageSize); 
+            $result = array_chunk($result, $pages->pageSize);
             $list = $result[$index];
         }
         return array('pages' => $pages , 'list' => $list);
     }
-    
+
 }

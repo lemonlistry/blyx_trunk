@@ -47,7 +47,7 @@ return array(
                 'ext.YiiMongoDbSuite.gii'
             ),
         ),
-        'passport',     //运维模块 系统信息 账号 密码 
+        'passport',     //运维模块 系统信息 账号 密码
         'core',         //运营模块  核心数据分析
         'install',      //数据初始化模块
         'restfulApi',   //api模块 提交接口供游戏请求
@@ -71,8 +71,8 @@ return array(
         // uncomment the following to enable URLs in path-format
 
         'urlManager'=>array(
-            'urlFormat'=>'path',
-            'showScriptName'=>false,
+            //'urlFormat'=>'path',
+            //'showScriptName'=>false,
             'rules'=>array(
                 '<controller:\w+>/<id:\d+>'=>'<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
@@ -90,9 +90,9 @@ return array(
         'clientScript' => array(
             'class' => 'CClientScript',
             'corePackages' => require(__DIR__ . '/packages.php'),
-            'coreScriptUrl' => '/source',
+            'coreScriptUrl' => '/trunk/source',
         ),
-        
+
         'cache'=>array(
             'class'=>'CMemCache',
             'servers'=>array(
@@ -123,7 +123,7 @@ return array(
             'safeFlag'          => false,
             'useCursor'         => false,
         ),
-        
+
         'db_passport'=>array(
             'connectionString' => 'mysql:host=localhost;dbname=passport',
             'emulatePrepare' => true,
@@ -133,7 +133,7 @@ return array(
             'tablePrefix' => 'bl_',
         ),
         */
-        
+
         'db'=>array(
             'class' => 'CDbConnection',
             'connectionString' => 'mysql:host=172.16.7.12;dbname=platform',
@@ -142,8 +142,10 @@ return array(
             'password' => '111111',
             'charset' => 'utf8',
             'schemaCachingDuration' => 3600,
+            //'enableProfiling' => true,
+            //'enableParamLogging' => true,
         ),
-        
+
         'errorHandler'=>array(
             // use 'site/error' action to display errors
             'errorAction'=>'site/error',
@@ -159,8 +161,11 @@ return array(
                 /*
                 array(
                     'class'=>'CWebLogRoute',
+                    'levels'=>'trace',     //级别为trace
+                    'showInFireBug'=>true,
+                    'categories'=>'system.db.CDbCommand' //只显示关于数据库信息,包括数据库连接,数据库执行语句
                 ),
-                */
+                 */
             ),
         ),
     ),
@@ -173,5 +178,6 @@ return array(
         'socket_ip'=>'172.16.2.74', //socket通讯IP
         'socket_port'=>'20005', //socket通讯端口
         'version'=>'1.0.0', //版本号
+        'js_url_path'=>'/trunk',
     ),
 );

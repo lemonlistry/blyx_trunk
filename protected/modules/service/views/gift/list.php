@@ -1,85 +1,202 @@
-<div id="page_body">
-<div id="page_title">
-    <?php
-        require dirname(__FILE__) . '/../default/_menu.php';
-    ?>
-</div>
+<div id="search"></div>
 
-<div class="main-box">
-    <div class="main-body">
-        <aside class="span5">
-            <?php
-                $this->widget('zii.widgets.CMenu', array('items' => $menu, 'activeCssClass' => 'selected',
-                    'htmlOptions' => array('class' => 'left-menu',)));
-            ?>
-        </aside>
-        <div class="main-container prepend5">
-            <header>
-                <div class="right">
-                    <?php echo Html5::link('添加礼包', array('/service/gift/addgift'), array('class' => 'js-dialog-link', 'data-height' => 400, 'data-width' => 550)); ?>
-                </div>
-            </header>
-            <div class="main-content">
-                <div class="grid-view">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="span2">编号</th>
-                                <th class="span4">服务器</th>
-                                <th class="span2">时间</th>
-                                <th class="span4">角色ID</th>
-                                <th class="span4">礼包名称</th>
-                                <th class="span4">物品ID</th>
-                                <th class="span2">数量</th>
-                                <th class="span2">状态</th>
-                                <th class="span4">创建时间</th>
-                                <th class="span2">操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php 
-                                if (count($list)) {
-                                    foreach ($list as $k => $v) {
-                                       $server = Server::model()->findByAttributes(array('id' => $v->server_id));
-                            ?>
-                                        <tr> 
-                                            <td><?php echo $k + 1; ?></td>
-                                            <td><?php echo $server->sname; ?></td>
-                                            <td><?php echo $v->time; ?></td>
-                                            <td><?php echo $v->role_id; ?></td>
-                                            <td><?php echo $v->name; ?></td>
-                                            <td><?php echo $v->item_id; ?></td>
-                                            <td><?php echo $v->num; ?></td>
-                                            <td><?php echo $model->getStatus($v->status); ?></td>
-                                            <td><?php echo date("Y-m-d H:i:s",$v->create_time); ?></td>
-                                            <td>
-                                                <?php
-                                                    if($v->status == 0){
-                                                        echo Html5::link('删除', array('/service/gift/deletegift', 'id' => $v->id), array('class' => 'js-confirm-link', 'data-title' => "您确定要删除当前礼包吗？"));
-                                                    }
-                                                ?>
-                                            </td>
-                                        </tr>
-                                <?php 
-                                    } 
-                                ?>
-                                    <tr>
-                                        <td colspan="6"> <div class="pager"><?php $this->widget('CLinkPager', array('pages'=>$pages));?> </div></td>
-                                    </tr>
-                            <?php 
-                                } else { 
-                            ?>
-                                    <tr>
-                                        <td colspan="6">暂无数据!</td>
-                                    </tr>
-                            <?php 
-                                } 
-                            ?>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+
+<div style="clear:both;"></div>
+<div id="list"></div>
+
+<script type="text/javascript">
+
+Ext.onReady(function(){
+
+var searchForm = Ext.widget({
+    xtype: 'form',
+    frame: true,
+    width: 'auto',
+    height:33,
+    layout : "column",
+    items:[
+        {
+            xtype : 'datefield',
+            width:200,
+            labelWidth:70,
+            fieldLabel: '开始日期',
+            format: 'Y-m-d',
+            name:'begintime',
+            editable: false,
+            value: date.getPreviouslyTime().lastMonth
+        },
+        {
+            xtype : 'datefield',
+            width:200,
+            labelWidth:70,
+            fieldLabel: '截止日期',
+            format: 'Y-m-d',
+            name:'endtime',
+            editable: false,
+            style: 'margin-left:7px;',
+            value: date.getPreviouslyTime().yesterday
+        },
+        {
+            xtype : 'textfield',
+            width: 200,
+            emptyText: '角色名',
+            name:'role_name',
+            style: 'margin-left:7px;'
+        },
+        {
+            xtype : 'button',
+            width: 60,
+            text: '查询',
+            style: 'margin-left:7px;',
+            handler: function(){
+                submit();
+            }
+        },
+        {
+            xtype : 'button',
+            width: 60,
+            text: '添加礼包',
+            style: 'margin-left:7px;',
+            handler: function(){
+				openWindow({
+					src : js_url_path+'/index.php?r=service/gift/addgift',
+					title:'添加礼包',
+					width:520,
+					height:280
+				});
+            }
+        }
+    ],
+    renderTo: Ext.get('search')
+});
+
+function submit(){
+    var args = searchForm.getForm().getValues();
+    drawTable( args );
+}
+
+	
+function drawTable( options ){
+	var targetDiv = Ext.get('list');
+	targetDiv.update('');
+    Ext.define('serverStruct', {
+        extend: 'Ext.data.Model',
+        fields: [
+            {name: 'role_id', type:'string'},
+            {
+                name: 'role_name',
+                type:'string',
+                convert: function (value, record) {
+                    return value ||　' ';
+                }
+            },
+            {name: 'sname', type: 'string'},
+            {name: 'name', type: 'string'},
+            {name: 'item_name',type: 'string'},
+            {name: 'time', type: 'string'},
+            {name: 'num',type: 'string'},
+            {
+                name: 'create_time',
+                type: 'string',
+                convert: function (value, record) {
+                    return date.format(value,'ISO8601Long');
+                }
+            },
+            {name: 'status', type: 'string'},
+            {name: 'tran_status',type: 'string'}
+        ]
+    });
+
+
+
+    myMask.show();
+	var currentPage = page.get() || 1;
+	//解决翻页按钮状态错误bug,c_page = parseInt( c_page );
+	currentPage = parseInt( currentPage,10 );
+	var startpage = (currentPage-1) * window.config.$page;
+	var store = Ext.create('Ext.data.Store', {
+		model: 'serverStruct',
+		proxy: {
+			type: 'ajax',
+			url: js_url_path+'/index.php?r=/service/gift/list',
+			extraParams: options,
+			reader: {
+				root: 'dataList',
+				totalProperty: 'dataCount'
+			},
+		},
+		pageSize: window.config.$page,
+		currentPage: currentPage
+	});
+	store.load({
+		params:{
+			page: currentPage,
+			start: startpage,
+        	limit: window.config.$page
+		}
+	});
+	store.on('load',function(){
+		myMask.hide();
+		page.set( store.currentPage );
+	});
+
+    Ext.create('Ext.grid.Panel', {
+        title: '',
+        store: store,
+        viewConfig  : {
+			enableTextSelection:true
+        },
+        bbar: Ext.create('Ext.PagingToolbar', {
+			store: store,
+			displayInfo: true,
+			displayMsg: '第{0}-{1}条(共{2}条)',
+			emptyMsg: "<b style='color:red;'>查询结果为空</b>"
+		}),
+        columns: [
+            {text: '编号', width:60,dataIndex:'id'},
+            {text: '服务器名字', width:120, dataIndex:'sname'},
+            {text: '有效时间', width:80, dataIndex:'time'},
+            {text: '角色ID',width:160,  dataIndex:'role_id'},
+            {text: '角色名称',width:220,  dataIndex:'role_name'},
+            {text: '礼包名称', width:120, dataIndex:'name'},
+            {text: '物品名称',width:70,  dataIndex:'item_name'},
+            {text: '数量', width:60, dataIndex:'num'},
+            {text: '状态', width:60, dataIndex:'tran_status'},
+            {text: '创建时间', width:140, dataIndex:'create_time'},
+            {
+                xtype:'actioncolumn',
+                width:40,
+                text:'操作',
+                items: [{
+                    icon: js_source_path+'/source/js/ExtJS/shared/icons/fam/delete.gif',
+                    tooltip: 'Delete',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var _id = store.getAt(rowIndex).get('id');
+                        var url = js_url_path+'/index.php?r=/service/gift/deletegift';
+                        ajaxCallBack.alert({
+                            params : {
+                                id : _id
+                            },
+                            url : url
+                        });
+                    },
+                    getClass:function(v,m,r,rIndex,cIndex,store){
+                        if(r.data.status != 0){
+                            return 'x-hidden';
+                        }
+                    }
+                }]
+            }
+        ],
+        width: 'auto',
+        renderTo: targetDiv
+    });
+}
+
+submit();
+	
+myMask.hide();
+
+});
+</script>
+

@@ -5,45 +5,27 @@
     <meta name="language" content="zh-CN" />
     <title><?php echo Yii::app()->name; ?></title>
     <?php 
-        Yii::app()->clientScript->registerCoreScript('jquery.ui');
-        Yii::app()->clientScript->registerCoreScript('platform');
+        Yii::app()->clientScript->registerCoreScript('extjs');
     ?>
 </head>
-<body style="min-width: 1000px; background:#F9FCFF">
-    <header id="page_header">
-        <div class="logo-panel"><a class="logo" href="/"><?php echo Yii::app()->name; ?></a></div>
-        <div id="welcome">  欢迎您，<?php echo Yii::app()->user->name; ?>！<?php echo Html5::link('更改密码', array('/passport/default/updatepassword'), array('class' => 'js-dialog-link')); ?> &nbsp; <a href="<?php echo $this->createUrl('/passport/default/logout'); ?>">退出</a></div>
-        <nav class="menu">
-            <ul>
-                <?php 
-                    foreach ($this->menu as $k => $v) {
-                        $index_arr = explode('/', $k);
-                        $index = $index_arr[0] . '/' . $index_arr[1];
-                ?>
-                        <li class="<?php echo strpos(Yii::app()->request->url, $index) === false ? '' : 'active'; ?>"><a href="<?php echo $this->createUrl($k); ?>"><?php echo $v; ?></a></li>
-                <?php 
-                    }
-                ?>
-            </ul>
-        </nav>
-    </header>
-    
-    <div id="page_main">
-        <div id="page_nav">
-            <?php 
-                if(isset($this->navMenu)) {
-                    $this->widget('zii.widgets.CMenu', array('items' => $this->navMenu,'activateParents'=>true,
-                        'encodeLabel'=>false,'activeCssClass'=>'selected'));
-                }
-            ?>
-        </div>
+<body>
+
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/source/js/ExtJS/locale/ext-lang-zh_CN.js"></script>
+<script type="text/javascript">
+var js_url_path = '<?php echo Yii::app()->params['js_url_path']; ?>';
+var js_source_path = '<?php echo Yii::app()->request->baseUrl; ?>';
+Ext.onReady(function(){
+    window.myMask= new Ext.LoadMask(Ext.getBody(), {msg:"loading..."});     
+    myMask.show();
+});
+</script>
+  
         <?php echo $content; ?>
-    </div>
 
-    <footer id="page_footer">
-        Copyright &copy; 2011-<?php echo date('Y'); ?> By blyx . All Rights Reserved.<br/>
-        <p>版本：<?php echo Yii::app()->params['version']; ?> &nbsp;&nbsp; 执行时间：<?php echo printf("%.2f", Yii::getLogger()->getExecutionTime()); ?>秒 </p>
-    </footer>
 
+<script type="text/javascript">
+var executeTime = '执行时间：<?php echo printf("%.2f", Yii::getLogger()->getExecutionTime()); ?>秒';
+typeof console != 'undefined' && console.log(executeTime);
+</script>
 </body>
 </html>
